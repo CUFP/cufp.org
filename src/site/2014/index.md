@@ -104,6 +104,7 @@ gathering proposals, organized via our website.
     data-options="animation:fade;
                   timer_speed:6000;
                   animation_speed:1500;
+                  resume_on_mouseout:true;
                   slide_number:false;
                   bullets:false;
                   variable_height:true;">
