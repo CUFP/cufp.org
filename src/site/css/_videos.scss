@@ -1,0 +1,31 @@
+////////////////////////////////////////////////////////////////////////////////
+// Videos Page
+
+body.videos {
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  dd .row {
+    padding-top: $rem-base;
+    padding-bottom: $rem-base;
+  }
+
+  dd .row:not(:last-child) {
+    border-bottom: 2px solid $secondary-color;
+  }
+
+  dd .row .columns {
+    padding-left: 0;
+  }
+
+  div.date {
+    color : scale-color($body-font-color, $lightness: 50%);
+  }
+
+  dl {
+    margin-bottom: $rem-base;
+  }
+
+}

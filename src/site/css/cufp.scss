@@ -1,0 +1,119 @@
+@import "settings";
+@import "../../../bower/foundation/scss/normalize";
+@import "../../../bower/foundation/scss/foundation";
+
+////////////////////////////////////////////////////////////////////////////////
+// Highlights. Used especially for rows spanning full window width.
+
+.highlight0 {
+  background-color: $primary-color;
+
+  a:link, a:visited {
+    color : $body-font-color;
+    text-decoration : none;
+    border-bottom : 1px dotted $body-font-color;
+  }
+
+  a:hover, a:active {
+    color : #FFFFFF;
+  }
+
+}
+
+.highlight1 {
+  background-color: $secondary-color;
+}
+
+.highlight2 {
+  background-color: $alert-color;
+}
+
+.highlight3 {
+  background-color: $success-color;
+}
+
+.highlight4 {
+  background-color: $warning-color;
+}
+
+.highlight5 {
+  background-color: $info-color;
+
+  a:link, a:visited {
+    color : $body-font-color;
+    text-decoration : none;
+    border-bottom : 1px dotted $body-font-color;
+  }
+
+  a:hover, a:active {
+    color : $primary-color;
+  }
+
+}
+
+.highlight6 {
+  background-color: #000000;
+}
+
+
+// Fix top padding, which seems to little. Not sure this is best solution.
+.row {
+  padding-top: $rem-base * 0.8;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Conference pages
+body.conference {
+
+  // Margin following H2 headers is too large.
+  h2 {margin-bottom: 0;}
+
+  div:nth-child(2) {
+    h1, h2 {
+      color:white;
+      font-weight:bold;
+      font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    // In banner, H2 margin should be larger.
+    h2 {margin-bottom: $rem-base;}
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  // Announcements section.
+  h2#Announcements {
+    color: $warning-color;
+  }
+
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Persons
+$person-color: $body-font-color;
+
+.person {
+  color: $person-color;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Affiliations
+.affiliation {
+  font-style: italic;
+}
+
+.affiliation:before {
+  content: "("
+}
+
+.affiliation:after {
+  content: ")"
+}
+
+
+@import "sessions", "footer", "videos", "blog"

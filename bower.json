@@ -1,0 +1,6 @@
+{
+  "name" : "cufp.org",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}

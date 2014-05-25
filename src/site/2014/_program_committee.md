@@ -1,0 +1,7 @@
+- [Ozgun Ataman](http://soostone.com) (Soostone, Inc.)
+- [Tim Chevalier](http://catamorphism.org/) (AlephCloud)
+- Derek Elkins (Now Business Intelligence)
+- [Matthew Might](http://matt.might.net) (University of Utah)
+- [Richard Minerich](http://richardminerich.com) (Bayard Rock)
+- Audrey Tang (Apple, Inc.)
+- [Jason Zaugg](https://github.com/retronym) (Typesafe)

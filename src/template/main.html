@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CUFP</title>
+
+  <link rel="stylesheet" type="text/css"
+        href="http://fonts.googleapis.com/css?family=Montserrat:bold|Maven+Pro:bold" />
+
+  <link rel="stylesheet" href="/css/cufp.css" />
+  <link rel="stylesheet" href="/css/foundation-icons/foundation-icons.css" />
+  <link rel="stylesheet" href="/css/fairhead-webicons/webicons.css" />
+  <link rel="stylesheet" href="/css/flaticon-feather/flaticon.css" />
+  <script src="/js/modernizr.js"></script>
+
+</head>
+
+<body {{ ifdef body_class (( get body_class )) }} >
+
+<!-- Navigation Bar -->
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+      <li class="has-dropdown">
+        <a href="#"><i class="fi-torsos-all"></i> Conferences</a>
+        <ul class="dropdown">
+          (( cmd ./cufp.org print conference-list ))
+        </ul>
+      </li>
+    </ul>
+
+  </section>
+</nav>
+ 
+ 
+<!-- Content -->
+{{ input (( get content_file )) }}
+
+<!-- Footer -->
+<footer>
+<div class="row" data-equalizer>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch>
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-4 columns conferences text-center" data-equalizer-watch>
+    <h3><i class="fi-torsos-all"></i> Conferences</h3>
+    <ul>
+      (( cmd ./cufp.org print conference-list ))
+    </ul>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch>
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch>
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">CUFP.org Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – (( cmd date "+%Y" )) Commercial Users of
+      Functional Programming. All Rights
+      Reserved. See <a href="/license.html">licenses</a> file for
+      details.</p>
+  </div>
+</div>
+</footer>
+
+<!-- Zurb Foundation scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/fastclick.js"></script>
+<script src="/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+<!-- Twitter script. Needed to embed Twitter timelines and buttons. -->
+(( cat src/template/_twitter_script.html ))
+
+<!-- Google Analytics -->
+(( ifdef production
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+))
+
+</body>
+</html>

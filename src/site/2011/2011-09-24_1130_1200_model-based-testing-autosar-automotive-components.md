@@ -1,0 +1,11 @@
+- type: talk
+- title: Model based testing of AUTOSAR automotive components 
+- speakers: Thomas Arts
+- affiliations: QuviQ
+- video: https://www.youtube.com/watch?v=4aTEFNre2nM
+
+## Abstract
+Testing AUTOSAR components with traditional software testing techniques turns out to be an expensive undertaking. Traditionally, one manually constructs test cases, but the enormous amount of configuration parameters make it hard to reuse tests written for a specific configuration in a different configuration. The least one needs to do is to inspect the test case and see if it makes sense for the new configuration. With a test suite of ten thousand tests, that’s not an easy exercise. Even harder is it to adapt the tests if the configuration parameters require that.  On top of the large configuration space, there is the complexity of the almost infinite amount of possible scenarios. How would one manually create a test suite that covers at least a large number of all possible ways components can interact with each other?
+Model based testing presents the solution. Instead of manually writing test cases, one creates a test model for the software. From this test model and a given configuration, one can generate millions of tests automatically: exploring a wild variety of possible scenarios.  Volvo, Mentor Graphics, SP and Quviq joined in the development of test models for AUTOSAR 4.0 components, including all communication stacks, diagnostics and mode management. These models have been used to validate components from a number of vendors and to detect a number of AUTOSAR ambiguities.
+
+It turns out that creating models is far more cost effective than manually creating test cases, at least a factor ten when using Quviq’s QuickCheck approach. The resulting models are more general than any test suite could be and are configuration independent, in the sense that given a certain configuration, test cases for that configuration are generated. Scenarios are randomly generated according to some tool specific logic and whenever a scenario in the software differs from what the model expects, a minimal difference is created. The minimal failing test case is a great help in analyzing why the model and the code are incompatible. 

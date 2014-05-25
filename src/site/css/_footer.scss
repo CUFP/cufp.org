@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Footer
+//
+// Imported into cufp.scss.
+//
+
+$footer-color: #CCCCCC;
+
+footer:not(.copyright) {
+  background-color: $topbar-bg-color;
+  padding-top: $rem-base;
+  padding-bottom: $rem-base;
+}
+
+footer * {
+  font-size: $rem-base * 0.8;
+  color: $footer-color;
+}
+
+footer h3 {
+  font-weight: bold;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+footer > div > div:first-child {
+  a:link, a:visited {
+    border-bottom: 1px dotted;
+  }
+}
+
+// Footer .conferences section
+$footer-column-count: 3;
+$footer-column-gap: rem-calc(2.5);
+footer .conferences ul {
+  -moz-column-count: $footer-column-count;
+  -moz-column-gap: $footer-column-gap;
+  -webkit-column-count: $footer-column-count;
+  -webkit-column-gap: $footer-column-gap;
+  column-count: $footer-column-count;
+  gap: $footer-column-gap;
+}
+
+@media #{$medium-up} {
+  footer .columns:not(:first-child) {
+    border-left: 1px solid scale-color($footer-color, $lightness: -60%);
+  }
+}
+
+// Footer .social section
+footer .social * {
+  text-align: center;
+  font-size: $rem-base * 2;
+}
+
+// Footer .copyright section
+footer.copyright {
+  text-align: center;
+  background-color: scale-color($topbar-bg-color, $lightness: 10%);
+  a:link, a:visited {
+    border-bottom: 1px dotted;
+  }
+}

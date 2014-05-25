@@ -1,0 +1,229 @@
+open build/OCaml
+DefineCommandVars()
+
+.PHONY: lib app doc site \
+        site-clean doc-clean clean really-really-clean \
+        print_config diff-scss
+
+
+################################################################################
+# General Project Information
+PROJECT = cufp.org
+DESCRIPTION = Implementation of the cufp.org website.
+if $(test -e .git)
+  GIT_COMMIT = $(shell git rev-parse HEAD)
+  export
+else
+  GIT_COMMIT =
+  export
+
+LIB_NAME = cufp_org
+LIB_DESCRIPTION = Implementation of the cufp.org website.
+LIB_MODULES[] =
+  $(removesuffix $(basename $(ls src/lib/*.ml)))
+  cufp_about
+LIB_PACKAGES = core async sexplib.syntax core_extended \
+               omd yojson \
+               uri netstring rss
+
+APP_NAME = $(PROJECT)
+APP_MODULES[] =
+  $(removesuffix $(basename $(ls src/app/*.ml)))
+APP_PACKAGES = $(LIB_PACKAGES)
+APP = $(ROOT)/_build/src/app/$(APP_NAME)
+
+
+################################################################################
+# Configuration
+CONFIG_FILE = configure.om
+
+$(CONFIG_FILE):
+  if $(not $(file-exists $(CONFIG_FILE)))
+    echo "Generating default $@. Change as desired."
+    echo "COMPILE_SITE = true" > $(CONFIG_FILE)
+    echo "COMPILE_LIB = true" >> $(CONFIG_FILE)
+    echo "COMPILE_APP = true" >> $(CONFIG_FILE)
+    echo "PRODUCTION = false" >> $(CONFIG_FILE)
+  else
+    echo "$@ exists. Will not change."
+
+if $(file-exists $(CONFIG_FILE))
+  include $(CONFIG_FILE)
+  export
+
+DefineCommandVars()
+
+if $(not $(defined COMPILE_SITE))
+  COMPILE_SITE = true
+  export
+
+if $(not $(defined COMPILE_LIB))
+  COMPILE_LIB = true
+  export
+
+if $(not $(defined COMPILE_APP))
+  COMPILE_APP = true
+  export
+
+if $(not $(defined PRODUCTION))
+  PRODUCTION = false
+  export
+
+print_config:
+  echo "COMPILE_LIB: $(COMPILE_LIB)"
+  echo "COMPILE_APP: $(COMPILE_APP)"
+  echo "PRODUCTION: $(PRODUCTION)"
+  echo "COMPILE_SITE: $(COMPILE_SITE)"
+
+################################################################################
+# Build Parameters
+USE_OCAMLFIND = true
+if $(not $(OCAMLFIND_EXISTS))
+   eprintln(Required package ocamlfind not found.)
+   exit 1
+
+NATIVE_ENABLED = $(OCAMLOPT_EXISTS)
+BYTE_ENABLED = $(OCAMLC_EXISTS)
+
+OCAMLFLAGS = -bin-annot -annot -warn-error P -thread
+OCAMLCFLAGS =
+OCAMLOPTFLAGS =
+OCAML_LINK_FLAGS = -linkpkg
+OCAML_BYTE_LINK_FLAGS =
+OCAML_NATIVE_LINK_FLAGS =
+OCAMLFINDFLAGS = -syntax camlp4o
+
+
+################################################################################
+# Sub-directories
+.SUBDIRS: .
+  mkdir -p _build/src/lib
+  mkdir -p _build/src/app
+  mkdir -p _build/site
+  mkdir -p _build/tmp
+  mkdir -p _build/doc
+  vmount(-l, src/, _build/src/)
+
+  ##############################################################################
+  # Library
+  .SUBDIRS: _build/src/lib
+    OCAMLPACKS[] = $(LIB_PACKAGES)
+
+    cufp_about.ml:
+      echo '(** General information about this code. *)' > $@
+      echo '' >> $@
+      echo 'let description = "$(DESCRIPTION)"' >> $@
+      echo '' >> $@
+      echo '(** Git commit if known. *)' >> $@
+      if $(equal $(GIT_COMMIT), $(EMPTY))
+        echo 'let git_commit = None' >> $@
+      else
+        echo 'let git_commit = Some "$(GIT_COMMIT)"' >> $@
+
+    lib: $(OCamlLibrary $(LIB_NAME), $(LIB_MODULES))
+      @echo "Building $(PROJECT) lib."
+
+    if $(COMPILE_LIB)
+      .DEFAULT: lib
+
+
+  ##############################################################################
+  # Command Line App
+  .SUBDIRS: _build/src/app
+    OCAML_LIBS = ../lib/$(LIB_NAME)
+    OCAMLINCLUDES += $(dir ../lib/)
+    OCAMLPACKS[] = $(APP_PACKAGES)
+
+    app $(ROOT)/$(APP_NAME): $(OCamlProgram $(APP_NAME), $(APP_MODULES))
+      @echo "Building $(PROJECT) app."
+      ln -fs _build/src/app/$(APP_NAME).opt $(ROOT)/$(APP_NAME)
+
+    if $(COMPILE_APP)
+      .DEFAULT: app
+
+
+  ##############################################################################
+  # Documentation
+  .SUBDIRS: _build/doc
+
+    doc: ../src/lib/$(LIB_NAME).cma doc-clean
+      @echo "Building $(PROJECT) doc."
+      rm -rf api
+      mkdir api
+      ocamlfind ocamldoc \
+        -package $(concat \,, $(LIB_PACKAGES)) \
+         -syntax camlp4o \
+        -charset UTF-8 \
+        -d api \
+        -t "Functions to Build CUFP.org Website" \
+        -keep-code \
+        -colorize-code \
+        -sort \
+        -I ../src/lib \
+        -thread \
+        -html \
+        ../src/lib/*.mli ../src/lib/*.ml
+
+
+  ##############################################################################
+  # CSS
+  .SUBDIRS: src/site/css
+
+    cufp.css: $(ls *.scss) $(ROOT)/bower
+      @echo "Building $@."
+      sass -q $< > $@
+
+# See changes we've made to Foundation settings.
+diff-scss:
+  diff \
+    bower/foundation/scss/foundation/_settings.scss \
+    src/site/css/_settings.scss
+
+
+################################################################################
+# Bower based installations
+#
+# Bower is a package manager, which we use to install some CSS and
+# JS libraries.
+bower:
+  @echo "Running bower."
+  bower install
+
+
+################################################################################
+# Build Site
+site: $(APP) bower/ src/site/css/cufp.css
+  @echo "Building $(PROJECT) site."
+  rsync -a bower/modernizr/modernizr.js _build/site/js/
+  rsync -a bower/jquery/dist/jquery.* _build/site/js/
+  rsync -a bower/fastclick/lib/fastclick.js _build/site/js/
+  rsync -a bower/foundation/js/foundation.min.js _build/site/js/
+  rsync -a ext/foundation-icons _build/site/css/
+  rsync -a ext/fairhead-webicons _build/site/css/
+  rsync -a ext/flaticon-feather _build/site/css/
+  rsync -a ../cufp.org-media/* _build/site/
+  $(APP) make -repo-root $(ROOT) -production $(PRODUCTION) "/"
+
+if $(COMPILE_SITE)
+  .DEFAULT: site
+
+
+################################################################################
+# Clean Up
+site-clean:
+  rm -rf _build/site
+
+doc-clean:
+  rm -rf _build/doc
+
+clean:
+  rm -f $(APP_NAME)
+  rm -rf _build
+  rm -rf OMakefile.omc OMakeroot.omc .omakedb .omakedb.lock
+  rm -rf src/site/css/.sass-cache
+
+# Should rarely need to run this. Regenerating these files requires a
+# lot of additional software.
+really-really-clean: clean
+  rm -rf bower
+  rm -f src/site/css/cufp.css
