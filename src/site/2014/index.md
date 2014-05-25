@@ -7,7 +7,6 @@
 </div>
 </div>
 
-<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -25,7 +24,6 @@ functional programming.
 CUFP is co-located with [ICFP](http://icfpconference.org/icfp2014/)
 and consists of three components: Talks, Tutorials and BoFs.
 
-</div>
 </div>
 </div>
 

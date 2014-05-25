@@ -5624,7 +5624,7 @@ th.hide-for-touch {
     color: #008cba; }
 
 .pane-subtle {
-  box-shadow: 0px 2px 2px 2px #AAAAAA; }
+  box-shadow: 0px 0px 10px 2px #AAAAAA; }
 
 .pane-dark {
   background-color: #000000; }
