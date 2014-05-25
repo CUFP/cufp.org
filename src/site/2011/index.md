@@ -54,7 +54,7 @@ the future of functional programming.
 </div>
 </div>
 
-<div class="highlight6">
+<div class="pane-dark">
 <center>
 <ul data-orbit
     data-options="animation:fade;
@@ -76,7 +76,7 @@ the future of functional programming.
 </center>
 </div>
 
-<div class="highlight0" media:type="text/omd">
+<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -91,7 +91,6 @@ the future of functional programming.
 </div>
 </div>
 
-<div class="highlight1" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -104,6 +103,5 @@ the future of functional programming.
 * [Call for Participation](/2011/call-participation.html)
 * [Call for Birds-of-a-Feather Sessions](/2011/bofs.html)
 
-</div>
 </div>
 </div>

@@ -3,41 +3,12 @@
 @import "../../../bower/foundation/scss/foundation";
 
 ////////////////////////////////////////////////////////////////////////////////
-// Highlights. Used especially for rows spanning full window width.
+// Main conference pages are divided into panes. The following classes
+// allow setting styles to contrast adjacent panes.
 
-.highlight0 {
-  background-color: $primary-color;
-
-  a:link, a:visited {
-    color : $body-font-color;
-    text-decoration : none;
-    border-bottom : 1px dotted $body-font-color;
-  }
-
-  a:hover, a:active {
-    color : #FFFFFF;
-  }
-
-}
-
-.highlight1 {
-  background-color: $secondary-color;
-}
-
-.highlight2 {
-  background-color: $alert-color;
-}
-
-.highlight3 {
-  background-color: $success-color;
-}
-
-.highlight4 {
-  background-color: $warning-color;
-}
-
-.highlight5 {
-  background-color: $info-color;
+// A bright pane.
+.pane-bright {
+  background-color: scale-color($primary-color, $lightness: 80%);
 
   a:link, a:visited {
     color : $body-font-color;
@@ -51,7 +22,14 @@
 
 }
 
-.highlight6 {
+// A subtle pane. Useful to delineate two adjacent panes that both
+// have same background color.
+.pane-subtle {
+  box-shadow: 0px 1px 5px 2px #AAAAAA;
+}
+
+// A dark pane.
+.pane-dark {
   background-color: #000000;
 }
 
@@ -82,11 +60,6 @@ body.conference {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-  }
-
-  // Announcements section.
-  h2#Announcements {
-    color: $warning-color;
   }
 
 }

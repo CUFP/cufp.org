@@ -5614,37 +5614,19 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-.highlight0 {
-  background-color: #008cba; }
-  .highlight0 a:link, .highlight0 a:visited {
+.pane-bright {
+  background-color: #beefff; }
+  .pane-bright a:link, .pane-bright a:visited {
     color: #222222;
     text-decoration: none;
     border-bottom: 1px dotted #222222; }
-  .highlight0 a:hover, .highlight0 a:active {
-    color: #FFFFFF; }
-
-.highlight1 {
-  background-color: #e7e7e7; }
-
-.highlight2 {
-  background-color: #f04124; }
-
-.highlight3 {
-  background-color: #43ac6a; }
-
-.highlight4 {
-  background-color: #f08a24; }
-
-.highlight5 {
-  background-color: #a0d3e8; }
-  .highlight5 a:link, .highlight5 a:visited {
-    color: #222222;
-    text-decoration: none;
-    border-bottom: 1px dotted #222222; }
-  .highlight5 a:hover, .highlight5 a:active {
+  .pane-bright a:hover, .pane-bright a:active {
     color: #008cba; }
 
-.highlight6 {
+.pane-subtle {
+  box-shadow: 0px 1px 5px 2px #AAAAAA; }
+
+.pane-dark {
   background-color: #000000; }
 
 .row {
@@ -5662,8 +5644,6 @@ body.conference div:nth-child(2) {
     font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif; }
   body.conference div:nth-child(2) h2 {
     margin-bottom: 16px; }
-body.conference h2#Announcements {
-  color: #f08a24; }
 
 .person {
   color: #222222; }

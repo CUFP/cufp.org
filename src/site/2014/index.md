@@ -7,7 +7,7 @@
 </div>
 </div>
 
-<div class="highlight5" media:type="text/omd">
+<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -29,15 +29,33 @@ and consists of three components: Talks, Tutorials and BoFs.
 </div>
 </div>
 
-<div class="highlight1" media:type="text/omd">
+<div class="pane-subtle" media:type="text/omd">
 <div class="row" media:type="text/omd">
-<div class="small-12 columns" media:type="text/omd">
+
+<div class="medium-8 columns" media:type="text/omd">
 
 ## Announcements
-* [May 12th: Call for Tutorials - Now available.](/2014/call-for-tutorials.html)
-* [April 20th: Call for Presentations - Now available.](/2014/call-for-presentations.html)
+* May 12th [Call for Tutorials - Now available.](/2014/call-for-tutorials.html)
+* April 20th [Call for Presentations - Now available.](/2014/call-for-presentations.html)
 
 </div>
+
+<div class="medium-4 columns">
+
+<div class="row">
+<div class="medium-12 columns">
+<a href="https://twitter.com/intent/tweet?button_hashtag=cufp2014" class="twitter-hashtag-button" data-size="large" data-related="cufpconference">Tweet #cufp2014</a>
+</div>
+</div>
+
+<div class="row">
+<div class="medium-12 columns">
+CUFP 2014 on <a href="http://lanyrd.com/2014/cufp2014/">Lanyrd</a>.
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -82,21 +100,7 @@ gathering proposals, organized via our website.
 
 </div>
 
-<div class="highlight5" media:type="text/omd">
-<div class="row" media:type="text/omd">
-
-<div class="small-6 columns" media:type="text/omd">
-<a href="https://twitter.com/intent/tweet?button_hashtag=cufp2014" class="twitter-hashtag-button" data-size="large" data-related="cufpconference">Tweet #cufp2014</a>
-</div>
-
-<div class="small-6 columns" media:type="text/omd">
-CUFP 2014 is also on <a href="http://lanyrd.com/2014/cufp2014/">Lanyrd</a>!
-</div>
-
-</div>
-</div>
-
-<div class="highlight6">
+<div class="pane-dark">
 <center>
 <ul data-orbit
     data-options="animation:fade;
@@ -116,7 +120,7 @@ CUFP 2014 is also on <a href="http://lanyrd.com/2014/cufp2014/">Lanyrd</a>!
 </div>
 
 
-<div class="highlight0" media:type="text/omd">
+<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 

@@ -63,7 +63,7 @@ gathering proposals, organised via our website.
 </div>
 </div>
 
-<div class="highlight0" media:type="text/omd">
+<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -95,7 +95,6 @@ gathering proposals, organised via our website.
 </div>
 </div>
 
-<div class="highlight1" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -108,6 +107,5 @@ gathering proposals, organised via our website.
 * [Call for Presentations](/2012/call-presentations.html)
 * [Call for BoFs](/2012/bofs.html)
 
-</div>
 </div>
 </div>

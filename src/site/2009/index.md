@@ -7,11 +7,11 @@
 </div>
 </div>
 
-<div class="highlight5" media:type="text/omd">
+<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
-The conference will be held at the [Royal College of
+CUFP will be held at the [Royal College of
 Physicians](http://www.rcpe.ac.uk/conferencing/index.php), a historic
 building in the centre of Scotland's capital city of
 [Edinburgh](http://en.wikipedia.org/wiki/Edinburgh). As an additional
@@ -38,7 +38,7 @@ Committee](http://www.sigplan.org/PAC.htm).
 </div>
 </div>
 
-<div class="highlight0" media:type="text/omd">
+<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -64,7 +64,6 @@ Committee](http://www.sigplan.org/PAC.htm).
 </div>
 </div>
 
-<div class="highlight1" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -77,6 +76,5 @@ Committee](http://www.sigplan.org/PAC.htm).
 - [JFP articles](http://cufp.galois.com/stuff/JFP.html)
 - [Old site](/archive/2009/main.html)
 
-</div>
 </div>
 </div>

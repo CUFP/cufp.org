@@ -58,7 +58,7 @@ programming.
 </div>
 </div>
 
-<div class="highlight0" media:type="text/omd">
+<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -85,7 +85,6 @@ programming.
 </div>
 </div>
 
-<div class="highlight1" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -100,6 +99,5 @@ programming.
 * [Call for Presentations](/2010/call-presentations.html)
 * [BoFs](/2010/bofs.html)
 
-</div>
 </div>
 </div>

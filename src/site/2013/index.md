@@ -57,7 +57,7 @@ proposals, organised via our website.
 </div>
 </div>
 
-<div class="highlight6">
+<div class="pane-dark">
 <center>
 <ul data-orbit
     data-options="animation:fade;
@@ -79,7 +79,7 @@ proposals, organised via our website.
 </center>
 </div>
 
-<div class="highlight0" media:type="text/omd">
+<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -106,7 +106,6 @@ proposals, organised via our website.
 </div>
 </div>
 
-<div class="highlight1" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -117,6 +116,5 @@ proposals, organised via our website.
 * [Registration Information](/2013/registration.html)
 * CUFP 2013 is also on [Lanyrd](http://lanyrd.com/2013/cufp2013/)!
 
-</div>
 </div>
 </div>
