@@ -46,7 +46,7 @@ and consists of three components: Talks, Tutorials and BoFs.
 </div>
 </div>
 
-<div class="row">
+<div style="padding-bottom: 20px" class="row">
 <div class="medium-12 columns">
 CUFP 2014 on <a href="http://lanyrd.com/2014/cufp2014/">Lanyrd</a>.
 </div>
