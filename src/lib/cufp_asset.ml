@@ -298,7 +298,7 @@ let rec make ?(production=false) t =
     | []
     | "css"::[]
     | "videos"::[]
-    | "conferences"::[]
+    | "conference"::_
     | "blog"::[] -> (log_recurse t; recurse ~production t)
     | "archive"::[]
     | "img"::[] -> (log_copy t; copy t)
