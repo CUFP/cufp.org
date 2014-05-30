@@ -17,7 +17,7 @@ Haskell", that's enough.
 
 ## Preparation
 Before attending, participants should have a copy of the Haskell framework,
-as per the instructions that come with tutorial [T5: Parallel Programming in Haskell](http://cufp.org/conference/sessions/2011/t5-parallel-programming-haskell-simon-peyton-jones.html).
+as per the instructions that come with tutorial [T5: Parallel Programming in Haskell](/2011/t5-parallel-programming-haskell-simon-peyton-jones.html).
 
 You will also need the Snap framework, which you can install via this command:
 

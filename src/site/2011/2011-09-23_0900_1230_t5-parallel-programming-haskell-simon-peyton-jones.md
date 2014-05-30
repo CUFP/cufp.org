@@ -44,10 +44,10 @@ Alternatively, you can get a more up to date Haskell Platform
 and installing it yourself.
 
 You may also want to get the newer version of ThreadScope \(0.2\).  For instructions go to 
-[this page](http://haskell.org/haskellwiki/ThreadScope).
+[this page](http://www.haskell.org/haskellwiki/ThreadScope).
 
 ### Windows
-Install the [Haskell Platform](http://hackage.haskell.org/platform/).
+Install the [Haskell Platform](http://www.haskell.org/platform/).
 
 Install the `monad-par` package \(using the command line\):
 

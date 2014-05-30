@@ -43,7 +43,7 @@ On September 15th, please download the
 needed for this
 tutorial onto your laptop. Note the URL will not be active before then.
 Install
-[VirtualBox](http://www.virtualbox.org)
+[VirtualBox](https://www.virtualbox.org)
 if you do not already have it. Open VirtualBox's
 preferences and select the `Network` tab. In the `Host-Only Networks` box, you
 should see one entry, `vobxnet0`. If not, click the `+` button to add it. Then,

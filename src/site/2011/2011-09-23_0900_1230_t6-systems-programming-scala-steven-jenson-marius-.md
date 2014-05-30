@@ -62,7 +62,7 @@ Familiarity with Java concepts is a plus, but not required.
 ## Software Prerequisites
 - A Twitter account
 - A working Java (JVM) installation
-- The [bootstrap tarball](http://cufp.org/sites/all/files/uploads/scalaschool.tgz), also available [online](http://twitter.github.com/scala_school/).
+- The [bootstrap tarball](scalaschool.tgz), also available [online](http://twitter.github.io/scala_school/).
 
 ## Steve Jenson
 An engineer at Twitter since 2008 focused on building Scala

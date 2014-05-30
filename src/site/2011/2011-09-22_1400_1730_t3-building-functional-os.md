@@ -42,7 +42,7 @@ proficiency in OCaml.
 You'll need:
 
 - an SSH client on your machine
-- [Virtualbox](http://www.virtualbox.org/wiki/Downloads)
+- [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 - the [machine image](http://minsky-primus.net/CUFP-Core-and-Mirage-Tutorials.ova)
 
 Click `Import Appliance` from the File menu, and select the `.ova` file.
