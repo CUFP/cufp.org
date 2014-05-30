@@ -8,7 +8,7 @@
 Commercial Users of Functional Programming 2014<br />
 Sponsored by SIGPLAN<br />
 [CUFP 2014](/2014/)<br />
-Co-located with [ICFP 2014](http://icfpconference.org/icfp2014)<br />
+Co-located with [ICFP 2014](http://icfpconference.org/icfp2014/)<br />
 Gothenburg, Sweden<br />
 Sep 4-6<br />
 Talk Proposal Submission Deadline: 27 June 2014<br />

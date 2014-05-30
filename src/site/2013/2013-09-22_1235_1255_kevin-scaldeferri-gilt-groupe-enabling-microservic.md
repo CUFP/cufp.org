@@ -7,7 +7,7 @@
 
 ## Abstract
 Over the past 4 years, the production architecture at the [Gilt
-Groupe](www.gilt.com) has evolved from a single monolithic web
+Groupe](http://www.gilt.com) has evolved from a single monolithic web
 application to a highly-distributed collection of more than 200
 micro-services and small web applications. This architectural shift
 allows greater scalability and faster, less coupled development of new

@@ -61,7 +61,7 @@ by the command
    opam switch 4.00.1+BER
 ```
 
-The `opam switch` command is explained in the [Advanced manual](http://opam.ocamlpro.com/doc/Advanced_Usage.html)
+The `opam switch` command is explained in the [Advanced manual](http://opam.ocaml.org/doc/Advanced_Usage.html)
 Don't forget to execute the command to update the environment,
 which `opam switch` tells you to do at the end.
 

@@ -2,8 +2,7 @@
 - title: Beckman Coulter Inc: Medical Device Automation using Message-Passing Concurrency in Scheme
 - speakers: Vishesh Panchal, Bob Burger
 - affiliations: Beckman Coulter Inc., Beckman Coulter Inc.
-- links: , http://www.cs.indiana.edu/~burger/
-- slides: /2013/slides/panchal.pdf)
+- slides: /2013/slides/panchal.pdf
 - video: http://www.youtube.com/watch?v=D8PN_M-XRpM
 
 

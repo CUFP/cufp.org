@@ -37,7 +37,7 @@ let to_uri = function
 let to_embed_uri = function
   | Youtube id ->
     sprintf
-      "http://youtube.com/embed/%s?controls=2&showinfo=0&theme=light&autohide=1"
+      "http://www.youtube.com/embed/%s?controls=2&showinfo=0&theme=light&autohide=1"
       id
   | Vimeo id ->
     sprintf

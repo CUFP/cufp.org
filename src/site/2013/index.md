@@ -85,7 +85,7 @@ proposals, organised via our website.
 <div class="small-12 columns" media:type="text/omd">
 
 ## Program Chairs
-- [Marius Eriksen](http://monkey.org/~marius) (Twitter, Inc), co-chair
+- [Marius Eriksen](http://monkey.org/~marius/) (Twitter, Inc), co-chair
 - [Mike Sperber](http://www.deinprogramm.de/sperber/) (Active Group),
   co-chair
 

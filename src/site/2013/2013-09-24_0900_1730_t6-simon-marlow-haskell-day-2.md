@@ -52,7 +52,7 @@ some additional Haskell libraries, but they can easily be installed
 on-the-fly during the course.
 
 ## Simon Marlow
-<img align="right" src="/sites/all/files/speaker-portraits/simon-marlow-portrait.jpg" alt="Simon Marlow"></img>
+<img align="right" src="img/simon-marlow-portrait.jpg" alt="Simon Marlow"></img>
 Simon Marlow is a developer at Facebook. He has been one of the two
 lead developers of the Glasgow Haskell Compiler over most of its
 lifetime. Simon was responsible in particular for GHC's
