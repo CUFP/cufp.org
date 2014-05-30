@@ -263,8 +263,9 @@ let to_rss_channel (t:t) : Rss.channel =
     (List.map t ~f:Post.to_rss)
 
 let to_string_rss t =
+  let date_fmt = "%a, %d %b %Y %T %z" in
   to_rss_channel t |>
-  Rss.print_channel Format.str_formatter;
+  Rss.print_channel ~date_fmt Format.str_formatter;
   Format.flush_str_formatter ()
 
 let to_html (t:t) =
