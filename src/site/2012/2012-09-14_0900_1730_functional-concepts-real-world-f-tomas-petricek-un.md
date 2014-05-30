@@ -50,7 +50,7 @@ You need a Windows to follow this tutorial.  \(If you don't have Windows on your
 You will also need Visual Studio 2012: Microsoft has a [trial version of Visual Studio 2012 Ultimate](http://www.microsoft.com/visualstudio/11/en-us/downloads#ultimate) that is available for free download.
 
 ## Tomas Petricek
-<img align="right" src="/sites/all/files/speaker-portraits/tomas-petricek-portrait.jpg" alt="Tomas Petricek"></img>
+<img align="right" src="img/tomas-petricek-portrait.jpg" alt="Tomas Petricek"></img>
 
 Tomas is a PhD student at the University of Cambridge with interest in
 functional programming languages. He is an F# expert, using F# since the

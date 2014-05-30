@@ -46,7 +46,7 @@ For this tutorial, you should have Unix/Linux/Mac OS X on your laptop.  If that'
 
 +     First, install Erlang/OTP 15B01 from [this page](http://www.erlang.org/download.html).
 
-+     Download [this file](/sites/all/files/uploads/erlang-web.tar.gz) and untar it somewhere on your machine.
++     Download [this file](erlang-web.tar.gz) and untar it somewhere on your machine.
 
 
 ## Steve Vinoski

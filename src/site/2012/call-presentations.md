@@ -7,7 +7,7 @@
 **Workshop for<br />
 Commercial Users of Functional Programming 2012<br />
 Sponsored by SIGPLAN<br />
-[CUFP 2012](http://cufp.org/conference.html)<br />
+[CUFP 2012](http://cufp.org/2012/)<br />
 Co-located with [ICFP 2012](http://icfpconference.org/icfp2012/)<br />
 Copenhagen, Denmark<br />
 Sep 13-15<br />

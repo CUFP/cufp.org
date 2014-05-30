@@ -47,20 +47,20 @@ also cover some of the practical aspects of day-to-day programming in
 Haskell, such as working with third-party libraries.
 
 ## Jeremy Gibbons
-<img align="right" src="/sites/all/files/speaker-portraits/jeremy-gibbons-portrait.jpg" alt="Jeremy Gibbons"></img>
+<img align="right" src="img/jeremy-gibbons-portrait.jpg" alt="Jeremy Gibbons"></img>
 
 Jeremy Gibbons is Professor of Computing at the University of Oxford,
 and has been a FP enthusiast for twenty five years. For the last
 thirteen of those, all his teaching has been to professional software
 engineers on the part-time [masters' programme at
-Oxford](www.softeng.ox.ac.uk), of which he is currently
+Oxford](http://www.softeng.ox.ac.uk), of which he is currently
 Director. Among other roles, he is also an Editor of the Journal of
 Functional Programming, with special responsibility for the Functional
 Pearls column; Chair of IFIP WG2.1 on Algorithmic Languages and
 Calculi; and Vice-Chair of ACM SIGPLAN.
 
 ## Simon Marlow
-<img align="right" src="/sites/all/files/speaker-portraits/simon-marlow-portrait.jpg" alt="Simon Marlow"></img>
+<img align="right" src="img/simon-marlow-portrait.jpg" alt="Simon Marlow"></img>
 
 Simon Marlow is a developer at Microsoft Research in Cambridge.  He
 has been one of the two lead developers of the Glasgow Haskell
@@ -80,7 +80,7 @@ Please bring a laptop to the tutorial. Ideally, you should install the required 
 If you have problems or questions, please contact Mike Sperber \(sperber\(at\)deinprogramm\(dot\)de\).
 
 ### Installing the prerequisite software
-+     First, download and install the [Haskell Platform](http://hackage.haskell.org/platform/).
++     First, download and install the [Haskell Platform](http://www.haskell.org/platform/).
 
 +     Run the following commands:
 

@@ -33,7 +33,7 @@ Haskell, for *two days*.
 
 ### Introductory Haskell / Concurrent Haskell
 - [Full
-  details...](/2012/introductory-haskell-concurrent-haskell-jeremy-gib.html)
+  details...](/2012/introductory-haskell-concurrent-haskell-jeremy-gib-day1.html)
 
 This two-day tutorial is designed to introduce you to Haskell without
 assuming that you know anything about the language in advance, and

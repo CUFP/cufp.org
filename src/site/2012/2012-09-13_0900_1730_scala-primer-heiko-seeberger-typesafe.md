@@ -85,7 +85,7 @@ g8 typesafehub/training-ftts
 - Import the case study project into your Eclipse workspace.
 
 ## Heiko Seeberger
-<img align="right" src="/sites/all/files/speaker-portraits/heiko-seeberger-portrait.jpg" alt="Heiko Seeberger"></img>
+<img align="right" src="img/heiko-seeberger-portrait.jpg" alt="Heiko Seeberger"></img>
 
 Heiko Seeberger is the Director Professional Services at Typesafe. He
 has been a Scala enthusiast ever since he came to know this beautiful

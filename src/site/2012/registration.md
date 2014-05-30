@@ -32,7 +32,7 @@ We'll have three *introductory tutorials* on:
   [F\#](/2012/functional-concepts-real-world-f-tomas-petricek-un.html)
 
 - Thu-Fri 13-14th September 2012:
-  [Haskell](/2012/introductory-haskell-concurrent-haskell-jeremy-gib.html)
+  [Haskell](/2012/introductory-haskell-concurrent-haskell-jeremy-gib-day1.html)
 
 by renowned experts on those languages. These tutorials are intended
 for participants mostly new to functional programming, and will give
@@ -70,7 +70,7 @@ familiar with a functional language:
    \(T4\)](/2012/t4-hands-real-world-clojure-lau-jensen-best-class-.html)
 
 They have designations T1 through T4 on the [CUFP
-schedule](/2012/schedule.html). If you want to attend any of those,
+schedule](/2012/index.html#Day1ThuSep13thTutorials). If you want to attend any of those,
 just purchase a regular day pass for the day of the tutorial.
 
 </div>

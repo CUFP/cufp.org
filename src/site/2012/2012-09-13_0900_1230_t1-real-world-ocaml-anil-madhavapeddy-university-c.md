@@ -42,7 +42,7 @@ After that, you run `opam install core async lwt`, and that will install
 all the packages required for the tutorial material.
 
 ## Anil Madhavapeddy
-<img align="right" src="/sites/all/files/speaker-portraits/anil-madhavapeddy-portrait.jpg" alt="Anil Madhavapeddy"></img>
+<img align="right" src="img/anil-madhavapeddy-portrait.jpg" alt="Anil Madhavapeddy"></img>
 
 Dr. Anil Madhavapeddy is a Senior Research Fellow at Wolfson College
 Cambridge based in the Systems Research Group in the Cambridge
@@ -60,7 +60,7 @@ of Functional Programming, and on the boards of startup companies such
 as Ashima Arts.
 
 ## Yaron Minsky
-<img align="right" src="/sites/all/files/speaker-portraits/yaron-minsky-portrait.jpg" alt="Yaron Minsky"></img>
+<img align="right" src="img/yaron-minsky-portrait.jpg" alt="Yaron Minsky"></img>
 
 Yaron Minsky obtained his PhD in Computer Science from Cornell
 University in 2002, focusing on distributed systems. In 2003, he

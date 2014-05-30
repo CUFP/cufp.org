@@ -29,7 +29,7 @@ Please bring a laptop to the tutorial. Ideally, you should install the required 
 If you have problems or questions, please contact Mike Sperber \(sperber\(at\)deinprogramm\(dot\)de\).
 
 ### Installing the prerequisite software
-+     First, download and install the [Haskell Platform](http://hackage.haskell.org/platform/).
++     First, download and install the [Haskell Platform](http://www.haskell.org/platform/).
 
 +     Run the following commands:
 
@@ -42,7 +42,7 @@ For more detailed
 instructions and assistance please visit [the Happstack website](http://www.happstack.com/cufp2012).
 
 ## Jeremy Shaw
-<img align="right" src="/sites/all/files/speaker-portraits/jeremy-shaw-portrait.jpg" alt="Jeremy Shaw"></img>
+<img align="right" src="img/jeremy-shaw-portrait.jpg" alt="Jeremy Shaw"></img>
 
 Jeremy Shaw has been using Haskell in a professional capacity since
 

@@ -68,7 +68,7 @@ gathering proposals, organised via our website.
 <div class="small-12 columns" media:type="text/omd">
 
 ## Program Chairs
-- [Mike Sperber](http://www.deinprogramm.de/sperber) (Active Group),
+- [Mike Sperber](http://www.deinprogramm.de/sperber/) (Active Group),
   co-chair
 - [Anil Madhavapeddy](http://anil.recoil.org) (University of
   Cambridge), co-chair
@@ -83,9 +83,9 @@ gathering proposals, organised via our website.
 - [Noel Welsh](http://noelwelsh.com) (untyped)
 
 ## Tutorial Organizers
-- [Duncan Coutts](http://www.well-typed.com/who_we_are), Well-Typed
+- [Duncan Coutts](http://www.well-typed.com/who_we_are/), Well-Typed
   LLP
-- [Simon Thompson](http://www.cs.kent.ac.uk/people/staff/sjt),
+- [Simon Thompson](http://www.cs.kent.ac.uk/people/staff/sjt/),
   University of Kent
 
 ## BoF Organizer
@@ -101,7 +101,7 @@ gathering proposals, organised via our website.
 ## Announcements
 
 * CUFP 2012 will be co-located with [ICFP
-  2012](http://icfpconference.org/icfp2012), and will consist of three
+  2012](http://icfpconference.org/icfp2012/), and will consist of three
   components: Talks, Tutorials and BOFs.
 * [Registration Information](/2012/registration.html)
 * [Call for Presentations](/2012/call-presentations.html)

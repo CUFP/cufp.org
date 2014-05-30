@@ -13,11 +13,11 @@ Clojure is a fairly young functional programming language targeting the JVM \(Ja
 Clojure is a rich language, and there is a lot more to learn than what can be covered in a half day. The intention of this tutorial is to give participants a feel of what Clojure programming is like using a mix of lectures and exercises. The first part will focus on the basics of functional programming with Clojure: pure functions, the sequence library and persistent data structures.  The second part gives an example of using Clojure in practice. We'll walk you through a set of tools, a way of working and a small but working example Clojure application.
 
 ## Lau Jensen
-<img align="right" src="/sites/all/files/speaker-portraits/lau-jensen-portrait.jpg" alt="Lau Jensen"></img>
+<img align="right" src="img/lau-jensen-portrait.jpg" alt="Lau Jensen"></img>
 
 Lau is an entrepreneur who has been involved in software development for many years. After ending a career as a Project Manager at a danish consulting company, he launched his own firm [Best In Class](http://www.bestinclass.dk/). When he is not busy consulting or training he also serves as the Director of Sales at a major security company. Best In Class is more than a name as it expresses the determination Lau has for pursuing the highest quality in all his dealings and successfully wielding Clojure is central to achieving this goal. Lau has personally built enterprise applications using Clojure, which are deployed in the Danish Health Care industry, the Energy Sector and in Financial Trading.
 
 ## Karl Krukow
-<img align="right" src="/sites/all/files/speaker-portraits/karl-krukow-portrait.jpg" alt="Karl Krukow"></img>
+<img align="right" src="img/karl-krukow-portrait.jpg" alt="Karl Krukow"></img>
 
 arl is the CTO of LessPainful, a Danish company providing automated functional testing of Android and iOS apps. Karl has a PhD in computer science and his industry experience includes many years of enterprise consulting and training, web technologies and systems integration. Karl instantly fell in love with Clojure the first time he heard about it in 2008, and has invested countless hours in it since. Karl has had the pleasure of using Clojure in several production systems, including a multiple data-feed processing system, and test automation at LessPainful. He is a frequent speaker at international conferences, he blogs at [http://www.conj-labs.eu](http://www.conj-labs.eu) and runs open source projects like [clj-ds](http://github.com/krukow/clj-ds).
