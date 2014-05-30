@@ -28,7 +28,7 @@ compilation environment.  You will need at least OCaml 4.01.0, which
 you can easily install using the OPAM package manager.
 
 1. Install OPAM by following the quick-start guide at [this
-page](http://opam.ocamlpro.com/doc/Quick_Install.html).
+page](http://opam.ocaml.org/doc/Quick_Install.html).
 
  (You can use OCaml 3.12.1 or greater to get this in place, or just
  use binary packages if available on your platform.)
