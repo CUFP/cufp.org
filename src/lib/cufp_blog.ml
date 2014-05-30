@@ -85,7 +85,13 @@ module Post = struct
       div (Omd.to_html t.description |> Html.parse);
     ]
 
-  let to_html t = [to_html_item t]
+  let to_html t =
+    let open Html in
+    [div ~a:["class","row"] [
+      div ~a:["class","small-12 columns"]
+        [to_html_item t]
+     ]
+    ]
 
   let to_rss (t:t) : Rss.item =
     let link =
