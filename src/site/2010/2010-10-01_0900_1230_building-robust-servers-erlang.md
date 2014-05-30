@@ -43,6 +43,6 @@ the first call detail record collection systems for the SIP protocol.
 Most recently Martin has focused on large scale e-commerce backing
 systems. Currently Martin brings his expertise to Orbitz Worldwide,
 one of the largest online travel companies in the world. Martin has
-taken a leadership role with [Erlware](http://erlware.org/) where he is a core
+taken a leadership role with [Erlware](http://www.erlware.org/) where he is a core
 developer and the primary developer of the Faxien package management
 system.

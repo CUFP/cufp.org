@@ -39,7 +39,7 @@ after installing the Haskell Platform.
 
 The Haskell Platform can be downloaded for Mac, Windows, and Linux from:
 
-[`http://hackage.haskell.org/platform/`](http://hackage.haskell.org/platform/)
+[`http://www.haskell.org/platform/`](http://www.haskell.org/platform/)
 
 ## Johan Tibell
 is a Software Engineer at Google Inc. His main

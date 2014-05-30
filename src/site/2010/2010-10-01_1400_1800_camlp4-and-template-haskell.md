@@ -52,7 +52,7 @@ Haskell Platform installed.  Objective Caml is available here:
 
 The Haskell platform is available here:
 
-[`http://hackage.haskell.org/platform/`](http://hackage.haskell.org/platform/)
+[`http://www.haskell.org/platform/`](http://www.haskell.org/platform/)
 
 For OCaml, participants need to
 install Findlib:
