@@ -50,7 +50,7 @@ built.
 
 
 ## Steve Vinoski
-<img align="right" src="/sites/all/files/speaker-portraits/steve-vinoski-portrait.jpg" alt="Steve Vinoski"\</img\>
+<img align="right" src="img/steve-vinoski-portrait.jpg" alt="Steve Vinoski"></img>
 
 Steve Vinoski is an architect at Basho Technologies, Cambridge, MA,
 USA. He's been a committer on the Yaws web server project since
