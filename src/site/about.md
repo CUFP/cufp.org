@@ -38,7 +38,7 @@ features, techniques or tool kits.
 
 There will be no published proceedings, as the meeting is intended to
 be more a discussion forum than a technical interchange.  All of the
-videos of previous talks are available in our [videos](/videos)
+videos of previous talks are available in our [videos](/videos/)
 section on this site.
 
 </div>
