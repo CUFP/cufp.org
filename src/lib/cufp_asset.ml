@@ -299,6 +299,7 @@ let rec make ?(production=false) t =
     | "css"::[]
     | "videos"::[]
     | "conference"::_
+    | "2014cfp"::_
     | "blog"::[] -> (log_recurse t; recurse ~production t)
     | "archive"::[]
     | "img"::[] -> (log_copy t; copy t)
