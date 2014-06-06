@@ -119,7 +119,6 @@ gathering proposals, organized via our website.
 </div>
 
 
-<div class="pane-bright" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
@@ -131,6 +130,5 @@ gathering proposals, organized via our website.
 - Francesco Cesarini (Erlang Solutions)
 - Thomas Arts (Quviq AB)
 
-</div>
 </div>
 </div>
