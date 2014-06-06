@@ -5807,17 +5807,17 @@ table.session tr.bof a.fi-social-youtube, table.session tr.bof a.fi-social-vimeo
 table.session tr.bof .fi-microphone, table.session tr.bof .fi-laptop, table.session tr.bof .flaticon-pen43 {
   color: #0a82cc;
   font-size: 125%; }
-table.session table.session tr.break a:link, table.session table.session tr.break a:visited {
+table.session tr.break a:link, table.session tr.break a:visited {
   color: #222222;
   text-decoration: none;
   border-bottom: 1px dotted #222222; }
-table.session table.session tr.break a:hover, table.session table.session tr.break a:active {
+table.session tr.break a:hover, table.session tr.break a:active {
   color: #008cba; }
-table.session table.session tr.break a.fi-social-youtube, table.session table.session tr.break a.fi-social-vimeo, table.session table.session tr.break a.fi-page {
+table.session tr.break a.fi-social-youtube, table.session tr.break a.fi-social-vimeo, table.session tr.break a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
   color: #919191; }
-table.session table.session tr.break .fi-microphone, table.session table.session tr.break .fi-laptop, table.session table.session tr.break .flaticon-pen43 {
+table.session tr.break .fi-microphone, table.session tr.break .fi-laptop, table.session tr.break .flaticon-pen43 {
   color: #a3a3a3;
   font-size: 125%; }
 

@@ -83,7 +83,7 @@ table.session {
   tr.bof {
     @include session-row($bof-color)
   };
-  table.session tr.break {
+  tr.break {
     @include session-row($break-color);
   };
 }
