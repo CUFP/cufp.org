@@ -2,7 +2,7 @@ open build/OCaml
 DefineCommandVars()
 
 .PHONY: lib app doc site \
-        site-clean doc-clean clean really-really-clean \
+        clean-site clean-doc clean clean-everything \
         print_config diff-scss
 
 
@@ -146,7 +146,7 @@ OCAMLFINDFLAGS = -syntax camlp4o
   # Documentation
   .SUBDIRS: _build/doc
 
-    doc: ../src/lib/$(LIB_NAME).cma doc-clean
+    doc: ../src/lib/$(LIB_NAME).cma clean-doc
       @echo "Building $(PROJECT) doc."
       rm -rf api
       mkdir api
@@ -210,10 +210,10 @@ if $(COMPILE_SITE)
 
 ################################################################################
 # Clean Up
-site-clean:
+clean-site:
   rm -rf _build/site
 
-doc-clean:
+clean-doc:
   rm -rf _build/doc
 
 clean:
@@ -224,6 +224,6 @@ clean:
 
 # Should rarely need to run this. Regenerating these files requires a
 # lot of additional software.
-really-really-clean: clean
+clean-everything: clean
   rm -rf bower
   rm -f src/site/css/cufp.css
