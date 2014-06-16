@@ -13,8 +13,8 @@ will need OCaml and several OCaml libraries:
 [Async](https://github.com/janestreet/async),
 [Uri](https://github.com/mirage/ocaml-uri/),
 [Yojson](http://mjambon.com/yojson.html), and
-ocamlnet[http://projects.camlcity.org/projects/ocamlnet.html). Styling
-makes use of [Zurb Foundation](foundation.zurb.com). However, most
+[ocamlnet](http://projects.camlcity.org/projects/ocamlnet.html). Styling
+makes use of [Zurb Foundation](http://foundation.zurb.com/). However, most
 contributors will only be adding content, and don't necessarily need
 to build the site locally. You can just add or modify Markdown files.
 
