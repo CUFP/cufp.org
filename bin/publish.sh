@@ -1,6 +1,6 @@
 #! /bin/sh
 
-omake site-clean
+omake clean-site
 omake PRODUCTION=true
 
 find _build/site -type d -exec chmod 755 {} \;
@@ -11,4 +11,4 @@ rsync -av --exclude .DS_Store --delete --delete-excluded \
   cufp:~/cufp.org/
 
 # Make sure you don't accidentally keep working with PRODUCTION files.
-omake site-clean
+omake clean-site
