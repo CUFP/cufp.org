@@ -77,7 +77,7 @@ the future of functional programming.
 </center>
 </div>
 
-<div class="pane-bright" media:type="text/omd">
+<div class="pane-light" media:type="text/omd">
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 

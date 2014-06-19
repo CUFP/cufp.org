@@ -27,7 +27,7 @@ and consists of three components: Talks, Tutorials and BoFs.
 </div>
 </div>
 
-<div class="pane-bright" media:type="text/omd">
+<div class="pane-light" media:type="text/omd">
 <div class="row" media:type="text/omd">
 
 <div class="medium-8 columns" media:type="text/omd">
