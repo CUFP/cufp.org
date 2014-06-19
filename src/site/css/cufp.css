@@ -394,10 +394,10 @@ body {
 
 body {
   background: white;
-  color: #222222;
+  color: #444444;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -476,8 +476,8 @@ select {
     margin-right: 0; }
   .row .row {
     width: auto;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
+    margin-left: -2.03125rem;
+    margin-right: -2.03125rem;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none;
@@ -500,8 +500,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 2.03125rem;
+  padding-right: 2.03125rem;
   width: 100%;
   float: left; }
 
@@ -629,8 +629,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.03125rem;
+    padding-right: 2.03125rem;
     float: left; }
 
   .small-1 {
@@ -858,8 +858,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.03125rem;
+    padding-right: 2.03125rem;
     float: left; }
 
   .medium-1 {
@@ -1207,8 +1207,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.03125rem;
+    padding-right: 2.03125rem;
     float: left; }
 
   .large-1 {
@@ -1450,13 +1450,13 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-size: 1rem; }
       .accordion dd > a:hover {
         background: #e3e3e3; }
   .accordion .content {
     display: none;
-    padding: 0.9375rem; }
+    padding: 2.03125rem; }
     .accordion .content.active {
       display: block;
       background: white; }
@@ -1870,7 +1870,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3123,7 +3123,7 @@ kbd {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3551,7 +3551,7 @@ ul.pagination {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -3559,7 +3559,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -3790,7 +3790,7 @@ dialog[open] {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -3802,7 +3802,7 @@ dialog[open] {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3905,7 +3905,7 @@ dialog[open] {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4117,7 +4117,7 @@ table {
       background: #efefef;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover {
         background: #e1e1e1; }
@@ -4147,17 +4147,17 @@ table {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 0.9375rem 0;
+    padding: 2.03125rem 0;
     width: 100%; }
     .tabs-content > .content.active {
       display: block;
       float: none; }
     .tabs-content > .content.contained {
-      padding: 0.9375rem; }
+      padding: 2.03125rem; }
   .tabs-content.vertical {
     display: block; }
     .tabs-content.vertical > .content {
-      padding: 0 0.9375rem; }
+      padding: 0 2.03125rem; }
 
 @media only screen and (min-width: 40.063em) {
   .tabs.vertical {
@@ -4402,7 +4402,7 @@ meta.foundation-mq-topbar {
     color: white;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 0.8125rem;
     font-weight: normal;
     text-transform: none;
@@ -4891,7 +4891,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -5015,7 +5015,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222222;
+  color: #444444;
   border-bottom: 1px dotted #dddddd;
   cursor: help; }
 
@@ -5617,9 +5617,9 @@ th.hide-for-touch {
 .pane-bright {
   background-color: #beefff; }
   .pane-bright a:link, .pane-bright a:visited {
-    color: #222222;
+    color: #444444;
     text-decoration: none;
-    border-bottom: 1px dotted #222222; }
+    border-bottom: 1px dotted #444444; }
   .pane-bright a:hover, .pane-bright a:active {
     color: #008cba; }
 
@@ -5644,9 +5644,12 @@ body.conference div:nth-child(2) {
     font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif; }
   body.conference div:nth-child(2) h2 {
     margin-bottom: 16px; }
+body.conference ul {
+  list-style-type: none;
+  margin-left: 0; }
 
 .person {
-  color: #222222; }
+  color: #444444; }
 
 .affiliation {
   font-style: italic; }
@@ -5664,7 +5667,7 @@ body.conference div:nth-child(2) {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -5694,7 +5697,7 @@ body.conference div:nth-child(2) {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -5724,7 +5727,7 @@ body.conference div:nth-child(2) {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -5754,69 +5757,69 @@ table.session {
     border-bottom: solid 3px #dddddd; }
 
 table.session tr.talk a:link, table.session tr.talk a:visited {
-  color: #222222;
+  color: #444444;
   text-decoration: none;
-  border-bottom: 1px dotted #222222; }
+  border-bottom: 1px dotted #444444; }
 table.session tr.talk a:hover, table.session tr.talk a:active {
   color: #008cba; }
 table.session tr.talk a.fi-social-youtube, table.session tr.talk a.fi-social-vimeo, table.session tr.talk a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
-  color: #919191; }
+  color: #a2a2a2; }
 table.session tr.talk .fi-microphone, table.session tr.talk .fi-laptop, table.session tr.talk .flaticon-pen43 {
   color: maroon;
   font-size: 125%; }
 table.session tr.keynote {
   font-weight: bold; }
   table.session tr.keynote a:link, table.session tr.keynote a:visited {
-    color: #222222;
+    color: #444444;
     text-decoration: none;
-    border-bottom: 1px dotted #222222; }
+    border-bottom: 1px dotted #444444; }
   table.session tr.keynote a:hover, table.session tr.keynote a:active {
     color: #008cba; }
   table.session tr.keynote a.fi-social-youtube, table.session tr.keynote a.fi-social-vimeo, table.session tr.keynote a.fi-page {
     border-bottom: 0 !important;
     font-size: 120%;
-    color: #919191; }
+    color: #a2a2a2; }
   table.session tr.keynote .fi-microphone, table.session tr.keynote .fi-laptop, table.session tr.keynote .flaticon-pen43 {
     color: maroon;
     font-size: 125%; }
 table.session tr.tutorial a:link, table.session tr.tutorial a:visited {
-  color: #222222;
+  color: #444444;
   text-decoration: none;
-  border-bottom: 1px dotted #222222; }
+  border-bottom: 1px dotted #444444; }
 table.session tr.tutorial a:hover, table.session tr.tutorial a:active {
   color: #008cba; }
 table.session tr.tutorial a.fi-social-youtube, table.session tr.tutorial a.fi-social-vimeo, table.session tr.tutorial a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
-  color: #919191; }
+  color: #a2a2a2; }
 table.session tr.tutorial .fi-microphone, table.session tr.tutorial .fi-laptop, table.session tr.tutorial .flaticon-pen43 {
   color: #008024;
   font-size: 125%; }
 table.session tr.bof a:link, table.session tr.bof a:visited {
-  color: #222222;
+  color: #444444;
   text-decoration: none;
-  border-bottom: 1px dotted #222222; }
+  border-bottom: 1px dotted #444444; }
 table.session tr.bof a:hover, table.session tr.bof a:active {
   color: #008cba; }
 table.session tr.bof a.fi-social-youtube, table.session tr.bof a.fi-social-vimeo, table.session tr.bof a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
-  color: #919191; }
+  color: #a2a2a2; }
 table.session tr.bof .fi-microphone, table.session tr.bof .fi-laptop, table.session tr.bof .flaticon-pen43 {
   color: #0a82cc;
   font-size: 125%; }
 table.session tr.break a:link, table.session tr.break a:visited {
-  color: #222222;
+  color: #444444;
   text-decoration: none;
-  border-bottom: 1px dotted #222222; }
+  border-bottom: 1px dotted #444444; }
 table.session tr.break a:hover, table.session tr.break a:active {
   color: #008cba; }
 table.session tr.break a.fi-social-youtube, table.session tr.break a.fi-social-vimeo, table.session tr.break a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
-  color: #919191; }
+  color: #a2a2a2; }
 table.session tr.break .fi-microphone, table.session tr.break .fi-laptop, table.session tr.break .flaticon-pen43 {
   color: #a3a3a3;
   font-size: 125%; }
@@ -5840,7 +5843,7 @@ body.session div.speakers ul {
   body.session div.speakers ul li:not(:last-child):after {
     content: ", "; }
 body.session div.time {
-  color: #919191;
+  color: #a2a2a2;
   font-style: italic;
   font-size: 75%;
   margin-top: 0;
@@ -5899,27 +5902,25 @@ body.videos dd .row:not(:last-child) {
 body.videos dd .row .columns {
   padding-left: 0; }
 body.videos div.date {
-  color: #919191; }
+  color: #a2a2a2; }
 body.videos dl {
   margin-bottom: 16px; }
 
 body.blog {
   background-color: #e7e7e7; }
   body.blog h1 {
-    margin-left: 32px;
-    margin-right: 32px;
     font-weight: bold; }
     body.blog h1 i.fi-rss {
       color: orange; }
   body.blog div.post {
     background-color: white;
-    padding: 16px;
-    margin: 32px;
+    padding: 32px;
+    margin-bottom: 32px;
     box-shadow: 0px 0px 10px 2px #AAAAAA; }
   body.blog h3 {
     margin-bottom: 0; }
   body.blog div.date {
-    color: #919191;
+    color: #a2a2a2;
     font-style: italic;
     margin-bottom: 16px;
     font-size: 75%; }

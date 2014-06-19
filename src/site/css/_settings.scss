@@ -41,7 +41,9 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
+$body-font-color: #444;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -71,6 +73,7 @@
 // $shiny-edge-active-color: rgba(#000, .2);
 
 // $column-gutter: rem-calc(30);
+$column-gutter: rem-calc(65);
 
 // Media Query Ranges
 // $small-range: (0em, 40em);
