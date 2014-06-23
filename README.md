@@ -129,7 +129,7 @@ page from a previous year and mimic the sections. MPP calls to the
 
 ###### session page
 A session file must be named in the format:
-`YYYY-MM-DD_HHMM_HHMM_short-tile.md`, which indicates the session's
+`YYYY-MM-DD_HHMM_HHMM_short-title.md`, which indicates the session's
 date, start time, end time, and short title used as the URL. The file
 contents must be Markdown starting with an unordered list. Each list
 item is a colon separated tag-value pair as follows:
