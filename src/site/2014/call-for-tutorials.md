@@ -5,8 +5,8 @@
 
 Commercial Users of Functional Programming (CUFP) is an annual meeting
 co-located with the International Conference on Functional Programming
-which this year will take place in Gothenburg, Sweden on 4-6 September
-2014. CUFP aims to bridge the gap between academia and users applying
+which this year will take place in Gothenburg, Sweden on 4-6 September 2014.
+CUFP aims to bridge the gap between academia and users applying
 functional programming in practice. CUFP provides high-quality
 practical tutorials covering state-of-the-art techniques and tools for
 functional programming. There will be a mix of tutorials on
