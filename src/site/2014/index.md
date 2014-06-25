@@ -11,9 +11,9 @@
 <div class="small-12 columns" media:type="text/omd">
 
 **Functional Programming** has been at the forefront of a new
-generation of programming technologies. Companies employing functional
-programming to enable more effective, robust, and flexible software
-development.
+generation of programming technologies, and companies have been
+successfully utilizing functional programming to enable more flexible,
+robust, and effective software development.
 
 The annual CUFP workshop is designed to serve the growing community of
 commercial users of functional programming. Practitioners meet and
