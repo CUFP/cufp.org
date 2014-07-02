@@ -160,7 +160,7 @@ blog and the short title used as the URL. The file contents must be a
 Markdown file starting with an unordered list. Each list item is a
 colon separated tag-value pair as follows:
 
-- tite: free text. Required.
+- title: free text. Required.
 - categories: comma separated list of categories. Optional.
 - author: author name. Optional.
 
