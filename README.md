@@ -154,7 +154,7 @@ Everything after this unordered list is displayed as the session's
 page.
 
 ###### blog posts
-Each blog most is written in a file named in the format:
+Each blog post is written in a file named in the format:
 `YYYY-MM-DD_short-title.md`, which indicates the posting date of the
 blog and the short title used as the URL. The file contents must be a
 Markdown file starting with an unordered list. Each list item is a
