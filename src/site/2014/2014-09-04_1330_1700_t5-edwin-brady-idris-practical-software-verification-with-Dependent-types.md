@@ -62,7 +62,7 @@ along with examples (instructions at http://idris-lang.org/download).
 
 
 ## Edwin Brady
-<!--<img align="right" src="img/edwin-brady.jpg" alt="Edwin Brady"></img>-->
+<img align="right" src="img/edwin-brady.jpg" alt="Edwin Brady"></img>
 Edwin Brady is a Lecturer in Computer Science at the University of St
 Andrews in Scotland. His research interests there include programming
 language design, in particular type systems and domain specific

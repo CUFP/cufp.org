@@ -69,7 +69,7 @@ Participants are not required to install anything before the tutorial,
 but are invited to follow along on their laptops.
 
 ## Tiark Rompf
-<!--<img align="right" src="img/tiark-rompf.jpg" alt="Tiark Rompf"></img>-->
+<img align="right" src="img/tiark-rompf.jpg" alt="Tiark Rompf"></img>
 This tutorial will be given jointly by Tiark Rompf and Nada Amin.
 
 Tiark Rompf is a researcher at Oracle Labs. His work focuses on
@@ -80,14 +80,8 @@ framework and made various contributions to the Scala language and
 toolchain (delimited continuations, efficient immutable data
 structures, compiler speedups, type system work).
 
-Nada Amin is a member of the Scala team at EPFL, where she studies
-type systems and hacks on programming languages. She has contributed
-to Clojure's core.logic and Google's Closure compiler. She's loved
-helping others learn to program ever since tutoring SICP as an
-undergraduate lab assistant at MIT.
-
 ## Nada Amin
-<!--<img align="right" src="img/nada-amin.jpg" alt="Nada Amin"></img>-->
+<img align="right" src="img/nada-amin.jpg" alt="Nada Amin"></img>
 Nada is a member of the Scala team at EPFL,
 where she studies type systems and hacks on programming languages.
 She has contributed to Clojure's core.logic and Google's Closure compiler.

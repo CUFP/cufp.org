@@ -40,7 +40,7 @@ elm-d3 source code is available via GitHub:
 https://github.com/seliopou/elm-d3.
 
 ## Evan Czaplicki
-<!--<img align="right" src="img/evan-czaplicki.jpg" alt="Evan Czaplicki"></img>-->
+<img align="right" src="img/evan-czaplicki.jpg" alt="Evan Czaplicki"></img>
 Spiros Eliopoulos is a research engineer at Cornell
 University, serving as Lead Engineer on the Frenetic controller
 platform for Software-Defined Networks. He’s the author of the elm-d3
