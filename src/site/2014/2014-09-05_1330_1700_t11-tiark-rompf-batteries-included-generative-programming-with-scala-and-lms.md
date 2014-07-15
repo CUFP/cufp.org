@@ -1,7 +1,7 @@
 - type: tutorial
 - title: T11: Batteries Included: Generative Programming with Scala and LMS
-- speakers: Tiark Rompf
-- affiliations: Oracle Labs & EPFL
+- speakers: Tiark Rompf, Nada Amin
+- affiliations: Oracle Labs & EPFL, EPFL
 
 ## Abstract
 Functional language implementations have come a long way towards
@@ -85,3 +85,11 @@ type systems and hacks on programming languages. She has contributed
 to Clojure's core.logic and Google's Closure compiler. She's loved
 helping others learn to program ever since tutoring SICP as an
 undergraduate lab assistant at MIT.
+
+## Nada Amin
+<!--<img align="right" src="img/nada-amin.jpg" alt="Nada Amin"></img>-->
+Nada is a member of the Scala team at EPFL,
+where she studies type systems and hacks on programming languages.
+She has contributed to Clojure's core.logic and Google's Closure compiler.
+She's loved helping others learn to program ever since tutoring SICP
+as an undergraduate lab assistant at MIT.
