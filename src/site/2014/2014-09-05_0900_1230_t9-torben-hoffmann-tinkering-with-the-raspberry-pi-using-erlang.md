@@ -33,7 +33,13 @@ Instructions on what to prepare before coming will be provided.
 
 
 ## Torben Hoffmann 
-<img align="right" src="img/torben-hoffmann.jpg" alt="Torben Hoffmann"></img>
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/torben-hoffmann.jpg" alt="Torben Hoffmann"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Torben has been working with Erlang in Motorola and
 Issuu as technical architect and developer since 2006. He has talked
 about his Motorola achievements at Erlang eXchange 2008 and EUC 2010.
@@ -42,3 +48,6 @@ process improvement and people management.
 
 The first demo of Erlang to Motorola management was done on a little
 Gumstix board anno 2006.
+</div>
+
+</div>

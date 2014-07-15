@@ -36,15 +36,33 @@ usage without a garbage collector.
 Participants need Linux or OSX.
 
 ## Felix Klock
-<img align="right" src="img/felix-klock.jpg" alt="Felix Klock"></img>
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/felix-klock.jpg" alt="Felix Klock"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Felix Klock is a Researcher at Mozilla.  He works on the Rust compiler
 and runtime libraries, and obtained his PhD in Computer Science from
 Northeastern University.  He previously worked on the ActionScript
 Virtual Machine for the Adobe Flash Runtime.
+</div>
+
+</div>
 
 ## Lars Bergstrom.
-<img align="right" src="img/lars-bergstrom.jpg" alt="Lars Bergstorm"></img>
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/lars-bergstrom.jpg" alt="Lars Bergstorm"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Lars Bergstrom is a Researcher at Mozilla. He works
 on the Servo web browser engine and obtained his PhD in Computer
 Science from the University of Chicago. He previously worked on
 Developer Tools at Microsoft.
+</div>
+
+</div>

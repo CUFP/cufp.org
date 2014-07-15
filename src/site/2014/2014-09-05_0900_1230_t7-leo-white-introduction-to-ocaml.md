@@ -23,18 +23,37 @@ experience with a functional language will be useful but is not
 required. No prior knowledge of OCaml is assumed.
 
 ## Leo White
-<img align="right" src="img/leo-white.jpg" alt="Leo White"></img>
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/leo-white.jpg" alt="Leo White"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Leo White is a Research Associate in the OCaml Labs group at the
 University of Cambridge. He is the author of two chapters in the Real
 World OCaml book, and of various contributions to the OCaml compiler
 including the recent addition of "extensible variants" to the
 language.
+</div>
+
+</div>
+
 
 ## Jeremy Yallop
-<img align="right" src="img/jeremy-yallop.jpg" alt="Jeremy Yallop"></img>
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/jeremy-yallop.jpg" alt="Jeremy Yallop"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Jeremy Yallop is a Research Associate in the OCaml Labs group at the
 University of Cambridge. He worked on the ctypes library
 that had the goal of eliminating the need to write any C code at all for the vast majority of foreign bindings.
 Jeremy also participated in creating "Real World OCaml".
 He helped out with extensive review of the Foreign Function Interface chapter,
-that used his ctypes library. 
+that used his ctypes library.
+</div>
+
+</div>

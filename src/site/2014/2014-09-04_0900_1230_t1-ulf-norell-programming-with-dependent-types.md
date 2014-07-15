@@ -20,10 +20,19 @@ People curious about dependent types.
 Bring laptop with Agda installed (requires GHC and Emacs).
 
 ## Ulf Norell
-<img align="right" src="img/ulf-norell.jpg" alt="Ulf Norell"></img>
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/ulf-norell.jpg" alt="Ulf Norell"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Ulf Norell has spent the last 10 years implementing the dependently
 typed programming language Agda at Chalmers and Gothenburg University
 and somehow managed to get a PhD in the process. He is currently
 spending half his time on Agda development at the university and the
 other half out in the real world doing property based testing using
 QuickCheck for Quviq.
+</div>
+
+</div>

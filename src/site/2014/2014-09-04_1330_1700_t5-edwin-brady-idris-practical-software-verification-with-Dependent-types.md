@@ -62,7 +62,13 @@ along with examples (instructions at http://idris-lang.org/download).
 
 
 ## Edwin Brady
-<img align="right" src="img/edwin-brady.jpg" alt="Edwin Brady"></img>
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/edwin-brady.jpg" alt="Edwin Brady"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Edwin Brady is a Lecturer in Computer Science at the University of St
 Andrews in Scotland. His research interests there include programming
 language design, in particular type systems and domain specific
@@ -72,3 +78,6 @@ language with dependent types, which he uses to implement verified
 domain specific languages. When he\'s not doing that, he\'s likely to
 be playing a game of Go, wrestling with the crossword, or stuck on a
 train somewhere in Britain.
+</div>
+
+</div>

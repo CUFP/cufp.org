@@ -23,7 +23,13 @@ show how property driven development can produce code that is solid
 from the word go.
 
 ## John Hughes
-<img align="right" src="img/john-hughes.jpg" alt="John Hughes"></img>
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/john-hughes.jpg" alt="John Hughes"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 John Hughes is co-founder and CEO of Quviq AB, and the originator of
 Quviq QuickCheck. From 2002-2005 he led a major research project in
 software verification, funded by the Swedish Strategic Research
@@ -31,3 +37,6 @@ Foundation. This led to the development of Quviq QuickCheck in
 Erlang. Before John\'s involvement with Erlang, he was deeply involved
 with the design of Haskell from the start, and co-chaired the
 committee that defined the current language standard.
+</div>
+
+</div>
