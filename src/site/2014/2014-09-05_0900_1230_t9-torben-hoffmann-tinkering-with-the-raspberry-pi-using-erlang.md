@@ -33,7 +33,7 @@ Instructions on what to prepare before coming will be provided.
 
 
 ## Torben Hoffmann 
-<!--<img align="right" src="img/torben-hoffmann.jpg" alt="Torben Hoffmann"></img>-->
+<img align="right" src="img/torben-hoffmann.jpg" alt="Torben Hoffmann"></img>
 Torben has been working with Erlang in Motorola and
 Issuu as technical architect and developer since 2006. He has talked
 about his Motorola achievements at Erlang eXchange 2008 and EUC 2010.

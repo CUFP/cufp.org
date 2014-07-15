@@ -32,7 +32,7 @@ Haskell platform (2013.2.0.0) installed. A list of additional packages
 will be made available soon.
 
 ## Stefan Wehr
-<!--<img align="right" src="img/stefan-wehr.jpg" alt="Stefan Wehr"></img>-->
+<img align="right" src="img/stefan-wehr.jpg" alt="Stefan Wehr"></img>
 Stefan Wehr works for factis research GmbH, where he designs and
 develops large distributed software systems in Haskell. He has more
 than ten years of experience with Haskell. Back in 2010, he received

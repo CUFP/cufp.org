@@ -30,7 +30,7 @@ http://websharper.com) installed into it, or the latest CloudSharper
 Local installed (via http://cloudsharper.com).
 
 ## Adam Granicz
-<!--<img align="right" src="img/adam-granicz.jpg" alt="Adam Granicz"></img>-->
+<img align="right" src="img/adam-granicz.jpg" alt="Adam Granicz"></img>
 Adam Granicz is a 4x F# MVP and book author, key F#
 community member and evangelist, and a regular speaker at developer
 conferences and workshops. Next to heading IntelliFactory, the F#

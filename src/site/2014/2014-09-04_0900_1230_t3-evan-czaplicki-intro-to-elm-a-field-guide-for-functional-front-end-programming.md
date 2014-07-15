@@ -1,7 +1,7 @@
 - type: tutorial
-- title: T3: Intro to Elm: a field guide for functional front-end programming
-- speakers: Evan Czaplicki
-- affiliations: Prezi
+- title: T3: Intro to Elm: a field guide for functional front-end programming (Part 1)
+- speakers: Evan Czaplicki, Spiros Eliopoulos
+- affiliations: Prezi, Cornell
 
 ## Abstract
 Elm began as an exploration of what “purely functional graphics
@@ -40,7 +40,10 @@ elm-d3 source code is available via GitHub:
 https://github.com/seliopou/elm-d3.
 
 ## Evan Czaplicki
-<!--<img align="right" src="img/evan-czaplicki.jpg" alt="Evan Czaplicki"></img>-->
+<img align="right" src="img/evan-czaplicki.jpg" alt="Evan Czaplicki"></img>
+I am a functional programmer at heart, and my broad goal is to provide the tools and learning resources to make functional languages common in industry. I work full-time to develop Elm’s compiler, tools, and community to make it a great choice for web and cross-platform projects.
+
+## Spiros Eliopoulos
 Spiros Eliopoulos is a research engineer at Cornell
 University, serving as Lead Engineer on the Frenetic controller
 platform for Software-Defined Networks. He’s the author of the elm-d3

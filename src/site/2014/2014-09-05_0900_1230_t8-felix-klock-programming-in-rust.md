@@ -1,6 +1,6 @@
 - type: tutorial
 - title: T8: Programming in Rust
-- speakers: Felix Klock, Lars Bergstorm
+- speakers: Felix Klock, Lars Bergstrom
 - affiliations: Mozilla, Mozilla
 
 ## Abstract
@@ -36,14 +36,14 @@ usage without a garbage collector.
 Participants need Linux or OSX.
 
 ## Felix Klock
-<!--<img align="right" src="img/felix-kock.jpg" alt="Felix Klock"></img>-->
+<img align="right" src="img/felix-klock.jpg" alt="Felix Klock"></img>
 Felix Klock is a Researcher at Mozilla.  He works on the Rust compiler
 and runtime libraries, and obtained his PhD in Computer Science from
 Northeastern University.  He previously worked on the ActionScript
 Virtual Machine for the Adobe Flash Runtime.
 
 ## Lars Bergstrom.
-<!--<img align="right" src="img/lars-bergstorm.jpg" alt="Lars Bergstorm"></img>-->
+<img align="right" src="img/lars-bergstrom.jpg" alt="Lars Bergstorm"></img>
 Lars Bergstrom is a Researcher at Mozilla. He works
 on the Servo web browser engine and obtained his PhD in Computer
 Science from the University of Chicago. He previously worked on
