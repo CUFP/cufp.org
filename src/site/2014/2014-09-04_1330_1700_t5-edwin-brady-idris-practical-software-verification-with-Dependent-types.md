@@ -32,7 +32,7 @@ participants some introductory experience with the Idris programming
 language.
 
 The tutorial will explain why software correctness, particularly
-extra-functional correctness, is important, and show how Idris\'
+extra-functional correctness, is important, and show how Idris'
 dependent type system can support this. It will cover:
 
 * Getting started: compiling and running programs
@@ -75,7 +75,7 @@ language design, in particular type systems and domain specific
 languages.  Since 2008, he has been designing and implementing the
 Idris programming language, a general purpose functional programming
 language with dependent types, which he uses to implement verified
-domain specific languages. When he\'s not doing that, he\'s likely to
+domain specific languages. When he's not doing that, he's likely to
 be playing a game of Go, wrestling with the crossword, or stuck on a
 train somewhere in Britain.
 </div>
