@@ -32,7 +32,7 @@ language.
 
 ## Jeremy Yallop
 <img align="right" src="img/jeremy-yallop.jpg" alt="Jeremy Yallop"></img>
-Leo White is a Research Associate in the OCaml Labs group at the
+Jeremy Yallop is a Research Associate in the OCaml Labs group at the
 University of Cambridge. He worked on the ctypes library
 that had the goal of eliminating the need to write any C code at all for the vast majority of foreign bindings.
 Jeremy also participated in creating "Real World OCaml".
