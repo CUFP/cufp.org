@@ -1,7 +1,7 @@
 - type: tutorial
 - title: T7: Introduction to OCaml
-- speakers: Leo White
-- affiliations: University of Cambridge
+- speakers: Leo White, Jeremy Yallop
+- affiliations: University of Cambridge, University of Cambridge
 
 
 ## Abstract
@@ -29,3 +29,12 @@ University of Cambridge. He is the author of two chapters in the Real
 World OCaml book, and of various contributions to the OCaml compiler
 including the recent addition of "extensible variants" to the
 language.
+
+## Jeremy Yallop
+<!--<img align="right" src="img/jeremy-yallop.jpg" alt="Jeremy Yallop"></img>-->
+Leo White is a Research Associate in the OCaml Labs group at the
+University of Cambridge. He worked on the ctypes library
+that had the goal of eliminating the need to write any C code at all for the vast majority of foreign bindings.
+Jeremy also participated in creating "Real World OCaml".
+He helped out with extensive review of the Foreign Function Interface chapter,
+that used his ctypes library. 
