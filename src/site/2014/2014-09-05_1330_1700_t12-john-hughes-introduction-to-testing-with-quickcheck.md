@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T12: QuickCheck
+- title: T12: Introduction to testing with QuickCheck
 - speakers: John Hughes
 - affiliations: Chalmers / Quviq
 
