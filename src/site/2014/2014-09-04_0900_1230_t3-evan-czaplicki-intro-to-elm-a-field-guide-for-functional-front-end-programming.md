@@ -41,7 +41,7 @@ https://github.com/seliopou/elm-d3.
 
 ## Evan Czaplicki
 <img align="right" src="img/evan-czaplicki.jpg" alt="Evan Czaplicki"></img>
-I am a functional programmer at heart, and my broad goal is to provide the tools and learning resources to make functional languages common in industry. I work full-time to develop Elm’s compiler, tools, and community to make it a great choice for web and cross-platform projects.
+Evan Czaplicki is a functional programmer at heart, and his broad goal is to provide the tools and learning resources to make functional languages common in industry. He works full-time to develop Elm’s compiler, tools, and community to make it a great choice for web and cross-platform projects.
 
 ## Spiros Eliopoulos
 Spiros Eliopoulos is a research engineer at Cornell
