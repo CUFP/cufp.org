@@ -35,6 +35,7 @@ and consists of three components: Talks, Tutorials and BoFs.
 ## Announcements
 * May 12th [Call for Tutorials - Now available.](/2014/call-for-tutorials.html)
 * April 20th [Call for Presentations - Now available.](/2014/call-for-presentations.html)
+* 2014 CUFP [Tutorial Schedule now Available!](/2014/tutorial-schedule.html)
 
 </div>
 
@@ -63,13 +64,11 @@ CUFP 2014 on <a href="http://lanyrd.com/2014/cufp2014/">Lanyrd</a>.
 <div class="medium-4 columns tutorial" media:type="text/omd">
 ### <i class="fi-laptop"></i> Tutorials
 ###### Thu-Fri September 4-5th
-Talks will be made up of in-depth, hands-on sessions for learning
-particular technologies and techniques in functional
-programming. These will range from language introductions for
-beginners to more advanced and focused sessions on particular language
-features, techniques or toolkits.
+Register for the 2014 CUFP Tutorials! Early bird ends August 3rd!
 
-<a href="/2014/call-for-tutorials.html" class="tiny radius button">Call</a>
+CUFP tutorials have become an in-depth, hands-on sessions for learning functional programming languages, libraries and toolkits directly from the experts and leaders in their fields. Register to learn more about Erlang, Rust, Haskell, OCaml, F#, Scala, Elm and Idris. Did you wonder about Agda or Lens? Or what about front-end applications with elm-d3 of WebSharper? Or property based testing with the inventor of Quick Check? Have a look at the program to find out more! <a href="https://regmaster4.com/2014conf/ICFP14/register.php">Register here.</a>
+
+<a href="#schedule" class="tiny radius button">Call</a>
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
@@ -98,7 +97,7 @@ gathering proposals, organized via our website.
 
 </div>
 
-<div class="row" media:type="text/omd">
+<div id="schedule" class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 ## Day 1 - Thu Sep 4th  <small>Tutorials</small>
 (( cmd cufp.org print session-list -date 2014-09-04 2014 ))

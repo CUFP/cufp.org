@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T4: Elm-d3: Front-end Development without Frameworks
+- title: T4: Elm-d3: Front-end Development without Frameworks (Part 2)
 - speakers: Spiros Eliopoulos
 - affiliations: Cornell
 
