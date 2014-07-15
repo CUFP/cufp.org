@@ -23,7 +23,7 @@ show how property driven development can produce code that is solid
 from the word go.
 
 ## John Hughes
-<img align="right" src="img/joghn-hughes.jpg" alt="John Hughes"></img>
+<img align="right" src="img/john-hughes.jpg" alt="John Hughes"></img>
 John Hughes is co-founder and CEO of Quviq AB, and the originator of
 Quviq QuickCheck. From 2002-2005 he led a major research project in
 software verification, funded by the Swedish Strategic Research
