@@ -80,8 +80,6 @@ but are invited to follow along on their laptops.
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
-This tutorial will be given jointly by Tiark Rompf and Nada Amin.
-
 Tiark Rompf is a researcher at Oracle Labs. His work focuses on
 runtime code generation, advanced compiler technology, and associated
 language support. From 2008 to 2014 he was a member of Martin
