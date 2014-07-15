@@ -67,7 +67,7 @@ Talks will be made up of in-depth, hands-on sessions for learning
 particular technologies and techniques in functional
 programming. These will range from language introductions for
 beginners to more advanced and focused sessions on particular language
-features, techniques or tool kits.
+features, techniques or toolkits.
 
 <a href="/2014/call-for-tutorials.html" class="tiny radius button">Call</a>
 </div>
