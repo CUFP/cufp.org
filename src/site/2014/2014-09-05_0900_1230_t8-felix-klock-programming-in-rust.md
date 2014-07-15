@@ -1,6 +1,6 @@
 - type: tutorial
 - title: T8: Programming in Rust
-- speakers: Felix Klock, Lars Bergstorm
+- speakers: Felix Klock, Lars Bergstrom
 - affiliations: Mozilla, Mozilla
 
 ## Abstract
