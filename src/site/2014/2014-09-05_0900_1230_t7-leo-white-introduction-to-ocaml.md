@@ -48,12 +48,9 @@ language.
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
-Jeremy Yallop is a Research Associate in the OCaml Labs group at the
-University of Cambridge. He worked on the ctypes library
-that had the goal of eliminating the need to write any C code at all for the vast majority of foreign bindings.
-Jeremy also participated in creating "Real World OCaml".
-He helped out with extensive review of the Foreign Function Interface chapter,
-that used his ctypes library.
+Jeremy Yallop is a researcher in the OCaml Labs group at the
+University of Cambridge and the author of a number of well-known OCaml
+libraries, including deriving and ctypes.
 </div>
 
 </div>
