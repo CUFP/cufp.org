@@ -36,6 +36,9 @@ and consists of three components: Talks, Tutorials and BoFs.
 * May 12th [Call for Tutorials - Now available.](/2014/call-for-tutorials.html)
 * April 20th [Call for Presentations - Now available.](/2014/call-for-presentations.html)
 * 2014 CUFP [Tutorial Schedule now Available!](/2014/tutorial-schedule.html)
+* Please register for the tutorials via the hosting <a href="https://regmaster4.com/2014conf/ICFP14/register.php">ICFP conference website</a>.
+The cost of the tutorials is $260 per day, thus consider attending two tutorials at the same day!
+
 
 </div>
 
@@ -66,9 +69,9 @@ CUFP 2014 on <a href="http://lanyrd.com/2014/cufp2014/">Lanyrd</a>.
 ###### Thu-Fri September 4-5th
 Register for the 2014 CUFP Tutorials! Early bird ends August 3rd!
 
-CUFP tutorials have become an in-depth, hands-on sessions for learning functional programming languages, libraries and toolkits directly from the experts and leaders in their fields. Register to learn more about Erlang, Rust, Haskell, OCaml, F#, Scala, Elm and Idris. Did you wonder about Agda or Lens? Or what about front-end applications with elm-d3 of WebSharper? Or property based testing with the inventor of Quick Check? Have a look at the program to find out more! <a href="https://regmaster4.com/2014conf/ICFP14/register.php">Register here.</a>
+CUFP tutorials have become an in-depth, hands-on sessions for learning functional programming languages, libraries and toolkits directly from the experts and leaders in their fields. Register to learn more about Erlang, Rust, Haskell, OCaml, F#, Scala, Elm and Idris. Did you wonder about Agda or Lens? Or what about front-end applications with elm-d3 of WebSharper? Or property based testing with the inventor of Quick Check? Have a look at the program to find out more!
 
-<a href="#schedule" class="tiny radius button">Call</a>
+<a href="https://regmaster4.com/2014conf/ICFP14/register.php" class="tiny radius button">Register</a>
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
