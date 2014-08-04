@@ -109,7 +109,8 @@ gathering proposals, organized via our website.
 (( cmd cufp.org print session-list -date 2014-09-05 2014 ))
 
 ## Day 3 - Sat Sep 6th <small>Talks</small>
-<p>Talk schedule not yet available. Stay tuned.</p>
+(( cmd cufp.org print session-list -date 2014-09-06 2014 ))
+
 </div>
 </div>
 
