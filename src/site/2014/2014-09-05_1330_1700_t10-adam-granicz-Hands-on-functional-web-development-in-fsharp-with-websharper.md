@@ -50,4 +50,5 @@ online functional programming community.
 </div>
 
 </div>
-<a style="width: 100%; margin-top: 2em;" href="https://regmaster4.com/2014conf/ICFP14/register.php" class="button radius">Register via the hosting ICFP conference website</a>
+{{ input src/site/2014/_register_button.html }}
+
