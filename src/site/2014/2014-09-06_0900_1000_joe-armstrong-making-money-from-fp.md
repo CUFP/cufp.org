@@ -18,12 +18,14 @@ Spoiler: The 19$B WhatsApp acquisition by Facebook shows that not only
 can FP ideas earn money - but actually earn more money than in any
 other acquisition to date (WhatsApp messaging is programmed in Erlang :-)
 
-# Joe Armstrong
-
+## Joe Armstrong
 <div class="row" media:type="text/omd">
 
 <div class="medium-4 columns">
-<img src="img/joe-armstrong.jpg" alt="Joe Armstrong"></img>
+<!-- <img src="img/joe-armstrong.jpg" alt="Joe Armstrong"></img> -->
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Joe Armstrong is the principle inventor of the Erlang programming
 Language and coined the term "Concurrency Oriented Programming". He
 has worked for Ericsson where he developed Erlang and was chief
@@ -35,10 +37,6 @@ Institute of Technology, Stockholm. The title of his thesis was
 "Making reliable distributed systems in the presence of software
 errors." Today he works for Ericsson, and is also Professor of
 Computer Science at the Royal Institute of Technology in Stockholm.
-</div>
-
-<div class="medium-8 columns" media:type="text/omd">
-
 </div>
 
 </div>
