@@ -25,11 +25,11 @@ let rec of_html html =
       child_html,
       ""
     )
-    | _ -> failwith "xxx" (* Omd.Html (
+    | _ -> Omd.Html (
       tag,
       List.map attributes ~f:(fun (x,y) -> x, Some y),
       child_html
-    )  *)
+    )
   )
 
 let parse_assoc_list = function
