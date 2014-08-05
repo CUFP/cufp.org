@@ -18,3 +18,5 @@ environment, the tools developed in Haskell, how they benefitted (and
 occasionally suffered) from the choice of implementation language,
 which (public) libraries were critical to their success, and how they
 were deployed in the satellite operations environment.
+
+{{ input src/site/2014/_register_button.html }}

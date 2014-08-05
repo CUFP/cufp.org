@@ -27,3 +27,5 @@ usable from both languages - what is the right balance between
 object-oriented and functional API design? We'll also discuss finding
 the right balance between immutable and mutable data structures in
 this project.
+
+{{ input src/site/2014/_register_button.html }}

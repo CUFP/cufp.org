@@ -39,3 +39,5 @@ user acknowledgement, such that additionally an additional tool (a
 protocol bridge) was developed in Haskell. This presentation details
 on the findings gained in these investigations and compares it with
 traditional implementations in C++.
+
+{{ input src/site/2014/_register_button.html }}

@@ -18,3 +18,5 @@ In this talk, we will be focusing on the MBrace programming model,
 showcasing its foundations and how they compare in expressive power
 with respect to other established distribution abstractions. We will
 be offering benchmarks and if circumstance allows, a short demo.
+
+{{ input src/site/2014/_register_button.html }}

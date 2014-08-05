@@ -18,3 +18,5 @@ mobile and web platforms.
 The goal of this talk is to demonstrate the use of F# to write clean,
 concise game logic as well as infrastructure code, the same techniques
 and concepts can be easily applied to other domains.
+
+{{ input src/site/2014/_register_button.html }}

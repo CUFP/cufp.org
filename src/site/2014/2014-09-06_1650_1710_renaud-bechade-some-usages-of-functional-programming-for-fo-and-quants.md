@@ -26,3 +26,5 @@ Specifically, we will go though a few applications/frameworks we
 developed, mainly, in Haskell and F# for both flow and structured
 products across several asset classes: - pricers - market fitters &
 injectors - strategy backtesting - market risk
+
+{{ input src/site/2014/_register_button.html }}

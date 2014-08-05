@@ -40,3 +40,5 @@ reproducibility with minimal context; predictable performance; and
 interestingly, how steadfastly holding to functional programming
 principles contributes to being able to deliver a humane user
 experience in the face of complexity.
+
+{{ input src/site/2014/_register_button.html }}

@@ -29,3 +29,5 @@ Play Iteratees, Enumerators, and Enumeratees, and asynchronous I/O
 pipelines using promises and futures. We will walk through a simple
 example for each pattern in Scala to demonstrate its strengths and
 challenges it has presented for us.
+
+{{ input src/site/2014/_register_button.html }}

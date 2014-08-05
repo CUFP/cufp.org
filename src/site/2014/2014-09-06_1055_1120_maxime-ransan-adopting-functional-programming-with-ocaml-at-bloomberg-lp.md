@@ -30,3 +30,5 @@ technology was then migrated to benefit from the modified OCaml
 compiler developed by LexiFi (MLFi). This technology is now fully
 integrated into the Bloomberg development environment and makes use of
 all available proprietary APIs.
+
+{{ input src/site/2014/_register_button.html }}

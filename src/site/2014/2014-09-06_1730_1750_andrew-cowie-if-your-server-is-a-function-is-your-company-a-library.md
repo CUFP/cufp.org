@@ -42,3 +42,5 @@ Haskell. Many systems have external dependencies (databases, third
 party web services, etc). This talk will describe our approaches to
 each of these, and our progress in abstracting the overall idea
 further.
+
+{{ input src/site/2014/_register_button.html }}
