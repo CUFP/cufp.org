@@ -20,18 +20,18 @@ and ease of use. This is not necessary.
 
 Drawing on well understood foundations from datalog and deductive
 databases, and utilizing functional programming fundamentals,
-""annex"" takes a different view on how to manage artifacts. We should
-be able to ask: ""Give me the latest binary compatible versions of X
-with no known CVE""; or, ""Give me the last stable builds of my
-dependencies that have been tested in IE 9, Chrome and Firefox""; or
+"annex" takes a different view on how to manage artifacts. We should
+be able to ask: "Give me the latest binary compatible versions of X
+with no known CVE"; or, "Give me the last stable builds of my
+dependencies that have been tested in IE 9, Chrome and Firefox"; or
 in a more general context outside of dependency resolution, queries
-such as ""What platforms has build x of my library been tested on?""
+such as "What platforms has build x of my library been tested on?"
 provide a useful understanding of the current state of artifacts; and
 finally, it should be possible to phrase all of these questions with a
-first class notion of time, for example ""Give me the same
-dependencies when I last asked this query"".
+first class notion of time, for example "Give me the same
+dependencies when I last asked this query".
 
-This talk will start by walking through the concepts behind ""annex"",
+This talk will start by walking through the concepts behind "annex",
 before taking a deeper look at the design and implementation (in
 Haskell). We will look at how its functional underpinnings give rise
 to very desirable properties for a cross-language dependency system.
