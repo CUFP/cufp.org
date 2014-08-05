@@ -114,27 +114,9 @@ gathering proposals, organized via our website.
 </div>
 </div>
 
-
-<div class="pane-dark">
-<center>
-<ul data-orbit
-    data-options="animation:fade;
-                  timer_speed:6000;
-                  animation_speed:1500;
-                  resume_on_mouseout:true;
-                  slide_number:false;
-                  bullets:false;
-                  variable_height:true;">
-<li>
-<img src="/2014/img/1024x400_3675479286_f5ce0a6c93_b copy.jpg" />
-</li>
-<li>
-<img src="/2014/img/1014x400_12984993963_26cb3afb35_b.jpg" />
-</li>
-</ul>
-</center>
+<div style="text-align:center" class="pane-dark" media:type="text/omd">
+<img src="img/1024x400_3675479286_f5ce0a6c93_b.jpg" />
 </div>
-
 
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
