@@ -68,7 +68,7 @@ site. It is a command line interface to the library above. Run the app
 without arguments for more information. When built, it is symlink'ed
 as `cufp.org` in the repo's root.
 
-`src/bin/` — Scripts.
+`bin/` — Scripts.
 
 `ext/` — Files from external sources, e.g. CSS or Javascript
 libraries. These are copied without modification to the generated
