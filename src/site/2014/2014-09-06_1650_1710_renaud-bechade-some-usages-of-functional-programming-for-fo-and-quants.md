@@ -12,10 +12,12 @@ FO users, traders and structures, fellow quants can be a hard public:
 as we lived this adventure both as a trader/structurer and as a quant,
 we can relate to conflicting goals and mindsets.
 
-Our presentation will focus on the following key points: -
-traders/structurers : what are their needs? ""why not do it all in
-VBA?” - quantitative analysts : ""why not do it all in C++?"" what is
-the upside? - how we planted seeds, how we failed (sometimes)
+Our presentation will focus on the following key points:
+- traders/structurers : what are their needs? ""why not do it all in
+  VBA?”
+- quantitative analysts : ""why not do it all in C++?"" what is the
+  upside?
+- how we planted seeds, how we failed (sometimes)
 
 For each user category, we will illustrate some practical scenarios
 where functional programming brought us added value, while trying to
@@ -24,7 +26,10 @@ audit…
 
 Specifically, we will go though a few applications/frameworks we
 developed, mainly, in Haskell and F# for both flow and structured
-products across several asset classes: - pricers - market fitters &
-injectors - strategy backtesting - market risk
+products across several asset classes:
+- pricers
+- market fitters & injectors
+- strategy backtesting
+- market risk
 
 {{ input src/site/2014/_register_button.html }}
