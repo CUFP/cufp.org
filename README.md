@@ -125,11 +125,11 @@ also contain HTML formatting elements because there is a fair bit of
 custom styling done for each page. The styling requires knowledge of
 Zurb Foundation. The best way to start a new conference is to copy a
 page from a previous year and mimic the sections. MPP calls to the
-`cufp.org` app will be needed to generate session tables.
+`cufp.org` app will be needed to generate schedule tables.
 
-###### session page
-A session file must be named in the format:
-`YYYY-MM-DD_HHMM_HHMM_short-title.md`, which indicates the session's
+###### event page
+An event file must be named in the format:
+`YYYY-MM-DD_HHMM_HHMM_short-title.md`, which indicates the event's
 date, start time, end time, and short title used as the URL. The file
 contents must be Markdown starting with an unordered list. Each list
 item is a colon separated tag-value pair as follows:
@@ -144,6 +144,8 @@ item is a colon separated tag-value pair as follows:
   must have same number of items as speakers. Leave empty items if
   only some speakers' affiliation is to be listed. The affiliation
   cannot itself have a comma. Optional.
+
+- session: Name of session which this event is part of. Optional.
 
 - video: Link to YouTube or Vimeo video. Optional.
 
