@@ -98,7 +98,7 @@ let icon typ =
   | Tutorial -> "fi-laptop"
   | BoF -> "flaticon-pen43"
   | Break ->
-    failwithf "icon undefined for session typ: %s"
+    failwithf "icon undefined for event typ: %s"
       (typ_to_string typ) ()
   ) |> fun x ->
   Html.i ~a:["class", x] []
@@ -152,9 +152,9 @@ let break_description {typ; description; _ } =
       String.strip description
     | [] -> ""
     | _ ->
-      failwith "break session content expected to be short text only"
+      failwith "break event content expected to be short text only"
   )
-  | _ -> failwith "break_description called on non-Break session typ"
+  | _ -> failwith "break_description called on non-Break event typ"
 
 
 
@@ -168,11 +168,11 @@ let typ_of_string s =
   | "tutorial" -> Tutorial
   | "bof" -> BoF
   | "break" -> Break
-  | _ -> failwithf "%s is not valid a session type" s ()
+  | _ -> failwithf "%s is not valid a event type" s ()
 
 let parse_filename s =
   if not (Filename.check_suffix s ".md") then
-    failwithf "session file %s doesn't have a .md extension" s ()
+    failwithf "event file %s doesn't have a .md extension" s ()
   else
     let s' = Filename.chop_suffix s ".md" |> Filename.basename in
     match String.split ~on:'_' s' with
@@ -184,7 +184,7 @@ let parse_filename s =
         finish = Time.Ofday.of_string finish;
       }
     | _ ->
-      failwithf "session file %s not in expected format" s ()
+      failwithf "event file %s not in expected format" s ()
 
 let is_valid_filename s =
   try ignore (parse_filename s); true

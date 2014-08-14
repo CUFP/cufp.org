@@ -43,13 +43,13 @@ the future of functional programming.
 <div class="small-12 columns" media:type="text/omd">
 
 ## Day 1 - Thursday, Sep 22nd <small>Tutorials and BoFs</small>
-(( cmd cufp.org print session-list -date 2011-09-22 2011 ))
+(( cmd cufp.org print event-list -date 2011-09-22 2011 ))
 
 ## Day 2 - Friday, Sep 23rd <small>Tutorials and BoFs</small>
-(( cmd cufp.org print session-list -date 2011-09-23 2011 ))
+(( cmd cufp.org print event-list -date 2011-09-23 2011 ))
 
 ## Day 3 - Saturday, Sep 24th <small>Talks</small>
-(( cmd cufp.org print session-list -date 2011-09-24 2011 ))
+(( cmd cufp.org print event-list -date 2011-09-24 2011 ))
 
 </div>
 </div>

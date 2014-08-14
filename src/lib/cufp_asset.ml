@@ -1,19 +1,19 @@
 open Core.Std
 open Async.Std
 module Blog = Cufp_blog
+module Event = Cufp_event
 module Html = Cufp_html
 module Json = Cufp_json
 module Markdown = Cufp_markdown
 module Mpp = Cufp_mpp
 module Path = Cufp_path
-module Session = Cufp_session
 module Util = Cufp_util
 let lift = Cufp_util.lift
 
 type typ =
 | Front_page
 | Conference
-| Session
+| Event
 | Blog_post
 | Blog_html
 | Blog_rss
@@ -60,8 +60,8 @@ let typ_of_path path =
     if Util.is_YYYY x then (
       if y = "index.md" then
         return Conference
-      else if Session.is_valid_filename y then
-        return Session
+      else if Event.is_valid_filename y then
+        return Event
       else
         typ_of_basename path
     )
@@ -87,7 +87,7 @@ let body_class {typ; path} =
     | year::"index.md"::[] -> Some (sprintf "conference cufp%s" year)
     | _ -> assert false
   )
-  | Session -> Some "session"
+  | Event -> Some "event"
   | Blog_post -> Some "blog-post"
   | Blog_html -> Some "blog"
   | Videos -> Some "videos"
@@ -111,8 +111,8 @@ let source ?(style = `Abs) t =
 let target ?(style = `Abs) t =
   let f = match style with `Abs -> Path.output | `Rel -> Path.relative in
   match t.typ with
-  | Session -> (
-    let {Session.url_title;_} = Session.parse_filename (Path.relative t.path) in
+  | Event -> (
+    let {Event.url_title;_} = Event.parse_filename (Path.relative t.path) in
     let basename = url_title ^ ".html" in
     let parent_dir = Path.parent t.path in
     f (Path.concat parent_dir basename)
@@ -143,7 +143,7 @@ let dependencies t =
   match t.typ with
   | Front_page
   | Conference
-  | Session
+  | Event
   | Blog_post
   | Videos
   | Json
@@ -223,16 +223,16 @@ let rec make ?(production=false) t =
 
   match t.typ with
 
-  | Session -> (
+  | Event -> (
     out_of_date t >>= function
     | false -> Deferred.unit
     | true ->
-      Session.of_file (source t) >>= fun s ->
-      if s.Session.typ = Session.Break then
+      Event.of_file (source t) >>= fun s ->
+      if s.Event.typ = Event.Break then
         (log_skip t; Deferred.unit)
       else (
         log_convert t;
-        return (Session.to_html s) >>=
+        return (Event.to_html s) >>=
         lift Html.to_string >>=
         main_template ~out_file:(target t)
       )

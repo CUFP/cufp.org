@@ -46,13 +46,13 @@ proposals, organised via our website.
 <div class="small-12 columns" media:type="text/omd">
 
 ## Day 1 - Sun Sep 22nd  <small>Talks</small>
-(( cmd cufp.org print session-list -date 2013-09-22 2013 ))
+(( cmd cufp.org print event-list -date 2013-09-22 2013 ))
 
 ## Day 2 - Mon Sep 23rd <small>Tutorials & BoFs</small>
-(( cmd cufp.org print session-list -date 2013-09-23 2013 ))
+(( cmd cufp.org print event-list -date 2013-09-23 2013 ))
 
 ## Day 3 - Tue Sep 24th <small>Tutorials & BoFs</small>
-(( cmd cufp.org print session-list -date 2013-09-24 2013 ))
+(( cmd cufp.org print event-list -date 2013-09-24 2013 ))
 
 </div>
 </div>

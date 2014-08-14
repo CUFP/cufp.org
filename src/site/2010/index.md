@@ -47,13 +47,13 @@ programming.
 <div class="small-12 columns" media:type="text/omd">
 
 ## Evening Before - Thursday, Sep 30th <small>BoFs</small>
-(( cmd cufp.org print session-list -date 2010-09-30 2010 ))
+(( cmd cufp.org print event-list -date 2010-09-30 2010 ))
 
 ## Day 1 - Friday, Oct 1st <small>Tutorials and BoFs</small>
-(( cmd cufp.org print session-list -date 2010-10-01 2010 ))
+(( cmd cufp.org print event-list -date 2010-10-01 2010 ))
 
 ## Day 2 - Saturday, Oct 2nd <small>Talks</small>
-(( cmd cufp.org print session-list -date 2010-10-02 2010 ))
+(( cmd cufp.org print event-list -date 2010-10-02 2010 ))
 
 </div>
 </div>

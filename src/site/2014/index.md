@@ -103,13 +103,13 @@ gathering proposals, organized via our website.
 <div id="schedule" class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 ## Day 1 - Thu Sep 4th  <small>Tutorials</small>
-(( cmd cufp.org print session-list -date 2014-09-04 2014 ))
+(( cmd cufp.org print event-list -date 2014-09-04 2014 ))
 
 ## Day 2 - Fri Sep 5th <small>Tutorials</small>
-(( cmd cufp.org print session-list -date 2014-09-05 2014 ))
+(( cmd cufp.org print event-list -date 2014-09-05 2014 ))
 
 ## Day 3 - Sat Sep 6th <small>Talks</small>
-(( cmd cufp.org print session-list -date 2014-09-06 2014 ))
+(( cmd cufp.org print event-list -date 2014-09-06 2014 ))
 
 </div>
 </div>

@@ -5753,107 +5753,107 @@ body.conference ul {
   .bof.columns .button:hover, .bof.columns .button:focus {
     color: white; }
 
-table.session {
+table.event {
   border: 0;
   margin-top: -16px; }
-  table.session thead {
+  table.event thead {
     border-bottom: solid 3px #dddddd; }
 
-table.session tr.talk a:link, table.session tr.talk a:visited {
+table.event tr.talk a:link, table.event tr.talk a:visited {
   color: #444444;
   text-decoration: none;
   border-bottom: 1px dotted #444444; }
-table.session tr.talk a:hover, table.session tr.talk a:active {
+table.event tr.talk a:hover, table.event tr.talk a:active {
   color: #008cba; }
-table.session tr.talk a.fi-social-youtube, table.session tr.talk a.fi-social-vimeo, table.session tr.talk a.fi-page {
+table.event tr.talk a.fi-social-youtube, table.event tr.talk a.fi-social-vimeo, table.event tr.talk a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
   color: #a2a2a2; }
-table.session tr.talk .fi-microphone, table.session tr.talk .fi-laptop, table.session tr.talk .flaticon-pen43 {
+table.event tr.talk .fi-microphone, table.event tr.talk .fi-laptop, table.event tr.talk .flaticon-pen43 {
   color: maroon;
   font-size: 125%; }
-table.session tr.keynote {
+table.event tr.keynote {
   font-weight: bold; }
-  table.session tr.keynote a:link, table.session tr.keynote a:visited {
+  table.event tr.keynote a:link, table.event tr.keynote a:visited {
     color: #444444;
     text-decoration: none;
     border-bottom: 1px dotted #444444; }
-  table.session tr.keynote a:hover, table.session tr.keynote a:active {
+  table.event tr.keynote a:hover, table.event tr.keynote a:active {
     color: #008cba; }
-  table.session tr.keynote a.fi-social-youtube, table.session tr.keynote a.fi-social-vimeo, table.session tr.keynote a.fi-page {
+  table.event tr.keynote a.fi-social-youtube, table.event tr.keynote a.fi-social-vimeo, table.event tr.keynote a.fi-page {
     border-bottom: 0 !important;
     font-size: 120%;
     color: #a2a2a2; }
-  table.session tr.keynote .fi-microphone, table.session tr.keynote .fi-laptop, table.session tr.keynote .flaticon-pen43 {
+  table.event tr.keynote .fi-microphone, table.event tr.keynote .fi-laptop, table.event tr.keynote .flaticon-pen43 {
     color: maroon;
     font-size: 125%; }
-table.session tr.tutorial a:link, table.session tr.tutorial a:visited {
+table.event tr.tutorial a:link, table.event tr.tutorial a:visited {
   color: #444444;
   text-decoration: none;
   border-bottom: 1px dotted #444444; }
-table.session tr.tutorial a:hover, table.session tr.tutorial a:active {
+table.event tr.tutorial a:hover, table.event tr.tutorial a:active {
   color: #008cba; }
-table.session tr.tutorial a.fi-social-youtube, table.session tr.tutorial a.fi-social-vimeo, table.session tr.tutorial a.fi-page {
+table.event tr.tutorial a.fi-social-youtube, table.event tr.tutorial a.fi-social-vimeo, table.event tr.tutorial a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
   color: #a2a2a2; }
-table.session tr.tutorial .fi-microphone, table.session tr.tutorial .fi-laptop, table.session tr.tutorial .flaticon-pen43 {
+table.event tr.tutorial .fi-microphone, table.event tr.tutorial .fi-laptop, table.event tr.tutorial .flaticon-pen43 {
   color: #008024;
   font-size: 125%; }
-table.session tr.bof a:link, table.session tr.bof a:visited {
+table.event tr.bof a:link, table.event tr.bof a:visited {
   color: #444444;
   text-decoration: none;
   border-bottom: 1px dotted #444444; }
-table.session tr.bof a:hover, table.session tr.bof a:active {
+table.event tr.bof a:hover, table.event tr.bof a:active {
   color: #008cba; }
-table.session tr.bof a.fi-social-youtube, table.session tr.bof a.fi-social-vimeo, table.session tr.bof a.fi-page {
+table.event tr.bof a.fi-social-youtube, table.event tr.bof a.fi-social-vimeo, table.event tr.bof a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
   color: #a2a2a2; }
-table.session tr.bof .fi-microphone, table.session tr.bof .fi-laptop, table.session tr.bof .flaticon-pen43 {
+table.event tr.bof .fi-microphone, table.event tr.bof .fi-laptop, table.event tr.bof .flaticon-pen43 {
   color: #0a82cc;
   font-size: 125%; }
-table.session tr.break a:link, table.session tr.break a:visited {
+table.event tr.break a:link, table.event tr.break a:visited {
   color: #444444;
   text-decoration: none;
   border-bottom: 1px dotted #444444; }
-table.session tr.break a:hover, table.session tr.break a:active {
+table.event tr.break a:hover, table.event tr.break a:active {
   color: #008cba; }
-table.session tr.break a.fi-social-youtube, table.session tr.break a.fi-social-vimeo, table.session tr.break a.fi-page {
+table.event tr.break a.fi-social-youtube, table.event tr.break a.fi-social-vimeo, table.event tr.break a.fi-page {
   border-bottom: 0 !important;
   font-size: 120%;
   color: #a2a2a2; }
-table.session tr.break .fi-microphone, table.session tr.break .fi-laptop, table.session tr.break .flaticon-pen43 {
+table.event tr.break .fi-microphone, table.event tr.break .fi-laptop, table.event tr.break .flaticon-pen43 {
   color: #a3a3a3;
   font-size: 125%; }
 
-table.session ul {
+table.event ul {
   list-style-type: none;
   margin-left: 0; }
 
-body.session .fi-microphone {
+body.event .fi-microphone {
   color: maroon; }
-body.session .fi-laptop {
+body.event .fi-laptop {
   color: #008024; }
-body.session .flaticon-pen43 {
+body.event .flaticon-pen43 {
   color: #0a82cc; }
-body.session div.speakers ul {
+body.event div.speakers ul {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 8px; }
-  body.session div.speakers ul li {
+  body.event div.speakers ul li {
     display: inline; }
-  body.session div.speakers ul li:not(:last-child):after {
+  body.event div.speakers ul li:not(:last-child):after {
     content: ", "; }
-body.session div.time {
+body.event div.time {
   color: #a2a2a2;
   font-style: italic;
   font-size: 75%;
   margin-top: 0;
   margin-bottom: 16px; }
-body.session div.video {
+body.event div.video {
   margin-bottom: 16px; }
-body.session img {
+body.event img {
   width: 100%; }
 
 footer:not(.copyright) {

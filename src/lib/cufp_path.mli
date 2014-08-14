@@ -63,7 +63,7 @@ val parent : t -> t
 (** {6 File Types} *)
 
 val check_suffix : t -> string -> bool
-val is_session_file : t -> bool
+val is_event_file : t -> bool
 val is_blog_post : t -> bool
 
 (** Return all blog post files given repo_root. *)

@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
-// Style based on session type: Talk, Keynote, Tutorial, BoF, or Break
+// Style based on event type: Talk, Keynote, Tutorial, BoF, or Break
 
 
-// Color for each session type.
+// Color for each event type.
 $talk-color: #800000;
 $keynote-color: $talk-color;
 $tutorial-color: #008024;
@@ -11,28 +11,28 @@ $break-color: #A3A3A3;
 
 
 ////////////////////////////////////////////////////////////////////////////////
-/// Session Columns
-@mixin session-columns($session-color) {
+/// Event Columns
+@mixin event-columns($event-color) {
   h3 {
-    color : $session-color;
+    color : $event-color;
     font-weight : bold;
   }
 
   .button {
-    @include button(rem-calc(8), $session-color, true)
+    @include button(rem-calc(8), $event-color, true)
   }
 }
 
-.talk.columns { @include session-columns($talk-color); }
-.tutorial.columns { @include session-columns($tutorial-color); }
-.bof.columns { @include session-columns($bof-color); }
+.talk.columns { @include event-columns($talk-color); }
+.tutorial.columns { @include event-columns($tutorial-color); }
+.bof.columns { @include event-columns($bof-color); }
 
 
 ////////////////////////////////////////////////////////////////////////////////
-/// Session Tables
+/// Event Tables
 
 // General table properties.
-table.session {
+table.event {
   border: 0;
   margin-top: -$rem-base;
   thead {
@@ -40,8 +40,8 @@ table.session {
   }
 }
 
-// Mixin to customize row based on session type.
-@mixin session-row($session-color) {
+// Mixin to customize row based on event type.
+@mixin event-row($event-color) {
   a:link, a:visited {
     color: $body-font-color;
     text-decoration: none;
@@ -60,44 +60,44 @@ table.session {
     }
   }
 
-  // Set all icon colors to $session-color, but we know only a certain
-  // icon will be used for a given session type.
+  // Set all icon colors to $event-color, but we know only a certain
+  // icon will be used for a given event type.
   .fi-microphone, .fi-laptop, .flaticon-pen43 {
-    color: $session-color;
+    color: $event-color;
     font-size: 125%;
   }
 }
 
-// Apply above mixin for each session type.
-table.session {
+// Apply above mixin for each event type.
+table.event {
   tr.talk {
-    @include session-row($talk-color)
+    @include event-row($talk-color)
   };
   tr.keynote {
-    @include session-row($keynote-color);
+    @include event-row($keynote-color);
     font-weight: bold;
   };
   tr.tutorial {
-    @include session-row($tutorial-color)
+    @include event-row($tutorial-color)
   };
   tr.bof {
-    @include session-row($bof-color)
+    @include event-row($bof-color)
   };
   tr.break {
-    @include session-row($break-color);
+    @include event-row($break-color);
   };
 }
 
 // Speakers column
-table.session ul {
+table.event ul {
   list-style-type: none;
   margin-left: 0;
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
-/// Session Pages
-body.session {
+/// Event Pages
+body.event {
   .fi-microphone {color:$talk-color};
   .fi-laptop {color:$tutorial-color};
   .flaticon-pen43 {color:$bof-color};

@@ -1,8 +1,8 @@
 open Core.Std
 open Async.Std
+module Event = Cufp_event
 module Html = Cufp_html
 module Person = Cufp_person
-module Session = Cufp_session
 module Slides = Cufp_slides
 module Util = Cufp_util
 module Video = Cufp_video
@@ -10,7 +10,7 @@ let (/) = Filename.concat
 
 type t = {
   year : int;
-  sessions : Session.t list;
+  events : Event.t list;
 }
 
 let first_year = 2004
@@ -32,24 +32,24 @@ let years ~repo_root () =
 (* Printers                                                                   *)
 (******************************************************************************)
 
-let sessions_table ?date {sessions; _} =
+let events_table ?date {events; _} =
   let open Html in
 
-  let sessions : Session.t list = match date with
+  let events : Event.t list = match date with
     | None ->
-      sessions
+      events
     | Some date ->
-      List.filter sessions ~f:(fun x ->
-        Date.equal x.Session.date date
+      List.filter events ~f:(fun x ->
+        Date.equal x.Event.date date
       )
   in
 
-  let time ({Session.start; finish; _} : Session.t) =
+  let time ({Event.start; finish; _} : Event.t) =
     td [data (Util.time_ofday_range_to_string start finish)]
   in
 
-  let title (s:Session.t) =
-    let open Session in
+  let title (s:Event.t) =
+    let open Event in
     match s.typ with
     | Break ->
       td [
@@ -86,12 +86,12 @@ let sessions_table ?date {sessions; _} =
       )
   in
 
-  let speakers {Session.speakers; _} =
+  let speakers {Event.speakers; _} =
     td [Person.to_html_ul speakers];
   in
 
-  let tr_of_session ({Session.typ; _} as x) =
-    tr ~a:["class", Session.typ_to_string typ] [
+  let tr_of_event ({Event.typ; _} as x) =
+    tr ~a:["class", Event.typ_to_string typ] [
       time x;
       title x;
       speakers x;
@@ -99,7 +99,7 @@ let sessions_table ?date {sessions; _} =
   in
 
   let speaker_hdr =
-    List.map sessions ~f:(fun x -> List.length x.Session.speakers)
+    List.map events ~f:(fun x -> List.length x.Event.speakers)
     |> fun l ->
       if List.(exists l ~f:((=) 1) && exists l ~f:(fun x -> x > 1)) then
         "Speaker(s)"
@@ -109,7 +109,7 @@ let sessions_table ?date {sessions; _} =
         "Speaker"
   in
 
-  table ~a:["class", "session"] [
+  table ~a:["class", "event"] [
     thead [
       tr [
         th [data "Time"];
@@ -118,14 +118,14 @@ let sessions_table ?date {sessions; _} =
       ]
     ]
     ;
-    tbody (List.map sessions ~f:tr_of_session)
+    tbody (List.map events ~f:tr_of_event)
   ]
 
 let videos_page tl =
   let open Html in
 
-  let video_html year (s:Session.t) : Html.item option =
-    let open Session in
+  let video_html year (s:Event.t) : Html.item option =
+    let open Event in
     let url = sprintf "/%d/%s.html" year s.url_title in
     Option.map s.video ~f:(fun video ->
       div ~a:["class","row"] [
@@ -154,15 +154,15 @@ let videos_page tl =
   in
 
   (* Return None if given conference has no videos. *)
-  let conference_html {sessions; year} : Html.item option =
-    List.filter_map sessions ~f:(video_html year)
+  let conference_html {events; year} : Html.item option =
+    List.filter_map events ~f:(video_html year)
     |> function
       | [] -> None
-      | session_videos -> (
+      | event_videos -> (
         let id = sprintf "cufp%d" year in
         dd [
           a ~a:["href", sprintf "#%s" id] [data (sprintf "CUFP %d" year)];
-          div ~a:["id",id; "class","content"] session_videos;
+          div ~a:["id",id; "class","content"] event_videos;
         ]
         |> Option.some
       )
@@ -181,16 +181,16 @@ let of_dir dir =
   let year = Int.of_string (Filename.basename dir) in
   Sys.readdir dir >>=
   Util.lift Array.to_list >>= fun l ->
-  return (List.filter l ~f:Session.is_valid_filename) >>=
-  Deferred.List.map ~f:(fun file -> Session.of_file (dir/file))
-  >>= fun sessions ->
+  return (List.filter l ~f:Event.is_valid_filename) >>=
+  Deferred.List.map ~f:(fun file -> Event.of_file (dir/file))
+  >>= fun events ->
   let n =
-    List.map sessions ~f:(fun (x:Session.t) -> x.Session.url_title)
+    List.map events ~f:(fun (x:Event.t) -> x.Event.url_title)
     |> List.sort ~cmp:String.compare
     |> List.dedup
     |> List.length
   in
-  if n <> List.length sessions then
-    failwithf "%s: session url titles are not unique" dir ()
+  if n <> List.length events then
+    failwithf "%s: event url titles are not unique" dir ()
   else
-    return {year; sessions}
+    return {year; events}

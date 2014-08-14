@@ -1,7 +1,7 @@
 open Core.Std
 open Async.Std
 module Blog = Cufp_blog
-module Session = Cufp_session
+module Event = Cufp_event
 module Util = Cufp_util
 let (/) = Filename.concat
 
@@ -77,9 +77,9 @@ let check_suffix {repo_root; path} suffix =
   List.fold ~init:repo_root ~f:Filename.concat path
   |> fun file -> Filename.check_suffix file suffix
 
-let is_session_file {path; _} = match path with
+let is_event_file {path; _} = match path with
   | x::y::[] ->
-    Util.is_YYYY x && Session.is_valid_filename y
+    Util.is_YYYY x && Event.is_valid_filename y
   | _ -> false
 
 let is_blog_post {path; _} = match path with

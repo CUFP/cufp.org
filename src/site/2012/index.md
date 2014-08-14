@@ -52,13 +52,13 @@ gathering proposals, organised via our website.
 <div class="small-12 columns" media:type="text/omd">
 
 ## Day 1 - Thu Sep 13th <small>Tutorials</small>
-(( cmd cufp.org print session-list -date 2012-09-13 2012 ))
+(( cmd cufp.org print event-list -date 2012-09-13 2012 ))
 
 ## Day 2 - Fri Sep 14th <small>Tutorials & BoFs</small>
-(( cmd cufp.org print session-list -date 2012-09-14 2012 ))
+(( cmd cufp.org print event-list -date 2012-09-14 2012 ))
 
 ## Day 3 - Sat Sep 15th <small>Talks</small>
-(( cmd cufp.org print session-list -date 2012-09-15 2012 ))
+(( cmd cufp.org print event-list -date 2012-09-15 2012 ))
 
 </div>
 </div>

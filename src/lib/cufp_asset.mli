@@ -2,7 +2,7 @@
     how to generate files associated with an asset, whether the files
     are out-of-date, what files an asset depends on, etc. An asset is
     basically a file, but sometimes we know more specifically that it
-    is, for example, a file defining a conference session. Also, we
+    is, for example, a file defining a conference event. Also, we
     know that a markdown file gets converted to an html file, so an
     asset isn't simply a filename. Most importantly, {!make} allows
     generating the asset.
@@ -13,7 +13,7 @@
 
     - Conference: a conference's main page
 
-    - Session: a single session within a conference
+    - Event: a single event within a conference
 
     - Blog_post: a single blog post
 
@@ -41,7 +41,7 @@ open Async.Std
 type typ =
 | Front_page
 | Conference
-| Session
+| Event
 | Blog_post
 | Blog_html
 | Blog_rss

@@ -33,7 +33,7 @@ Committee](http://www.sigplan.org/PAC.htm).
 <div class="small-12 columns" media:type="text/omd">
 
 ## Talks
-(( cmd cufp.org print session-list 2009 ))
+(( cmd cufp.org print event-list 2009 ))
 
 </div>
 </div>

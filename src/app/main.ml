@@ -93,22 +93,22 @@ let print_conference_list : (string * Command.t) =
      )
   )
 
-let print_session_list : (string * Command.t) =
-  ("session-list",
+let print_event_list : (string * Command.t) =
+  ("event-list",
    Command.async_basic
      ~summary:"print conference calendar"
      Command.Spec.(
        empty
        +> Param.repo_root
        +> flag "-date" (optional string) ~doc:"YYYY-MM-DD Date to \
-          print sessions for. Default is to print all."
+          print events for. Default is to print all."
        +> anon ("year" %: int)
      )
      (fun repo_root date year () ->
        let date = Option.map date ~f:Date.of_string in
        Path.make ~repo_root (sprintf "%d" year) >>= fun dir ->
        Conference.of_dir (Path.input dir) >>=
-       Util.lift (Conference.sessions_table ?date) >>= fun x ->
+       Util.lift (Conference.events_table ?date) >>= fun x ->
        return (printf "%s\n" (Html.to_string [x])) >>= fun () ->
        Deferred.unit
      )
@@ -169,7 +169,7 @@ let print : (string * Command.t) =
    Command.group ~summary:"print various items"
      [
        print_conference_list;
-       print_session_list;
+       print_event_list;
        print_blog;
        print_video;
      ]

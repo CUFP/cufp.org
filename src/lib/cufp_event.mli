@@ -1,4 +1,4 @@
-(** Sessions are scheduled events. *)
+(** Events. *)
 open Core.Std
 open Async.Std
 
@@ -65,8 +65,8 @@ val to_html : t -> Cufp_html.t
 val typ_to_string : typ -> string
 
 (** Return description of a Break as a plain string. Raise [Failure]
-    if called on other types of sessions. *)
+    if called on other types of events. *)
 val break_description : t -> string
 
-(** Foundation icon for given session [typ], if any. *)
+(** Foundation icon for given event [typ], if any. *)
 val icon : typ -> Cufp_html.item
