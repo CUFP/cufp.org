@@ -3,7 +3,6 @@ module Asset = Cufp_asset
 module Blog = Cufp_blog
 module Conference = Cufp_conference
 module Disqus = Cufp_disqus
-module Drupal = Cufp_drupal
 module Html = Cufp_html
 module Json = Cufp_json
 module Markdown = Cufp_markdown
