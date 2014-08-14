@@ -12,6 +12,7 @@ type t = {
   start : Time.Ofday.t;
   finish : Time.Ofday.t;
   speakers : Cufp_person.t list;
+  session : string option;
   video : Cufp_video.t option;
   slides : Cufp_slides.t option;
   description : Omd.t;
@@ -36,6 +37,7 @@ val make :
   start : Time.Ofday.t ->
   finish : Time.Ofday.t ->
   speakers : Cufp_person.t list ->
+  session : string option ->
   video : Cufp_video.t option ->
   slides : Cufp_slides.t option ->
   description : Omd.t ->

@@ -20,6 +20,7 @@ type t = {
   start : Time.Ofday.t;
   finish : Time.Ofday.t;
   speakers : Cufp_person.t list;
+  session : string option;
   video : Cufp_video.t option;
   slides: Cufp_slides.t option;
   description : Omd.t;
@@ -77,6 +78,9 @@ let to_file (t:t) dir =
         |> String.concat ~sep:","
         |> sprintf "links: %s"
        )
+      ]::
+      [Text (sprintf "session: %s" (
+        Option.value_map t.session ~default:"" ~f:Fn.id))
       ]::
       [Text (sprintf "video: %s" (
         Option.value_map t.video ~default:"" ~f:Video.to_string))
@@ -192,21 +196,26 @@ let is_valid_filename s =
 
 let make
     ~typ ~title ~url_title
-    ~date ~start ~finish ~speakers ~video ~slides
+    ~date ~start ~finish ~speakers ~session ~video ~slides
     ~description ()
     =
+  let session = match session with
+    | None -> None
+    | Some "" -> None
+    | Some _ -> session
+  in
   if not (Util.is_url_string url_title) then
     failwithf "invalid url_title %s" url_title ()
   else
     {
       typ; title; url_title;
-      date; start; finish; speakers; video; slides;
+      date; start; finish; speakers; session; video; slides;
       description;
     }
 
 let of_markdown ~filename omd =
   let expected_fields = String.Set.of_list
-    ["type"; "title"; "speakers"; "affiliations";
+    ["type"; "title"; "speakers"; "session"; "affiliations";
      "links"; "video"; "slides";]
   in
 
@@ -243,6 +252,10 @@ let of_markdown ~filename omd =
               ?affiliations:(List.Assoc.find ul "affiliations")
               ?links:(List.Assoc.find ul "links")
               ()
+          )
+          ~session:(
+            List.Assoc.find ul "session"
+            |> Option.map ~f:String.strip
           )
           ~video:(
             List.Assoc.find ul "video"
