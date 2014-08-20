@@ -180,23 +180,31 @@ let videos_page tl =
 let of_dir dir =
   let year = Int.of_string (Filename.basename dir) in
   Sys.readdir dir >>=
-  Util.lift Array.to_list >>= fun l ->
-  return (List.filter l ~f:Event.is_valid_filename) >>=
+  Util.lift Array.to_list >>= fun files ->
+  return (List.filter files ~f:Event.is_valid_filename) >>=
   Deferred.List.map ~f:(fun file -> Event.of_file (dir/file))
   >>= fun events ->
-  let events_with_url = (* events for which a URL will be assigned *)
+  let event_urls = (* events for which a URL will be assigned *)
     List.filter events ~f:(fun x ->
       let open Event in
       match x.typ with
       | Break | Discussion -> false
       | Talk | Keynote | Tutorial | BoF -> true
     )
+    |> List.map ~f:(fun (x:Event.t) -> x.Event.url_title)
   in
-  let urls =
-    List.map events_with_url ~f:(fun x -> x.Event.url_title)
-    |> List.dedup
+  let other_urls =
+    List.filter_map files ~f:(fun file ->
+      if Event.is_valid_filename file || file.[0] = '_' then
+        None
+      else
+        match Filename.split_extension file with
+        | x, None -> None (* ignore sub-directories *)
+        | x, Some _ -> Some x (* consider files with any extension *)
+    )
   in
-  if List.length urls <> List.length events_with_url then
-    failwithf "%s: event url titles are not unique" dir ()
+  let urls = event_urls@other_urls in
+  if List.(length urls <> length (dedup urls)) then
+    failwithf "%s: urls are not unique" dir ()
   else
     return {year; events}
