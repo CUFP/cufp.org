@@ -1,5 +1,5 @@
 - [Ozgun Ataman](http://soostone.com) (Soostone, Inc.)
-- [Tim Chevalier](http://catamorphism.org/) (AlephCloud)
+- [Tim Chevalier](http://catamorphism.org/) (Heroku)
 - Derek Elkins (Now Business Intelligence)
 - [Matthew Might](http://matt.might.net) (University of Utah)
 - [Richard Minerich](http://richardminerich.com) (Bayard Rock)
