@@ -51,12 +51,12 @@ let events_table ?date {events; _} =
   let title (s:Event.t) =
     let open Event in
     match s.typ with
-    | Break ->
+    | Break | Discussion ->
       td [
         span [
           data (sprintf "%s%s"
                   s.title
-                  (match break_description s with
+                  (match short_description s with
                   | "" -> ""
                   | x -> " – " ^ x
                   )

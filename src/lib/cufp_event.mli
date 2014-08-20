@@ -2,7 +2,7 @@
 open Core.Std
 open Async.Std
 
-type typ = Talk | Keynote | Tutorial | BoF | Break
+type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion
 
 type t = {
   typ : typ;
@@ -66,9 +66,9 @@ val to_html : t -> Cufp_html.t
 
 val typ_to_string : typ -> string
 
-(** Return description of a Break as a plain string. Raise [Failure]
-    if called on other types of events. *)
-val break_description : t -> string
+(** Return description of a Break or Discussion as a plain
+    string. Raise [Failure] if called on other types of events. *)
+val short_description : t -> string
 
 (** Foundation icon for given event [typ], if any. *)
 val icon : typ -> Cufp_html.item

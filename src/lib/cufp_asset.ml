@@ -228,7 +228,7 @@ let rec make ?(production=false) t =
     | false -> Deferred.unit
     | true ->
       Event.of_file (source t) >>= fun s ->
-      if s.Event.typ = Event.Break then
+      if Event.(s.typ = Break || s.typ = Discussion) then
         (log_skip t; Deferred.unit)
       else (
         log_convert t;

@@ -9,7 +9,7 @@ module Slides = Cufp_slides
 module Video = Cufp_video
 let (/) = Filename.concat
 
-type typ = Talk | Keynote | Tutorial | BoF | Break
+type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion
 with sexp
 
 type t = {
@@ -101,7 +101,7 @@ let icon typ =
   | Talk | Keynote -> "fi-microphone"
   | Tutorial -> "fi-laptop"
   | BoF -> "flaticon-pen43"
-  | Break ->
+  | Break | Discussion ->
     failwithf "icon undefined for event typ: %s"
       (typ_to_string typ) ()
   ) |> fun x ->
@@ -149,16 +149,18 @@ let to_html t =
       @(Disqus.html)
     ) ] ]
 
-let break_description {typ; description; _ } =
+let short_description {typ; description; _ } =
   match typ with
-  | Break -> (match description with
+  | Break | Discussion -> (match description with
     | [Omd.NL; Omd.Paragraph [Omd.Text description]] ->
       String.strip description
     | [] -> ""
     | _ ->
-      failwith "break event content expected to be short text only"
+      failwith "event content expected to be short text only"
   )
-  | _ -> failwith "break_description called on non-Break event typ"
+  | Talk | Keynote | Tutorial | BoF ->
+    failwith
+      "short_description can be called only on Break or Discussion event typ"
 
 
 
@@ -172,6 +174,7 @@ let typ_of_string s =
   | "tutorial" -> Tutorial
   | "bof" -> BoF
   | "break" -> Break
+  | "discussion" -> Discussion
   | _ -> failwithf "%s is not valid a event type" s ()
 
 let parse_filename s =
