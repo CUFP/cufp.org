@@ -42,6 +42,10 @@ table.event {
 
 // Mixin to customize row based on event type.
 @mixin event-row($event-color) {
+  vertical-align: text-top;
+
+  * {font-size: $table-row-font-size}
+
   a:link, a:visited {
     color: $body-font-color;
     text-decoration: none;
