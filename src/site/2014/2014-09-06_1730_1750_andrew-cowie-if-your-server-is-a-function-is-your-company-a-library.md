@@ -1,6 +1,7 @@
 - type: talk
 - title: If your server is a function, is your company a library?
 - speakers: Andrew Cowie
+- session: Potpourri
 
 ## Abstract
 

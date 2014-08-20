@@ -2,6 +2,7 @@
 - title: Making Money From FP
 - speakers: Joe Armstrong
 - affiliations: Ericsson and Royal Institute of Technology in Stockholm
+- session: Opening remarks and keynote
 
 ## Abstract 
 

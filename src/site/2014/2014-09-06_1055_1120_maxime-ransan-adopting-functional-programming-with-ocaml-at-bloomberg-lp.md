@@ -2,6 +2,7 @@
 - title: Adopting Functional Programming with OCaml at Bloomberg LP
 - speakers: Maxime Ransan
 - affiliations: Bloomberg LP
+- session: In situ
 
 ## Abstract 
 

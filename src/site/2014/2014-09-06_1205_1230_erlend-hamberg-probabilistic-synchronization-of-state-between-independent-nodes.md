@@ -1,7 +1,7 @@
 - type: talk
 - title: Probabilistic Synchronization of State Between Independent Nodes
 - speakers: Erlend Hamberg
-
+- session: Distributed systems
 
 ## Abstract 
 

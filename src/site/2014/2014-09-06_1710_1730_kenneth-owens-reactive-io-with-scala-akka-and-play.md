@@ -2,6 +2,7 @@
 - title: Reactive I/O with Scala, Akka, and Play
 - speakers: Kenneth Owens
 - affiliations: Comcast
+- session: Potpourri
 
 ## Abstract
 

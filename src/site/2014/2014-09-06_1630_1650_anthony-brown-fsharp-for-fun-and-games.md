@@ -1,6 +1,7 @@
 - type: talk
 - title: F# For Fun and Games
 - speakers: Anthony Brown
+- session: Potpourri
 
 ## Abstract 
 

@@ -1,6 +1,7 @@
 - type: talk
 - title: Some usages of functional programming for FO and quants
 - speakers: Renaud Bechade
+- session: Potpourri
 
 ## Abstract 
 

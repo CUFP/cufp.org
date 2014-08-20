@@ -2,6 +2,7 @@
 - title: MBrace: large-scale programming in F#
 - speakers: Eirik Tsarpalis
 - affiliations: Nessos
+- session: Distributed systems
 
 ## Abstract 
 

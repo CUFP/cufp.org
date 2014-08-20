@@ -2,6 +2,7 @@
 - title: Functional Programming at Verizon OnCue
 - speakers: Timothy Perrett
 - affiliations: Verizon
+- session: In situ
 
 ## Abstract 
 
