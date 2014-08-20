@@ -108,7 +108,7 @@ let print_event_list : (string * Command.t) =
        let date = Option.map date ~f:Date.of_string in
        Path.make ~repo_root (sprintf "%d" year) >>= fun dir ->
        Conference.of_dir (Path.input dir) >>=
-       Util.lift (Conference.events_table ?date) >>= fun x ->
+       Util.lift (Conference.sessions_table ?date) >>= fun x ->
        return (printf "%s\n" (Html.to_string [x])) >>= fun () ->
        Deferred.unit
      )

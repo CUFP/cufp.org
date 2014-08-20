@@ -4091,7 +4091,7 @@ table {
     font-size: 0.875rem;
     color: #222222; }
   table tr.even, table tr.alt, table tr:nth-of-type(even) {
-    background: #f9f9f9; }
+    background: white; }
   table thead tr th,
   table tfoot tr th,
   table tbody tr td,
@@ -5754,26 +5754,29 @@ body.conference ul {
     color: white; }
 
 table.event {
-  border: 0;
-  margin-top: -16px; }
-  table.event thead {
-    border-bottom: solid 3px #dddddd; }
+  border: 0; }
 
-table.event tr.talk a:link, table.event tr.talk a:visited {
-  color: #444444;
-  text-decoration: none;
-  border-bottom: 1px dotted #444444; }
-table.event tr.talk a:hover, table.event tr.talk a:active {
-  color: #008cba; }
-table.event tr.talk a.fi-social-youtube, table.event tr.talk a.fi-social-vimeo, table.event tr.talk a.fi-page {
-  border-bottom: 0 !important;
-  font-size: 120%;
-  color: #a2a2a2; }
-table.event tr.talk .fi-microphone, table.event tr.talk .fi-laptop, table.event tr.talk .flaticon-pen43 {
-  color: maroon;
-  font-size: 125%; }
+table.event tr.talk {
+  vertical-align: text-top; }
+  table.event tr.talk * {
+    font-size: 0.875rem; }
+  table.event tr.talk a:link, table.event tr.talk a:visited {
+    color: #444444;
+    text-decoration: none;
+    border-bottom: 1px dotted #444444; }
+  table.event tr.talk a:hover, table.event tr.talk a:active {
+    color: #008cba; }
+  table.event tr.talk a.fi-social-youtube, table.event tr.talk a.fi-social-vimeo, table.event tr.talk a.fi-page {
+    border-bottom: 0 !important;
+    font-size: 120%;
+    color: #a2a2a2; }
+  table.event tr.talk .fi-microphone, table.event tr.talk .fi-laptop, table.event tr.talk .flaticon-pen43 {
+    color: maroon;
+    font-size: 125%; }
 table.event tr.keynote {
-  font-weight: bold; }
+  vertical-align: text-top; }
+  table.event tr.keynote * {
+    font-size: 0.875rem; }
   table.event tr.keynote a:link, table.event tr.keynote a:visited {
     color: #444444;
     text-decoration: none;
@@ -5787,45 +5790,80 @@ table.event tr.keynote {
   table.event tr.keynote .fi-microphone, table.event tr.keynote .fi-laptop, table.event tr.keynote .flaticon-pen43 {
     color: maroon;
     font-size: 125%; }
-table.event tr.tutorial a:link, table.event tr.tutorial a:visited {
-  color: #444444;
-  text-decoration: none;
-  border-bottom: 1px dotted #444444; }
-table.event tr.tutorial a:hover, table.event tr.tutorial a:active {
-  color: #008cba; }
-table.event tr.tutorial a.fi-social-youtube, table.event tr.tutorial a.fi-social-vimeo, table.event tr.tutorial a.fi-page {
-  border-bottom: 0 !important;
-  font-size: 120%;
-  color: #a2a2a2; }
-table.event tr.tutorial .fi-microphone, table.event tr.tutorial .fi-laptop, table.event tr.tutorial .flaticon-pen43 {
-  color: #008024;
-  font-size: 125%; }
-table.event tr.bof a:link, table.event tr.bof a:visited {
-  color: #444444;
-  text-decoration: none;
-  border-bottom: 1px dotted #444444; }
-table.event tr.bof a:hover, table.event tr.bof a:active {
-  color: #008cba; }
-table.event tr.bof a.fi-social-youtube, table.event tr.bof a.fi-social-vimeo, table.event tr.bof a.fi-page {
-  border-bottom: 0 !important;
-  font-size: 120%;
-  color: #a2a2a2; }
-table.event tr.bof .fi-microphone, table.event tr.bof .fi-laptop, table.event tr.bof .flaticon-pen43 {
-  color: #0a82cc;
-  font-size: 125%; }
-table.event tr.break a:link, table.event tr.break a:visited {
-  color: #444444;
-  text-decoration: none;
-  border-bottom: 1px dotted #444444; }
-table.event tr.break a:hover, table.event tr.break a:active {
-  color: #008cba; }
-table.event tr.break a.fi-social-youtube, table.event tr.break a.fi-social-vimeo, table.event tr.break a.fi-page {
-  border-bottom: 0 !important;
-  font-size: 120%;
-  color: #a2a2a2; }
-table.event tr.break .fi-microphone, table.event tr.break .fi-laptop, table.event tr.break .flaticon-pen43 {
-  color: #a3a3a3;
-  font-size: 125%; }
+table.event tr.tutorial {
+  vertical-align: text-top; }
+  table.event tr.tutorial * {
+    font-size: 0.875rem; }
+  table.event tr.tutorial a:link, table.event tr.tutorial a:visited {
+    color: #444444;
+    text-decoration: none;
+    border-bottom: 1px dotted #444444; }
+  table.event tr.tutorial a:hover, table.event tr.tutorial a:active {
+    color: #008cba; }
+  table.event tr.tutorial a.fi-social-youtube, table.event tr.tutorial a.fi-social-vimeo, table.event tr.tutorial a.fi-page {
+    border-bottom: 0 !important;
+    font-size: 120%;
+    color: #a2a2a2; }
+  table.event tr.tutorial .fi-microphone, table.event tr.tutorial .fi-laptop, table.event tr.tutorial .flaticon-pen43 {
+    color: #008024;
+    font-size: 125%; }
+table.event tr.bof {
+  vertical-align: text-top; }
+  table.event tr.bof * {
+    font-size: 0.875rem; }
+  table.event tr.bof a:link, table.event tr.bof a:visited {
+    color: #444444;
+    text-decoration: none;
+    border-bottom: 1px dotted #444444; }
+  table.event tr.bof a:hover, table.event tr.bof a:active {
+    color: #008cba; }
+  table.event tr.bof a.fi-social-youtube, table.event tr.bof a.fi-social-vimeo, table.event tr.bof a.fi-page {
+    border-bottom: 0 !important;
+    font-size: 120%;
+    color: #a2a2a2; }
+  table.event tr.bof .fi-microphone, table.event tr.bof .fi-laptop, table.event tr.bof .flaticon-pen43 {
+    color: #0a82cc;
+    font-size: 125%; }
+table.event tr.break {
+  vertical-align: text-top; }
+  table.event tr.break * {
+    font-size: 0.875rem; }
+  table.event tr.break a:link, table.event tr.break a:visited {
+    color: #444444;
+    text-decoration: none;
+    border-bottom: 1px dotted #444444; }
+  table.event tr.break a:hover, table.event tr.break a:active {
+    color: #008cba; }
+  table.event tr.break a.fi-social-youtube, table.event tr.break a.fi-social-vimeo, table.event tr.break a.fi-page {
+    border-bottom: 0 !important;
+    font-size: 120%;
+    color: #a2a2a2; }
+  table.event tr.break .fi-microphone, table.event tr.break .fi-laptop, table.event tr.break .flaticon-pen43 {
+    color: #a3a3a3;
+    font-size: 125%; }
+table.event tr.discussion {
+  vertical-align: text-top; }
+  table.event tr.discussion * {
+    font-size: 0.875rem; }
+  table.event tr.discussion a:link, table.event tr.discussion a:visited {
+    color: #444444;
+    text-decoration: none;
+    border-bottom: 1px dotted #444444; }
+  table.event tr.discussion a:hover, table.event tr.discussion a:active {
+    color: #008cba; }
+  table.event tr.discussion a.fi-social-youtube, table.event tr.discussion a.fi-social-vimeo, table.event tr.discussion a.fi-page {
+    border-bottom: 0 !important;
+    font-size: 120%;
+    color: #a2a2a2; }
+  table.event tr.discussion .fi-microphone, table.event tr.discussion .fi-laptop, table.event tr.discussion .flaticon-pen43 {
+    color: #a3a3a3;
+    font-size: 125%; }
+table.event tr.session {
+  background-color: #d0d0d0; }
+  table.event tr.session * {
+    font-size: 110%; }
+  table.event tr.session span {
+    padding-left: 1.25rem; }
 
 table.event ul {
   list-style-type: none;

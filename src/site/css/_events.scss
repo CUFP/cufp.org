@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-// Style based on event type: Talk, Keynote, Tutorial, BoF, or Break
+// Style based on event type: Talk, Keynote, Tutorial, BoF, Break, or Discussion
 
 
 // Color for each event type.
@@ -8,7 +8,7 @@ $keynote-color: $talk-color;
 $tutorial-color: #008024;
 $bof-color: #0A82CC;
 $break-color: #A3A3A3;
-
+$discussion-color: $break-color;
 
 ////////////////////////////////////////////////////////////////////////////////
 /// Event Columns
@@ -34,10 +34,6 @@ $break-color: #A3A3A3;
 // General table properties.
 table.event {
   border: 0;
-  margin-top: -$rem-base;
-  thead {
-    border-bottom : $table-border-style 3px $table-border-color; 
-  }
 }
 
 // Mixin to customize row based on event type.
@@ -79,7 +75,6 @@ table.event {
   };
   tr.keynote {
     @include event-row($keynote-color);
-    font-weight: bold;
   };
   tr.tutorial {
     @include event-row($tutorial-color)
@@ -89,6 +84,14 @@ table.event {
   };
   tr.break {
     @include event-row($break-color);
+  };
+  tr.discussion {
+    @include event-row($discussion-color);
+  };
+  tr.session {
+    * {font-size: 110%};
+    background-color: scale-color($body-font-color, $lightness: 75%);
+    span {padding-left: rem-calc(20)}
   };
 }
 
