@@ -25,13 +25,7 @@ let session_name session =
 
 let session_date (x:session) = (List.hd_exn x).Event.date
 let session_start (x:session) = (List.hd_exn x).Event.start
-
-let session_finish (x:session) =
-  List.filter x ~f:Event.(fun x -> match x.typ with
-  | Break | Discussion -> false
-  | Talk | Keynote | Tutorial | BoF -> true
-  )
-  |> fun x -> (List.last_exn x).Event.finish
+let session_finish (x:session) = (List.last_exn x).Event.finish
 
 let first_year = 2004
 
