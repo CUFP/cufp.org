@@ -184,13 +184,19 @@ let of_dir dir =
   return (List.filter l ~f:Event.is_valid_filename) >>=
   Deferred.List.map ~f:(fun file -> Event.of_file (dir/file))
   >>= fun events ->
-  let n =
-    List.map events ~f:(fun (x:Event.t) -> x.Event.url_title)
-    |> List.sort ~cmp:String.compare
-    |> List.dedup
-    |> List.length
+  let events_with_url = (* events for which a URL will be assigned *)
+    List.filter events ~f:(fun x ->
+      let open Event in
+      match x.typ with
+      | Break | Discussion -> false
+      | Talk | Keynote | Tutorial | BoF -> true
+    )
   in
-  if n <> List.length events then
+  let urls =
+    List.map events_with_url ~f:(fun x -> x.Event.url_title)
+    |> List.dedup
+  in
+  if List.length urls <> List.length events_with_url then
     failwithf "%s: event url titles are not unique" dir ()
   else
     return {year; events}
