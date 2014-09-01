@@ -10,8 +10,9 @@ Commercial Users of Functional Programming, except as indicated below.
 
 ## Sessions
 
-Copyright of abstracts of individual sessions is retained by the
-contributing authors.
+Copyright of abstracts, videos, and slides of individual sessions is
+retained by the contributing authors, except in several cases where
+the authors have transferred the rights to ACM.
 
 ## Code
 
