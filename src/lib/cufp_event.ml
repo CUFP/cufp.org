@@ -9,7 +9,7 @@ module Slides = Cufp_slides
 module Video = Cufp_video
 let (/) = Filename.concat
 
-type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion
+type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion | Reception
 with sexp
 
 type t = {
@@ -97,23 +97,27 @@ let to_file (t:t) dir =
 
 
 let icon typ =
+  let open Result.Monad_infix in
   (match typ with
-  | Talk | Keynote -> "fi-microphone"
-  | Tutorial -> "fi-laptop"
-  | BoF -> "flaticon-pen43"
-  | Break | Discussion ->
-    failwithf "icon undefined for event typ: %s"
-      (typ_to_string typ) ()
-  ) |> fun x ->
+  | Talk | Keynote -> Ok "fi-microphone"
+  | Tutorial -> Ok "fi-laptop"
+  | BoF -> Ok "flaticon-pen43"
+  | Break | Discussion | Reception ->
+    error "icon undefined for event typ" typ sexp_of_typ
+  ) >>| fun x ->
   Html.i ~a:["class", x] []
 
 
 let to_html t =
   let open Html in
+  let icon = match icon t.typ with
+    | Ok x -> x
+    | Error _ -> data ""
+  in
   [div ~a:["class","row"] [
     div ~a:["class","small-12 columns"] (
       [
-        h1 [icon t.typ; data " "; data t.title];
+        h1 [icon; data " "; data t.title];
         div ~a:["class","speakers"] [Person.to_html_ul t.speakers];
         div ~a:["class","time"] [
           data (Date.format t.date "%B %d, %Y");
@@ -158,7 +162,7 @@ let short_description {typ; description; _ } =
     | _ ->
       failwith "event content expected to be short text only"
   )
-  | Talk | Keynote | Tutorial | BoF ->
+  | Talk | Keynote | Tutorial | BoF | Reception ->
     failwith
       "short_description can be called only on Break or Discussion event typ"
 
@@ -175,6 +179,7 @@ let typ_of_string s =
   | "bof" -> BoF
   | "break" -> Break
   | "discussion" -> Discussion
+  | "reception" -> Reception
   | _ -> failwithf "%s is not valid a event type" s ()
 
 let parse_filename s =

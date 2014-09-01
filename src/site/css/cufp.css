@@ -5858,6 +5858,23 @@ table.event tr.discussion {
   table.event tr.discussion .fi-microphone, table.event tr.discussion .fi-laptop, table.event tr.discussion .flaticon-pen43 {
     color: #a3a3a3;
     font-size: 125%; }
+table.event tr.reception {
+  vertical-align: text-top; }
+  table.event tr.reception * {
+    font-size: 0.875rem; }
+  table.event tr.reception a:link, table.event tr.reception a:visited {
+    color: #444444;
+    text-decoration: none;
+    border-bottom: 1px dotted #444444; }
+  table.event tr.reception a:hover, table.event tr.reception a:active {
+    color: #008cba; }
+  table.event tr.reception a.fi-social-youtube, table.event tr.reception a.fi-social-vimeo, table.event tr.reception a.fi-page {
+    border-bottom: 0 !important;
+    font-size: 120%;
+    color: #a2a2a2; }
+  table.event tr.reception .fi-microphone, table.event tr.reception .fi-laptop, table.event tr.reception .flaticon-pen43 {
+    color: #a3a3a3;
+    font-size: 125%; }
 table.event tr.session {
   background-color: #d0d0d0; }
   table.event tr.session * {

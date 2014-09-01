@@ -66,8 +66,12 @@ let session_rows session =
     | Talk
     | Keynote
     | Tutorial
+    | Reception
     | BoF ->
-      let icon = icon s.typ in
+      let icon = match icon s.typ with
+        | Ok x -> x
+        | Error _ -> data ""
+      in
       let title = a ~a:["href", s.url_title ^ ".html"] [data s.title] in
       let video = match s.video with
         | None -> []
@@ -83,7 +87,7 @@ let session_rows session =
           a ~a:Slides.(["href", to_uri x; "class", icon_class x]) [];
         ]
       in
-      div ([icon; (data " "); title]@video@slides)
+      div (icon::[data " "; title]@video@slides)
   in
 
   let event_speakers {Event.speakers; _} =
@@ -229,7 +233,7 @@ let of_dir dir =
       let open Event in
       match x.typ with
       | Break | Discussion -> false
-      | Talk | Keynote | Tutorial | BoF -> true
+      | Talk | Keynote | Tutorial | BoF | Reception -> true
     )
     |> List.map ~f:(fun (x:Event.t) -> x.Event.url_title)
   in

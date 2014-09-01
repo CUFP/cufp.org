@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-// Style based on event type: Talk, Keynote, Tutorial, BoF, Break, or Discussion
+// Style based on event type.
 
 
 // Color for each event type.
@@ -9,6 +9,8 @@ $tutorial-color: #008024;
 $bof-color: #0A82CC;
 $break-color: #A3A3A3;
 $discussion-color: $break-color;
+$reception-color: $break-color;
+
 
 ////////////////////////////////////////////////////////////////////////////////
 /// Event Columns
@@ -87,6 +89,9 @@ table.event {
   };
   tr.discussion {
     @include event-row($discussion-color);
+  };
+  tr.reception {
+    @include event-row($reception-color);
   };
   tr.session {
     * {font-size: 110%};

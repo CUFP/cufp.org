@@ -2,7 +2,7 @@
 open Core.Std
 open Async.Std
 
-type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion
+type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion | Reception
 
 type t = {
   typ : typ;
@@ -71,4 +71,4 @@ val typ_to_string : typ -> string
 val short_description : t -> string
 
 (** Foundation icon for given event [typ], if any. *)
-val icon : typ -> Cufp_html.item
+val icon : typ -> Cufp_html.item Or_error.t
