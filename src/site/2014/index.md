@@ -24,6 +24,10 @@ functional programming.
 CUFP is co-located with [ICFP](http://icfpconference.org/icfp2014/)
 and consists of three components: Talks, Tutorials and BoFs.
 
+<div data-alert class="alert-box info radius">
+Don't miss the Industrial Reception on Thursday evening!
+</div>
+
 </div>
 </div>
 
