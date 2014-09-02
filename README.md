@@ -134,7 +134,8 @@ date, start time, end time, and short title used as the URL. The file
 contents must be Markdown starting with an unordered list. Each list
 item is a colon separated tag-value pair as follows:
 
-- type: (talk | keynote | tutorial | bof | break). Required.
+- type: (talk | keynote | tutorial | bof | break | discussion |
+  reception). Required.
 
 - title: free text. Required.
 
@@ -150,7 +151,8 @@ item is a colon separated tag-value pair as follows:
 - video: Link to YouTube or Vimeo video. Optional.
 
 - slides: Site root-relative path to slides. Slides must not be added
-  to the `cufp.org` repo. They go in `cufp.org-media`.
+  to the `cufp.org` repo. They go in
+  [cufp.org-media](https://github.com/CUFP/cufp.org-media).
 
 Everything after this unordered list is displayed as the session's
 page.
@@ -190,3 +192,11 @@ CONTACTS
 Report bugs or suggest content changes by creating an issue on
 [GitHub](https://github.com/cufp/cufp.org). Or better, fork the repo,
 make changes to your copy, and submit a pull request.
+
+
+LICENSES
+========
+See
+[license.md](https://github.com/CUFP/cufp.org/blob/master/src/site/license.md)
+within this repo or the [published
+version](http://cufp.org/license.html).
