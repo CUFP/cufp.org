@@ -12,7 +12,18 @@ Commercial Users of Functional Programming, except as indicated below.
 
 Copyright of abstracts, videos, and slides of individual sessions is
 retained by the contributing authors, except in several cases where
-the authors have transferred the rights to ACM.
+the authors have transferred rights:
+
+* CUFP 2012 - Authors gave permission to have their talks recorded and
+  archived, and to have the videos disseminated.
+
+* CUFP 2013 - Authors signed an [ACM copyright transfer
+  agreement](ACMCopyReleaseProc-4-13.pdf), and they were informed
+  their talks would be posted on YouTube.
+
+* CUFP 2014 - Authors gave permission to have their talks recorded and
+  archived, and to have the videos disseminated.
+
 
 ## Code
 
