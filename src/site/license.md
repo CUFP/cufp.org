@@ -11,8 +11,7 @@ Commercial Users of Functional Programming, except as indicated below.
 ## Sessions
 
 Copyright of abstracts, videos, and slides of individual sessions is
-retained by the contributing speakers (authors), except in several cases where
-they authors have transferred rights:
+retained by the contributing speakers (authors), except as follows:
 
 * CUFP 2012 - Speakers signed an agreement stating:
 
