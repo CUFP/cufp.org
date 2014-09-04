@@ -58,7 +58,7 @@ combining object-oriented and functional programming techniques.
 Emin Karayel works for factis research GmbH and has more than ten
 years of experience in software engineering, with a focus on the
 design of algorithms for natural language processing, machine learning
-and information retrieval. He is using Haskell professionally for one
+and information retrieval. He has been using Haskell professionally for one
 year.
 </div>
 
