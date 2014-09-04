@@ -1,7 +1,7 @@
 - type: tutorial
 - title: T2: Haskell in the Real World
-- speakers: Stefan Wehr
-- affiliations: factis research GmbH
+- speakers: Stefan Wehr, Emin Karayel
+- affiliations: factis research GmbH, factis research GmbH
 
 ## Abstract
 Haskell is a statically typed functional language with a robust and
@@ -44,6 +44,22 @@ develops large distributed software systems in Haskell. He has more
 than ten years of experience with Haskell. Back in 2010, he received
 his PhD from the University of Freiburg, Germany, for research on
 combining object-oriented and functional programming techniques.
+</div>
+</div>
+
+## Emin Karayel
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/emin-karayel.jpg" alt="Emin Karayel"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
+Emin Karayel works for factis research GmbH and has more than ten
+years of experience in software engineering, with a focus on the
+design of algorithms for natural language processing, machine learning
+and information retrieval. He is using Haskell professionally for one
+year.
 </div>
 
 </div>
