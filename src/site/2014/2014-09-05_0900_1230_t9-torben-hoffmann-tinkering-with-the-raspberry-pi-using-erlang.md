@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T9: Tinkering with the Raspberry Pi using Erlang
+- title: T9: Tinkering with the Raspberry Pi using Erlang \[canceled\]
 - speakers: Torben Hoffmann 
 - affiliations: Erlang Solutions Ltd 
 
@@ -51,5 +51,4 @@ Gumstix board anno 2006.
 </div>
 
 </div>
-{{ input src/site/2014/_register_button.html }}
 

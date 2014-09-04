@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T10: Hands-on Functional Web Development in F# with WebSharper
+- title: T10: Hands-on Functional Web Development in F# with WebSharper \[canceled\]
 - speakers: Adam Granicz
 - affiliations: IntelliFactory
 
@@ -50,5 +50,4 @@ online functional programming community.
 </div>
 
 </div>
-{{ input src/site/2014/_register_button.html }}
 
