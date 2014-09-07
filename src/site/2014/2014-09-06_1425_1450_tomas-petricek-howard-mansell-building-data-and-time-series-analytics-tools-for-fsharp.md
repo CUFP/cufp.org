@@ -2,6 +2,7 @@
 - title: Building data and time-series analytics tools for F#
 - speakers: Tomas Petricek, Howard Mansell
 - session: Data and knowledge
+- video: https://www.youtube.com/watch?v=BkA8rxkOMoU
 
 ## Abstract 
 

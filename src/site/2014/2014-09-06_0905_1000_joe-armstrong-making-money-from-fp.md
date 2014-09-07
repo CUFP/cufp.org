@@ -3,6 +3,7 @@
 - speakers: Joe Armstrong
 - affiliations: Ericsson and Royal Institute of Technology in Stockholm
 - session: Opening remarks and keynote
+- video: https://www.youtube.com/watch?v=CVcyA16KWw4
 
 ## Abstract 
 

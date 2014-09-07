@@ -2,6 +2,7 @@
 - title: F# For Fun and Games
 - speakers: Anthony Brown
 - session: Potpourri
+- video: https://www.youtube.com/watch?v=i7pI1grKjAY
 
 ## Abstract 
 

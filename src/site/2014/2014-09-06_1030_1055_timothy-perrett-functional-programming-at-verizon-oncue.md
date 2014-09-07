@@ -3,6 +3,7 @@
 - speakers: Timothy Perrett
 - affiliations: Verizon
 - session: In situ
+- video: https://www.youtube.com/watch?v=YLGENmgKCsE
 
 ## Abstract 
 

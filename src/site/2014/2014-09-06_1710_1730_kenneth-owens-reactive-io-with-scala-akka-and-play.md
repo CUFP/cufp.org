@@ -3,6 +3,7 @@
 - speakers: Kenneth Owens
 - affiliations: Comcast
 - session: Potpourri
+- video: https://www.youtube.com/watch?v=NVHjybjBZKY
 
 ## Abstract
 

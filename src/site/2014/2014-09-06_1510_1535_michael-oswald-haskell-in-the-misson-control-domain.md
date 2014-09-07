@@ -2,6 +2,7 @@
 - title: Haskell in the Misson Control Domain
 - speakers: Michael Oswald
 - session: Functional programming in space!
+- video: https://www.youtube.com/watch?v=Wu8eJh6OqhI
 
 ## Abstract 
 

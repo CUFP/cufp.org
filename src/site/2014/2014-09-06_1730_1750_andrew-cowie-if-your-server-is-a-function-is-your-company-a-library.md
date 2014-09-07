@@ -2,6 +2,7 @@
 - title: If your server is a function, is your company a library?
 - speakers: Andrew Cowie
 - session: Potpourri
+- video: https://www.youtube.com/watch?v=nXHkj4E55Nk
 
 ## Abstract
 

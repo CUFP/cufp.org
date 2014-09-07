@@ -2,6 +2,7 @@
 - title: Probabilistic Synchronization of State Between Independent Nodes
 - speakers: Erlend Hamberg
 - session: Distributed systems
+- video: https://www.youtube.com/watch?v=imjdhT6DqSs
 
 ## Abstract 
 

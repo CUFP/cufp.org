@@ -3,6 +3,7 @@
 - speakers: Eirik Tsarpalis
 - affiliations: Nessos
 - session: Distributed systems
+- video: https://www.youtube.com/watch?v=hP3NkOVNxFE
 
 ## Abstract 
 

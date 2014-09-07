@@ -2,6 +2,7 @@
 - title: Towards "annex", a Fact Based Dependency System
 - speakers: Mark Hibberd
 - session: Data and knowledge
+- video: https://www.youtube.com/watch?v=D6JZiJTnPEI
 
 ## Abstract 
 

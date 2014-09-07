@@ -3,6 +3,7 @@
 - speakers: Maxime Ransan
 - affiliations: Bloomberg LP
 - session: In situ
+- video: https://www.youtube.com/watch?v=WlNBQru7klM
 
 ## Abstract 
 
