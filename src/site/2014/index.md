@@ -10,6 +10,10 @@
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
+<div data-alert class="alert-box info radius">
+The conference is now over. Thanks for another great year! <a href="/videos/index.html">Videos</a> are now online.
+</div>
+
 **Functional Programming** has been at the forefront of a new
 generation of programming technologies, and companies have been
 successfully utilizing functional programming to enable more flexible,
