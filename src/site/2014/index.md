@@ -24,47 +24,21 @@ functional programming.
 CUFP is co-located with [ICFP](http://icfpconference.org/icfp2014/)
 and consists of three components: Talks, Tutorials and BoFs.
 
-<div data-alert class="alert-box info radius">
-Don't miss the Industrial Reception on Thursday evening!
-</div>
-
 </div>
 </div>
-
-<div class="pane-light" media:type="text/omd">
-<div class="row" media:type="text/omd">
-
-<div class="medium-8 columns" media:type="text/omd">
-
-## Announcements
-* May 12th [Call for Tutorials - Now available.](/2014/call-for-tutorials.html)
-* April 20th [Call for Presentations - Now available.](/2014/call-for-presentations.html)
-* 2014 CUFP [Tutorial Schedule now Available!](/2014/tutorial-schedule.html)
-* Please register for the tutorials via the hosting <a href="https://regmaster4.com/2014conf/ICFP14/register.php">ICFP conference website</a>.
-The cost of the tutorials is $260 per day, thus consider attending two tutorials at the same day!
-
-
-</div>
-
-<div class="medium-4 columns">
 
 <div class="row">
-<div class="medium-12 columns">
-<a href="https://twitter.com/intent/tweet?button_hashtag=cufp2014" class="twitter-hashtag-button" data-size="large" data-related="cufpconference">Tweet #cufp2014</a>
-</div>
+<div class="medium-6 columns">
+<a href="https://twitter.com/intent/tweet?button_hashtag=cufp2014"
+class="twitter-hashtag-button" data-size="large"
+data-related="cufpconference">Tweet #cufp2014</a>
 </div>
 
-<div style="padding-bottom: 20px" class="row">
-<div class="medium-12 columns">
-CUFP 2014 on <a href="http://lanyrd.com/2014/cufp2014/">Lanyrd</a>.
-</div>
-</div>
+<div class="medium-6 columns">
 
 </div>
 
 </div>
-</div>
-
 
 <div class="row" media:type="text/omd">
 
@@ -133,5 +107,28 @@ gathering proposals, organized via our website.
 - Francesco Cesarini (Erlang Solutions)
 - Thomas Arts (Quviq AB)
 
+</div>
+</div>
+
+<div class="pane-light" media:type="text/omd">
+<div class="row" media:type="text/omd">
+<div class="small-12 columns" media:type="text/omd">
+
+## Announcements
+
+- Don't miss the Industrial Reception on Thursday evening!
+- May 12th [Call for Tutorials - Now
+  available.](/2014/call-for-tutorials.html)
+- April 20th [Call for Presentations - Now
+  available.](/2014/call-for-presentations.html)
+- 2014 CUFP [Tutorial Schedule now
+  Available!](/2014/tutorial-schedule.html)
+- Please register for the tutorials via the hosting [ICFP conference
+  website](https://regmaster4.com/2014conf/ICFP14/register.php). The
+  cost of the tutorials is $260 per day, thus consider attending two
+  tutorials at the same day!
+- CUFP 2014 on [Lanyrd](http://lanyrd.com/2014/cufp2014/).
+
+</div>
 </div>
 </div>
