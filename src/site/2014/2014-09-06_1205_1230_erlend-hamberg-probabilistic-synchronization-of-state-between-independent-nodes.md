@@ -31,5 +31,3 @@ missing events (if any). The low-probability event of losing a chat
 message is acceptable, and by tuning the Bloom filter parameters we
 can weigh the benefit of short synchronization messages against the
 risk of losing messages in the chat history.
-
-{{ input src/site/2014/_register_button.html }}

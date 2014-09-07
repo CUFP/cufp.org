@@ -32,5 +32,3 @@ products across several asset classes:
 - market fitters & injectors
 - strategy backtesting
 - market risk
-
-{{ input src/site/2014/_register_button.html }}

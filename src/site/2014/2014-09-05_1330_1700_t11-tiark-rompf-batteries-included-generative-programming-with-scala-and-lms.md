@@ -107,4 +107,3 @@ as an undergraduate lab assistant at MIT.
 </div>
 
 </div>
-{{ input src/site/2014/_register_button.html }}

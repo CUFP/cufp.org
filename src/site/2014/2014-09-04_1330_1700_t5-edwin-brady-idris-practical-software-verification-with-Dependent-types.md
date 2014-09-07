@@ -81,4 +81,3 @@ train somewhere in Britain.
 </div>
 
 </div>
-{{ input src/site/2014/_register_button.html }}

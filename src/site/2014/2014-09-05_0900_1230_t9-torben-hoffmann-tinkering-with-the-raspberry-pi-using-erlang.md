@@ -51,4 +51,3 @@ Gumstix board anno 2006.
 </div>
 
 </div>
-

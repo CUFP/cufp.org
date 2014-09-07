@@ -55,5 +55,3 @@ library. Previously, he was the founding CEO of Tracelytics, a
 SaaS-based Application Performance Management company built on top of
 the X-Trace distributed tracing framework. He resides in Brooklyn, via
 Rhode Island.
-
-{{ input src/site/2014/_register_button.html }}

@@ -41,4 +41,3 @@ Computer Science at the Royal Institute of Technology in Stockholm.
 </div>
 
 </div>
-{{ input src/site/2014/_register_button.html }}

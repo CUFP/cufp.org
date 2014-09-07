@@ -22,5 +22,3 @@ we went about edifying that large team on pure functional programming.
 Finally, we'll cover some of the ways packaging functional APIs can
 bridge the skills gap in large teams and ease the transition to FP
 whilst still allowing teams to ship operational systems.
-
-{{ input src/site/2014/_register_button.html }}

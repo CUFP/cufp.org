@@ -40,4 +40,3 @@ committee that defined the current language standard.
 </div>
 
 </div>
-{{ input src/site/2014/_register_button.html }}

@@ -18,6 +18,3 @@ to the current architecture. Performance, multi device compatibility
 and ease of use were all considerations throughout the development
 leading to the ultimate consideration of whether functional
 programming has a use at all in the future of game development.
-
-
-{{ input src/site/2014/_register_button.html }}

@@ -36,4 +36,3 @@ QuickCheck for Quviq.
 </div>
 
 </div>
-{{ input src/site/2014/_register_button.html }}

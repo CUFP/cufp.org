@@ -50,4 +50,3 @@ online functional programming community.
 </div>
 
 </div>
-
