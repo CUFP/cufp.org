@@ -49,11 +49,7 @@ data-related="cufpconference">Tweet #cufp2014</a>
 <div class="medium-4 columns tutorial" media:type="text/omd">
 ### <i class="fi-laptop"></i> Tutorials
 ###### Thu-Fri September 4-5th
-Register for the 2014 CUFP Tutorials! Early bird ends August 3rd!
-
 CUFP tutorials have become an in-depth, hands-on sessions for learning functional programming languages, libraries and toolkits directly from the experts and leaders in their fields. Register to learn more about Erlang, Rust, Haskell, OCaml, F#, Scala, Elm and Idris. Did you wonder about Agda or Lens? Or what about front-end applications with elm-d3 of WebSharper? Or property based testing with the inventor of Quick Check? Have a look at the program to find out more!
-
-<a href="https://regmaster4.com/2014conf/ICFP14/register.php" class="tiny radius button">Register</a>
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
@@ -65,8 +61,6 @@ describing ways in which functional programming has been used, either
 successfully or unsuccessfully, in the real world; and technical
 talks, which will detail techniques and approaches for applying
 functional programming in practical settings.
-
-<a href="/2014/call-for-presentations.html" class="tiny radius button">Call</a>
 </div>
 
 <div class="medium-4 columns bof" media:type="text/omd">
