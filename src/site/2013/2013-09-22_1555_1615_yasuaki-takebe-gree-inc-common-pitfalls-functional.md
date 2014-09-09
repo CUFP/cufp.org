@@ -3,7 +3,7 @@
 - speakers: Yasuaki Takebe
 - affiliations: GREE Inc 
 - video: http://www.youtube.com/watch?v=cnqZyvp76Xw
-- slides: /2013/slides/pfeffer.pdf
+- slides: /2013/slides/takebe.pdf
 
 
 ## Abstract
