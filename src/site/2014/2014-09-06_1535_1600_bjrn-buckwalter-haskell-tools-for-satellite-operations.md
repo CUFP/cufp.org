@@ -2,6 +2,7 @@
 - title: Haskell tools for satellite operations
 - speakers: Björn Buckwalter
 - session: Functional programming in space!
+- video: https://www.youtube.com/watch?v=QpRGe5d3ouo
 
 ## Abstract 
 

@@ -2,7 +2,6 @@
 - title: Some usages of functional programming for FO and quants
 - speakers: Renaud Bechade
 - session: Potpourri
-- video: https://www.youtube.com/watch?v=T--y2XxZf0o
 
 ## Abstract 
 
