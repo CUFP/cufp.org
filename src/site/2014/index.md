@@ -8,43 +8,6 @@
 </div>
 
 <div class="row" media:type="text/omd">
-<div class="small-12 columns" media:type="text/omd">
-
-<div data-alert class="alert-box info radius">
-The conference is now over. Thanks for another great year! <a href="/videos/index.html">Videos</a> are now online.
-</div>
-
-**Functional Programming** has been at the forefront of a new
-generation of programming technologies, and companies have been
-successfully utilizing functional programming to enable more flexible,
-robust, and effective software development.
-
-The annual CUFP workshop is designed to serve the growing community of
-commercial users of functional programming. Practitioners meet and
-collaborate, language designers and users share ideas about the future
-of their languages, and experts share their expertise on practical
-functional programming.
-
-CUFP is co-located with [ICFP](http://icfpconference.org/icfp2014/)
-and consists of three components: Talks, Tutorials and BoFs.
-
-</div>
-</div>
-
-<div class="row">
-<div class="medium-6 columns">
-<a href="https://twitter.com/intent/tweet?button_hashtag=cufp2014"
-class="twitter-hashtag-button" data-size="large"
-data-related="cufpconference">Tweet #cufp2014</a>
-</div>
-
-<div class="medium-6 columns">
-
-</div>
-
-</div>
-
-<div class="row" media:type="text/omd">
 
 <div class="medium-4 columns tutorial" media:type="text/omd">
 ### <i class="fi-laptop"></i> Tutorials
