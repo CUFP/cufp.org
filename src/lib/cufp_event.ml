@@ -155,8 +155,10 @@ let to_html t =
 
 let short_description {typ; description; _ } =
   match typ with
-  | Break | Discussion -> (match description with
-    | [Omd.NL; Omd.Paragraph [Omd.Text description]] ->
+  | Break | Discussion -> (
+    let description = List.filter description ~f:(fun x -> x <> Omd.NL) in
+    match description with
+    | [Omd.Paragraph [Omd.Text description]] ->
       String.strip description
     | [] -> ""
     | _ ->
