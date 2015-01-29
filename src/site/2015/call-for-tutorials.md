@@ -5,7 +5,7 @@
 
 Commercial Users of Functional Programming (CUFP) is an annual meeting
 co-located with the International Conference on Functional Programming
-which this year will take place in Vancouver, Sweden on X-Z September 2015.
+which this year will take place in Vancouver, Canada on 3-5 September 2015.
 CUFP aims to bridge the gap between academia and users applying
 functional programming in practice. CUFP provides high-quality
 practical tutorials covering state-of-the-art techniques and tools for
@@ -14,7 +14,7 @@ introduction and advanced level, such that anyone that wants to learn
 something new has an opportunity to do so.
 
 We are seeking proposals for half-day tutorials to be presented during
-the first two days of the meeting, X and Y September. Submission
+the first two days of the meeting, 3 and 4 September. Submission
 deadline is April 30th, but the earlier you submit, the better!
 
 Among the suggested topics for tutorials are:
@@ -49,13 +49,13 @@ Tutorial proposals should address the following points:
 * Other minor information which will help us market your tutorial.
 
 and should be submitted using the following [talk submission
-form](https://docs.google.com/forms/d/1RhkCJmJbmj0-dy0vxyrJy0wKnLTV0EBRMWjUiSIEh_0/viewform).
+form](https://easychair.org/conferences/?conf=cufp2015).
 
 If you have any questions, email Thomas Arts: thomas dot arts at
 quviq dot com or Román González: romanandreg at gmail dot com
 
 The 2015 conference is in Vancouver, Canada from September
-Xth-Zth. Once again, it is co-located with [ICFP
+3rd-5th. Once again, it is co-located with [ICFP
 2015](http://icfpconference.org/icfp2015/).
 
 CUFP tweets [@cufpconference](https://twitter.com/cufpconference).
