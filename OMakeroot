@@ -22,7 +22,7 @@ LIB_DESCRIPTION = Implementation of the cufp.org website.
 LIB_MODULES[] =
   $(removesuffix $(basename $(ls src/lib/*.ml)))
   cufp_about
-LIB_PACKAGES = core async sexplib.syntax core_extended \
+LIB_PACKAGES = core async sexplib.syntax \
                omd yojson \
                uri netstring rss
 
