@@ -5,18 +5,24 @@ Implementation of the cufp.org website.
 
 DEPENDENCIES
 ============
-The site is implemented in OCaml, so to build the site yourself you
-will need OCaml and several OCaml libraries:
-[OMD](https://github.com/ocaml/omd),
-[MPP](https://github.com/pw374/MPP-language-blender),
-[Core](https://github.com/janestreet/core),
-[Async](https://github.com/janestreet/async),
-[Uri](https://github.com/mirage/ocaml-uri/),
-[Yojson](http://mjambon.com/yojson.html), and
-[ocamlnet](http://projects.camlcity.org/projects/ocamlnet.html). Styling
-makes use of [Zurb Foundation](http://foundation.zurb.com/). However, most
-contributors will only be adding content, and don't necessarily need
-to build the site locally. You can just add or modify Markdown files.
+Most contributors will only be adding content, and don't necessarily
+need to build the site locally. You can just add or modify Markdown
+files.
+
+If you do want to test your changes locally before pushing, you'll
+need to have OCaml and several libraries installed. It is recommended
+to use [OPAM](http://opam.ocaml.org/). Once you have it installed, you
+can do:
+
+```
+opam repo add web https://github.com/solvuu/opam-repo-web.git
+opam switch cufp.org -A 4.02.1
+cd /to/your/working/directory
+opam pin add cufporg .
+opam install cufp --deps-only
+```
+
+The `switch` step is optional.
 
 
 BUILD INSTRUCTIONS
@@ -69,15 +75,6 @@ without arguments for more information. When built, it is symlink'ed
 as `cufp.org` in the repo's root.
 
 `bin/` — Scripts.
-
-`ext/` — Files from external sources, e.g. CSS or Javascript
-libraries. These are copied without modification to the generated
-site.
-
-`bower/` — Packages installed by the Bower package manager. It eases
-installation of Foundation and its dependencies. Doing `omake bower`
-will generate this directory, but we check it into the repo to avoid
-the dependency on bower most of the time.
 
 `src/site/css/cufp.css` — The main CSS file, generated from cufp.scss
 in the same directory. It is checked into the repo to avoid the
