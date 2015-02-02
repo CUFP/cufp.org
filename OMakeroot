@@ -169,38 +169,28 @@ OCAMLFINDFLAGS = -syntax camlp4o
   # CSS
   .SUBDIRS: src/site/css
 
-    cufp.css: $(ls *.scss) $(ROOT)/bower
+    cufp.css: $(ls *.scss)
       @echo "Building $@."
-      sass -q $< > $@
+      sass -q -I $(shell opam config var lib) $< > $@
 
 # See changes we've made to Foundation settings.
 diff-scss:
   diff \
-    bower/foundation/scss/foundation/_settings.scss \
+    $(shell opam config var foundation:lib)/scss/foundation/_settings.scss \
     src/site/css/_settings.scss
 
 
 ################################################################################
-# Bower based installations
-#
-# Bower is a package manager, which we use to install some CSS and
-# JS libraries.
-bower:
-  @echo "Running bower."
-  bower install
-
-
-################################################################################
 # Build Site
-site: $(APP) bower/ src/site/css/cufp.css
+site: $(APP) src/site/css/cufp.css
   @echo "Building $(PROJECT) site."
-  rsync -a bower/modernizr/modernizr.js _build/site/js/
-  rsync -a bower/jquery/dist/jquery.* _build/site/js/
-  rsync -a bower/fastclick/lib/fastclick.js _build/site/js/
-  rsync -a bower/foundation/js/foundation.min.js _build/site/js/
-  rsync -a ext/foundation-icons _build/site/css/
-  rsync -a ext/fairhead-webicons _build/site/css/
-  rsync -a ext/flaticon-feather _build/site/css/
+  rsync -a $(shell opam config var modernizr:lib)/modernizr.js _build/site/js/
+  rsync -a $(shell opam config var jquery:lib)/jquery.* _build/site/js/
+  rsync -a $(shell opam config var fastclick:lib)/fastclick.js _build/site/js/
+  rsync -a $(shell opam config var foundation:lib)/js/foundation/foundation*.js _build/site/js/
+  rsync -a $(shell opam config var foundation-icons:lib) _build/site/css/
+  rsync -a $(shell opam config var fairhead-webicons:lib) _build/site/css/
+  rsync -a $(shell opam config var flaticon-feather-pen:lib) _build/site/css/
   rsync -a ../cufp.org-media/* _build/site/
   $(APP) make -repo-root $(ROOT) -production $(PRODUCTION) "/"
 
@@ -225,5 +215,4 @@ clean:
 # Should rarely need to run this. Regenerating these files requires a
 # lot of additional software.
 clean-everything: clean
-  rm -rf bower
   rm -f src/site/css/cufp.css

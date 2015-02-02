@@ -121,24 +121,15 @@ released under the same license as the original.
 
 ## Fairhead Webicons
 
-Icons in the directory `ext/fairhead-webicons` in the
-[repo](http://github.com/cufp/cufp.org/) are CC-Attrib by [Fairhead
+Fairhead webicons are CC-Attrib by [Fairhead
 Creative](http://fairheadcreative.com).
-
-
-## Feed Icons
-
-The RSS icons in the directory `ext/feedicons-standard` in the
-[repo](http://github.com/cufp/cufp.org/) are from
-[Feedicons.com](http://www.feedicons.com).
 
 
 ## flaticon feather
 
-The icon in the directory `ext/flaticon-feather` is made by
-[Freepik](http://www.freepik.com) from
+The feather pen made by [Freepik](http://www.freepik.com) from
 [www.flaticon.com](http://www.flaticon.com/free-icon/pen-feather-black-diagonal-shape-of-a-bird-wing_44870).
 
-                
+
 </div>
 </div>

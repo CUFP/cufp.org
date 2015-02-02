@@ -19,4 +19,11 @@ depends: [
   "uri"
   "ocamlnet"
   "ocamlrss"
+  "modernizr"
+  "jquery"
+  "fastclick"
+  "foundation"
+  "foundation-icons"
+  "fairhead-webicons"
+  "flaticon-feather-pen"
 ]
