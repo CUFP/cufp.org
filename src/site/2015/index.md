@@ -1,4 +1,4 @@
-<div style="background-color:black">
+<div style="background-image: url(img/943x200_panoramicelevation.jpg)">
 <div class="row">
 <div class="small-12 columns">
 <h1>CUFP 2015 — Vancouver</h1>
@@ -69,6 +69,10 @@ BoFs, topics will be chosen beforehand based on a public process for
 gathering proposals, organized via our website.
 </div>
 
+</div>
+
+<div style="text-align:center" class="pane-dark" media:type="text/omd">
+<img src="img/1024x400_vancouver.jpg" />
 </div>
 
 <div class="row" media:type="text/omd">
