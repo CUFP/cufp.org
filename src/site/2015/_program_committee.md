@@ -1,0 +1,5 @@
+- [Michael Fogus](http://www.fogus.me/) (Cognitect)
+- [Rein Henrichs](http://reinh.com/) (AlephCloud)
+- [Jessica Kerr](http://jessitron.com/) (Outpace Systems)
+- [Tony Morris](http://tmorris.net/) (NICTA)
+- [Max Swadling](http://maxs.io/) (Apple)

@@ -2,7 +2,7 @@
 <div class="row">
 <div class="small-12 columns">
 <h1>CUFP 2015 — Vancouver</h1>
-<h2>September Mth-Nth</h2>
+<h2>September 3rd-5th</h2>
 </div>
 </div>
 </div>
@@ -43,13 +43,13 @@ Insert Twitter button here.
 
 <div class="medium-4 columns tutorial" media:type="text/omd">
 ### <i class="fi-laptop"></i> Tutorials
-###### Day-Day September M-Nth
+###### Thursday-Friday September 3rd-4th
 CUFP tutorials have become an in-depth, hands-on sessions for learning functional programming languages, libraries and toolkits directly from the experts and leaders in their fields.
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
 ### <i class="fi-microphone"></i> Talks
-###### Dat September Nth
+###### Saturday September 5th
 Tutorials will consist of a series of talks given by practitioners in
 the field. The talks will be split between experience reports,
 describing ways in which functional programming has been used, either
@@ -75,6 +75,8 @@ gathering proposals, organized via our website.
 <div class="small-12 columns" media:type="text/omd">
 
 ## Program Chairs(( cmd omd src/site/2015/_program_chairs.md ))
+
+## Program Committee(( cmd omd src/site/2015/_program_committee.md ))
 
 ## Tutorial Chair
 - Thomas Arts (Quviq AB)
