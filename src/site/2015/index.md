@@ -106,7 +106,7 @@ gathering proposals, organized via our website.
 
 ## Announcements
 
-- February 15 [Call for Presentations - Now available.](/2015/call-for-presentations.html)
+- February 13 [Call for Presentations - Now available.](/2015/call-for-presentations.html)
 - CUFP 2015 on [Lanyrd](http://lanyrd.com/2015/cufp/).
 
 </div>
