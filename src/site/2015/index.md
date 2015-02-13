@@ -76,6 +76,14 @@ gathering proposals, organized via our website.
 
 </div>
 
+<div id="schedule" class="row" media:type="text/omd">
+<div class="small-12 columns" media:type="text/omd">
+
+<p>Schedule not yet available. Stay tuned.</p>
+
+</div>
+</div>
+
 <div style="text-align:center" class="pane-dark" media:type="text/omd">
 <img src="img/1024x400_vancouver.jpg" />
 </div>
