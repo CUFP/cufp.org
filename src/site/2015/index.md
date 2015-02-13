@@ -95,8 +95,20 @@ gathering proposals, organized via our website.
 
 ## Program Committee(( cmd omd src/site/2015/_program_committee.md ))
 
-## Tutorial Chair
-- Thomas Arts (Quviq AB)
+## Tutorial Chairs (( cmd omd src/site/2015/_tutorial_chairs.md ))
 
+</div>
+</div>
+
+<div class="pane-light" media:type="text/omd">
+<div class="row" media:type="text/omd">
+<div class="small-12 columns" media:type="text/omd">
+
+## Announcements
+
+- February 15 [Call for Presentations - Now available.](/2015/call-for-presentations.html)
+- CUFP 2015 on [Lanyrd](http://lanyrd.com/2015/cufp/).
+
+</div>
 </div>
 </div>
