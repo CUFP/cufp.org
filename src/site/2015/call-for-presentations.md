@@ -71,7 +71,7 @@ Nevertheless, presentations will be video taped and presenters will be
 expected to sign an ACM copyright release form.
 
 Note that we will need all presenters to register for the CUFP
-workshop and travel to Gothenburg at their own expense.
+workshop and travel to Vancouver at their own expense.
 
 ## Program Committee
 (( cmd cat src/site/2015/_program_chairs.md src/site/2015/_program_committee.md | omd ))
