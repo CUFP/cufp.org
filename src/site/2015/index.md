@@ -30,7 +30,12 @@ and consists of three components: Talks, Tutorials and BoFs.
 <div class="row">
 
 <div class="medium-6 columns">
-Insert Twitter button here.
+  <a href="https://twitter.com/intent/tweet?button_hashtag=cufp2015"
+     class="twitter-hashtag-button" data-size="large"
+     data-related="cufpconference"
+  >
+    Tweet #cufp2015
+  </a>
 </div>
 
 <div class="medium-6 columns">
