@@ -53,6 +53,17 @@ version of foo.jpg might be named cropped_foo.jpg. Below you will find
 entries only for the original file name; modified versions are
 released under the same license as the original.
 
+* /2015/img/4381712356_ec10bb0d18_o.jpg
+  - link: https://flic.kr/p/7FcqqL 
+  - license: CC BY-NC-SA 2.0
+  - attribution: By Evan Leeson
+  - edits: image cropped
+
+* /2015/img/Vancouver_ib.jpg
+  - link: https://commons.wikimedia.org/wiki/File:Vancouver_ib.jpg 
+  - license: CC BY 2.0 
+  - attribution: By Thom Quine, via Wikimedia Commons
+
 * /2014/img/3675479286_f5ce0a6c93_b.jpg
   - link: https://flic.kr/p/6AMMWw
   - license: CC BY-SA 2.0
