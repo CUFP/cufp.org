@@ -2,4 +2,4 @@
 - [Rein Henrichs](http://reinh.com/) (PivotMail)
 - [Jessica Kerr](http://jessitron.com/) (Outpace Systems)
 - [Tony Morris](http://tmorris.net/) (NICTA)
-- [Max Swadling](http://maxs.io/) (Apple)
+- [Max Swadling](http://maxs.io/)

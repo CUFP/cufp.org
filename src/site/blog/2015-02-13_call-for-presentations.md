@@ -13,7 +13,7 @@ This year's program committee is:
 - Rein Henrichs (PivotMail)
 - Jessica Kerr (Outpace Systems)
 - Tony Morris (NICTA)
-- Max Swadling (Apple)
+- Max Swadling
 
 This year's tutorials are organized by:
 
