@@ -10,7 +10,7 @@ This year's program committee is:
 - Edward Kmett (McGraw Hill Financial), co-chair
 - Katie Miller, co-chair
 - Michael Fogus (Cognitect)
-- Rein Henrichs (AlephCloud)
+- Rein Henrichs (PivotMail)
 - Jessica Kerr (Outpace Systems)
 - Tony Morris (NICTA)
 - Max Swadling (Apple)
