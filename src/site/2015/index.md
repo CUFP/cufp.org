@@ -49,18 +49,23 @@ and consists of three components: Talks, Tutorials and BoFs.
 <div class="medium-4 columns tutorial" media:type="text/omd">
 ### <i class="fi-laptop"></i> Tutorials
 ###### Thursday-Friday September 3rd-4th
-CUFP tutorials have become an in-depth, hands-on sessions for learning functional programming languages, libraries and toolkits directly from the experts and leaders in their fields.
+CUFP tutorials are in-depth, hands-on sessions for learning functional
+programming languages, libraries and toolkits directly from the
+experts and leaders in their fields.
+
+<a href="/2014/call-for-tutorials.html" class="tiny radius button">Call</a>
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
 ### <i class="fi-microphone"></i> Talks
 ###### Saturday September 5th
-Tutorials will consist of a series of talks given by practitioners in
-the field. The talks will be split between experience reports,
+Talks are by expert practitioners and will be split between experience reports,
 describing ways in which functional programming has been used, either
 successfully or unsuccessfully, in the real world; and technical
 talks, which will detail techniques and approaches for applying
 functional programming in practical settings.
+
+<a href="/2014/call-for-presentations.html" class="tiny radius button">Call</a>
 </div>
 
 <div class="medium-4 columns bof" media:type="text/omd">
@@ -76,11 +81,19 @@ gathering proposals, organized via our website.
 
 </div>
 
-<div id="schedule" class="row" media:type="text/omd">
+<div class="pane-light" media:type="text/omd">
+<div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
-<p>Schedule not yet available. Stay tuned.</p>
+## Announcements
 
+- February 13: [Call for Presentations - Now
+  available.](/2015/call-for-presentations.html)
+- January 30: [Call for Tutorials - Now
+  available.](/2015/call-for-tutorials.html)
+- CUFP 2015 on [Lanyrd](http://lanyrd.com/2015/cufp/).
+
+</div>
 </div>
 </div>
 
@@ -97,18 +110,5 @@ gathering proposals, organized via our website.
 
 ## Tutorial Chairs (( cmd omd src/site/2015/_tutorial_chairs.md ))
 
-</div>
-</div>
-
-<div class="pane-light" media:type="text/omd">
-<div class="row" media:type="text/omd">
-<div class="small-12 columns" media:type="text/omd">
-
-## Announcements
-
-- February 13 [Call for Presentations - Now available.](/2015/call-for-presentations.html)
-- CUFP 2015 on [Lanyrd](http://lanyrd.com/2015/cufp/).
-
-</div>
 </div>
 </div>
