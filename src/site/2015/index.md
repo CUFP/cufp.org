@@ -53,7 +53,7 @@ CUFP tutorials are in-depth, hands-on sessions for learning functional
 programming languages, libraries and toolkits directly from the
 experts and leaders in their fields.
 
-<a href="/2014/call-for-tutorials.html" class="tiny radius button">Call</a>
+<a href="/2015/call-for-tutorials.html" class="tiny radius button">Call</a>
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
@@ -65,7 +65,7 @@ successfully or unsuccessfully, in the real world; and technical
 talks, which will detail techniques and approaches for applying
 functional programming in practical settings.
 
-<a href="/2014/call-for-presentations.html" class="tiny radius button">Call</a>
+<a href="/2015/call-for-presentations.html" class="tiny radius button">Call</a>
 </div>
 
 <div class="medium-4 columns bof" media:type="text/omd">
