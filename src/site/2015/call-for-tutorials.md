@@ -23,33 +23,52 @@ Among the suggested topics for tutorials are:
   have had introductions to Clojure, Erlang, F#, Haskell, ML, OCaml,
   Scala, Scheme and others.
 
+* Advanced programming languages concepts and applications, such as
+  Lens, Agda, Idris and others
+
 * Applying functional programming in particular areas, including the
   web, high-performance computing, finance.
 
 * Tools and techniques supporting state of the art functional
-  programming.
+  programming. In the past we have had tutorials on QuickCheck, Elm and others.
 
 Tutorial proposals should address the following points:
 
 * Title
 
-* Abstract (about 100 words)
+* Abstract (about 200 words) including
 
-* Tutorial Objectives: by the end of this tutorial you will be able to …
+   * Tutorial Objectives: by the end of this tutorial you will be able to …
 
-* Intended audience: e.g. beginners, those with a working knowledge of X, …
+   * Intended audience: e.g. beginners, those with a working knowledge of X, …
 
-* Speaker Bio: Joe Bloggs is ...
+   * Speaker Bio: Joe Bloggs is ...
 
-* Infrastructure required: For example, will participants need access
-  to a particular system? Do they need to download anything prior to
-  the tutorial? Can they be expected to have this on a laptop, or does
-  it need to be provided by the meeting?
+   * Infrastructure required: For example, will participants need access
+    to a particular system? Do they need to download anything prior to
+    the tutorial? Can they be expected to have this on a laptop, or does
+    it need to be provided by the meeting?
 
-* Other minor information which will help us market your tutorial.
+   * Other minor information which will help us market your tutorial.
 
-and should be submitted using the following [talk submission
+Tutorials should be submitted using the following [talk submission
 form](https://easychair.org/conferences/?conf=cufp2015).
+
+Tutorial Agreement  
+While CUFP does not pay tutorialists, they will be compensated with
+admission credits to CUFP and ICFP, as outlined below.
+
+- If a tutorial has 5 or more registrants, the tutorialist will
+  receive free admission to CUFP, including the two days of tutorials
+  and the day of the CUFP workshop.
+
+- If a tutorial has 10 or more registrants, the tutorialist will
+  additionally receive a $250 voucher that can be used to register for
+  any of the other ICFP events, including ICFP itself.
+
+Note that we reserve the right to cancel tutorials with fewer than 5
+registrants, but we will try hard to avoid having to do so.
+No compensation will be awarded for cancelled tutorials.
 
 If you have any questions, email Thomas Arts: thomas dot arts at
 quviq dot com or Román González: romanandreg at gmail dot com
