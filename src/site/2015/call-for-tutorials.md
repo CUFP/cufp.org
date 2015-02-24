@@ -43,7 +43,9 @@ Tutorial proposals should address the following points:
    * Other minor information which will help us market your tutorial.
 
 Tutorials should be submitted using the following [talk submission
-form](https://easychair.org/conferences/?conf=cufp2015).
+form](https://easychair.org/conferences/?conf=cufp2015). Deadline for
+submission is May 25, 2015. Notification of acceptance is two weeks
+later.
 
 Tutorial Agreement  
 While CUFP does not pay tutorialists, they will be compensated with
