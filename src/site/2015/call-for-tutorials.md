@@ -22,33 +22,24 @@ Among the suggested topics for tutorials are:
 * Introductions to functional programming languages. In the past we
   have had introductions to Clojure, Erlang, F#, Haskell, ML, OCaml,
   Scala, Scheme and others.
-
 * Advanced programming languages concepts and applications, such as
   Lens, Agda, Idris and others
-
 * Applying functional programming in particular areas, including the
   web, high-performance computing, finance.
-
 * Tools and techniques supporting state of the art functional
   programming. In the past we have had tutorials on QuickCheck, Elm and others.
 
 Tutorial proposals should address the following points:
 
 * Title
-
 * Abstract (about 200 words) including
-
    * Tutorial Objectives: by the end of this tutorial you will be able to …
-
    * Intended audience: e.g. beginners, those with a working knowledge of X, …
-
    * Speaker Bio: Joe Bloggs is ...
-
    * Infrastructure required: For example, will participants need access
     to a particular system? Do they need to download anything prior to
     the tutorial? Can they be expected to have this on a laptop, or does
     it need to be provided by the meeting?
-
    * Other minor information which will help us market your tutorial.
 
 Tutorials should be submitted using the following [talk submission
@@ -61,7 +52,6 @@ admission credits to CUFP and ICFP, as outlined below.
 - If a tutorial has 5 or more registrants, the tutorialist will
   receive free admission to CUFP, including the two days of tutorials
   and the day of the CUFP workshop.
-
 - If a tutorial has 10 or more registrants, the tutorialist will
   additionally receive a $250 voucher that can be used to register for
   any of the other ICFP events, including ICFP itself.
