@@ -8,7 +8,7 @@ The call for presentations is available [here](/2015/call-for-presentations.html
 This year's program committee is:
 
 - Edward Kmett (McGraw Hill Financial), co-chair
-- Katie Miller, co-chair
+- Katie Miller (Facebook), co-chair
 - Michael Fogus (Cognitect)
 - Rein Henrichs (PivotMail)
 - Jessica Kerr (Outpace Systems)
