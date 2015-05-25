@@ -1,2 +1,2 @@
 - [Edward Kmett](http://comonad.com) (McGraw Hill Financial), co-chair
-- [Katie Miller](http://codemiller.com), co-chair
+- [Katie Miller](http://codemiller.com) (Facebook), co-chair
