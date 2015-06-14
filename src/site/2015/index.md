@@ -55,7 +55,7 @@ experts and leaders in their fields. We have a broad variety
 of tutorials, including O'Caml, Scripting Haskell, LiquidHaskell, PureScript,
 Coq, F* for programming effectful programs, and Clojure.
 
-<a href="/2015/accepted-tutorials.html" class="tiny radius button">Tutorials</a>
+<a href="/2015/tutorial-schedule.html" class="tiny radius button">Info</a>
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
@@ -81,6 +81,20 @@ BoFs, topics will be chosen beforehand based on a public process for
 gathering proposals, organized via our website.
 </div>
 
+</div>
+
+<div id="schedule" class="row" media:type="text/omd">
+<div class="small-12 columns" media:type="text/omd">
+## Day 1 - Thu Sep 3rd  <small>Tutorials</small>
+(( cmd cufp.org print event-list -date 2015-09-03 2015 ))
+
+## Day 2 - Fri Sep 4th <small>Tutorials</small>
+(( cmd cufp.org print event-list -date 2015-09-04 2015 ))
+
+## Day 3 - Sat Sep 5th <small>Talks</small>
+Talk schedule is not yet available.
+
+</div>
 </div>
 
 <div class="pane-light" media:type="text/omd">

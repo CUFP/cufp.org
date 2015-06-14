@@ -27,7 +27,7 @@ After August 2nd, the cost goes up to:
 * Students $150
 * Non-ACM Members $250
 
-To see the complete tutorial list, tutorial objectives and speaker bios, [click here… ](http://cufp.org/2015#schedule)
+To see the complete tutorial list, tutorial objectives and speaker bios, [click here… ](/2015#schedule)
 To register for the CUFP tutorials and workshop, [click here...](https://regmaster4.com/2015conf/ICFP15/register.php)
  
 </div>
