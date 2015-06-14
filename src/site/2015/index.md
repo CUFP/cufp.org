@@ -52,7 +52,7 @@ and consists of three components: Talks, Tutorials and BoFs.
 CUFP tutorials are in-depth, hands-on sessions for learning functional
 programming languages, libraries and toolkits directly from the
 experts and leaders in their fields. We have a broad variety
-of tutorials, including O'Caml, Scripting Haskell, LiquidHaskell, PureScript,
+of tutorials, including OCaml, Scripting Haskell, LiquidHaskell, PureScript,
 Coq, F* for programming effectful programs, and Clojure.
 
 <a href="/2015/tutorial-schedule.html" class="tiny radius button">Info</a>

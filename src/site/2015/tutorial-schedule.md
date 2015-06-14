@@ -11,7 +11,7 @@ techniques. These will range from language introductions for beginners
 to more advanced and focused sessions on particular language features,
 techniques or toolkits. Tutorials are given by recognized experts in
 their fields, knowledgeable about the subject and passionate about
-functional programming. We have tutorials including O'Caml, Scripting Haskell, LiquidHaskell, PureScript,
+functional programming. We have tutorials including OCaml, Scripting Haskell, LiquidHaskell, PureScript,
 Coq, F* for programming effectful programs, Clojure and QuickCheck.
 
 
