@@ -51,9 +51,11 @@ and consists of three components: Talks, Tutorials and BoFs.
 ###### Thursday-Friday September 3rd-4th
 CUFP tutorials are in-depth, hands-on sessions for learning functional
 programming languages, libraries and toolkits directly from the
-experts and leaders in their fields.
+experts and leaders in their fields. We have a broad variety
+of tutorials, including O'Caml, Scripting Haskell, LiquidHaskell, PureScript,
+Coq, F* for programming effectful programs, and Clojure.
 
-<a href="/2015/call-for-tutorials.html" class="tiny radius button">Call</a>
+<a href="/2015/accepted-tutorials.html" class="tiny radius button">Tutorials</a>
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
