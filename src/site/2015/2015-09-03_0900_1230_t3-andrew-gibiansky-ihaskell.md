@@ -1,7 +1,6 @@
 - type: tutorial
 - title: T3: Interactive Computing with IHaskell
 - speakers: Andrew Gibiansky
-- affiliations: -
 
 ## Abstract
 IHaskell provides a modern exploratory programming environment for
