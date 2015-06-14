@@ -15,7 +15,7 @@ something new has an opportunity to do so.
 
 We are seeking proposals for half-day tutorials to be presented during
 the first two days of the meeting, 3 and 4 September. Submission
-deadline is April 30th, but the earlier you submit, the better!
+deadline is May 25th, but the earlier you submit, the better!
 
 Among the suggested topics for tutorials are:
 
