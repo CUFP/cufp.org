@@ -142,5 +142,11 @@ The feather pen made by [Freepik](http://www.freepik.com) from
 [www.flaticon.com](http://www.flaticon.com/free-icon/pen-feather-black-diagonal-shape-of-a-bird-wing_44870).
 
 
+## User_silhouette_128.png
+
+Icon made by [Freepik](http://www.freepik.com) from
+[www.flaticon.com](http://www.flaticon.com) is licensed under [CC BY
+3.0](http://creativecommons.org/licenses/by/3.0/).
+
 </div>
 </div>
