@@ -38,8 +38,11 @@ will be provided at a later stage.
 
 <div class="medium-8 columns" media:type="text/omd">
 Hans Svensson is a QuickCheck expert working for Quviq AB. Hans has been working with
-QuickCheck since 2008, both as a researcher and as a consultant. Hans is a an active
-member of the Erlang community with more than a handful of Erlang papers at the Erlang
+QuickCheck since 2008, both as a researcher and as a consultant. Hans
+has a PhD from Chalmers University of Technology (2008) on the topic 
+"Verification of Distributed Erlang Programs using Testing, Model
+Checking and Theorem Proving".
+Hans is a an active member of the Erlang community with more than a handful of Erlang papers at the Erlang
 Workshop and ICFP, as well as several EUC and Erlang Factory presentations.
 </div>
 

@@ -12,9 +12,7 @@ compiler, partial evaluator, pretty-printer are all interpreters. At
 any time one may add more interpreters, and even more expression forms
 to the DSL while re-using the previous interpreters as they were. Only
 well-typed DSL terms are representable. Therefore, the type checker of
-the host language checks -- and even infers for us -- DSL types. Even
-DSLs with resource-sensitive (affine, linear) types are thus
-embeddable.
+the host language checks -- and even infers for us -- DSL types. 
 
 It was recently discovered how to transform, simplify, and generally,
 optimize DSLs embedded in this style. The optimization rules are
@@ -30,8 +28,14 @@ libraries and packages beyond the standard library will be needed. The
 most basic installation should suffice.
 
 Only passing familiarity with OCaml will be assumed from the audience.
-The tutorial will introduce all necessary language features, with
-comments how they may be realized in other languages. 
+ The typed-final style has been successfully used in Haskell, OCaml,
+ Scala and even to some extent in Java. The tutorial thus should be
+ applicable across the modern functional programming languages. The
+ tutorial materials are available in OCaml and Haskell. For the actual
+ presentation one programming language has to be chosen: it is chosen
+OCaml. Only passing familiarity with OCaml will be assumed from the
+audience.  The tutorial will introduce all necessary language
+features, with comments how they may be realized in other languages.
 
 ## Tutorial objectives
 By the end of the tutorial, the participants will:
