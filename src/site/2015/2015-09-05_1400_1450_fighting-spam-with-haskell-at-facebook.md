@@ -15,7 +15,7 @@ This was a long and complex migration, with many ups and downs. In the talk I'd 
 <div class="row" media:type="text/omd">
 
 <div class="medium-4 columns">
-<img src="img/simon-marlow" alt="Simon Marlow"></img>
+<img src="img/simon-marlow.jpg" alt="Simon Marlow"></img>
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
