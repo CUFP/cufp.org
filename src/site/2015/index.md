@@ -92,7 +92,7 @@ gathering proposals, organized via our website.
 (( cmd cufp.org print event-list -date 2015-09-04 2015 ))
 
 ## Day 3 - Sat Sep 5th <small>Talks</small>
-Talk schedule is not yet available.
+(( cmd cufp.org print event-list -date 2015-09-05 2015 ))
 
 </div>
 </div>
