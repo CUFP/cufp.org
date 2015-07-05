@@ -15,7 +15,7 @@ We are increasingly living in a word where data processing needs to happen in re
 <div class="row" media:type="text/omd">
 
 <div class="medium-4 columns">
-<img src="img/faisal-waris.jpg" alt="Faisal Waris"></img>
+<!--<img src="img/faisal-waris.jpg" alt="Faisal Waris"></img>-->
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">

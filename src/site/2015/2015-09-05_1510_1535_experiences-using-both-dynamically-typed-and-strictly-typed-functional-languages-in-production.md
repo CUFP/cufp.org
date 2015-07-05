@@ -1,7 +1,7 @@
 - type: talk
 - title: Experiences using both dynamically-typed and strictly-typed functional languages in a production environment
 - speakers: Anders Fugmann 
-- affiliations: Issuu 
+- affiliations: issuu 
 
 ## Abstract 
 
@@ -17,7 +17,7 @@ From a hiring perspective, we see a trend that skilled back-end developers enjoy
 <div class="row" media:type="text/omd">
 
 <div class="medium-4 columns">
-<img src="img/anders-fugmann.jpg" alt="Anders Fugmann"></img>
+<!--<img src="img/anders-fugmann.jpg" alt="Anders Fugmann"></img>-->
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">

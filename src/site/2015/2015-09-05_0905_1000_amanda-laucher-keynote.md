@@ -1,5 +1,5 @@
 - type: keynote
-- title: TBA 
+- title: Keynote 
 - speakers: Amanda Laucher 
 - affiliations: Neo Technology 
 
@@ -11,7 +11,7 @@ TBA
 <div class="row" media:type="text/omd">
 
 <div class="medium-4 columns">
-<img src="img/amanda-laucher.jpg" alt="Amanda Laucher"></img>
+<!--<img src="img/amanda-laucher.jpg" alt="Amanda Laucher"></img>-->
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
