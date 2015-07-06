@@ -1,7 +1,7 @@
 - type: talk
 - title: Declarative systems through data 
 - speakers: Paul deGrandis 
-- affiliations:  
+- affiliations: Cognitect 
 
 ## Abstract 
 
