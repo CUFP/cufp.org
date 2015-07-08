@@ -7,7 +7,7 @@
 
 The Future (Promise) monad expresses asynchronous computation, e.g. "fetch this data, then post-process it, then reduce it". It is a popular pattern in various (semi)functional languages, such as Scala and JavaScript.
 
-We at Facebook saw the utility of this pattern and wished to apply it in our C++ codebase. C++11 has std::future but it does not allow chaining; it is not monadic. So we wrote our own implementation, modeled after Twitter's futures (as used in Finagle)[1][] and taking boost::future[2][] and C++ standard proposal N3428[3][] into consideration. We have open sourced it as part of Folly[4][].
+We at Facebook saw the utility of this pattern and wished to apply it in our C++ codebase. C++11 has std::future but it does not allow chaining; it is not monadic. So we wrote our own implementation, modeled after Twitter's futures [as used in Finagle][1] and taking [boost::future][2] and C++ standard proposal [N3428][3] into consideration. We have open sourced it as part of [Folly][4].
 
 We will talk about implementing this pattern in C++ and in the Facebook environment. Various details of C++ have complicating implications that are not apparent at first blush when considering implementing this pattern. For example: polymorphism requirements, heap object lifetime, move semantics, and underpowered templates. Facebook developers demand extreme performance, clean and expressive syntax that fully leverages new C++11 features, and full control over execution context and flow between threads (with sensible defaults). We also strived to make it as frictionless as possible to migrate legacy synchronous code to be asynchronous using Futures, with an eye toward parallelizing the embarrassingly parallel sections of that code.
 
