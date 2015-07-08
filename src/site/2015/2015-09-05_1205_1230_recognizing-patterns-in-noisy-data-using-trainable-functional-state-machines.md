@@ -15,10 +15,10 @@ We are increasingly living in a word where data processing needs to happen in re
 <div class="row" media:type="text/omd">
 
 <div class="medium-4 columns">
-<!--<img src="img/faisal-waris.jpg" alt="Faisal Waris"></img>-->
+<img src="img/faisal-waris.jpg" alt="Faisal Waris"></img>
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
+Faisal Waris has worked in Detroit's automotive industry for the past 15 years, in a variety of IT roles. He is currently pursuing a PhD in Computer Science at Wayne State University. He primarily uses F# as his everyday functional programming language but also delves into Spark/Scala for data science work.
 </div>
-
 </div>

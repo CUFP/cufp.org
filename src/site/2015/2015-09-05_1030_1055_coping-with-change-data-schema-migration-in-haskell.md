@@ -18,10 +18,6 @@ In this talk, I will explain how we've addressed this problem in the context of 
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
+Adam is a Haskell Consultant at Well-Typed, providing software development, advice and training for businesses using Haskell. In 2013, he completed a PhD on combining Haskell with dependent types. He is interested in programming language design and compiler front ends, and contributes to the Glasgow Haskell Compiler.
 </div>
-Adam is a Haskell Consultant at Well-Typed, providing software
-development, advice and training for businesses using Haskell. In 2013,
-he completed a PhD on combining Haskell with dependent types. He is
-interested in programming language design and compiler front ends, and
-contributes to the Glasgow Haskell Compiler.
 </div>
