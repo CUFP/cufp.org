@@ -17,6 +17,6 @@ This talk will analyze and discuss the design principles, quality attributes, an
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
-</div>
 
+</div>
 </div>

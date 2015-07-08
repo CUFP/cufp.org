@@ -18,6 +18,6 @@ Most of the examples will be in Haskell using lens, but we'll dip out to Scala h
 <img src="img/edward-kmett.jpg" alt="Edward Kmett"></img>
 </div>
 <div class="medium-8 columns" media:type="text/omd">
-</div>
 
+</div>
 </div>

@@ -19,6 +19,6 @@ This was a long and complex migration, with many ups and downs. In the talk I'd 
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
-</div>
 Simon Marlow is a Software Engineer on Facebook's Site Integrity Infrastructure team in London. He is working on Haxl, a Haskell-based domain-specific language that is used by the teams fighting spam and malware. Simon is a co-author of the Glasgow Haskell Compiler, author of the book "Parallel and Concurrent Programming in Haskell", and has a string of research publications in functional programming, language design, compilers, and language implementation.
+</div>
 </div>
