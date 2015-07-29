@@ -31,7 +31,10 @@ Bring laptop with OCaml installed.
 </div>
 
 <div class="medium-8 columns" media:type="text/omd">
-Mindy Preston bio
+Mindy Preston is a research assistant at OCaml Labs in the University
+of Cambridge, where she works on the MirageOS project, plays board
+games, rides bicycles, and has opinions about writing software.  She
+has her own [blog](https://www.somerandomidiot.com).
 </div>
 
 </div>
