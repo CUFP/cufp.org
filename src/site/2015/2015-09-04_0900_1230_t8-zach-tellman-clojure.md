@@ -1,10 +1,13 @@
 - type: tutorial
-- title: T8: Network Programming in Clojure
+- title: ~~T8: Network Programming in Clojure~~ 
 - speakers: Zach Tellman
 - affiliations: Factual
 
+## Canceled
+Unfortunatelly the speaker had to cancel this tutorial.
+
 ## Abstract
-A typical Clojure server speaks HTTP, and uses a pure function to
+~~A typical Clojure server speaks HTTP, and uses a pure function to
 model the request/response cycle. This aligns well with Clojure's
 programming model, but it also hides away important details, and can
 make the jump to a less structured protocol such as TCP or WebSockets
@@ -12,20 +15,20 @@ painful and error-prone.  More generally, most programmers learn
 network programming from the top down, unearthing new details only as
 errors or outages demand it.  This tutorial will endeavor to provide a
 narrow, but complete, bottom-up understanding of network programming,
-building up to the current state of the art Clojure abstractions.
+building up to the current state of the art Clojure abstractions.~~
 
 ## Tutorial objectives
-This tutorial will build upwards from the fundamentals of network
+~~This tutorial will build upwards from the fundamentals of network
 programming, with an emphasis on practical analysis of each layer of
 abstraction. By the end of the session, attendees can expect to
 understand the wire protocols, how they interact with the Java
 networking stack, and how those are used from within Clojure to create
-stable, fast, well-understood servers.
+stable, fast, well-understood servers.~~
 
 ## Target audience
-The target audience for this tutorial is intermediate to advanced
+~~The target audience for this tutorial is intermediate to advanced
 Clojure developers. No prior experience with network programming is
-required.
+required.~~
 
 
 
