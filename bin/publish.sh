@@ -1,7 +1,7 @@
 #! /bin/sh
 
 omake clean-site
-omake PRODUCTION=true
+omake PRODUCTION=true || exit 1
 
 find _build/site -type d -exec chmod 755 {} \;
 find _build/site -type f -exec chmod 644 {} \;
