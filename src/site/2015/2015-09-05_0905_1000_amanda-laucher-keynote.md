@@ -1,5 +1,5 @@
 - type: keynote
-- title: Keynote: An Enterprise Software Consultant's View of FP
+- title: Keynote: An Enterprise Software Consultant's view of FP
 - speakers: Amanda Laucher 
 - affiliations: Pariveda Solutions
 
