@@ -38,6 +38,10 @@ No JavaScript knowledge or experience with DOM programming is
 required.  A short introduction to the relevant parts of ClojureScript
 will be given.  Rudimentary familiarity with HTML/CSS is helpful.
 
+Please download the
+[skeleton project](https://github.com/active-group/reacl-tutorial)
+for the tutorial with instructions on setup before the tutorial.
+
 ## Michael Sperber
 <div class="row" media:type="text/omd">
 
