@@ -14,8 +14,8 @@ between the view and the data, cause the universally hated "callback
 hell." [Facebook's React](http://facebook.github.io/react/) is
 frustratingly close to declarative, as it renders the GUI via a pure
 function from the model. However, React's idea of a model and its
-event event handling are still fundamentally imperative. [The Reacl
-framework](https://github.com/active-group/reacl], built on top of
+event event handling are still fundamentally imperative.
+[The Reacl framework](https://github.com/active-group/reacl), built on top of
 React, rectifies this fault and provides purely functional management
 of rendering, state and event handling to the ClojureScript
 programmer. This makes Reacl a practical and efficient substrate for
