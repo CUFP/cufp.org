@@ -1,4 +1,4 @@
-<div>
+<div style="background-image: url(img/437089535_75b3ddc6eb_o.jpg)">
 <div class="row">
 <div class="small-12 columns">
 <h1>CUFP 2016 — Nara</h1>
