@@ -2,6 +2,7 @@
 - title: Haskell in production, a survey
 - speakers: Christian Marie 
 - affiliations: Anchor Systems
+- video: https://www.youtube.com/watch?v=HlO1rZ-fo0k
 
 ## Abstract 
 

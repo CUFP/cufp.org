@@ -2,6 +2,7 @@
 - title: Building binary protocol drivers in Elixir 
 - speakers: Justin Schneck 
 - affiliations: LiveHelpNow 
+- video: https://www.youtube.com/watch?v=YJY9O-6D68A
 
 ## Abstract 
 

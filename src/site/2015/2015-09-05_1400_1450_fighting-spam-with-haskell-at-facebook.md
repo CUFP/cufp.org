@@ -2,6 +2,7 @@
 - title: Fighting spam with Haskell at Facebook
 - speakers: Simon Marlow
 - affiliations: Facebook 
+- video: https://www.youtube.com/watch?v=IOEGfnjh92o
 
 ## Abstract 
 

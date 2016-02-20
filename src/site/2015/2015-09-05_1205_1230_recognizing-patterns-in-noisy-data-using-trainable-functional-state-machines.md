@@ -2,6 +2,7 @@
 - title: Recognizing patterns in noisy data using trainable 'Functional' State Machines
 - speakers: Faisal Waris 
 - affiliations: Wayne State University
+- video: https://www.youtube.com/watch?v=-SltvNdFw4U
 
 ## Abstract 
 

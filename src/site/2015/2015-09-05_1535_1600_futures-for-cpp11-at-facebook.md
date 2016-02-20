@@ -2,6 +2,7 @@
 - title: Futures for C++11 at Facebook 
 - speakers: Hans Fugal 
 - affiliations: Facebook 
+- video: https://www.youtube.com/watch?v=lL_Wkwvqb9o
 
 ## Abstract 
 

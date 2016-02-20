@@ -2,6 +2,7 @@
 - title: Modeling state transitions with specification-based random testing 
 - speakers: Zeeshan Lakhani 
 - affiliations: Basho 
+- video: https://www.youtube.com/watch?v=pTmRaZ82syQ
 
 ## Abstract 
 What if you thought about tests only in terms of properties and counterexamples? Properties that may assert failures and/or successes. Counterexamples to a set of properties that can “shrink” to smaller failures and be better reasoned about. Properties and counterexamples are the foundation of QuickCheck, a tool to generate tests over concurrent and non-deterministic code.

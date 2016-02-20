@@ -2,6 +2,7 @@
 - title: The unreasonable effectiveness of lenses in business applications 
 - speakers: Edward Kmett 
 - affiliations: McGraw Hill Financial
+- video: https://www.youtube.com/watch?v=T88TDS7L5DY
 
 ## Abstract 
 

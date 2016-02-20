@@ -2,6 +2,7 @@
 - title: Coping with change: data schema migration in Haskell 
 - speakers: Adam Gundry 
 - affiliations: Well-Typed LLP 
+- video: https://www.youtube.com/watch?v=0XwCnRvQf0Q
 
 ## Abstract 
 
