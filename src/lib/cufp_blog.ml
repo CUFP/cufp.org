@@ -238,7 +238,7 @@ let to_rss_channel (t:t) : Rss.channel =
     ~copyright:(
       sprintf
         "Copyright %d - %d, Commercial Users of Functional Programming"
-        Conference.first_year Date.((today()) |> Date.year)
+        Conference.first_year (Date.today Time.Zone.local |> Date.year)
     )
     ?managing_editor:None
     ?webmaster:None

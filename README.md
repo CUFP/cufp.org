@@ -16,7 +16,7 @@ can do:
 
 ```
 opam repo add web https://github.com/solvuu/opam-repo-web.git
-opam switch cufp.org -A 4.02.1
+opam switch cufp.org -A 4.02.3
 cd /to/your/working/directory
 opam pin add cufporg .
 opam install cufp --deps-only

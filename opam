@@ -11,7 +11,7 @@ maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
 build: [omake]
 
 depends: [
-  "core"
+  "core" {>= "113.00.00"}
   "async"
   "omd"
   "mpp"
