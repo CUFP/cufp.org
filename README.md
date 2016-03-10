@@ -18,7 +18,7 @@ can do:
 opam repo add web https://github.com/solvuu/opam-repo-web.git
 opam switch cufp.org -A 4.02.3
 cd /to/your/working/directory
-opam pin add cufporg .
+opam pin add cufporg . -n
 opam install cufp --deps-only
 ```
 
@@ -31,20 +31,16 @@ The site consists only of static pages, so can be built and run
 entirely on a local machine without dependencies on external file or
 database servers.
 
-Running `omake` will build a development version of the site at
+Running `make` will build a development version of the site at
 `_build/site`, and also the underlying OCaml library and command line
 app that are used to build the site.
 
-Run `omake PRODUCTION=true` to build a version ready for publication
+Run `make PRODUCTION=true` to build a version ready for publication
 to cufp.org. The production version includes analytics tracking code,
 has a different robots.txt file, and relativizes links differently.
 
-Run `omake doc` to generate documentation for the OCaml library that
-does most of the work to generate the site. Open
-`_build/doc/api/index.html` to browse the API.
-
-Run `omake clean` to remove most generated files, `omake clean-site`
-to remove the generated site, and `omake clean-doc` to remove
+Run `make clean` to remove most generated files, `make clean-site`
+to remove the generated site, and `make clean-doc` to remove
 generated documentation.
 
 
