@@ -24,12 +24,12 @@ type typ =
 | Text
 | Dir
 | File
-with sexp
+[@@deriving sexp]
 
 type t = {
   typ:typ;
   path:Cufp_path.t;
-} with sexp
+} [@@deriving sexp]
 
 (** Return typ based only on basename of file, not which directory it
     is contained within. *)

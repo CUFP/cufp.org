@@ -25,7 +25,7 @@ open Async.Std
 type t = private {
   repo_root : string;
   path : string list;
-} with sexp
+} [@@deriving sexp]
 
 (** [root repo_root] returns the content root directory given
     [repo_root]. If [repo_root] is relative, it is converted to an

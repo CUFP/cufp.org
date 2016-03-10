@@ -1,8 +1,9 @@
 /_build/
-/cufp.org
-/tmp
+/cufporg.install
+/.merlin
 /.ocamlinit
-/.omakedb
-/.omakedb.lock
-/OMakeroot.omc
+/tmp
+/cufp.org
+/*.byte
+/*.native
 /src/site/css/.sass-cache
