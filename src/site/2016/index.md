@@ -22,7 +22,7 @@ of their languages, and experts share their expertise on practical
 functional programming.
 
 CUFP is co-located with [ICFP](http://conf.researchr.org/home/icfp-2016)
-and consists of three components: Talks, Tutorials and BoFs.
+and consists of two components: Talks and Tutorials.
 
 </div>
 </div>
@@ -38,7 +38,7 @@ experts and leaders in their fields. We have a broad variety
 of tutorials, including OCaml, Scripting Haskell, LiquidHaskell, PureScript,
 Coq, F* for programming effectful programs, and Clojure.
 
-<a href="/2015/tutorial-schedule.html" class="tiny radius button">Info</a>
+<a href="/2016/tutorial-schedule.html" class="tiny radius button">Info</a>
 </div>
 
 <div class="medium-4 columns talk" media:type="text/omd">
@@ -50,18 +50,7 @@ successfully or unsuccessfully, in the real world; and technical
 talks, which will detail techniques and approaches for applying
 functional programming in practical settings.
 
-<a href="/2015/call-for-presentations.html" class="tiny radius button">Call</a>
-</div>
-
-<div class="medium-4 columns bof" media:type="text/omd">
-### <i class="flaticon-pen43"></i> BoFs
-Birds-of-a-Feather sessions will consist of so-called
-"birds-of-a-feather" sessions, which will create spaces for informal
-conversations on a variety of topics. Among other things, this will be
-a good venue for language designers and practitioners to exchange
-ideas about the future of functional programming. As is typical with
-BoFs, topics will be chosen beforehand based on a public process for
-gathering proposals, organized via our website.
+<a href="/2016/call-for-presentations.html" class="tiny radius button">Call for presentations</a>
 </div>
 
 </div>
