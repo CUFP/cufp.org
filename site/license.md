@@ -36,7 +36,7 @@ retained by the contributing speakers (authors), except as follows:
 
 The code implementing CUFP.org, i.e. files in the main
 [repo](http://github.com/cufp/cufp.org/) under the directories
-`src/lib` and `src/app` are released under the [ISC
+`lib/` and `app/` are released under the [ISC
 license](http://opensource.org/licenses/ISC).
 
 

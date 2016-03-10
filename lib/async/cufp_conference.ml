@@ -30,7 +30,7 @@ let session_finish (x:session) = (List.last_exn x).Event.finish
 let first_year = 2004
 
 let years ~repo_root () =
-  let dir = repo_root/"src"/"site" in
+  let dir = repo_root/"site" in
   Sys.ls_dir dir >>=
   Deferred.List.filter ~f:(fun file ->
     (Sys.is_directory (dir/file) >>| function

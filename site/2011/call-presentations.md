@@ -62,7 +62,7 @@ interchange. *You do not need to submit a paper*, just a proposal for
 your talk!
 
 ## Program Committee
-(( cmd omd src/site/2011/_program_committee.md ))
+(( cmd omd site/2011/_program_committee.md ))
 
 ## More information
 For more information on CUFP, including videos of presentations from

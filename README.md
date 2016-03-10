@@ -57,26 +57,26 @@ server.
 
 DIRECTORY STRUCTURE
 ===================
-`src/site/` — Main content of the site. Most files are in Markdown
+`site/` — Main content of the site. Most files are in Markdown
 syntax and converted to HTML by the build scripts. If you are only
 contributing content, this will likely be the only directory you need
 to look at. Sub-files are described in greater detail below.
 
-`src/template/` — Templates governing the overall look and feel of the
-site. These are applied to the pages within `src/site/` when the site
+`template/` — Templates governing the overall look and feel of the
+site. These are applied to the pages within `site/` when the site
 is built.
 
-`src/lib/` — OCaml library that does most of the work of generating
+`lib/` — OCaml library that does most of the work of generating
 the site.
 
-`src/app/` — Implementation of an app to build and publish the
+`app/` — Implementation of an app to build and publish the
 site. It is a command line interface to the library above. Run the app
 without arguments for more information. When built, it is symlink'ed
 as `cufp.org` in the repo's root.
 
 `bin/` — Scripts.
 
-`src/site/css/cufp.css` — The main CSS file, generated from cufp.scss
+`site/css/cufp.css` — The main CSS file, generated from cufp.scss
 in the same directory. It is checked into the repo to avoid the
 dependency on SASS unless you are modifying the site's design.
 
@@ -96,7 +96,7 @@ sections.
 See the [MPP repo](https://github.com/pw374/MPP-language-blender) and
 [Philippe Wang](http://pw374.github.io/)'s website for details.
 
-Most files within `src/site` and `src/template` are first processed
+Most files within `site/` and `template/` are first processed
 through MPP, as described in more detail below. Thus, strictly they
 are MPP files, not Markdown or HTML files as their .md and .html file
 extensions suggest. Of course, the reason for keeping the .md and
@@ -106,9 +106,9 @@ Markdown or HTML; most files have little or no MPP sections.
 
 PROCESSING PIPELINE
 ===================
-Source files within `src/site` are processed through a sequence of
+Source files within `site/` are processed through a sequence of
 steps to produce the HTML pages constituting the site. The OCaml
-[`Asset`](https://github.com/CUFP/cufp.org/blob/master/src/lib/cufp_asset.mli)
+[`Asset`](https://github.com/CUFP/cufp.org/blob/master/lib/cufp_asset.mli)
 module implements the logic of generating the site. Each file type is
 categorized as being of a certain type, e.g. a general Markdown file,
 or more specifically a Markdown file that contains a blog post. The
@@ -194,6 +194,6 @@ make changes to your copy, and submit a pull request.
 LICENSES
 ========
 See
-[license.md](https://github.com/CUFP/cufp.org/blob/master/src/site/license.md)
+[license.md](https://github.com/CUFP/cufp.org/blob/master/site/license.md)
 within this repo or the [published
 version](http://cufp.org/license.html).

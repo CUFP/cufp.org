@@ -13,11 +13,11 @@ type t = {
 (******************************************************************************)
 (* Non-content Paths                                                          *)
 (******************************************************************************)
-let in_site_root repo_root = repo_root/"src"/"site"
+let in_site_root repo_root = repo_root/"site"
 let out_site_root repo_root = repo_root/"_build"/"site"
 let temp_dir repo_root = repo_root/"_build"/"tmp"
-let main_template repo_root = repo_root/"src"/"template"/"main.html"
-let blog_dir repo_root = repo_root/"src"/"site"/"blog"
+let main_template repo_root = repo_root/"template"/"main.html"
+let blog_dir repo_root = repo_root/"site"/"blog"
 let app_dir repo_root = repo_root/"_build"/"app"
 
 

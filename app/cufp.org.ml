@@ -127,7 +127,7 @@ let print_blog : (string * Command.t) =
        +> anon ("format" %: string)
      )
      (fun repo_root n earliest format () ->
-       Blog.of_dir (repo_root/"src"/"site"/"blog") >>= fun blog ->
+       Blog.of_dir (repo_root/"site"/"blog") >>= fun blog ->
        return (match n with None -> blog | Some n -> Blog.take blog n)
        >>= fun blog ->
        return (match Option.map earliest ~f:Date.of_string with
@@ -155,7 +155,7 @@ let print_video : (string * Command.t) =
      (fun repo_root () ->
        Conference.years ~repo_root () >>=
        Deferred.List.map ~f:(fun year ->
-         sprintf "src/site/%d" year |> Conference.of_dir
+         sprintf "site/%d" year |> Conference.of_dir
        ) >>=
        lift Conference.videos_page >>= fun x ->
        return (Html.to_string [x]) >>= fun x ->

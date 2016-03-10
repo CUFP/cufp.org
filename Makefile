@@ -7,13 +7,13 @@ PRODUCTION=false
 
 ################################################################################
 # CSS
-src/site/css/cufp.css: $(wildcard src/site/css/*.scss)
+site/css/cufp.css: $(wildcard site/css/*.scss)
 	sass -q -I $(shell opam config var lib) cufp.scss > $@
 
 # See changes we've made to Foundation settings.
 .PHONY: diff-scss
 diff-scss:
-	diff $(shell opam config var foundation:lib)/scss/foundation/_settings.scss src/site/css/_settings.scss
+	diff $(shell opam config var foundation:lib)/scss/foundation/_settings.scss site/css/_settings.scss
 
 
 ################################################################################
@@ -35,7 +35,7 @@ _build/app/cufp.org: _build/app/cufp.org.byte
 ################################################################################
 # Build Site
 .PHONY: site
-site: $(APP) _build/app/cufp.org src/site/css/cufp.css
+site: $(APP) _build/app/cufp.org site/css/cufp.css
 	mkdir -p _build/site
 	mkdir -p _build/tmp
 	rsync -a $(shell opam config var modernizr:lib)/modernizr.js _build/site/js/
@@ -57,9 +57,9 @@ clean-site:
 clean:
 	ocamlbuild -clean
 	rm -f $(APP)
-	rm -rf src/site/css/.sass-cache
+	rm -rf site/css/.sass-cache
 
 # Should rarely need to run this. Regenerating these files requires a
 # lot of additional software.
 clean-everything: clean
-	rm -f src/site/css/cufp.css
+	rm -f site/css/cufp.css

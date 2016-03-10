@@ -74,7 +74,7 @@ Note that we will need all presenters to register for the CUFP
 workshop and travel to Vancouver at their own expense.
 
 ## Program Committee
-(( cmd cat src/site/2015/_program_chairs.md src/site/2015/_program_committee.md | omd ))
+(( cmd cat site/2015/_program_chairs.md site/2015/_program_committee.md | omd ))
 
 ## More information
 For more information on CUFP, including videos of presentations from

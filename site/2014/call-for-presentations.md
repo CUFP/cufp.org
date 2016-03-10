@@ -2,20 +2,20 @@
 <div class="small-12 columns" media:type="text/omd">
 
 <center media:type="text/omd">
-# 2016 Call for Presentations
+# 2014 Call for Presentations
 
 **Workshop for<br />
-Commercial Users of Functional Programming 2016<br />
+Commercial Users of Functional Programming 2014<br />
 Sponsored by SIGPLAN<br />
-[CUFP 2016](/2016/)<br />
-Co-located with [ICFP 2016](http://icfpconference.org/icfp2016/)<br />
-Nara, Japan<br />
-September 22-24<br />
-Talk Proposal Submission Deadline: 24 June 2016<br />
-[CUFP 2016 Presentation Submission Form](http://goo.gl/forms/gWDSoKfizW)<br />**
+[CUFP 2014](/2014/)<br />
+Co-located with [ICFP 2014](http://icfpconference.org/icfp2014/)<br />
+Gothenburg, Sweden<br />
+Sep 4-6<br />
+Talk Proposal Submission Deadline: 27 June 2014<br />
+[CUFP 2014 Presentation Submission Form](http://goo.gl/5BJLul)<br />**
 </center>
 
-The annual CUFP event is a place where people can see how others
+The annual CUFP workshop is a place where people can see how others
 are using functional programming to solve real world problems; where
 practitioners meet and collaborate; where language designers and users
 can share ideas about the future of their favorite language; and where
@@ -26,13 +26,14 @@ functional programming to work.
 
 If you have experience using functional languages in a practical
 setting, we invite you to submit a proposal to give a talk at the
-event. We're looking for two kinds of talks:
+workshop. We're looking for two kinds of talks:
 
-**Retrospective talks** are typically 25 minutes long. Now that
-CUFP has run for more than a decade, we intend to invite past
-speakers to share what they’ve learned after a decade spent as
-commercial users of functional programming. We will favour experience
-reports that include technical content.
+**Experience reports** are typically 25 minutes long, and aim to
+inform participants about how functional programming plays out in
+real-world applications, focusing especially on lessons learned and
+insights gained. Experience reports don't need to be highly technical;
+reflections on the commercial, management, or software engineering
+aspects are, if anything, more important.
 
 **Technical talks** are also 25 minutes long, and should focus on
 teaching the audience something about a particular technique or
@@ -56,31 +57,32 @@ the [SIGPLAN Conference Anti-Harassment
 Policy](http://www.sigplan.org/Resources/Policies/Anti-harassment).
 
 If you are interested in offering a talk, or nominating someone to do
-so, please submit your presentation before 24 June 2016 via the
+so, please submit your presentation before 27 June 2014 via the
 
-[CUFP 2016 Presentation Submission Form](http://goo.gl/forms/gWDSoKfizW)
+[CUFP 2014 Presentation Submission Form](http://goo.gl/5BJLul)
 
 You do not need to submit a paper, just a short proposal for your
-talk. There will be a short scribe's report of the presentations and
+talk! There will be a short scribe's report of the presentations and
 discussions but not of the details of individual talks, as the meeting
-is intended to be more of a discussion forum than a technical
+is intended to be more a discussion forum than a technical
 interchange.
 
-Nevertheless, presentations will be recorded and presenters will be
+Nevertheless, presentations will be video taped and presenters will be
 expected to sign an ACM copyright release form.
 
 Note that we will need all presenters to register for the CUFP
-workshop and travel to Japan at their own expense.
+workshop and travel to Gothenburg at their own expense.
 
 ## Program Committee
-(( cmd cat src/site/2016/_program_chairs.md src/site/2016/_program_committee.md | omd ))
+(( cmd cat site/2014/_program_chairs.md site/2014/_program_committee.md | omd ))
 
 ## More information
 For more information on CUFP, including videos of presentations from
 previous years, take a look at the CUFP website at
 [http://cufp.org](/). Note that presenters, like other attendees, will
-need to register for the event. Acceptance and rejection letters will 
-be sent out by July 15th.
+need to register for the event. Presentations will be video taped and
+presenters will be expected to sign an ACM copyright release
+form. Acceptance and rejection letters will be sent out by July 16th.
 
 
 ## Guidance on giving a great CUFP talk
@@ -89,9 +91,9 @@ be sent out by July 15th.
 your talk, and what will engage the audience, and focus there. There
 are a number of places to look for those interesting bits.
 
-* **Setting**: FP is pretty well-established in some areas, including
-  formal verification, financial processing, and server-side
-  web services. An unusual setting can be a source of interest. If
+* **Setting**: FP is pretty well established in some areas, including
+  formal verification, financial processing and server-side
+  web-services. An unusual setting can be a source of interest. If
   you're deploying FP-based mobile UIs or building servers on oil
   rigs, then the challenges of that scenario are worth focusing
   on. Did FP help or hinder in adapting to the setting?
@@ -100,12 +102,12 @@ are a number of places to look for those interesting bits.
   techniques work in practice. What design patterns have you applied,
   and to what areas? Did you use functional reactive programming for
   user interfaces, or DSLs for playing chess, or fault-tolerant actors
-  for large-scale geological data processing?  Teach us something
+  for large scale geological data processing?  Teach us something
   about the techniques you used, and why we should consider using them
   ourselves.
 
-* **Getting things done**: How did you deal with large-scale software
-  development in the absence of pre-existing support tools that
+* **Getting things done**: How did you deal with large software
+  development in the absence of a myriad of pre-existing support that
   are often expected in larger commercial environments (IDEs, coverage
   tools, debuggers, profilers) and without larger, proven bodies of
   libraries? Did you hit any brick walls that required support from
@@ -113,9 +115,9 @@ are a number of places to look for those interesting bits.
 
 * **Don't just be a cheerleader**: It's easy to write a rah-rah talk
   about how well FP worked for you, but CUFP is more interesting when
-  the talks also cover what doesn't work. Even when the results were 
-  all great, you should spend more time on the challenges along the way 
-  than on the parts that went smoothly.
+  the talks also spend time on what doesn't work. Even when the
+  results were all great, you should spend more time on the challenges
+  along the way than on the parts that went smoothly.
 
 </div>
 </div>

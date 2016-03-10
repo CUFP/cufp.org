@@ -87,11 +87,11 @@ Schedule not yet available.
 <div class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 
-## Program Chairs(( cmd omd src/site/2016/_program_chairs.md ))
+## Program Chairs(( cmd omd site/2016/_program_chairs.md ))
 
-## Program Committee(( cmd omd src/site/2016/_program_committee.md ))
+## Program Committee(( cmd omd site/2016/_program_committee.md ))
 
-## Tutorial Chairs (( cmd omd src/site/2016/_tutorial_chairs.md ))
+## Tutorial Chairs (( cmd omd site/2016/_tutorial_chairs.md ))
 
 </div>
 </div>
