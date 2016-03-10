@@ -11,6 +11,7 @@ maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
 build: [omake]
 
 depends: [
+  "solvuu_build" {build}
   "core" {>= "113.24.02"}
   "async"
   "omd"

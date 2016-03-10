@@ -1,8 +1,8 @@
 open Core.Std
 open Async.Std
 open Sexplib
-open Cufp
-open Cufp.Util
+open Cufporg_async.Cufp
+open Cufporg_async.Cufp.Util
 let (/) = Filename.concat
 
 module Param = struct
