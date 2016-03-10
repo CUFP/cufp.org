@@ -8,7 +8,7 @@ let (/) = Filename.concat
 type t = {
   repo_root : string; (* absolute path *)
   path : string list; (* site root-relative path *)
-} with sexp
+} [@@deriving sexp]
 
 (******************************************************************************)
 (* Non-content Paths                                                          *)

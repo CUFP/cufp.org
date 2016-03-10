@@ -22,7 +22,7 @@ LIB_DESCRIPTION = Implementation of the cufp.org website.
 LIB_MODULES[] =
   $(removesuffix $(basename $(ls src/lib/*.ml)))
   cufp_about
-LIB_PACKAGES = core async sexplib.syntax \
+LIB_PACKAGES = core async ppx_sexp_conv \
                omd yojson \
                uri netstring rss
 
@@ -91,7 +91,7 @@ OCAMLOPTFLAGS =
 OCAML_LINK_FLAGS = -linkpkg
 OCAML_BYTE_LINK_FLAGS =
 OCAML_NATIVE_LINK_FLAGS =
-OCAMLFINDFLAGS = -syntax camlp4o
+OCAMLFINDFLAGS =
 
 
 ################################################################################

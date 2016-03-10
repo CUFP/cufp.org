@@ -10,7 +10,7 @@ module Video = Cufp_video
 let (/) = Filename.concat
 
 type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion | Reception
-with sexp
+[@@deriving sexp]
 
 type t = {
   typ : typ;

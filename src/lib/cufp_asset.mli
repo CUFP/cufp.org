@@ -52,12 +52,12 @@ type typ =
 | Text
 | Dir
 | File
-with sexp
+[@@deriving sexp]
 
 type t = private {
   typ : typ;
   path : Cufp_path.t;
-} with sexp
+} [@@deriving sexp]
 
 
 (** [of_file path] returns the asset corresponding to the given
