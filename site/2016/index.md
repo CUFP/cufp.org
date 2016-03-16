@@ -29,7 +29,7 @@ and consists of two components: Talks and Tutorials.
 
 <div class="row" media:type="text/omd">
 
-<div class="medium-4 columns tutorial" media:type="text/omd">
+<div class="medium-6 columns tutorial" media:type="text/omd">
 ### <i class="fi-laptop"></i> Tutorials
 ###### Thursday-Friday September 22nd-23rd
 CUFP tutorials are in-depth, hands-on sessions for learning functional
@@ -37,11 +37,9 @@ programming languages, libraries and toolkits directly from the
 experts and leaders in their fields. We have a broad variety
 of tutorials, including OCaml, Scripting Haskell, LiquidHaskell, PureScript,
 Coq, F* for programming effectful programs, and Clojure.
-
-<a href="/2016/tutorial-schedule.html" class="tiny radius button">Info</a>
 </div>
 
-<div class="medium-4 columns talk" media:type="text/omd">
+<div class="medium-6 columns talk" media:type="text/omd">
 ### <i class="fi-microphone"></i> Talks
 ###### Saturday September 24th
 Talks are by expert practitioners and will be split between experience reports,
