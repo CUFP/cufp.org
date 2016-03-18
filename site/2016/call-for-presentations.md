@@ -70,7 +70,8 @@ Nevertheless, presentations will be recorded and presenters will be
 expected to sign an ACM copyright release form.
 
 Note that we will need all presenters to register for the CUFP
-workshop and travel to Japan at their own expense.
+workshop and travel to Japan at their own expense. There are some funds
+available to would-be presenters who require assistance in this respect.
 
 ## Program Committee
 (( cmd cat site/2016/_program_chairs.md site/2016/_program_committee.md | omd ))
