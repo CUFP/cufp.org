@@ -37,6 +37,8 @@ programming languages, libraries and toolkits directly from the
 experts and leaders in their fields. We have a broad variety
 of tutorials, including OCaml, Scripting Haskell, LiquidHaskell, PureScript,
 Coq, F* for programming effectful programs, and Clojure.
+
+<a href="/2016/call-for-tutorials.html" class="tiny radius button">Call for tutorials</a>
 </div>
 
 <div class="medium-6 columns talk" media:type="text/omd">
