@@ -6,7 +6,9 @@
 Commercial Users of Functional Programming (CUFP) is an annual meeting
 co-located with the International Conference on Functional Programming which
 this year will take place in Nara, Japan from the 22nd to 24th of September
-2016. CUFP aims to bridge the gap between academia and users applying functional
+2016.
+
+CUFP aims to bridge the gap between academia and users applying functional
 programming in practice. CUFP provides high-quality practical tutorials covering
 state-of-the-art techniques and tools for functional programming. There will be
 a mix of tutorials on introduction and advanced level, such that anyone that
@@ -69,6 +71,8 @@ to CUFP and ICFP, as outlined below.
 Note that we reserve the right to cancel tutorials with fewer than 5
 registrants, but we will try hard to avoid having to do so. No compensation will
 be awarded for cancelled tutorials.
+
+[Register here to submit a CUFP tutorial proposal.](https://easychair.org/conferences/?conf=cufp2016)
 
 If you have any questions, email Roman Gonzalez: roman at unbounce dot com or
 Takayuki Muranushi: muranushi at gmail dot com
