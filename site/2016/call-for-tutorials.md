@@ -3,11 +3,13 @@
 
 # CUFP 2016 Call for Tutorials
 
+## NOTICE: The submission deadline has been extended until July 1st, 2016.
+
 The Commercial Users of Functional Programming (CUFP) is an annual meeting co-located with the International Conference on Functional Programming (ICFP) which this year will take place in Nara, Japan from the 22nd to 24th of September 2016.
 
 CUFP aims to bridge the gap between academia and users applying functional programming in practice. CUFP provides high-quality practical tutorials covering state-of-the-art techniques and tools for functional programming. There will be a mix of tutorials on introduction and advanced level, such that anyone that wants to learn something new has an opportunity to do so.
 
-We are seeking proposals for half-day tutorials to be presented during the first two days of the meeting, 22nd and 24th of September. Submission deadline is June 26th, but the earlier you submit, the better!
+We are seeking proposals for half-day tutorials to be presented during the first two days of the meeting, 22nd and 24th of September. Submission deadline is July 1st, but the earlier you submit, the better!
 
 ## Please read these guidelines before submitting:
 
