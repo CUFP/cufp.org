@@ -59,6 +59,16 @@ libraries and packages beyond the standard library will be needed. The
 most basic installation should suffice.
 
 ## Speaker Bio
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/User_silhouette_512.png" alt="Oleg Kiselyov"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Oleg Kiselyov is an Assistant Professor at the Tohoku
 University, Japan. More information is on the web site
 http://okmij.org/ftp/
+</div>
+
+</div>

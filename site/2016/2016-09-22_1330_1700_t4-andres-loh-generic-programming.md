@@ -39,6 +39,13 @@ extensions such as GADTs or data kinds is assumed.
 Participants need to bring a laptop with the GHC compiler (>= 8.0.1) and
 
 ## Speaker Bio
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/User_silhouette_512.png" alt="Andres Löh"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 I am a Haskell consultant and co-owner of Well-Typed LLP, living in
 Regensburg, Germany. My first exposure to functional programming was during
 my undergraduate studies in Mathematics and Computer Science at the
@@ -58,3 +65,6 @@ At Well-Typed, I'm working on various projects for companies that use Haskell,
 as well as on open-source Haskell projects. I enjoy finding many opportunities
 to apply Computer Science research (other people's as well as mine) in
 practice. I am also responsible for designing and developing our Haskell training courses.
+</div>
+
+</div>

@@ -17,4 +17,14 @@ App developers interested in functional programming, no prior F# experience is n
 Attendees must install F# and Node.js on their computers. Instructions for installation on each OS platform can be found in the respective websites: fsharp.org and nodejs.org. An IDE, like Atom or Visual Studio Code with Ionide plugin (http://ionide.io), is also recommended.
 
 ## Speaker Bio
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/User_silhouette_512.png" alt="Alfonso García-Caro"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Alfonso García-Caro is a .NET/JS developer of eclectic background. After getting a degree in Linguistics, he lived in Japan, where he learnt the language, and Germany, where he didn't learn the language that well but programming instead to develop CAT (Computer Aided Translation) software. His interest in functional programming and web development led him to create Fable, an F# to JS compiler, which has quickly become very popular in the F# community. Alfonso is also an international speaker, who's presented about F# and his projects in the US, UK, Japan and Spain. Currently also learning about Machine Learning and finishing a book on F#. Twitter: @alfonsogcnunez
+</div>
+
+</div>

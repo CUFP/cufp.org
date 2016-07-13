@@ -15,4 +15,14 @@ all functional programmers
 DrRacket (http://racket-lang.org/) should be installed on your system.
 
 ## Speaker Bio
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/michael-sperber.jpg" alt="Michael Sperber"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Michael Sperber is CTO of Active Group in Filderstadt, Germany.  He is a long-time visitor and contributor of ICFP and associated workshops.  (This year he is program chair of FARM.)  Mike maintains a strong interest in teaching programming, has published several papers (at ICFP and other venues) and has designed introductory courses for several German universities.  He also regularly conducts professional training in functional programming.
+</div>
+
+</div>

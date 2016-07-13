@@ -24,4 +24,14 @@ Haskell users who have basic knowledge of lens
 * cabal or stack
 
 ## Speaker Bio
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/User_silhouette_512.png" alt="Fumiaki Kinoshita"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
 Fumiaki Kinoshita is a composer at Tsuru Capital, interested in utilizing abstract concepts for practical use.
+</div>
+
+</div>
