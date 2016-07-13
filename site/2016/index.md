@@ -58,11 +58,9 @@ functional programming in practical settings.
 <div id="schedule" class="row" media:type="text/omd">
 <div class="small-12 columns" media:type="text/omd">
 ## Day 1 - Thu Sep 22nd  <small>Tutorials</small>
-Schedule not yet available.
 (( cmd cufp.org print event-list -date 2016-09-22 2016 ))
 
 ## Day 2 - Fri Sep 23rd <small>Tutorials</small>
-Schedule not yet available.
 (( cmd cufp.org print event-list -date 2016-09-23 2016 ))
 
 ## Day 3 - Sat Sep 24th <small>Talks</small>
