@@ -1,5 +1,5 @@
 - type: tutorial
-- title: Extensible Effects: understanding them, implementing them, using them
+- title: T2: Extensible Effects: understanding them, implementing them, using them
 - speakers: Oleg Kiselyov
 
 ## Abstract

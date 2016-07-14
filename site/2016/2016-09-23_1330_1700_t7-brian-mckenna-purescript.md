@@ -1,5 +1,5 @@
 - type: tutorial
-- title: PureScript Front-end Developement
+- title: T7: PureScript Front-end Developement
 - speakers: Brian McKenna
 
 ## Abstract

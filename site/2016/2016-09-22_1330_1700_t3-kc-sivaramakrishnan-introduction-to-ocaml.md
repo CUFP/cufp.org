@@ -1,5 +1,5 @@
 - type: tutorial
-- title: Introduction to OCaml
+- title: T3: Introduction to OCaml
 - speakers: “KC” Sivaramakrishnan
 
 ## Abstract
