@@ -1,5 +1,5 @@
 - type: tutorial
-- title: An Introduction to to Type-Level and Generic Programming in Haskell
+- title: T4: An Introduction to to Type-Level and Generic Programming in Haskell
 - speakers: Andres Löh
 
 ## Abstract

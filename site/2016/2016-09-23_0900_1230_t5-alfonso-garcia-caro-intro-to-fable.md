@@ -1,5 +1,5 @@
 - type: tutorial
-- title: Fable, an F# to JavaScript compiler
+- title: T5: Fable, an F# to JavaScript compiler
 - speakers: Alfonso García-Caro
 
 ## Abstract

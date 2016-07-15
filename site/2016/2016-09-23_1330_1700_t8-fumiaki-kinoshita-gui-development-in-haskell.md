@@ -1,5 +1,5 @@
 - type: tutorial
-- title: Transforming data into GUI: a new style graphical user interface library for Haskell
+- title: T8: Transforming data into GUI: a new style graphical user interface library for Haskell
 - speakers: Fumiaki Kinoshita
 
 ## Abstract

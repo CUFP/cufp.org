@@ -1,5 +1,5 @@
 - type: tutorial
-- title: LiquidHaskell: Verification of Haskell Programs with SMTs
+- title: T6: LiquidHaskell: Verification of Haskell Programs with SMTs
 - speakers: Niki Vazou
 
 ## Abstract
