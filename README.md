@@ -19,6 +19,7 @@ opam repo add web https://github.com/solvuu/opam-repo-web.git
 opam switch cufp.org -A 4.02.3
 cd /to/your/working/directory
 opam pin add cufporg . -n
+opam pin add solvuu_build 0.0.2
 opam install cufporg --deps-only
 ```
 
