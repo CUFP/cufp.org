@@ -11,3 +11,15 @@ This talk will step through our use of Amazon Web Services and how we manage the
 
 From this talk the audience will take away knowledge of a specific example of Haskell and functional programming techniques being used to deal with the complexity of system management and deployment in a commercial setting. The lessons learned will be widely applicable to all forms of programming and system design with the hope that the functional underpinnings of our systems provide insight for people to apply similar techniques in a wide variety of domains.
 
+## Nick Hibberd
+
+<div class="row" media:type="text/omd">
+
+<div class="medium-4 columns">
+<img src="img/nick-hibberd.jpg" alt="Nick Hibberd"></img>
+</div>
+
+<div class="medium-8 columns" media:type="text/omd">
+Nick is a Data Lake Fisherman who drinks tea and writes Haskell at Ambiata.
+</div>
+</div>
