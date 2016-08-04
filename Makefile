@@ -1,7 +1,7 @@
 .PHONY: default
 default: site
 
-include $(shell opam config var solvuu_build:lib)/solvuu.mk
+include $(shell opam config var solvuu-build:lib)/solvuu.mk
 
 PRODUCTION=false
 
