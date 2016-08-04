@@ -21,7 +21,6 @@ depends: [
   "ocamlnet"
   "ocamlrss"
   "foundation"
-  "foundation-icons"
   "fairhead-webicons"
   "flaticon-feather-pen"
 ]
