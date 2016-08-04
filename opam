@@ -20,7 +20,4 @@ depends: [
   "uri"
   "ocamlnet"
   "ocamlrss"
-  "foundation"
-  "fairhead-webicons"
-  "flaticon-feather-pen"
 ]

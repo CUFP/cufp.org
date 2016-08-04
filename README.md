@@ -10,12 +10,11 @@ need to build the site locally. You can just add or modify Markdown
 files.
 
 If you do want to test your changes locally before pushing, you'll
-need to have OCaml and several libraries installed. It is recommended
-to use [OPAM](http://opam.ocaml.org/). Once you have it installed, you
-can do:
+need to have several OCaml, for which we assume you have
+[opam](http://opam.ocaml.org/). Once you have it installed, you can
+do:
 
 ```
-opam repo add web https://github.com/solvuu/opam-repo-web.git
 opam switch cufp.org -A 4.02.3
 cd /to/your/working/directory
 opam pin add cufporg . -n
@@ -23,7 +22,14 @@ opam pin add solvuu_build 0.0.2
 opam install cufporg --deps-only
 ```
 
-The `switch` step is optional.
+The `switch` step is optional. It is recommended unless this is the
+only OCaml project you work on.
+
+You will also need to have some JavaScript libraries installed, for
+which we assume you have [npm](https://www.npmjs.com/)
+installed. However, you do not need to explicitly run it. JavaScript
+packages will be installed as needed by the build process, described
+in the next section.
 
 
 BUILD INSTRUCTIONS

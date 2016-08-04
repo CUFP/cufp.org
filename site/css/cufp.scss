@@ -1,6 +1,5 @@
 @import "settings";
-@import "foundation/scss/normalize";
-@import "foundation/scss/foundation";
+@import "foundation";
 
 ////////////////////////////////////////////////////////////////////////////////
 // Main conference pages are divided into panes. The following classes
@@ -41,7 +40,7 @@
 
 // Fix top padding, which seems too little. Not sure this is best solution.
 .row {
-  padding-top: $rem-base * 0.8;
+  padding-top: $global-font-size * 0.8;
 }
 
 
@@ -60,7 +59,7 @@ body.conference {
     }
 
     // In banner, H2 margin should be larger.
-    h2 {margin-bottom: $rem-base;}
+    h2 {margin-bottom: $global-font-size;}
 
     background-repeat: no-repeat;
     background-size: cover;

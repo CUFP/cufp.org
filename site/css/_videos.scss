@@ -8,8 +8,8 @@ body.videos {
   }
 
   dd .row {
-    padding-top: $rem-base;
-    padding-bottom: $rem-base;
+    padding-top: $global-font-size;
+    padding-bottom: $global-font-size;
   }
 
   dd .row:not(:last-child) {
@@ -25,7 +25,7 @@ body.videos {
   }
 
   dl {
-    margin-bottom: $rem-base;
+    margin-bottom: $global-font-size;
   }
 
 }

@@ -7,13 +7,13 @@
 $footer-color: #CCCCCC;
 
 footer:not(.copyright) {
-  background-color: $topbar-bg-color;
-  padding-top: $rem-base;
-  padding-bottom: $rem-base;
+  background-color: $topbar-background;
+  padding-top: $global-font-size;
+  padding-bottom: $global-font-size;
 }
 
 footer * {
-  font-size: $rem-base * 0.8;
+  font-size: $global-font-size * 0.8;
   color: $footer-color;
 }
 
@@ -53,13 +53,13 @@ footer .conferences ul {
 // Footer .social section
 footer .social * {
   text-align: center;
-  font-size: $rem-base * 2;
+  font-size: $global-font-size * 2;
 }
 
 // Footer .copyright section
 footer.copyright {
   text-align: center;
-  background-color: scale-color($topbar-bg-color, $lightness: 10%);
+  background-color: scale-color($topbar-background, $lightness: 10%);
   a:link, a:visited {
     border-bottom: 1px dotted;
   }

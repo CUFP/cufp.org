@@ -42,7 +42,7 @@ table.event {
 @mixin event-row($event-color) {
   vertical-align: text-top;
 
-  * {font-size: $table-row-font-size}
+  * {font-size: $global-font-size}
 
   a:link, a:visited {
     color: $body-font-color;
@@ -117,7 +117,7 @@ body.event {
   div.speakers ul {
     list-style-type: none;
     margin-left: 0;
-    margin-bottom: 0.5 * $rem-base;
+    margin-bottom: 0.5 * $global-font-size;
     li {display:inline};
     li:not(:last-child):after {
       content: ", "
@@ -129,11 +129,11 @@ body.event {
     font-style: italic;
     font-size: 75%;
     margin-top: 0;
-    margin-bottom: $rem-base;
+    margin-bottom: $global-font-size;
   }
 
   div.video {
-    margin-bottom: $rem-base;
+    margin-bottom: $global-font-size;
   }
 
   img {

@@ -1,5 +1,7 @@
 /_cache
-/_build/
+/node_modules
+/npm-debug.log
+/_build
 /cufporg.install
 /.merlin
 /.ocamlinit
