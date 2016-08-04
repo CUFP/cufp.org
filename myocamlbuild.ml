@@ -7,8 +7,8 @@ let version = "dev"
 
 let lib : Project.item = Project.lib project_name
     ~pkg:project_name
-    ~dir:"lib/async"
-    ~pack_name:(project_name ^ "_async")
+    ~dir:"lib"
+    ~pack_name:project_name
     ~findlib_deps:[
       "async"; "core"; "mpp"; "netstring"; "omd"; "ppx_sexp_conv";
       "rss"; "uri"; "yojson";
