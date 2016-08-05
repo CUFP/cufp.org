@@ -6,7 +6,7 @@ type json = Yojson.Basic.json
 type t
 
 val of_file : string -> t Deferred.t
-val to_html : ?production:bool -> depth:int -> t -> Cufp_html.t
+val to_html : ?production:bool -> depth:int -> t -> Html.t
 
 (** [get_string al field] gets the string value of [field] from given
     association list. Raise [Failure] if value is not a string. *)

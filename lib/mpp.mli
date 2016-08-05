@@ -28,10 +28,10 @@ val main_template :
 val mpp :
   ?temp_dir:string ->
   ?its:bool ->
-  ?set:(string * Cufp_string_as.t option) list ->
+  ?set:(string * String_as.t option) list ->
   ?out_file:string ->
   app_dir:string ->
-  Cufp_string_as.t ->
+  String_as.t ->
   string Deferred.t
 
 

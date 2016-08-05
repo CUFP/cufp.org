@@ -1,6 +1,5 @@
 open Core.Std
 open Async.Std
-module Html = Cufp_html
 
 let script_text = "
   var disqus_shortname = 'cufp';

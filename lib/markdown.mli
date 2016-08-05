@@ -3,13 +3,13 @@ open Core.Std
 open Async.Std
 
 (** Convert given Markdown string to html. *)
-val to_html : string -> Cufp_html.t
+val to_html : string -> Html.t
 
 (** Like [to_html] but input is a file name. *)
-val file_to_html : string -> Cufp_html.t Deferred.t
+val file_to_html : string -> Html.t Deferred.t
 
 (** Conversion not very comprehensive. Use with caution. *)
-val of_html : Cufp_html.t -> Omd.t
+val of_html : Html.t -> Omd.t
 
 (** Parse markdown that is assumed to be an unordered list, with each
     item being a tag-value pair separated by a colon. *)

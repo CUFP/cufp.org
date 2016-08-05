@@ -1,11 +1,6 @@
 open Core.Std
 open Async.Std
 module Event = Cufp_event
-module Html = Cufp_html
-module Person = Cufp_person
-module Slides = Cufp_slides
-module Util = Cufp_util
-module Video = Cufp_video
 let (/) = Filename.concat
 
 type session = Cufp_event.t list

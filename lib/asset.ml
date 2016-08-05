@@ -1,14 +1,8 @@
 open Core.Std
 open Async.Std
-module Blog = Cufp_blog
 module Event = Cufp_event
-module Html = Cufp_html
-module Json = Cufp_json
-module Markdown = Cufp_markdown
-module Mpp = Cufp_mpp
 module Path = Cufp_path
-module Util = Cufp_util
-let lift = Cufp_util.lift
+let lift = Util.lift
 
 type typ =
 | Front_page

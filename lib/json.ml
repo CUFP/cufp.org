@@ -1,6 +1,5 @@
 open Core.Std
 open Async.Std
-module Html = Cufp_html
 
 type json = Yojson.Basic.json
 

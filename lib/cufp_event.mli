@@ -11,10 +11,10 @@ type t = {
   date : Date.t;
   start : Time.Ofday.t;
   finish : Time.Ofday.t;
-  speakers : Cufp_person.t list;
+  speakers : Person.t list;
   session : string option;
-  video : Cufp_video.t option;
-  slides : Cufp_slides.t option;
+  video : Video.t option;
+  slides : Slides.t option;
   description : Omd.t;
 }
 
@@ -36,10 +36,10 @@ val make :
   date : Date.t ->
   start : Time.Ofday.t ->
   finish : Time.Ofday.t ->
-  speakers : Cufp_person.t list ->
+  speakers : Person.t list ->
   session : string option ->
-  video : Cufp_video.t option ->
-  slides : Cufp_slides.t option ->
+  video : Video.t option ->
+  slides : Slides.t option ->
   description : Omd.t ->
   unit ->
   t
@@ -62,7 +62,7 @@ val is_valid_filename : string -> bool
     determined automatically. *)
 val to_file : t -> string -> unit Deferred.t
 
-val to_html : t -> Cufp_html.t
+val to_html : t -> Html.t
 
 val typ_to_string : typ -> string
 
@@ -71,4 +71,4 @@ val typ_to_string : typ -> string
 val short_description : t -> string
 
 (** Foundation icon for given event [typ], if any. *)
-val icon : typ -> Cufp_html.item Or_error.t
+val icon : typ -> Html.item Or_error.t

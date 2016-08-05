@@ -1,12 +1,5 @@
 open Core.Std
 open Async.Std
-module Disqus = Cufp_disqus
-module Html = Cufp_html
-module Markdown = Cufp_markdown
-module Person = Cufp_person
-module Util = Cufp_util
-module Slides = Cufp_slides
-module Video = Cufp_video
 let (/) = Filename.concat
 
 type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion | Reception
@@ -19,10 +12,10 @@ type t = {
   date : Date.t;
   start : Time.Ofday.t;
   finish : Time.Ofday.t;
-  speakers : Cufp_person.t list;
+  speakers : Person.t list;
   session : string option;
-  video : Cufp_video.t option;
-  slides: Cufp_slides.t option;
+  video : Video.t option;
+  slides: Slides.t option;
   description : Omd.t;
 }
 

@@ -1,6 +1,5 @@
 open Core.Std
 open Async.Std
-module Html = Cufp_html
 
 let to_html s =
   Omd.of_string s |> Omd.to_html |> Html.parse

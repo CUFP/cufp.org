@@ -10,7 +10,7 @@ module Post : sig
   type t = private {
     title : string;
     url_title : string;
-    author : Cufp_person.t option;
+    author : Person.t option;
     pubdate : Date.t;
     description : Omd.t;
     categories : string list;
@@ -29,7 +29,7 @@ module Post : sig
   val make :
     title:string ->
     url_title:string ->
-    ?author:Cufp_person.t ->
+    ?author:Person.t ->
     pubdate:Date.t ->
     description:Omd.t ->
     categories:(string list) ->
@@ -54,8 +54,8 @@ module Post : sig
       filename is determined automatically from [t]. *)
   val to_file : t -> string -> unit Deferred.t
 
-  val to_html_item : t -> Cufp_html.item
-  val to_html : t -> Cufp_html.t
+  val to_html_item : t -> Html.item
+  val to_html : t -> Html.t
 
 
   (** {6 Miscellaneous} *)
@@ -82,7 +82,7 @@ val of_dir : string -> t Deferred.t
 (** Print feed as an XML string in RSS 2.0 format. *)
 val to_string_rss : t -> string
 
-val to_html : t -> Cufp_html.t
+val to_html : t -> Html.t
 
 (** {6 List Operations}
 

@@ -1,8 +1,6 @@
 open Core.Std
 open Async.Std
-module Blog = Cufp_blog
 module Event = Cufp_event
-module Util = Cufp_util
 let (/) = Filename.concat
 
 type t = {

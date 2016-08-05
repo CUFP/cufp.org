@@ -32,8 +32,8 @@ val years : repo_root:string -> unit -> int list Deferred.t
 
 (** {6 HTML} *)
 
-val session_rows : session -> Cufp_html.item list
-val sessions_table : ?date:Date.t -> t -> Cufp_html.item
+val session_rows : session -> Html.item list
+val sessions_table : ?date:Date.t -> t -> Html.item
 
 (** Generate the videos page. *)
-val videos_page : t list -> Cufp_html.item
+val videos_page : t list -> Html.item

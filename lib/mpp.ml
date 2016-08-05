@@ -1,8 +1,6 @@
 open Core.Std
 open Async.Std
-module Html = Cufp_html
 module Path = Cufp_path
-module Util = Cufp_util
 
 let mpp_sys ?(its=false) ?(set=[]) ?o ~app_dir file =
   let env = `Extend [

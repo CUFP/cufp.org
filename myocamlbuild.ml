@@ -13,7 +13,7 @@ let lib : Project.item = Project.lib project_name
       "async"; "core"; "mpp"; "netstring"; "omd"; "ppx_sexp_conv";
       "rss"; "uri"; "yojson";
     ]
-    ~ml_files:(`Add ["cufp_about.ml"])
+    ~ml_files:(`Add ["about.ml"])
 
 let app : Project.item = Project.app "cufp.org"
     ~internal_deps:[lib]

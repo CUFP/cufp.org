@@ -1,17 +1,12 @@
 open Core.Std
 open Async.Std
-module Conference = Cufp_conference
-module Html = Cufp_html
-module Markdown = Cufp_markdown
-module Person = Cufp_person
-module Util = Cufp_util
 let (/) = Filename.concat
 
 module Post = struct
   type t = {
     title : string;
     url_title : string;
-    author : Cufp_person.t option;
+    author : Person.t option;
     pubdate : Date.t;
     description : Omd.t;
     categories : string list;
