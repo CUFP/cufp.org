@@ -64,7 +64,6 @@ functional programming in practical settings.
 (( cmd cufp.org print event-list -date 2016-09-23 2016 ))
 
 ## Day 3 - Sat Sep 24th <small>Talks</small>
-Schedule not yet available.
 (( cmd cufp.org print event-list -date 2016-09-24 2016 ))
 
 </div>
