@@ -1,5 +1,5 @@
 .PHONY: default-rule
-default-rule: site
+default-rule: .merlin .ocamlinit site
 
 include $(shell opam config var solvuu-build:lib)/solvuu.mk
 
