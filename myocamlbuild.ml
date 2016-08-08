@@ -22,7 +22,7 @@ let app : Project.item = Project.app "cufp.org"
 let ocamlinit_postfix = [
   "open Core.Std";
   "open Async.Std";
-  "open Cufporg.Cufp";
+  "open Cufporg.Std";
 ]
 
 ;;
