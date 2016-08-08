@@ -53,10 +53,10 @@ site/js/app.min.js: site/js/app.js \
 
 ################################################################################
 # OCaml
-_build/app/cufp.org.byte:
+_build/app/cufp.org.byte: FORCE
 	$(OCAMLBUILD) app/cufp.org.byte
 
-_build/app/cufp.org.native:
+_build/app/cufp.org.native: FORCE
 	$(OCAMLBUILD) app/cufp.org.native
 
 _build/app/cufp.org: _build/app/cufp.org.byte
@@ -152,3 +152,6 @@ distclean: clean clean-cache
 clean-everything: distclean
 	rm -f site/css/cufp.css
 	rm -f site/js/app.min.js
+
+# Don't delete this. It is a trick to make ocamlbuild always run. See above.
+FORCE:
