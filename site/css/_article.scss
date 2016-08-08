@@ -1,0 +1,16 @@
+.article
+{
+	a:hover
+	{
+		text-decoration: underline;
+	}
+	
+	@include breakpoint(medium)
+	{
+		p:first-child
+		{
+			font-size: $paragraph-font-size*1.3;
+			line-height: $paragraph-line-height;
+		}
+	}
+}

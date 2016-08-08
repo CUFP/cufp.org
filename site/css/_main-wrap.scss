@@ -1,0 +1,85 @@
+.main-wrap
+{
+	background: $clouds;
+	position: relative;
+	z-index: 10;
+
+	.introduction, .action-bar, .inner-intro
+	{
+		@include grid-col(12);
+		margin: $column-gutter/2 0;
+	}
+
+	.intro-paragraph
+	{
+		&:last-of-type
+		{
+			margin-bottom: 0;
+		}
+
+		.diamond
+		{
+			float: right;
+			margin-right: $column-gutter/2;
+		}
+
+		h4
+		{
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+
+		small
+		{
+			display: block;
+			font-size: 0.8rem;
+			color: $small-font-color;
+			padding-bottom: $paragraph-margin-bottom/2;
+			border-bottom: 1px solid $hr-border-color;
+			margin-bottom: $paragraph-margin-bottom/2;
+		}
+	}
+
+@include breakpoint(medium)
+{
+	.introduction
+	{
+		position: relative;
+		z-index: 20;
+		@include grid-column(7.5);
+		padding-top: $column-gutter;
+		padding-bottom: $column-gutter;
+
+		p
+		{
+			font-size: $paragraph-font-size*1.2;
+
+			&:first-child
+			{
+				font-size: $paragraph-font-size*1.5;
+			}
+		}
+	}
+
+	.action-bar
+	{
+		@include grid-col(3.5);
+		@include grid-column-offset(1);
+	}
+
+	.intro-paragraph
+	{
+		.diamond
+		{
+			margin-right: 0;
+		}
+	}
+}
+
+}
+
+.white-bg
+{
+	background-color: $white;
+	//@extend %padded;
+}

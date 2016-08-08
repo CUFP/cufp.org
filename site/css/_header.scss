@@ -1,0 +1,166 @@
+header
+{
+	background: no-repeat center center / cover;
+	//background-attachment: fixed;
+	position: relative;
+	z-index: 1000;
+
+	&:after
+	{
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: 0; right:0; bottom: 0; left: 0;
+		background: url('../images/overlay.png') center 40% / cover;
+		opacity: 0.625;
+	}
+
+	nav
+	{
+		position: relative;
+		z-index: 10;
+		@include grid-col(12);
+		padding: $column-gutter/2;
+
+		a
+		{
+			display: inline-block;
+			background: $white;
+			padding: 0.4rem 1rem;
+			font-weight: $font-weight-bold;
+			line-height: 1.4;
+
+			i
+			{
+				margin-right: 0.5rem;
+				color: $asbestos;
+			}
+
+			&:hover
+			{
+				background: $secondary-color;
+
+				i
+				{
+				}
+			}
+		}
+
+		select
+		{
+			border: none;
+			margin: 0;
+			vertical-align: top;
+			background-color: $white;
+			padding: 0.50rem 1.6rem 0.5rem 1rem;
+			height: auto;
+			color: $primary-color;
+			width: auto;
+			font-weight: $font-weight-bold;
+			line-height: 1.4;
+		}
+
+		.sub-menu
+		{
+			display: none;
+			position: absolute;
+			top: 100%;
+			padding-top: 0.25rem;
+
+			a
+			{
+				margin-bottom: 0.25rem;
+				white-space: nowrap;
+			}
+		}
+
+		&>div
+		{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+
+			&:hover, &.hover
+			{
+				z-index: 999;
+
+				.sub-menu
+				{
+					display: block;
+				}
+			}
+		}
+	}
+
+	.title
+	{
+		@include grid-col(12);
+		padding-top: $column-gutter*2;
+		padding-bottom: $column-gutter*3;
+		text-align: center;
+
+		h1
+		{
+			margin: 0 0 $paragraph-margin-bottom;
+			color: $white;
+			line-height: 0.7;
+			text-shadow: 1px 3px 64px $black, 1px 3px 6px rgba($black, 0.2);
+			font-weight: $font-weight-black;
+		}
+
+		h4
+		{
+			color: $white;
+			text-shadow: 1px 3px 16px $black, 1px 3px 6px rgba($black, 0.2);
+		}
+
+		h5
+		{
+			text-transform: uppercase;
+			color: $white;
+			text-shadow: 1px 3px 16px $black, 1px 3px 6px rgba($black, 0.2);
+		}
+	}
+
+@include breakpoint(medium)
+{
+	.title
+	{
+		@include grid-col(9);
+		@include grid-column-position(center);
+	}
+}
+
+}
+
+
+
+.page-title
+{
+	margin-top: $paragraph-margin-bottom;
+
+	h1, h2, h3, h4, h5, h6
+	{
+		color: $white;
+		margin: 0;
+		line-height: 1;
+	}
+
+	h2
+	{
+		font-size: 1.4rem;
+		text-shadow: 1px 3px 8px rgba($black, 0.3), 1px 3px 6px rgba($black, 0.2);
+	}
+
+	@include breakpoint(medium)
+	{
+		margin-top: 0;
+		margin-left: $paragraph-margin-bottom;
+
+		h2
+		{
+			font-size: 2.2rem;
+		}
+	}
+}

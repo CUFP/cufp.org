@@ -1,0 +1,49 @@
+.video-list
+{
+	@include grid-column(12, 0);
+	margin-top: $column-gutter/2;
+
+	ul
+	{
+		list-style: none;
+		@include grid-row;
+		@include grid-layout(1, 'li');
+
+		li
+		{
+			padding: $global-padding;
+		}
+
+		@include breakpoint(small only)
+		{
+			&>li
+			{
+				padding-bottom: 2rem;
+			}
+		}
+	}
+
+	h4
+	{
+		small
+		{
+			display: block;
+			line-height: 1.2;
+		}
+	}
+
+	@include breakpoint(medium)
+	{
+	margin-top: $column-gutter;
+
+		ul
+		{
+			@include grid-layout(2, 'li');
+
+			li
+			{
+				padding: $global-padding*2;
+			}
+		}
+	}
+}

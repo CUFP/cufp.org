@@ -1,0 +1,27 @@
+%padded, .padded
+{
+	padding-top: $column-gutter/2;
+	padding-bottom: $column-gutter/2;
+
+@include breakpoint(medium)
+{
+	padding-top: $column-gutter;
+	padding-bottom: $column-gutter;
+}
+}
+
+.media
+{
+	@include grid-row-nest;
+
+	&>*:first-child
+	{
+		@include grid-col(2.5);
+		padding-right: 0;
+	}
+
+	&>*:last-child
+	{
+		@include grid-col(9.5);
+	}
+}

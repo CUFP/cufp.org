@@ -1,0 +1,13 @@
+.talk-video
+{
+	margin-bottom: $paragraph-margin-bottom;
+}
+
+.main-column>.talk-video:first-of-type
+{
+	@include breakpoint(medium)
+	{
+		top: -$column-gutter*1.5;
+		margin-bottom: -$column-gutter;
+	}
+}

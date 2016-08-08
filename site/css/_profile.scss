@@ -1,0 +1,139 @@
+.profiles
+{
+	@extend %padded;
+
+@include breakpoint(medium)
+{
+	.title-bar
+	{
+		margin-bottom: $column-gutter;
+	}
+}
+}
+
+.profile-list
+{
+	list-style: none;
+	@include grid-row;
+	@include grid-row-nest;
+	@include grid-layout(2, 'li');
+	margin-bottom: $global-margin*2;
+
+	li
+	{
+		padding: $global-margin;
+
+		strong
+		{
+			display: block;
+			color: $header-font-color;
+			font-size: 1.2rem;
+			line-height: $header-line-height;
+			margin-bottom: $paragraph-margin-bottom/4;
+		}
+
+		small
+		{
+			display: block;
+			text-transform: uppercase;
+			color: $small-font-color;
+			font-family: $body-font-family;
+			line-height: 1;
+		}
+
+		small+strong
+		{
+			margin-top: 0.5rem;
+		}
+
+		p
+		{
+			padding-top: 0.5rem;
+			margin-top: 0.5rem;
+			border-top: 1px dashed $smoke;
+			color: $small-font-color;
+			line-height: $header-line-height;
+		}
+
+		a:hover p
+		{
+			color: $alert-color;
+		}
+	}
+
+	&.large, &.xlarge
+	{
+		li
+		{
+			strong
+			{
+				color: $primary-color;
+			}
+		}
+	}
+
+@include breakpoint(medium)
+{
+	@include grid-layout(4, 'li');
+	margin: 0 $global-padding*-1 $global-margin*4;
+
+	&.large, &.xlarge
+	{
+		@include grid-layout(3, 'li');
+	}
+}
+
+@include breakpoint(large)
+{
+	@include grid-layout(6, 'li');
+
+	&.large
+	{
+		@include grid-layout(5, 'li');
+	}
+
+	&.xlarge
+	{
+		@include grid-layout(4, 'li');
+	}
+}
+
+}
+
+.avatar
+{
+	background: $small-font-color;
+	position: relative;
+	//border-radius: $global-radius;
+	// overflow: hidden;
+	// border: 1rem solid $small-font-color !important;
+	box-shadow: 0 0.75rem 0.75rem -0.75rem rgba($black, 0.8);
+
+	margin-bottom: $paragraph-margin-bottom/2;
+
+	&:after
+	{
+		content:'';
+		position: absolute;
+		top:0;right:0;bottom:0;left:0;
+		z-index: 10;
+		// background: url('../images/overlay-profile.png') no-repeat bottom right / 200%;
+		border: 0.1rem solid $primary-color;
+		transition: border 0.2s;
+	}
+
+	&:hover
+	{
+		&:after
+		{
+			border: 0.5rem solid rgba($primary-color, 0.6);
+		}
+	}
+
+	img
+	{
+		max-width: none;
+		width: 100%;
+		border: none !important;
+	}
+}

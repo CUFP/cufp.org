@@ -1,0 +1,61 @@
+.inner-intro
+{
+	position: relative;
+	@extend %padded;
+	
+	h1
+	{
+		font-size: 2rem;
+	}
+	
+	h3
+	{
+		color: lighten($small-font-color, 20);
+		font-weight: $font-weight-normal;
+	}
+	
+	.diamond
+	{
+		position: absolute;
+		bottom: 0;
+		right: 2rem;
+	}
+	
+@include breakpoint(small only)
+{
+	h4
+	{
+		padding-right: $column-gutter;
+		
+		small
+		{
+			display: block;
+			margin-top: 0.625rem;
+			line-height: 1.2;
+		}
+	}
+}
+	
+@include breakpoint(medium)
+{
+	h1
+	{
+		font-size: 3.6rem;
+		max-width: 48rem;
+	}
+	
+	.diamond
+	{
+		width: 5rem;
+		height: 5rem;
+		line-height: 5rem;
+		
+		i
+		{
+			font-size: 2rem;
+		}
+	}
+}
+
+
+}

@@ -1,0 +1,84 @@
+.action-bar
+{
+	a
+	{
+		position: relative;
+		z-index: 10;
+		display: block;
+		background: $white;
+		background: rgba($white, 0.6);
+		padding: $column-gutter/2;
+		margin-bottom: 0.5rem;
+		transition: background-color 0.2s;
+
+		h3
+		{
+			text-transform: uppercase;
+			line-height: 1;
+			margin: 0;
+			font-size: 1.1rem;
+		}
+
+		small
+		{
+			display: block;
+			font-size: 1rem;
+			color: $small-font-color;
+			line-height: 1.1;
+		}
+
+		&:hover
+		{
+			background: $primary-color;
+
+			h3
+			{
+				color: $white;
+			}
+
+			small
+			{
+				color: rgba($white, 0.6);
+			}
+		}
+
+		&.top-link:hover
+		{
+			background: $sunflower;
+
+			small
+			{
+				color: $small-font-color;
+			}
+		}
+	}
+
+@include breakpoint(medium)
+{
+	a.top-link
+	{
+		z-index: 1;
+		margin-top: -30%;
+		width: 100%;
+		height: 0;
+		padding: 0 0 100%;
+		transform: rotateZ(45deg);
+
+		text-align: center;
+
+		&>div
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%) rotate(-45deg);
+		}
+
+		h3
+		{
+			font-size: rem-calc(map-get(map-get($header-sizes, 'medium'), 'h3'));
+		}
+	}
+}
+
+}

@@ -1,80 +1,115 @@
-.PHONY: default
-default: site
+.PHONY: default-rule
+default-rule: site
 
 include $(shell opam config var solvuu-build:lib)/solvuu.mk
 
 PRODUCTION=false
 
-# Path to node-sass executable.
-node-sass=node_modules/node-sass/bin/node-sass
+# Paths to local executables.
+babel=node_modules/.bin/babel
+browserify=node_modules/.bin/browserify
+node-sass=node_modules/.bin/node-sass
+postcss=node_modules/.bin/postcss
+cufp.org=./cufp.org
 
 ################################################################################
 # CSS
-site/css/cufp.css: $(wildcard site/css/*.scss) $(node-sass) node_modules/foundation-sites
-	$(node-sass) --include-path node_modules/foundation-sites/scss site/css/cufp.scss > $@ || rm -f $@
+site/css/app.css: $(wildcard site/css/*.scss) \
+                  _cache/foundation-icons \
+                  node_modules/autoprefixer \
+                  node_modules/foundation-sites \
+                  node_modules/motion-ui \
+                  node_modules/node-sass \
+                  node_modules/postcss-cli \
+                  etc/autoprefixer-config.json
+	$(node-sass) --include-path node_modules/foundation-sites/scss \
+                     --include-path node_modules/motion-ui/dist \
+                     site/css/app.scss > $@ || rm -f $@
+	$(postcss) --use autoprefixer \
+                   --local-plugins \
+                   -c etc/autoprefixer-config.json \
+                   -d site/css $@
 
 # See changes we've made to Foundation settings.
-.PHONY: diff-scss
-diff-scss:
-	diff $(shell opam config var foundation:lib)/scss/foundation/_settings.scss site/css/_settings.scss
+.PHONY: diff-foundation-settings
+diff-foundation-settings: node_modules/foundation-sites
+	diff \
+          node_modules/foundation-sites/scss/settings/_settings.scss \
+          site/css/_settings.scss
 
 
 ################################################################################
-# Command Line App
-APP=./cufp.org
+# JavaScript
+site/js/app.min.js: site/js/app.js \
+                    site/js/_functions.js \
+                    node_modules/babel-cli \
+                    node_modules/foundation-sites
+	$(babel) -o $@ --minified \
+            node_modules/foundation-sites/dist/plugins/foundation.core.js \
+            node_modules/foundation-sites/dist/plugins/foundation.util.mediaQuery.js \
+            site/js/_functions.js \
+            site/js/app.js
+
+
+################################################################################
+# OCaml
 _build/app/cufp.org.byte:
-	ocamlbuild app/cufp.org.byte
+	$(OCAMLBUILD) app/cufp.org.byte
 
 _build/app/cufp.org.native:
-	ocamlbuild app/cufp.org.native
-
-$(APP): _build/app/cufp.org.byte
-	cp -f $< $@
+	$(OCAMLBUILD) app/cufp.org.native
 
 _build/app/cufp.org: _build/app/cufp.org.byte
+	cp -f $< $@
+
+$(cufp.org): _build/app/cufp.org.byte
 	cp -f $< $@
 
 
 ################################################################################
 # 3rd Party Packages
-_cache/foundation-icons.zip: | _cache
-	wget -O $@ http://zurb.com/playground/uploads/upload/upload/288/foundation-icons.zip
-
-_cache/foundation-icons: _cache/foundation-icons.zip
-	unzip -q -o -d _cache $<
+_cache/foundation-icons: | _cache
+	wget -O _cache/foundation-icons.zip http://zurb.com/playground/uploads/upload/upload/288/foundation-icons.zip
+	unzip -q -o -d _cache _cache/foundation-icons.zip
 	rm -rf _cache/__MACOSX
 
-$(node-sass):
-	npm install node-sass@3.8.0
+node_modules/autoprefixer:
+	npm install autoprefixer
+
+node_modules/babel-cli:
+	npm install babel-cli
+
+node_module/browserify:
+	npm install browserify
 
 node_modules/foundation-sites:
 	npm install foundation-sites@6.2.3
 
-_cache/fairhead-webicons-v2.0.tar.gz: | _cache
-	wget -O $@ https://github.com/adamfairhead/webicons/archive/v2.0.tar.gz
+node_modules/motion-ui:
+	npm install motion-ui@1.2.2
 
-_cache/fairhead-webicons: _cache/fairhead-webicons-v2.0.tar.gz
-	cd _cache && tar xzf fairhead-webicons-v2.0.tar.gz
-	mv _cache/webicons-2.0 $@
+node_modules/node-sass:
+	npm install node-sass
 
-_cache/flaticon-feather-pen-0.1.tar.gz: | _cache
-	wget -O $@ https://github.com/agarwal/flaticon-feather-pen/archive/0.1.tar.gz
+node_modules/postcss-cli:
+	npm install postcss-cli
 
-_cache/flaticon-feather-pen: _cache/flaticon-feather-pen-0.1.tar.gz
-	cd _cache && tar xzf flaticon-feather-pen-0.1.tar.gz
-	mv _cache/flaticon-feather-pen-0.1 $@
 
 ################################################################################
 # Build Site
 .PHONY: site
-site: $(APP) _build/app/cufp.org site/css/cufp.css node_modules/foundation-sites _cache/foundation-icons _cache/fairhead-webicons _cache/flaticon-feather-pen | _build/site/js _build/tmp
-	cp -f node_modules/foundation-sites/vendor/jquery/dist/jquery.min.js _build/site/js/
-	cp -f node_modules/foundation-sites/dist/foundation.min.js _build/site/js/
-	rsync -a _cache/foundation-icons _build/site/css/
-	rsync -a _cache/fairhead-webicons _build/site/css/
-	rsync -a _cache/flaticon-feather-pen _build/site/css/
+site: $(cufp.org) \
+      _build/app/cufp.org \
+      site/css/app.css \
+      site/js/app.min.js \
+      _cache/foundation-icons \
+      | _build/site/css _build/site/js _build/tmp
+	cp -f site/css/app.css _build/site/css/
+	cp -f site/js/app.min.js _build/site/js
+	rsync -a _cache/foundation-icons/ _build/site/css/
+	rm -f _build/site/css/foundation-icons.css
 	rsync -a ../cufp.org-media/* _build/site/
-	$(APP) make -repo-root . -production $(PRODUCTION) "/"
+	$(cufp.org) make -repo-root . -production $(PRODUCTION) "/"
 
 
 ################################################################################
@@ -105,7 +140,7 @@ clean-site:
 
 clean:
 	ocamlbuild -clean
-	rm -f $(APP)
+	rm -f $(cufp.org)
 	rm -rf site/css/.sass-cache
 
 clean-cache:
@@ -114,6 +149,6 @@ clean-cache:
 
 distclean: clean clean-cache
 
-clean-everything: clean clean-cache
+clean-everything: distclean
 	rm -f site/css/cufp.css
-
+	rm -f site/js/app.min.js

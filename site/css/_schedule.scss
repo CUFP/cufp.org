@@ -1,0 +1,194 @@
+.title-bar
+{
+	@include grid-col(12);
+	margin-bottom: $paragraph-margin-bottom;
+
+	h3
+	{
+		font-weight: $font-weight-normal;
+	}
+}
+
+.schedule
+{
+	border-top: 2px solid darken($hr-border-color, 30);
+
+	.day-menu
+	{
+		@include grid-col(12);
+
+		.date-head
+		{
+			display: block;
+			@include grid-col(12);
+			padding: $column-gutter/4;
+			overflow: hidden;
+
+			strong, h5, small
+			{
+				display: block;
+				margin: 0;
+				line-height: 1;
+			}
+
+			strong
+			{
+				color: $asbestos;
+				text-transform: uppercase;
+				font-size: 0.8rem;
+			}
+
+			h5
+			{
+				margin-bottom: 0.2rem;
+				font-size: 3rem;
+			}
+
+			small
+			{
+				color: $small-font-color;
+				font-size: 1.2rem;
+			}
+
+			@include breakpoint(small only)
+			{
+				cursor: pointer;
+				// background: $hr-border-color;
+				margin-bottom: -1px;
+
+				h5
+				{
+					font-size: rem-calc(map-get(map-get($header-sizes, 'small'), 'h5'));
+				}
+
+				&:hover, &.open
+				{
+					background: $sunflower;
+
+					strong
+					{
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+
+	.day-calendar
+	{
+		@include grid-col(12);
+
+		.calendar
+		{
+			a
+			{
+				display: block;
+				border-top: 1px solid $hr-border-color;
+				color: $body-font-color;
+				padding: $column-gutter/8 0;
+
+				&>div
+				{
+					padding: $column-gutter/8 0;
+				}
+
+				.time
+				{
+					font-weight: $font-weight-bold;
+				}
+
+				.description
+				{
+					h2
+					{
+						font-weight: $font-weight-normal;
+						margin: 0;
+					}
+				}
+
+				.authors
+				{
+					overflow: hidden;
+
+					h6
+					{
+						@include grid-column(6, 0);
+
+						em
+						{
+							display: block;
+							font-size: 0.875rem;
+							font-weight: $font-weight-normal;
+						}
+					}
+				}
+			}
+		}
+	}
+
+@include breakpoint(medium)
+{
+	.day-menu
+	{
+		@include grid-column(3);
+	}
+
+	.day-calendar
+	{
+		@include grid-column(9);
+		border-left: 1px solid $hr-border-color;
+
+		.calendar
+		{
+			display: table;
+			width: 100%;
+
+			a
+			{
+				display: table-row;
+				padding: 0;
+
+				&>div
+				{
+					display: table-cell;
+					padding: $column-gutter/2 $column-gutter/6;
+					vertical-align: top;
+					border-bottom: 1px dotted $hr-border-color;
+				}
+
+				.time
+				{
+					width: 15%;
+				}
+
+				.authors
+				{
+					width: 30%;
+
+					h6
+					{
+						@include grid-col(12);
+					}
+				}
+
+				&:hover
+				{
+					h2
+					{
+						color: $primary-color;
+					}
+				}
+
+				&:last-of-type
+				{
+					&>div
+					{
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+}

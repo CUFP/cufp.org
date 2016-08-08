@@ -1,0 +1,24 @@
+.side-menu
+{
+	a
+	{
+		display: inline-block;
+		border-radius: $global-radius*2;
+		padding: 0.5rem 1rem;
+		border: 1px solid $hr-border-color;
+		margin-bottom: 0.5rem;
+		transition: background-color 0.2s;
+		
+		i
+		{
+			position: relative;
+			top: 1px;
+			margin-right: 0.5rem;
+		}
+		
+		&:hover
+		{
+			background-color: lighten($hr-border-color, 10);
+		}
+	}
+}

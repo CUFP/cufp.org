@@ -1,66 +1,156 @@
-////////////////////////////////////////////////////////////////////////////////
-// Footer
-//
-// Imported into cufp.scss.
-//
+footer
+{
+	background: darken($asbestos, 40);
 
-$footer-color: #CCCCCC;
+	a
+	{
+		color: $asbestos;
+	}
 
-footer:not(.copyright) {
-  background-color: $topbar-background;
-  padding-top: $global-font-size;
-  padding-bottom: $global-font-size;
+	p
+	{
+		color: $silver;
+	}
+
+	h1, h2, h3, h4, h5, h6
+	{
+		color: $silver;
+		margin: 0;
+	}
+
+	.row
+	{
+		&>div
+		{
+			@include grid-col(12);
+			margin: $column-gutter/2 0;
+
+			&.copyright
+			{
+				border-top: 1px solid darken($asbestos, 30);
+
+				small
+				{
+					color: darken($asbestos, 20);
+				}
+			}
+		}
+	}
+
+	.conf-list
+	{
+		h6
+		{
+			text-align: center;
+			margin-bottom: $paragraph-margin-bottom;
+
+			i
+			{
+				margin-right: 0.5rem;
+			}
+		}
+
+		ul
+		{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			column-count: 2;
+			column-gap: $column-gutter/2;
+
+			li
+			{
+				display: block;
+				break-inside: avoid;
+
+				a
+				{
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+
+		@include breakpoint(small only)
+		{
+			h6
+			{
+				text-align: left;
+			}
+
+			ul
+			{
+				column-count: 1;
+
+				li
+				{
+					display: inline-block;
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+
+	.social
+	{
+		padding-top: rem-calc(map-get(map-get($header-sizes, 'medium'), 'h6'));
+
+		a
+		{
+			display: inline-block;
+			@include grid-col(2.8);
+			float: none;
+			padding: 0;
+			text-align: center;
+			font-size: 2rem;
+		}
+	}
+
+	.link-set
+	{
+		ul
+		{
+			list-style: none;
+			margin-left: 0;
+		}
+	}
+
+@include breakpoint(medium)
+{
+	.row
+	{
+		&>div
+		{
+			@include grid-col-size(3);
+			margin: $column-gutter 0;
+
+			&.copyright
+			{
+				@include grid-col(12);
+				margin-top: 0;
+			}
+		}
+	}
+
+	.social
+	{
+		a
+		{
+			@include grid-column(5.9);
+			padding: 0;
+		}
+	}
 }
 
-footer * {
-  font-size: $global-font-size * 0.8;
-  color: $footer-color;
+@include breakpoint(large)
+{
+	.conf-list
+	{
+		ul
+		{
+			column-count: 3;
+		}
+	}
 }
 
-footer h3 {
-  font-weight: bold;
-}
-
-footer ul {
-  list-style-type: none;
-  margin-left: 0;
-}
-
-footer > div > div:first-child {
-  a:link, a:visited {
-    border-bottom: 1px dotted;
-  }
-}
-
-// Footer .conferences section
-$footer-column-count: 3;
-$footer-column-gap: rem-calc(2.5);
-footer .conferences ul {
-  -moz-column-count: $footer-column-count;
-  -moz-column-gap: $footer-column-gap;
-  -webkit-column-count: $footer-column-count;
-  -webkit-column-gap: $footer-column-gap;
-  column-count: $footer-column-count;
-  gap: $footer-column-gap;
-}
-
-@media #{$medium-up} {
-  footer .columns:not(:first-child) {
-    border-left: 1px solid scale-color($footer-color, $lightness: -60%);
-  }
-}
-
-// Footer .social section
-footer .social * {
-  text-align: center;
-  font-size: $global-font-size * 2;
-}
-
-// Footer .copyright section
-footer.copyright {
-  text-align: center;
-  background-color: scale-color($topbar-background, $lightness: 10%);
-  a:link, a:visited {
-    border-bottom: 1px dotted;
-  }
 }

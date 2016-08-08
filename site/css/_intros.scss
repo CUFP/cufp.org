@@ -1,0 +1,20 @@
+.intros
+{
+	@extend %padded;
+
+	.intro-paragraph
+	{
+		@include grid-col(12);
+		margin-bottom: $paragraph-margin-bottom*2;
+	}
+
+@include breakpoint(medium)
+{
+	.intro-paragraph
+	{
+		@include grid-column(4);
+		margin-bottom: 0;
+	}
+}
+
+}
