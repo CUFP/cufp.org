@@ -86,17 +86,17 @@ let main_template ~repo_root ~depth
   let app_dir = Path.app_dir repo_root in
   (
     mpp ~temp_dir ~its:true ~set ~app_dir (`As_string template_file)
-    >>| Html.parse
-    >>| (fun html ->
-      if production then html
+    >>| (fun x ->
+      if production then x
       else
-        Html.map_links html ~f:(fun link ->
+        Html.parse x
+        |> Html.map_links ~f:(fun link ->
           Html.relativize_link ~depth link
           |> Html.append_index_html
         )
+        |> Html.to_string
+        |> ((^) "<!DOCTYPE html>") (* Neththml discards this. Add it again. *)
     )
-    >>| Html.to_string
-    >>| ((^) "<!DOCTYPE html>") (* Neththml discards this. Add it again. *)
   ) >>= fun output ->
   Unix.mkdir ~p:() (Filename.dirname out_file) >>= fun () ->
   Writer.save out_file ~contents:output
