@@ -89,13 +89,11 @@ let main_template ~repo_root ~depth
     >>| (fun x ->
       if production then x
       else
-        Html.parse x
-        |> Html.map_links ~f:(fun link ->
+        x
+        |> Html.map_links_str ~f:(fun link ->
           Html.relativize_link ~depth link
           |> Html.append_index_html
         )
-        |> Html.to_string
-        |> ((^) "<!DOCTYPE html>") (* Neththml discards this. Add it again. *)
     )
   ) >>= fun output ->
   Unix.mkdir ~p:() (Filename.dirname out_file) >>= fun () ->

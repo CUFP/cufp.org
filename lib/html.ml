@@ -112,3 +112,28 @@ let map_links
       )
   in
   List.map t ~f:map_links_in_item
+
+let map_links_str ?(attributes_to_map = attributes_with_link_values) ~f x =
+  let f = function
+    | `Start_element ((elem_namespace,elem_name) as elem, attributes) -> (
+        let attributes =
+          match List.Assoc.find attributes_to_map elem_name with
+          | None -> attributes
+          | Some attr_to_map ->
+            List.map attributes
+              ~f:(fun (((attr_namespace,attr_name) as attr, value) as x) ->
+                match String.equal attr_name attr_to_map with
+                | false -> x
+                | true -> (attr, f value)
+              )
+        in
+        `Start_element (elem, attributes)
+      )
+    | `End_element
+    | `Text _
+    | `Doctype _
+    | `Xml _
+    | `PI _
+    | `Comment _ as x -> x
+  in
+  Markup.(string x |> parse_html |> signals |> map f |> write_html |> to_string)

@@ -15,6 +15,7 @@ depends: [
   "core" {>= "113.24.02"}
   "async"
   "omd"
+  "markup"
   "mpp"
   "yojson"
   "uri"

@@ -93,3 +93,11 @@ val map_links :
   ?attributes_to_map:(string * string) list ->
   f:(string -> string) ->
   t -> t
+
+(** Like [map_links] but works on an HTML string. Also, the
+    implementation uses the [Markup] library instead of [Nethtml]. *)
+val map_links_str :
+  ?attributes_to_map:(string * string) list ->
+  f:(string -> string) ->
+  string ->
+  string
