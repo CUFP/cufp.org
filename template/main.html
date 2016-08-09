@@ -1,142 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CUFP</title>
 
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700'
- 	 rel='stylesheet' type='text/css'>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="/css/foundation-icons/foundation-icons.css" />
-  <link rel="stylesheet" href="/css/fairhead-webicons/webicons.css" />
-  <link rel="stylesheet" href="/css/flaticon-feather-pen/flaticon.css" />
-  <link rel="stylesheet" href="/css/cufp.css" />
-  <script src="/js/modernizr.js"></script>
+  <link rel="stylesheet" href="/css/app.css" />
+  <script src="https://use.typekit.net/bam6iqp.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 </head>
 
 <body {{ ifdef body_class (( get body_class )) }} >
 
-<!-- Navigation Bar -->
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="/"><i class="fi-home"></i></a></h1>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-
-    <ul class="left">
-      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
-      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
-      <li class="has-dropdown">
-        <a href="#"><i class="fi-torsos-all"></i> CUFP</a>
-        <ul class="dropdown">
-          (( cmd ./cufp.org print conference-list ))
-        </ul>
-      </li>
-      <li><a href="http://icfpconference.org">ICFP</a></li>
-    </ul>
-
-  </section>
-</nav>
-
 <!-- Content -->
 {{ input (( get content_file )) }}
 
-<!-- Footer -->
+<!-- Fotter -->
 <footer>
-<div class="row" data-equalizer>
+  <div class="row">
+    <div class="about">
+      <h3>CUFP</h3>
+      <p>Functional Programming as a means, not an end.</p>
+      <p>Co-located with <a href="#">ICFP</a></p>
+    </div>
 
-  <div class="medium-3 columns text-center" data-equalizer-watch>
-    <h3>CUFP</h3>
-    <p><i>Functional Programming as a means, not an end.</i></p>
-    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+    <div class="conf-list">
+      <h6><i class="fi-torsos-all"></i> Conferences</h6>
+      <ul>
+	(( cmd ./cufp.org print conference-list ))
+      </ul>
+    </div>
+
+    <div class="social">
+      <a href="https://twitter.com/cufpconference">
+	<i class="fi-social-twitter"></i>
+      </a>
+      <a href="/blog/">
+	<i class="fi-rss"></i>
+      </a>
+      <a href="https://github.com/cufp">
+	<i class="fi-social-github"></i>
+      </a>
+      <a href="/videos/">
+	<i class="fi-video"></i>
+      </a>
+    </div>
+    
+    <div class="link-set">
+      <ul>
+	<li><a href="/about.html">About</a></li>
+	<li><a href="/bylaws.html">Bylaws</a></li>
+	<li><a href="/steering-committee.html">Steering Committee</a></li>
+      </ul>
+      <ul>
+	<li><a href="/license.html">Licenses</a></li>
+	<li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+      </ul>
+    </div>
+
   </div>
 
-  <div class="medium-4 columns conferences text-center" data-equalizer-watch>
-    <h3><i class="fi-torsos-all"></i> Conferences</h3>
-    <ul>
-      (( cmd ./cufp.org print conference-list ))
-    </ul>
+  <div class="row">
+    <div class="copyright">
+      <small>© Copyright 2004 – (( cmd date "+%Y" )) Commercial Users of Functional Programming. Details in Licenses.</small>
+    </div>
   </div>
-
-  <div class="medium-2 columns social" data-equalizer-watch>
-    <ul class="small-block-grid-4 medium-block-grid-2">
-      <li>
-        <a href="https://twitter.com/cufpconference">
-          <i class="fi-social-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="/blog/">
-          <i class="fi-rss"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/cufp">
-          <i class="fi-social-github"></i>
-        </a>
-      </li>
-      <li>
-        <a href="/videos/">
-          <i class="fi-video"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="medium-3 columns text-center" data-equalizer-watch>
-    <ul>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/bylaws.html">Bylaws</a></li>
-      <li><a href="/steering-committee.html">Steering Committee</a></li>
-    </ul>
-    <ul>
-      <li><a href="/license.html">Licenses</a></li>
-      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
-    </ul>
-  </div>
-</div>
 </footer>
-
-<footer class="copyright">
-<div class="row">
-  <div class="small-12 columns">
-      <p>© Copyright 2004 – (( cmd date "+%Y" )) Commercial Users of
-      Functional Programming. Details
-      in <a href="/license.html">Licenses</a>.</p>
-  </div>
-</div>
-</footer>
-
-<!-- Zurb Foundation scripts -->
 <script src="/js/jquery.min.js"></script>
-<script src="/js/fastclick.js"></script>
-<script src="/js/foundation.js"></script>
-<script src="/js/foundation.abide.js"></script>
-<script src="/js/foundation.accordion.js"></script>
-<script src="/js/foundation.alert.js"></script>
-<script src="/js/foundation.clearing.js"></script>
-<script src="/js/foundation.dropdown.js"></script>
-<script src="/js/foundation.equalizer.js"></script>
-<script src="/js/foundation.interchange.js"></script>
-<script src="/js/foundation.joyride.js"></script>
-<script src="/js/foundation.magellan.js"></script>
-<script src="/js/foundation.offcanvas.js"></script>
-<script src="/js/foundation.orbit.js"></script>
-<script src="/js/foundation.reveal.js"></script>
-<script src="/js/foundation.slider.js"></script>
-<script src="/js/foundation.tab.js"></script>
-<script src="/js/foundation.tooltip.js"></script>
-<script src="/js/foundation.topbar.js"></script>
-<script>
-  $(document).foundation();
-</script>
+<script src="/js/min/app-min.js"></script>
 
 <!-- Twitter script. Needed to embed Twitter timelines and buttons. -->
 (( cat template/_twitter_script.html ))

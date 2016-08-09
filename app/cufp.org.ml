@@ -114,6 +114,26 @@ let print_event_list : (string * Command.t) =
      )
   )
 
+let print_schedule : (string * Command.t) =
+  ("schedule",
+   Command.async_basic
+     ~summary:"print conference schedule"
+     Command.Spec.(
+       empty
+       +> Param.repo_root
+       +> anon ("YYYY-MM-DD" %: string)
+     )
+     (fun repo_root date () ->
+        let date = Date.of_string date in
+        let year = Date.year date in
+        Path.make ~repo_root (sprintf "%d" year) >>= fun dir ->
+        Conference.of_dir (Path.input dir) >>= fun conf ->
+        return @@ Conference.schedule conf date >>= fun x ->
+        return @@ Format.asprintf "%a" (Tyxml.Html.pp_elt ()) x >>= fun x ->
+        return @@ print_endline x
+     )
+  )
+
 let print_blog : (string * Command.t) =
   ("blog",
    Command.async_basic
@@ -164,14 +184,29 @@ let print_video : (string * Command.t) =
      )
   )
 
+let print_menu : (string * Command.t) =
+  ("menu",
+   Command.async_basic
+     ~summary:"print menu"
+     Command.Spec.(empty +> Param.repo_root)
+     (fun repo_root () ->
+        Conference.years ~repo_root () >>= fun years ->
+        return @@ Pages.menu ~years >>= fun x ->
+        return @@ Format.asprintf "%a" (Tyxml.Html.pp_elt ()) x >>= fun x ->
+        return @@ print_endline x
+     )
+  )
+
 let print : (string * Command.t) =
   ("print",
    Command.group ~summary:"print various items"
      [
+       print_schedule;
        print_conference_list;
        print_event_list;
        print_blog;
        print_video;
+       print_menu;
      ]
   )
 

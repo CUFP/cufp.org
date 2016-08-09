@@ -37,3 +37,5 @@ val sessions_table : ?date:Date.t -> t -> Html.item
 
 (** Generate the videos page. *)
 val videos_page : t list -> Html.item
+
+val schedule : t -> Date.t -> Html_types.div Tyxml.Html.elt

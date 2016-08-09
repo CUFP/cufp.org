@@ -11,7 +11,7 @@ let lib : Project.item = Project.lib project_name
     ~pack_name:project_name
     ~findlib_deps:[
       "async"; "core"; "mpp"; "netstring"; "omd"; "ppx_sexp_conv";
-      "rss"; "uri"; "yojson";
+      "rss"; "uri"; "yojson"; "tyxml"
     ]
     ~ml_files:(`Add ["about.ml"])
 

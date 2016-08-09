@@ -181,6 +181,54 @@ let videos_page tl =
   |> List.filter_map ~f:conference_html
   |> dl ~a:["class","accordion"; "data-accordion", ""]
 
+let schedule t date =
+  let events =
+    List.concat t.sessions |>
+    List.filter ~f:(fun (x:Event.t) -> Date.equal date x.Event.date) |>
+    List.sort ~cmp:(fun (x:Event.t) y ->
+      Time.Ofday.compare x.Event.start y.Event.start
+    )
+  in
+  let open Tyxml.Html in
+  div ~a:[a_class ["day-calendar"]] [
+    div ~a:[a_class ["calendar"]; a_id "calendar1"] (
+      List.map events ~f:(fun x ->
+        let time =
+          Util.time_ofday_range_to_string x.Event.start x.Event.finish
+        in
+        let description = match x.Event.typ with
+          | Event.Break | Event.Discussion ->
+            sprintf "%s%s"
+              x.Event.title
+              (match Event.short_description x with "" -> "" | x -> " - " ^ x)
+          | Event.Talk
+          | Event.Keynote
+          | Event.Tutorial
+          | Event.Reception
+          | Event.BoF ->
+            x.Event.title
+        in
+        let speakers = List.map x.Event.speakers ~f:(fun x ->
+          [
+            Some (pcdata x.Person.name);
+            (match x.Person.affiliation with
+             | None -> None
+             | Some _ -> Some (pcdata " ")
+            );
+            Option.map x.Person.affiliation ~f:(fun x -> em [pcdata x]);
+          ] |>
+          List.filter_map ~f:Fn.id |>
+          h6
+        )
+        in
+        a ~a:[a_class ["event"]; a_href (x.Event.url_title ^ ".html")] [
+          div ~a:[a_class ["time"]] [pcdata time];
+          div ~a:[a_class ["description"]] [h2 [pcdata description]];
+          div ~a:[a_class ["authors"]] speakers;
+        ]
+      )
+    )
+  ]
 
 
 (******************************************************************************)
