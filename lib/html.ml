@@ -55,44 +55,6 @@ let dd = item "dd"
 
 let script = item "script"
 
-let columnize t =
-  let open Nethtml in
-  Element (
-    "div",
-    ["class","row"],
-    [Element (
-      "div",
-      ["class", "col-md-8"],
-      t
-    )]
-  )
-
-let columnize_h2_sections docs =
-  let open Nethtml in
-  let column_content = ref [] in
-  let accum = ref [] in
-  let column_started () = not (List.is_empty !column_content) in
-  let f doc = match column_started (), doc with
-    | false, (Data _ as x) ->
-      accum := x::!accum
-    | true, (Data _ as x) ->
-      column_content := x::!column_content
-    | false, (Element ("h2", _, _) as x) ->
-      column_content := [x]
-    | true, (Element ("h2", _, _) as x) ->
-      accum := (columnize (List.rev !column_content))::!accum;
-      column_content := [x];
-    | false, (Element (_, _, _) as x) ->
-      accum := x::!accum
-    | true, (Element (_, _, _) as x) ->
-      column_content := x::!column_content
-  in
-  List.iter docs ~f;
-  if column_started () then
-    accum := (columnize (List.rev !column_content))::!accum
-  ;
-  List.rev !accum
-
 let attributes_with_link_values = [
   "link", "href";
   "script", "src";

@@ -55,29 +55,6 @@ val dd : ?a:attributes -> t -> item
 
 val script : ?a:attributes -> t -> item
 
-(** {6 Document Structure} *)
-
-(** Split document into sections. Each section is found, and enclosed
-    in a new <section> element. A section is defined as follows:
-
-    - Start - Any h1 - h6 element marks the beginning of a section.
-
-    - End - Say a section started with hi, for some i = 1 .. 6. Then,
-    a section ends just before the next hj element for any j >= i.
-
-    - Sub-section: Say a section started with hi, for some i = 1
-    .. 6. Then, a new sub-section starts at any hj for j < i.
-*)
-(*val section : t -> t*)
-
-(** Put given document into a column. *)
-val columnize : t -> item
-
-(** An h2 section is an h2 header followed by any elements up until
-    another h2 header. This function finds such sections and puts them
-    into a column. *)
-val columnize_h2_sections : t -> t
-
 
 (** {6 Links} *)
 
