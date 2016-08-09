@@ -9,7 +9,7 @@ let to_string = function
 
 let of_string s =
   let err = sprintf "unable to parse %s as slides" s in
-  match String.chop_prefix s "/" with
+  match String.chop_prefix s ~prefix:"/" with
   | None -> failwith err
   | Some _ -> Local s
 

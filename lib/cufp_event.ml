@@ -3,7 +3,7 @@ open Async.Std
 let (/) = Filename.concat
 
 type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion | Reception
-[@@deriving sexp]
+[@@deriving sexp_of]
 
 type t = {
   typ : typ;

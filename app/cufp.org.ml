@@ -37,7 +37,7 @@ end
 (******************************************************************************)
 let make : (string * Command.t) =
   ("make",
-   Command.async_basic
+   Command.async
      ~summary:"make a site asset"
      ~readme:(fun () ->
        "FILE should be the input source from which the asset is generated, \
@@ -62,7 +62,7 @@ let make : (string * Command.t) =
 (******************************************************************************)
 let print_conference_list : (string * Command.t) =
   ("conference-list",
-   Command.async_basic
+   Command.async
      ~summary:"print list of all conferences"
      Command.Spec.(
        empty
@@ -95,7 +95,7 @@ let print_conference_list : (string * Command.t) =
 
 let print_event_list : (string * Command.t) =
   ("event-list",
-   Command.async_basic
+   Command.async
      ~summary:"print conference calendar"
      Command.Spec.(
        empty
@@ -116,7 +116,7 @@ let print_event_list : (string * Command.t) =
 
 let print_schedule : (string * Command.t) =
   ("schedule",
-   Command.async_basic
+   Command.async
      ~summary:"print conference schedule"
      Command.Spec.(
        empty
@@ -136,7 +136,7 @@ let print_schedule : (string * Command.t) =
 
 let print_blog : (string * Command.t) =
   ("blog",
-   Command.async_basic
+   Command.async
      ~summary:"print blog in either html or rss format"
      Command.Spec.(
        empty
@@ -166,7 +166,7 @@ let print_blog : (string * Command.t) =
 
 let print_video : (string * Command.t) =
   ("videos",
-   Command.async_basic
+   Command.async
      ~summary:"print videos"
      Command.Spec.(
        empty
@@ -186,7 +186,7 @@ let print_video : (string * Command.t) =
 
 let print_menu : (string * Command.t) =
   ("menu",
-   Command.async_basic
+   Command.async
      ~summary:"print menu"
      Command.Spec.(empty +> Param.repo_root)
      (fun repo_root () ->

@@ -286,7 +286,7 @@ let of_dir dir =
         None
       else
         match Filename.split_extension file with
-        | x, None -> None (* ignore sub-directories *)
+        | _, None -> None (* ignore sub-directories *)
         | x, Some _ -> Some x (* consider files with any extension *)
     )
   in
