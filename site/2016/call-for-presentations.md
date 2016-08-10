@@ -74,7 +74,14 @@ workshop and travel to Japan at their own expense. There are some funds
 available to would-be presenters who require assistance in this respect.
 
 ## Program Committee
-(( cmd cat site/2016/_program_chairs.md site/2016/_program_committee.md | omd ))
+- [Katie Ots](http://katieots.com) (Facebook), co-chair
+- Alex Lang (Tsuru Capital), co-chair
+- [Rúnar Óli Bjarnason](http://bjarnason.is) (Verizon Labs)
+- Mark Hibberd (Ambiata)
+- Mirai Ikebuchi (Nagoya University)
+- Paul Khuong (AppNexus)
+- [Carin Meier](http://gigasquidsoftware.com/) (Cognitect)
+- [Kenji Rikitake](http://www.k2r.org/kenji/) (Kenji Rikitake Professional Engineer's Office)
 
 ## More information
 For more information on CUFP, including videos of presentations from

@@ -1,6 +1,0 @@
-- [Rúnar Óli Bjarnason](http://bjarnason.is) (Verizon Labs)
-- Mark Hibberd (Ambiata)
-- Mirai Ikebuchi (Nagoya University)
-- Paul Khuong (AppNexus)
-- [Carin Meier](http://gigasquidsoftware.com/) (Cognitect)
-- [Kenji Rikitake](http://www.k2r.org/kenji/) (Kenji Rikitake Professional Engineer's Office)
