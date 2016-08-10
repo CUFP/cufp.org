@@ -100,51 +100,96 @@ let icon typ =
   ) >>| fun x ->
   Html.i ~a:["class", x] []
 
+let to_html ~years (t:t) =
+  let open Tyxml.Html in
 
-let to_html t =
-  let open Html in
-  let icon = match icon t.typ with
-    | Ok x -> x
-    | Error _ -> data ""
+  let date_time =
+    sprintf "%s: %s"
+      (Date.format t.date "%b %d, %Y")
+      (Util.time_ofday_range_to_string t.start t.finish)
   in
-  [div ~a:["class","row"] [
-    div ~a:["class","small-12 columns"] (
+
+  let speakers =
+    List.map t.speakers ~f:(fun x ->
       [
-        h1 [icon; data " "; data t.title];
-        div ~a:["class","speakers"] [Person.to_html_ul t.speakers];
-        div ~a:["class","time"] [
-          data (Date.format t.date "%B %d, %Y");
-          data " ";
-          data (Util.time_ofday_range_to_string t.start t.finish);
-        ];
+        Some (pcdata x.Person.name);
+        (match x.Person.affiliation with
+         | None -> None
+         | Some _ -> Some (pcdata " ")
+        );
+        Option.map x.Person.affiliation ~f:(fun x -> small [pcdata x]);
       ]
-      @(match t.slides with
-      | None -> []
-      | Some x -> [
-        div ~a:["class","slides"] [
-          i ~a:["class", Slides.icon_class x] [];
-          data " ";
-          a ~a:["href", Slides.to_uri x] [data "Slides"];
-        ]]
-      )
-      @(Omd.to_html t.description |> Html.parse)
-      @(match t.video with
-      | None -> []
-      | Some video -> [
-        div ~a:["class","flex-video"] [
-          iframe ~a:[
-            "src", Video.to_embed_uri video;
-            "width", "420";
-            "height", "315";
-            "frameborder", "0";
-            "webkitallowfullscreen", "";
-            "mozallowfullscreen", "";
-            "allowfullscreen", "";
-          ] [];
-        ]]
-      )
-      @(Disqus.html)
-    ) ] ]
+      |> List.filter_map ~f:Fn.id
+      |> h4
+    )
+  in
+
+  let icon = match t.typ with
+    | Talk | Keynote -> "fi-projection-screen"
+    | Tutorial -> "fi-laptop"
+    | BoF -> "fi-lightbulb"
+    | Reception -> "fi-burst"
+    | Break -> failwith "attempting to create event page for Break"
+    | Discussion -> failwith "attempting to create event page for Discussion"
+  in
+
+  let video =
+    Option.map t.video (fun x ->
+      div ~a:[a_class ["talk-video embed-container"]] [
+        iframe
+          ~a:[
+            a_width 560;
+            a_height 315;
+            a_src (Video.to_embed_uri x);
+            Unsafe.string_attrib "frameborder" "0";
+            Unsafe.string_attrib "allowfullscreen" "";
+          ]
+          [];
+      ]
+    )
+  in
+
+  [
+    header
+      ~a:[
+        a_class ["title-parallax"];
+        a_style @@ sprintf "background-image:url('img/header-background.jpg')";
+      ]
+      [Pages.menu ~years]
+    ;
+
+    div ~a:[a_class ["main-wrap"]] [
+      div ~a:[a_class ["row"]] [
+        div ~a:[a_class ["inner-intro"]] (
+          List.concat [
+            [h3 [pcdata date_time]];
+            [h1 [pcdata t.title]];
+            speakers;
+            [div ~a:[a_class ["diamond one"]] [div [i ~a:[a_class [icon]] []]]];
+          ]
+        )
+      ];
+
+      div ~a:[a_class ["white-bg padded"]] [
+        div ~a:[a_class ["row"]] [
+          div ~a:[a_class ["main-column intro-paragraph"]] (
+            List.filter_map ~f:Fn.id [
+              video;
+              Some (Unsafe.data (Omd.to_html t.description));
+            ]
+          );
+
+          div ~a:[a_class ["sidebar"]] [
+            div ~a:[a_id "disqus_thread"] [];
+            script ~a:[Unsafe.string_attrib "type" "text/javascript"] (
+              pcdata Disqus.script_text
+            )
+          ]
+        ]
+      ]
+    ];
+
+  ]
 
 let short_description {typ; description; _ } =
   match typ with

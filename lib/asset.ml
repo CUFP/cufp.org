@@ -215,6 +215,8 @@ let rec make ?(production=false) t =
       ~out_file ()
   in
 
+  let years = Conference.years ~repo_root () in
+
   match t.typ with
 
   | Event -> (
@@ -226,8 +228,14 @@ let rec make ?(production=false) t =
         (log_skip t; Deferred.unit)
       else (
         log_convert t;
-        return (Event.to_html s) >>=
-        lift Html.to_string >>=
+        years >>= fun years ->
+        return (Event.to_html ~years s) >>= fun l ->
+        return (
+          List.map l ~f:(fun x ->
+            Format.asprintf "%a" (Tyxml.Html.pp_elt ()) x
+          ) |>
+          String.concat ~sep:""
+        ) >>=
         main_template ~out_file:(target t)
       )
   )

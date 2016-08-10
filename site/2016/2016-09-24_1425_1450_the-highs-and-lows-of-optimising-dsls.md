@@ -21,15 +21,16 @@ Anyone who is interested in domain specific languages (DSLs), embedded or extern
 
 The techniques presented are applicable to DSLs written in any language, although a familiarity with Haskell syntax would be a plus.
 
-## Jacob Stanley
+<div class="author media" media:type="text/omd">
 
-<div class="row" media:type="text/omd">
-
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/jacob-stanley.jpg" alt="Jacob Stanley"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### Jacob Stanley
 Jacob works at Ambiata, implementing the compiler and surrounding ecosystem for Icicle, a query language for processing large amounts of time-series data. His passion is building correct high performance software and he thinks functional programming and domain specific languages are outstanding tools for this purpose.
 </div>
 </div>

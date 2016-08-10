@@ -16,14 +16,16 @@ Static-verification enthusiasts, basic knowledge of Haskell, logic and type syst
 ## Infrastructure Required
 The tutorial will be uploaded online, so that the participants can follow via the online  LiquidHaskell interface.
 
-## Speaker Bio
-<div class="row" media:type="text/omd">
+<div class="author media" media:type="text/omd">
 
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/User_silhouette_512.png" alt="Niki Vazou"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### Niki Vazou
 Niki Vazou is a Ph.D. candidate at University of California, San Diego, supervised by Ranjit Jhala. She works in the area of programming languages, with the goal of building usable program verifiers that will naturally integrate formal verification techniques into the mainstream software development chain.
 </div>
 

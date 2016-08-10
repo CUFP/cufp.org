@@ -15,15 +15,16 @@ On the one hand we found Haskell's type system and testing capabilities excellen
  
 On the other hand we encountered challenges when attempting to optimise for high throughput and low latency. The most fundamental of these problems was the length of GC pauses when there was a large working set in memory. You can read more about this in [James Fisher's blog post here](https://blog.pusher.com/latency-working-set-ghc-gc-pick-two/).
 
-## Will Sewell
+<div class="author media" media:type="text/omd">
 
-<div class="row" media:type="text/omd">
-
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/will-sewell.jpg" alt="Will Sewell"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### Will Sewell
 Will is a platform engineer at Pusher. He helps keep the realtime messaging system ticking along smoothly. He is a strong believer in the advantages that functional programming languages can bring to industry, and is interested in the challenges that need to be solved in order to get wider adoption: performance issues, the ecosystem, and lowering the barrier to entry.
 
 He writes (mostly) about Haskell on the [Pusher blog](https://blog.pusher.com/author/will/).

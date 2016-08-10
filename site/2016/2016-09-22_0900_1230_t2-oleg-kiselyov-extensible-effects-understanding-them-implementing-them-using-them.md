@@ -58,14 +58,16 @@ to download tutorial materials, before or during the tutorial). No
 libraries and packages beyond the standard library will be needed. The
 most basic installation should suffice.
 
-## Speaker Bio
-<div class="row" media:type="text/omd">
+<div class="author media" media:type="text/omd">
 
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/User_silhouette_512.png" alt="Oleg Kiselyov"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### Oleg Kiselyov
 Oleg Kiselyov is an Assistant Professor at the Tohoku
 University, Japan. More information is on the web site
 http://okmij.org/ftp/

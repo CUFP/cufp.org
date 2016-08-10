@@ -18,14 +18,16 @@ People with some experience in typed functional programming interested in applyi
 ## Infrastructure Required
 A workspace in the Cloud9 online IDE will be provided with all required tools configured. It's possible to use any other system as long as the PureScript compiler and node.js are installed.
 
-## Speaker Bio
-<div class="row" media:type="text/omd">
+<div class="author media" media:type="text/omd">
 
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/User_silhouette_512.png" alt="Brian McKenna"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### Brian McKenna
 Brian McKenna has worked with web development for 8 years and has commercial experience with PureScript in creating an open-source front-end to SlamData. Brian has contributed to the PureScript compiler and many PureScript libraries.
 </div>
 

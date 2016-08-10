@@ -62,7 +62,10 @@ val is_valid_filename : string -> bool
     determined automatically. *)
 val to_file : t -> string -> unit Deferred.t
 
-val to_html : t -> Html.t
+val to_html :
+  years:int list ->
+  t ->
+  Html_types.body_content Tyxml.Html.elt list
 
 val typ_to_string : typ -> string
 

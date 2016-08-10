@@ -16,15 +16,16 @@ Such an abstraction isn't possible to express both statically and generically in
 
 Caching and prefetching are necessary for mobile apps. In this talk, I will explain how to think about caches as monoids, how a monoidal caching system can simplify our jobs as software engineers, and what real-world problems we ran into when putting such a system into production.
 
-## Brandon Kase
+<div class="author media" media:type="text/omd">
 
-<div class="row" media:type="text/omd">
-
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/brandon-kase.jpg" alt="Brandon Kase"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### Brandon Kase
 Brandon Kase is a product engineer at Pinterest. He formerly hacked on Shorts as a member of the Math Camp team (now part of Pinterest). He first came across functional programming while pursuing a B.S. in Computer Science from Carnegie Mellon University. Brandon is excited that strong static typing and functional programming are becoming mainstream, and believes that techniques once reserved for academia will help industry produce more reliable software. He is in general fascinated by anything and everything related to well-designed programming languages and libraries.
 </div>
 </div>

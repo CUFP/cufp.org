@@ -14,14 +14,16 @@ This tutorial is aimed at people with programming experience. Previous experienc
 ## Infrastructure Required
 Participants should bring their own laptop
 
-## Speaker Bio
-<div class="row" media:type="text/omd">
+<div class="author media" media:type="text/omd">
 
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/User_silhouette_512.png" alt="KC Sivaramakrishnan"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### KC Sivaramakrishnan
 “KC” Sivaramakrishnan is a research fellow at OCaml Labs in the University of Cambridge, where he leads the project to add multicore support to OCaml. He is interested in the design and implementation of concurrent functional programming languages targeting scalable platforms such as many-core processors and compute clouds.
 </div>
 

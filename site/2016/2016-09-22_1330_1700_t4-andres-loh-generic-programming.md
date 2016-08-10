@@ -38,14 +38,16 @@ extensions such as GADTs or data kinds is assumed.
 ## Infrastructure Required
 Participants need to bring a laptop with the GHC compiler (>= 8.0.1) and
 
-## Speaker Bio
-<div class="row" media:type="text/omd">
+<div class="author media" media:type="text/omd">
 
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/User_silhouette_512.png" alt="Andres Löh"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### Andres Löh
 I am a Haskell consultant and co-owner of Well-Typed LLP, living in
 Regensburg, Germany. My first exposure to functional programming was during
 my undergraduate studies in Mathematics and Computer Science at the

@@ -38,15 +38,16 @@ This talk will be a detailed explanation of the [topic presented](http://www.sli
 
 Our prototype implementation has been published on [GitHub](https://github.com/hexx/action-cont).
 
-## Seitaro Yuki
+<div class="author media" media:type="text/omd">
 
-<div class="row" media:type="text/omd">
-
-<div class="medium-4 columns">
+<div class="image">
+<div class="avatar">
 <img src="img/seitaro-yuki.jpg" alt="Seitaro Yuki"></img>
 </div>
+</div>
 
-<div class="medium-8 columns" media:type="text/omd">
+<div class="content" media:type="text/omd">
+### Seitaro Yuki
 Seitaro Yuki is a software engineer on the Niconico account team at Dwango.
 He is the co-author of the Scala textbook for training in Dwango (available at [https://github.com/dwango/scala_text](https://github.com/dwango/scala_text)).
 He got his MS in Computer Science from the University of Tsukuba, focusing on term rewriting systems.
