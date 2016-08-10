@@ -221,11 +221,22 @@ let schedule t date =
           h6
         )
         in
-        a ~a:[a_class ["event"]; a_href (x.Event.url_title ^ ".html")] [
-          div ~a:[a_class ["time"]] [pcdata time];
-          div ~a:[a_class ["description"]] [h2 [pcdata description]];
-          div ~a:[a_class ["authors"]] speakers;
-        ]
+        let childs =
+          [
+            div ~a:[a_class ["time"]] [pcdata time];
+            div ~a:[a_class ["description"]] [h2 [pcdata description]];
+            div ~a:[a_class ["authors"]] speakers;
+          ]
+        in
+        match x.Event.typ with
+        | Event.Talk
+        | Event.Keynote
+        | Event.Tutorial
+        | Event.Reception
+        | Event.BoF ->
+          a ~a:[a_class ["event"]; a_href (x.Event.url_title ^ ".html")] childs
+        | Event.Break | Event.Discussion ->
+          a ~a:[a_class ["event"]] childs (* FIXME: fix design to avoid link *)
       )
     )
   ]
