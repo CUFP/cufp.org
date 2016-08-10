@@ -1,2 +1,0 @@
-- [Roman Gonzalez](http://blog.roman-gonzalez.ca/) (Unbounce)
-- Takayuki Muranushi
