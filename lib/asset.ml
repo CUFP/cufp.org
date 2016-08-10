@@ -12,7 +12,6 @@ type typ =
 | Blog_html
 | Blog_rss
 | Videos
-| Json
 | Markdown
 | Html
 | Text
@@ -35,7 +34,6 @@ let typ_of_basename path =
     else if check_suffix x ".md" then return Markdown
     else if check_suffix x ".html" then return Html
     else if check_suffix x ".txt" then return Text
-    else if check_suffix x ".json" then return Json
     else
       Util.file_or_dir path >>| function
       | `Dir -> Dir
@@ -86,7 +84,6 @@ let body_class {typ; path} =
   | Blog_html -> Some "blog"
   | Videos -> Some "videos"
   | Blog_rss
-  | Json
   | Markdown
   | Html
   | Text
@@ -110,11 +107,6 @@ let target ?(style = `Abs) t =
     let basename = url_title ^ ".html" in
     let parent_dir = Path.parent t.path in
     f (Path.concat parent_dir basename)
-  )
-  | Json -> (
-    f t.path
-    |> Fn.flip Filename.chop_suffix ".json"
-    |> fun x -> x ^ ".html"
   )
   | Blog_post
   | Front_page
@@ -140,7 +132,6 @@ let dependencies t =
   | Event
   | Blog_post
   | Videos
-  | Json
   | Markdown
   | Html -> return common
   | Blog_html -> (
@@ -249,17 +240,6 @@ let rec make ?(production=false) t =
       lift Blog.Post.to_html >>=
       lift Html.to_string >>=
       main_template ~out_file:(target t)
-  )
-
-  | Json -> (
-    out_of_date t >>= function
-    | false -> Deferred.unit
-    | true ->
-      log_convert t;
-      Json.of_file (source t) >>=
-      lift (Json.to_html ~production ~depth) >>=
-      lift Html.to_string >>= fun contents ->
-      Writer.save (target t) ~contents
   )
 
   | Front_page

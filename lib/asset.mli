@@ -23,8 +23,6 @@
 
     - Videos: page of all videos
 
-    - Json: a json file, whose treatment depends on its content
-
     - Markdown: a general markdown file
 
     - Html: a general html file
@@ -46,7 +44,6 @@ type typ =
 | Blog_html
 | Blog_rss
 | Videos
-| Json
 | Markdown
 | Html
 | Text

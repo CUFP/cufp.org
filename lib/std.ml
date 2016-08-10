@@ -5,7 +5,6 @@ module Conference = Conference
 module Disqus = Disqus
 module Event = Cufp_event
 module Html = Html
-module Json = Json
 module Markdown = Markdown
 module Mpp = Mpp
 module Path = Cufp_path
