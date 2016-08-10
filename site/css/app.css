@@ -2035,7 +2035,7 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url("../images/overlay.png") center 40%/cover;
+    background: url("../img/overlay.png") center 40%/cover;
     opacity: 0.625; }
   header nav {
     position: relative;
