@@ -50,7 +50,7 @@ let build_events : Command.t = Command.async
      let build_event (x:Event.t) : unit Deferred.t =
        let in_file = repo_root/"site"/year/(Event.filename_base x ^ ".md") in
        let out_file =
-         repo_root/"_build"/"site"/year/(Event.filename_base x ^ ".html")
+         repo_root/"_build"/"site"/year/(x.Event.url_title ^ ".html")
        in
        let depth = 1 in
        Util.newer in_file out_file >>= function
