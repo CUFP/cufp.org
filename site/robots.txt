@@ -1,4 +1,0 @@
-User-agent: *
-(( ifndef production
-Disallow: /
-))

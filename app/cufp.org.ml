@@ -156,12 +156,60 @@ let build_markdown : Command.t = Command.async
        ~repo_root ~depth ~production ?body_class:None ~content:x ~out_file ()
   )
 
+let build_blog_post : Command.t = Command.async
+  ~summary:"build blog post html page from markdown source"
+  Command.Spec.(
+    empty +>
+    Param.repo_root +>
+    Param.production +>
+    anon ("FILE" %: file)
+  )
+  (fun repo_root production in_file () ->
+     let depth = match Filename.parts in_file with
+       | "."::"site"::parts -> List.length parts - 1
+       | _ -> failwithf "%s: FILE must begin with site/" in_file ()
+     in
+     let base = String.chop_suffix_exn in_file ~suffix:".md" in
+     let in_file = repo_root/in_file in
+     let out_file = repo_root/"_build"/(base^".html") in
+     Log.Global.info "converting %s → %s" in_file out_file;
+     Blog.Post.of_file in_file >>= fun x ->
+     return @@ Blog.Post.to_html x >>= fun x ->
+     return @@ Html.to_string x >>= fun content ->
+     Mpp.main_template
+       ~repo_root ~depth ~production ?body_class:None ~content ~out_file ()
+  )
+
+let build_blog_rss : Command.t = Command.async
+  ~summary:"print blog rss feed to stdout"
+  Command.Spec.(empty +> Param.repo_root)
+  (fun repo_root () ->
+     let in_dir = repo_root/"site"/"blog" in
+     Blog.of_dir in_dir >>| fun blog ->
+     print_endline @@ Blog.to_string_rss blog
+  )
+
+let build_robots : Command.t = Command.async
+  ~summary:"print robots.txt file to stdout"
+  Command.Spec.(empty +> Param.production)
+  (fun production () ->
+     (
+       match production with
+       | true -> printf "User-agent: *\n"
+       | false -> printf "User-agent: *\nDisallow: /\n"
+     );
+     Deferred.unit
+  )
+
 let build = Command.group
   ~summary:"build site files"
   [
     "events", build_events;
     "html", build_html;
     "markdown", build_markdown;
+    "blog-post", build_blog_post;
+    "blog-rss", build_blog_rss;
+    "robots", build_robots;
   ]
 
 (******************************************************************************)

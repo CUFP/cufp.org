@@ -99,14 +99,34 @@ node_modules/postcss-cli:
 # Build Site
 
 # General markdown files.
-markdown-bases=site/about site/bylaws site/license site/steering-committee 
-$(patsubst %, _build/%.html, $(markdown-bases)): _build/site/%.html: site/%.md | _build/tmp
+markdown-bases=site/about.md site/bylaws.md site/license.md \
+               site/steering-committee.md \
+               site/2016/call-for-presentations.md \
+               site/2016/call-for-tutorials.md
+$(patsubst %.md, _build/%.html, $(markdown-bases)): _build/site/%.html: site/%.md | _build/tmp
 	$(cufp.org) build markdown -production $(PRODUCTION) $<
 
 # General html files.
-html-files=site/2016/index.html
+html-files=site/blog/index.html site/videos/index.html site/2016/index.html
 $(patsubst %, _build/%, $(html-files)): _build/site/%.html: site/%.html | _build/tmp
 	$(cufp.org) build html -production $(PRODUCTION) $<
+
+# Blog main page.
+_build/site/blog/index.html: site/blog/* | _build/tmp
+	$(cufp.org) build html -production $(PRODUCTION) site/blog/index.html
+
+# Blog RSS feed.
+_build/site/blog/all.rss.xml: $(wildcard site/blog/20*)
+	$(cufp.org) build blog-rss >| $@
+
+# Blog post markdown files.
+blog-post-bases=$(wildcard site/blog/20*.md)
+$(patsubst %.md, _build/%.html, $(blog-post-bases)): _build/site/%.html: site/%.md | _build/tmp
+	$(cufp.org) build blog-post -production $(PRODUCTION) $<
+
+# robots.txt
+_build/site/robots.txt:
+	$(cufp.org) build robots -production $(PRODUCTION) >| $@
 
 .PHONY: site
 site: $(cufp.org) \
@@ -114,8 +134,12 @@ site: $(cufp.org) \
       site/css/app.css \
       site/js/app.min.js \
       _cache/foundation-icons \
-      $(patsubst %, _build/%.html, $(markdown-bases)) \
+      $(patsubst %.md, _build/%.html, $(markdown-bases)) \
       $(patsubst %, _build/%, $(html-files)) \
+      _build/site/blog/index.html \
+      _build/site/blog/all.rss.xml \
+      $(patsubst %.md, _build/%.html, $(blog-post-bases)) \
+      _build/site/robots.txt \
       | _build/site/css _build/site/js _build/tmp
 
 	cp -f site/css/app.css _build/site/css/
