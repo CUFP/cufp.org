@@ -97,19 +97,38 @@ node_modules/postcss-cli:
 
 ################################################################################
 # Build Site
+
+# General markdown files.
+markdown-bases=site/about site/bylaws site/license site/steering-committee 
+$(patsubst %, _build/%.html, $(markdown-bases)): _build/site/%.html: site/%.md | _build/tmp
+	$(cufp.org) build markdown -production $(PRODUCTION) $<
+
+# General html files.
+html-files=site/2016/index.html
+$(patsubst %, _build/%, $(html-files)): _build/site/%.html: site/%.html | _build/tmp
+	$(cufp.org) build html -production $(PRODUCTION) $<
+
 .PHONY: site
 site: $(cufp.org) \
       _build/app/cufp.org \
       site/css/app.css \
       site/js/app.min.js \
       _cache/foundation-icons \
+      $(patsubst %, _build/%.html, $(markdown-bases)) \
+      $(patsubst %, _build/%, $(html-files)) \
       | _build/site/css _build/site/js _build/tmp
+
 	cp -f site/css/app.css _build/site/css/
 	cp -f site/js/app.min.js _build/site/js
-	rsync -a _cache/foundation-icons/ _build/site/css/
-	rm -f _build/site/css/foundation-icons.css
+	rsync -a --exclude=foundation-icons.css --exclude=preview.html _cache/foundation-icons/ _build/site/css/
+
+	cp -f site/index.html _build/site/
 	rsync -a ../cufp.org-media/* _build/site/
-	$(cufp.org) make -repo-root . -production $(PRODUCTION) "/"
+	rsync -a site/200[4-8] site/conference _build/site/
+	rsync -a site/201[4-6]cfp _build/site/
+	rsync -a --exclude=/index.html site/videos/ _build/site/videos/
+
+	$(cufp.org) build events -production $(PRODUCTION) 2016
 
 
 ################################################################################

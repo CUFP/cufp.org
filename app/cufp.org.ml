@@ -58,6 +58,113 @@ let make : (string * Command.t) =
 
 
 (******************************************************************************)
+(* `build` sub-command                                                        *)
+(******************************************************************************)
+let build_events : Command.t = Command.async
+  ~summary:"build html pages for all events of given conference year"
+  Command.Spec.(
+    empty +>
+    Param.repo_root +>
+    Param.production +>
+    anon ("YEAR" %: int)
+  )
+  (fun repo_root production year () ->
+     let year = Int.to_string year in
+
+     let build_event (x:Event.t) : unit Deferred.t =
+       let in_file = repo_root/"site"/year/(Event.filename_base x ^ ".md") in
+       let out_file =
+         repo_root/"_build"/"site"/year/(Event.filename_base x ^ ".html")
+       in
+       let depth = 1 in
+       Util.newer in_file out_file >>= function
+       | false -> (
+           Log.Global.debug "%s is up to date" out_file;
+           Deferred.unit
+         )
+       | true -> (
+           Log.Global.info "converting %s → %s" in_file out_file;
+           Conference.years ~repo_root () >>= fun years ->
+           return (Event.to_html ~years x) >>= fun l ->
+           return @@ List.map l ~f:(Format.asprintf "%a" (Tyxml.Html.pp_elt ()))
+           >>= fun x ->
+           return @@ String.concat ~sep:"" x >>= fun content ->
+           Mpp.main_template
+             ~repo_root ~depth ~production
+             ?body_class:None ~content ~out_file ()
+         )
+     in
+
+     let in_dir = repo_root/"site"/year in
+     Conference.of_dir in_dir >>= fun c ->
+     let events =
+       List.map c.Conference.sessions ~f:(fun x ->
+         (x : Conference.session :> Event.t list)
+       ) |>
+       List.concat |>
+       List.filter ~f:(fun x -> Event.(match x.typ with
+         | Break | Discussion -> false
+         | Talk | Keynote | Tutorial
+         | BoF | Reception -> true
+       ))
+     in
+     Deferred.List.iter events ~f:build_event
+  )
+
+let build_html : Command.t = Command.async
+  ~summary:"build html page from html source"
+  Command.Spec.(
+    empty +>
+    Param.repo_root +>
+    Param.production +>
+    anon ("FILE" %: file)
+  )
+  (fun repo_root production in_file () ->
+     let depth = match Filename.parts in_file with
+       | "."::"site"::parts -> List.length parts - 1
+       | _ -> failwithf "%s: FILE must begin with site/" in_file ()
+     in
+     let in_file = repo_root/in_file in
+     let out_file = repo_root/"_build"/in_file in
+     Log.Global.info "converting %s → %s" in_file out_file;
+     Reader.file_contents in_file >>= fun content ->
+     Mpp.main_template
+       ~repo_root ~depth ~production ?body_class:None ~content ~out_file ()
+  )
+
+let build_markdown : Command.t = Command.async
+  ~summary:"build html page from markdown source"
+  Command.Spec.(
+    empty +>
+    Param.repo_root +>
+    Param.production +>
+    anon ("FILE" %: file)
+  )
+  (fun repo_root production in_file () ->
+     let depth = match Filename.parts in_file with
+       | "."::"site"::parts -> List.length parts - 1
+       | _ -> failwithf "%s: FILE must begin with site/" in_file ()
+     in
+     let base = String.chop_suffix_exn in_file ~suffix:".md" in
+     let in_file = repo_root/in_file in
+     let out_file = repo_root/"_build"/(base^".html") in
+     Log.Global.info "converting %s → %s" in_file out_file;
+     Reader.file_contents in_file >>= fun x ->
+     return @@ Omd.of_string x >>= fun x ->
+     return @@ Omd.to_html x >>= fun x ->
+     Mpp.main_template
+       ~repo_root ~depth ~production ?body_class:None ~content:x ~out_file ()
+  )
+
+let build = Command.group
+  ~summary:"build site files"
+  [
+    "events", build_events;
+    "html", build_html;
+    "markdown", build_markdown;
+  ]
+
+(******************************************************************************)
 (* `print` sub-command                                                        *)
 (******************************************************************************)
 let print_conference_list : (string * Command.t) =
@@ -216,7 +323,7 @@ let print : (string * Command.t) =
 (******************************************************************************)
 let main = Command.group
   ~summary:"build and publish the cufp.org website"
-  [make; print]
+  ["build",build; make; print]
 
 ;;
 let build_info = match About.git_commit with
