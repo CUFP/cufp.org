@@ -1,5 +1,4 @@
 module About = About
-module Asset = Asset
 module Blog = Blog
 module Conference = Conference
 module Disqus = Disqus

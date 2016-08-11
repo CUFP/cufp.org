@@ -32,30 +32,6 @@ module Param = struct
 
 end
 
-(******************************************************************************)
-(* `make` sub-command                                                         *)
-(******************************************************************************)
-let make : (string * Command.t) =
-  ("make",
-   Command.async
-     ~summary:"make a site asset"
-     ~readme:(fun () ->
-       "FILE should be the input source from which the asset is generated, \
-        and be in site root-relative form starting with a slash."
-     )
-     Command.Spec.(
-       empty
-       +> Param.repo_root
-       +> Param.production
-       +> anon ("file" %: file)
-     )
-     (fun repo_root production file () ->
-       Path.make ~repo_root file >>=
-       Asset.of_path >>=
-       Asset.make ~production
-     )
-  )
-
 
 (******************************************************************************)
 (* `build` sub-command                                                        *)
@@ -371,7 +347,7 @@ let print : (string * Command.t) =
 (******************************************************************************)
 let main = Command.group
   ~summary:"build and publish the cufp.org website"
-  ["build",build; make; print]
+  ["build",build; print]
 
 ;;
 let build_info = match About.git_commit with
