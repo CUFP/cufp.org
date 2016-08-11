@@ -58,6 +58,9 @@ val is_valid_filename : string -> bool
 
 (** {6 Printers} *)
 
+(** Return base of a filename for given event, without any extension. *)
+val filename_base : t -> string
+
 (** [to_file t dir] prints [t] to a file within [dir]. The filename is
     determined automatically. *)
 val to_file : t -> string -> unit Deferred.t

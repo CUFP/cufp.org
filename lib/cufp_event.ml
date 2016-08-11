@@ -33,10 +33,10 @@ type file_name_info = {
 let typ_to_string typ =
   sexp_of_typ typ |> Sexp.to_string |> String.map ~f:Char.lowercase
 
-let to_file (t:t) dir =
+let filename_base (t:t) =
   let start = Time.Ofday.to_parts t.start in
   let finish = Time.Ofday.to_parts t.finish in
-  let filename = sprintf "%04d-%02d-%02d_%02d%02d_%02d%02d_%s.md"
+  sprintf "%04d-%02d-%02d_%02d%02d_%02d%02d_%s"
     (Date.year t.date)
     (Date.month t.date |> Month.to_int)
     (Date.day t.date)
@@ -45,7 +45,9 @@ let to_file (t:t) dir =
     finish.Time.Span.Parts.hr
     finish.Time.Span.Parts.min
     t.url_title
-  in
+
+let to_file (t:t) dir =
+  let filename = filename_base t ^ "md" in
   let out_file = dir/filename in
   let md =
     let open Omd in
