@@ -2,6 +2,14 @@
 open Core.Std
 open Async.Std
 
+(** {HTML fragments} *)
+
+(** Main menu that we insert in header of most pages. *)
+val menu : years:int list -> Html_types.div Tyxml.Html.elt
+
+
+(** {Links} *)
+
 (** List of element/attribute pairs, whose values are links. For
     example, ("a", "href") is in the list because the html <a> element
     can have an "href" attribute whose value is expected to be a

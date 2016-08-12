@@ -157,7 +157,7 @@ let to_html ~years ~background_image (t:t) =
         a_class ["title-parallax"];
         a_style @@ sprintf "background-image:url('%s')" background_image;
       ]
-      [Pages.menu ~years]
+      [Html.menu ~years]
     ;
 
     div ~a:[a_class ["main-wrap"]] [

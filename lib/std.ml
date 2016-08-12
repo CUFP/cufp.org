@@ -4,7 +4,6 @@ module Event = Cufp_event
 module Html = Html
 module Mpp = Mpp
 module Path = Cufp_path
-module Pages = Pages
 module Person = Person
 module String_as = String_as
 module Util = Util

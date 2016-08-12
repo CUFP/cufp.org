@@ -220,7 +220,7 @@ let print_menu : (string * Command.t) =
      Command.Spec.(empty +> Param.repo_root)
      (fun repo_root () ->
         Conference.years ~repo_root () >>= fun years ->
-        return @@ Pages.menu ~years >>= fun x ->
+        return @@ Html.menu ~years >>= fun x ->
         return @@ Format.asprintf "%a" (Tyxml.Html.pp_elt ()) x >>= fun x ->
         return @@ print_endline x
      )
