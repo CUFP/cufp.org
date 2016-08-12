@@ -278,26 +278,6 @@ let print_blog : (string * Command.t) =
      )
   )
 
-let print_video : (string * Command.t) =
-  ("videos",
-   Command.async
-     ~summary:"print videos"
-     Command.Spec.(
-       empty
-       +> Param.repo_root
-     )
-     (fun repo_root () ->
-       Conference.years ~repo_root () >>=
-       Deferred.List.map ~f:(fun year ->
-         sprintf "site/%d" year |> Conference.of_dir
-       ) >>=
-       lift Conference.videos_page >>= fun x ->
-       return (Html.to_string [x]) >>= fun x ->
-       print_string x;
-       Deferred.unit
-     )
-  )
-
 let print_menu : (string * Command.t) =
   ("menu",
    Command.async
@@ -318,7 +298,6 @@ let print : (string * Command.t) =
        print_schedule;
        print_conference_list;
        print_blog;
-       print_video;
        print_menu;
      ]
   )

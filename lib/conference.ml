@@ -40,59 +40,6 @@ let years ~repo_root () =
 (******************************************************************************)
 (* Printers                                                                   *)
 (******************************************************************************)
-
-let videos_page tl =
-  let open Html in
-
-  let video_html year (s:Event.t) : Html.item option =
-    let open Event in
-    let url = sprintf "/%d/%s.html" year s.url_title in
-    Option.map s.video ~f:(fun video ->
-      div ~a:["class","row"] [
-        div ~a:["class", "medium-6 columns"] [
-          div ~a:["class","flex-video"] [
-            iframe ~a:[
-              "src", Video.to_embed_uri video;
-              "width", "420";
-              "height", "315";
-              "frameborder", "0";
-              "webkitallowfullscreen", "";
-              "mozallowfullscreen", "";
-              "allowfullscreen", "";
-            ] [];
-          ]
-        ];
-        div ~a:["class", "medium-6 columns"] [
-          h2 [
-            a ~a:["href", url] [data s.title]
-          ];
-          div [Person.to_html_ul s.speakers];
-          div ~a:["class","date"] [data (Date.format s.date "%B %d, %Y")];
-        ];
-      ]
-    )
-  in
-
-  (* Return None if given conference has no videos. *)
-  let conference_html {sessions; year} : Html.item option =
-    List.concat sessions
-    |> List.filter_map ~f:(video_html year)
-    |> function
-      | [] -> None
-      | event_videos -> (
-        let id = sprintf "cufp%d" year in
-        dd [
-          a ~a:["href", sprintf "#%s" id] [data (sprintf "CUFP %d" year)];
-          div ~a:["id",id; "class","content"] event_videos;
-        ]
-        |> Option.some
-      )
-  in
-
-  List.sort tl ~cmp:(fun a b -> Int.compare b.year a.year)
-  |> List.filter_map ~f:conference_html
-  |> dl ~a:["class","accordion"; "data-accordion", ""]
-
 let schedule t date =
   let events =
     List.concat t.sessions |>

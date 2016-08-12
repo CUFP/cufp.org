@@ -10,13 +10,6 @@ let menu ~years =
 
       div ~a:[a_class ["sub-menu"]] [
         div [
-          a ~a:[a_href "videos.html"] [
-            i ~a:[a_class ["fi-video"]] [];
-            pcdata " Videos"
-          ]
-        ];
-
-        div [
           a ~a:[a_href "blog-list.html"] [
             i ~a:[a_class ["fi-pencil"]] [];
             pcdata " Blog"

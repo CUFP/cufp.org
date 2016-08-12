@@ -107,7 +107,7 @@ $(patsubst %.md, _build/%.html, $(markdown-bases)): _build/site/%.html: site/%.m
 	$(cufp.org) build markdown -production $(PRODUCTION) $<
 
 # General html files.
-html-files=site/blog/index.html site/videos/index.html site/2016/index.html
+html-files=site/blog/index.html site/2016/index.html
 $(patsubst %, _build/%, $(html-files)): _build/site/%.html: site/%.html | _build/tmp
 	$(cufp.org) build html -production $(PRODUCTION) $<
 

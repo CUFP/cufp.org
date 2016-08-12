@@ -31,8 +31,4 @@ val years : repo_root:string -> unit -> int list Deferred.t
 
 
 (** {6 HTML} *)
-
-(** Generate the videos page. *)
-val videos_page : t list -> Html.item
-
 val schedule : t -> Date.t -> Html_types.div Tyxml.Html.elt
