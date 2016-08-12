@@ -1,5 +1,5 @@
+<div class="white-bg padded" media:type="text/omd">
 <div class="row" media:type="text/omd">
-<div class="small-12 columns" media:type="text/omd">
 
 # CUFP 2016 Call for Tutorials
 
