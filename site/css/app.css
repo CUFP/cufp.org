@@ -2105,7 +2105,8 @@ header {
     header .title h1 {
       margin: 0 0 1rem;
       color: #fefefe;
-      line-height: 0.7;
+      line-height: 0.82;
+      letter-spacing: -0.05em;
       text-shadow: 1px 3px 64px #0a0a0a, 1px 3px 6px rgba(10, 10, 10, 0.2);
       font-weight: 900; }
     header .title h4 {

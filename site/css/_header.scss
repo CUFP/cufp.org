@@ -103,7 +103,8 @@ header
 		{
 			margin: 0 0 $paragraph-margin-bottom;
 			color: $white;
-			line-height: 0.7;
+			line-height: 0.82;
+			letter-spacing: -0.05em;
 			text-shadow: 1px 3px 64px $black, 1px 3px 6px rgba($black, 0.2);
 			font-weight: $font-weight-black;
 		}
