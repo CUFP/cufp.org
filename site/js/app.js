@@ -60,10 +60,17 @@ $('.schedule').on('click', '.date-head', function(){
 	if (isMobile)
 	{
 		var $it = $(this).closest('.schedule').find('.day-calendar');
-		$('.schedule .date-head').removeClass('open');
-		$(this).addClass('open');
-		$('.schedule .day-calendar').not($it).slideUp();
-		$it.slideDown();
+		if ($(this).hasClass('open'))
+		{
+			$(this).removeClass('open');
+			$it.slideUp();
+		}
+		else {
+			$('.schedule .date-head').removeClass('open');
+			$(this).addClass('open');
+			$('.schedule .day-calendar').not($it).slideUp();
+			$it.slideDown();
+		}
 	}
 });
 

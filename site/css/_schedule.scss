@@ -61,9 +61,20 @@
 					font-size: rem-calc(map-get(map-get($header-sizes, 'small'), 'h5'));
 				}
 
-				&:hover, &.open
+				&:hover
 				{
 					background: $sunflower;
+
+					strong
+					{
+						color: $white;
+					}
+				}
+
+				&.open
+				{
+					background: $primary-color;
+					color: $white;
 
 					strong
 					{

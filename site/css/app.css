@@ -2476,9 +2476,14 @@ footer {
           margin-bottom: -1px; }
           .schedule .day-menu .date-head h5 {
             font-size: 1.25rem; }
-          .schedule .day-menu .date-head:hover, .schedule .day-menu .date-head.open {
+          .schedule .day-menu .date-head:hover {
             background: #f1c40f; }
-            .schedule .day-menu .date-head:hover strong, .schedule .day-menu .date-head.open strong {
+            .schedule .day-menu .date-head:hover strong {
+              color: #fefefe; }
+          .schedule .day-menu .date-head.open {
+            background: #50b966;
+            color: #fefefe; }
+            .schedule .day-menu .date-head.open strong {
               color: #fefefe; } }
   .schedule .day-calendar {
     width: 100%;
