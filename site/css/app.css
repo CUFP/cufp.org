@@ -1986,9 +1986,9 @@ p:last-child, .button:last-child, button:last-child {
   .diamond.one {
     background: #c0392b; }
   .diamond.two {
-    background: #50b966; }
-  .diamond.three {
     background: #3498db; }
+  .diamond.three {
+    background: #50b966; }
   @media screen and (min-width: 40em) {
     .diamond {
       -webkit-transform: rotateZ(45deg) scale(1.2);
@@ -2299,36 +2299,21 @@ footer {
     .main-wrap .introduction {
       position: relative;
       z-index: 20;
-      width: 62.5%;
-      float: left;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 64px;
-      padding-bottom: 64px; } }
-  @media screen and (min-width: 40em) and (min-width: 40em) {
+      width: 50%; }
+    .main-wrap .action-bar {
+      width: 50%; } }
+  @media screen and (min-width: 64em) {
     .main-wrap .introduction {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-  @media screen and (min-width: 40em) {
-      .main-wrap .introduction:last-child:not(:first-child) {
-        float: right; }
+      width: 62.5%;
+      padding-top: 64px;
+      padding-bottom: 64px; }
       .main-wrap .introduction p {
         font-size: 1.2rem; }
         .main-wrap .introduction p:first-child {
           font-size: 1.5rem; }
     .main-wrap .action-bar {
       width: 29.16667%;
-      float: left;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-left: 8.33333%; } }
-  @media screen and (min-width: 40em) and (min-width: 40em) {
-    .main-wrap .action-bar {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-  @media screen and (min-width: 40em) {
-      .main-wrap .action-bar:last-child:not(:first-child) {
-        float: right; }
+      margin-left: 8.33333%; }
     .main-wrap .intro-paragraph .diamond {
       margin-right: 0; } }
 
@@ -2350,19 +2335,13 @@ footer {
 
 @media screen and (min-width: 40em) {
   .intros .intro-paragraph {
-    width: 33.33333%;
-    float: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 50%;
     margin-bottom: 0; } }
-  @media screen and (min-width: 40em) and (min-width: 40em) {
-    .intros .intro-paragraph {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
 
-@media screen and (min-width: 40em) {
-    .intros .intro-paragraph:last-child:not(:first-child) {
-      float: right; } }
+@media screen and (min-width: 64em) {
+  .intros .intro-paragraph {
+    width: 33.33333%;
+    margin-bottom: 0; } }
 
 .action-bar a {
   position: relative;

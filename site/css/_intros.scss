@@ -12,9 +12,18 @@
 {
 	.intro-paragraph
 	{
-		@include grid-column(4);
+		@include grid-col-size(6);
 		margin-bottom: 0;
 	}
+}
+
+@include breakpoint(large)
+{
+.intro-paragraph
+{
+	@include grid-col-size(4);
+	margin-bottom: 0;
+}
 }
 
 }

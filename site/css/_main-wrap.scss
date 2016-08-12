@@ -46,7 +46,20 @@
 	{
 		position: relative;
 		z-index: 20;
-		@include grid-column(7.5);
+		@include grid-col-size(6);
+	}
+
+	.action-bar
+	{
+		@include grid-col-size(6);
+	}
+}
+
+@include breakpoint(large)
+{
+	.introduction
+	{
+		@include grid-col-size(7.5);
 		padding-top: $column-gutter;
 		padding-bottom: $column-gutter;
 
@@ -63,7 +76,7 @@
 
 	.action-bar
 	{
-		@include grid-col(3.5);
+		@include grid-col-size(3.5);
 		@include grid-column-offset(1);
 	}
 
