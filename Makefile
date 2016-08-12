@@ -128,6 +128,9 @@ $(patsubst %.md, _build/%.html, $(blog-post-bases)): _build/site/%.html: site/%.
 _build/site/robots.txt:
 	$(cufp.org) build robots -production $(PRODUCTION) >| $@
 
+_build/site/2009: site/2009
+	rsync -a $</*.html $@/
+
 .PHONY: site
 site: $(cufp.org) \
       _build/app/cufp.org \
@@ -140,6 +143,7 @@ site: $(cufp.org) \
       _build/site/blog/all.rss.xml \
       $(patsubst %.md, _build/%.html, $(blog-post-bases)) \
       _build/site/robots.txt \
+      _build/site/2009 \
       | _build/site/css _build/site/js _build/tmp
 
 	cp -f site/css/app.css _build/site/css/
