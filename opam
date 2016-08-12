@@ -17,9 +17,6 @@ depends: [
   "omd"
   "markup"
   "mpp"
-  "yojson"
   "uri"
-  "ocamlnet"
-  "ocamlrss"
   "tyxml" {>= "4.0.0"}
 ]

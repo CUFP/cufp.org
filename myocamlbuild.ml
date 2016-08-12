@@ -10,8 +10,8 @@ let lib : Project.item = Project.lib project_name
     ~dir:"lib"
     ~pack_name:project_name
     ~findlib_deps:[
-      "async"; "core"; "markup"; "mpp"; "netstring"; "omd"; "ppx_sexp_conv";
-      "rss"; "uri"; "yojson"; "tyxml"
+      "async"; "core"; "markup"; "mpp"; "omd"; "ppx_sexp_conv";
+      "uri"; "tyxml"
     ]
     ~ml_files:(`Add ["about.ml"])
 
