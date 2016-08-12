@@ -133,8 +133,8 @@ let time_ofday_to_string ?(print_ampm=true) t =
   let ampm =
     if not print_ampm then ""
     else match ampm t with
-    | `AM -> " AM"
-    | `PM -> " PM"
+    | `AM -> "am"
+    | `PM -> "pm"
   in
   let hr = match hr with
     | 0 | 12 ->  12
