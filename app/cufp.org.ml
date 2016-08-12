@@ -30,6 +30,9 @@ module Param = struct
     in
     flag "-sort-rev" (optional_with_default default bool) ~doc
 
+  let background =
+    flag "-background" (required string)
+      ~doc:"URL Path to background image."
 end
 
 
@@ -42,9 +45,10 @@ let build_events : Command.t = Command.async
     empty +>
     Param.repo_root +>
     Param.production +>
+    Param.background +>
     anon ("YEAR" %: int)
   )
-  (fun repo_root production year () ->
+  (fun repo_root production background_image year () ->
      let year = Int.to_string year in
 
      let build_event (x:Event.t) : unit Deferred.t =
@@ -61,7 +65,7 @@ let build_events : Command.t = Command.async
        | true -> (
            Log.Global.info "converting %s → %s" in_file out_file;
            Conference.years ~repo_root () >>= fun years ->
-           return (Event.to_html ~years x) >>= fun l ->
+           return (Event.to_html ~years ~background_image x) >>= fun l ->
            return @@ List.map l ~f:(Format.asprintf "%a" (Tyxml.Html.pp_elt ()))
            >>= fun x ->
            return @@ String.concat ~sep:"" x >>= fun content ->

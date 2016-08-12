@@ -67,6 +67,7 @@ val to_file : t -> string -> unit Deferred.t
 
 val to_html :
   years:int list ->
+  background_image:string ->
   t ->
   Html_types.body_content Tyxml.Html.elt list
 

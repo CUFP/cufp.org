@@ -102,7 +102,7 @@ let icon typ =
   ) >>| fun x ->
   Html.i ~a:["class", x] []
 
-let to_html ~years (t:t) =
+let to_html ~years ~background_image (t:t) =
   let open Tyxml.Html in
 
   let date_time =
@@ -155,7 +155,7 @@ let to_html ~years (t:t) =
     header
       ~a:[
         a_class ["title-parallax"];
-        a_style @@ sprintf "background-image:url('img/header-background.jpg')";
+        a_style @@ sprintf "background-image:url('%s')" background_image;
       ]
       [Pages.menu ~years]
     ;
