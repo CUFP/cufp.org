@@ -2285,17 +2285,28 @@ footer {
   background: #ecf0f1;
   position: relative;
   z-index: 10; }
-  .main-wrap .introduction, .main-wrap .action-bar, .main-wrap .inner-intro {
+  .main-wrap .introduction, .main-wrap .action-bar {
     width: 100%;
     float: left;
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 32px 0; }
     @media screen and (min-width: 40em) {
-      .main-wrap .introduction, .main-wrap .action-bar, .main-wrap .inner-intro {
+      .main-wrap .introduction, .main-wrap .action-bar {
         padding-left: 2rem;
         padding-right: 2rem; } }
-    .main-wrap .introduction:last-child:not(:first-child), .main-wrap .action-bar:last-child:not(:first-child), .main-wrap .inner-intro:last-child:not(:first-child) {
+    .main-wrap .introduction:last-child:not(:first-child), .main-wrap .action-bar:last-child:not(:first-child) {
+      float: right; }
+  .main-wrap .inner-intro {
+    width: 100%;
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    @media screen and (min-width: 40em) {
+      .main-wrap .inner-intro {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
+    .main-wrap .inner-intro:last-child:not(:first-child) {
       float: right; }
   .main-wrap .intro-paragraph:last-of-type {
     margin-bottom: 0; }

@@ -4,10 +4,15 @@
 	position: relative;
 	z-index: 10;
 
-	.introduction, .action-bar, .inner-intro
+	.introduction, .action-bar
 	{
 		@include grid-col(12);
 		margin: $column-gutter/2 0;
+	}
+
+	.inner-intro
+	{
+		@include grid-col(12);
 	}
 
 	.intro-paragraph
