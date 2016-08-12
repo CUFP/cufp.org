@@ -147,7 +147,8 @@ site: $(cufp.org) \
 	rsync -a --exclude=foundation-icons.css --exclude=preview.html _cache/foundation-icons/ _build/site/css/
 
 	cp -f site/index.html _build/site/
-	rsync -a ../cufp.org-media/* _build/site/
+	rsync -a --exclude=/icon/ ../cufp.org-media/* _build/site/
+	cp -f ../cufp.org-media/icon/favicon-32x32.png _build/site/
 	rsync -a site/200[4-8] site/conference _build/site/
 	rsync -a site/201[4-6]cfp _build/site/
 	rsync -a --exclude=/index.html site/videos/ _build/site/videos/
