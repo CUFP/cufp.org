@@ -1233,7 +1233,7 @@ h1 {
   font-size: 6rem; }
 
 h2 {
-  font-size: 1.625rem; }
+  font-size: 1.375rem; }
 
 h3 {
   font-size: 1.4375rem; }
@@ -1248,6 +1248,20 @@ h6 {
   font-size: 1rem; }
 
 @media screen and (min-width: 40em) {
+  h1 {
+    font-size: 8.25rem; }
+  h2 {
+    font-size: 1.375rem; }
+  h3 {
+    font-size: 2.375rem; }
+  h4 {
+    font-size: 1.625rem; }
+  h5 {
+    font-size: 1.25rem; }
+  h6 {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 64em) {
   h1 {
     font-size: 8.25rem; }
   h2 {
@@ -1922,6 +1936,9 @@ select {
     .media > *:last-child:last-child:not(:first-child) {
       float: right; }
 
+html, body {
+  overflow-x: hidden; }
+
 .row {
   max-width: 80rem;
   margin-left: auto;
@@ -2445,7 +2462,7 @@ footer {
         font-size: 0.8rem; }
       .schedule .day-menu .date-head h5 {
         margin-bottom: 0.2rem;
-        font-size: 3rem; }
+        font-size: 2rem; }
       .schedule .day-menu .date-head small {
         color: #3d3d3d;
         font-size: 1.2rem; }
@@ -2517,6 +2534,9 @@ footer {
   @media screen and (min-width: 40em) {
       .schedule .day-menu:last-child:not(:first-child) {
         float: right; }
+      .schedule .day-menu .date-head {
+        padding-top: 21.33333px;
+        padding-bottom: 21.33333px; }
     .schedule .day-calendar {
       width: 75%;
       float: left;

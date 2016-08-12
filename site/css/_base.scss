@@ -1,3 +1,8 @@
+html, body
+{
+	overflow-x: hidden;
+}
+
 .row
 {
 	@include grid-row;

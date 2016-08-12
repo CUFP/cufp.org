@@ -41,7 +41,7 @@
 			h5
 			{
 				margin-bottom: 0.2rem;
-				font-size: 3rem;
+				font-size: 2rem;
 			}
 
 			small
@@ -163,6 +163,12 @@
 	.day-menu
 	{
 		@include grid-column(3);
+
+		.date-head
+		{
+			padding-top: $column-gutter/3;
+			padding-bottom: $column-gutter/3;
+		}
 	}
 
 	.day-calendar

@@ -162,13 +162,21 @@ $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
     'h1': 96,
-    'h2': 26,
+    'h2': 22,
     'h3': 23,
     'h4': 24,
     'h5': 20,
     'h6': 16,
   ),
   medium: (
+    'h1': 132,
+    'h2': 22,
+    'h3': 38,
+    'h4': 26,
+    'h5': 20,
+    'h6': 16,
+  ),
+  large: (
     'h1': 132,
     'h2': 26,
     'h3': 38,
