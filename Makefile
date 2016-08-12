@@ -107,22 +107,13 @@ $(patsubst %.md, _build/%.html, $(markdown-bases)): _build/site/%.html: site/%.m
 	$(cufp.org) build markdown -production $(PRODUCTION) $<
 
 # General html files.
-html-files=site/blog/index.html site/2016/index.html
+html-files=site/2016/index.html
 $(patsubst %, _build/%, $(html-files)): _build/site/%.html: site/%.html | _build/tmp
 	$(cufp.org) build html -production $(PRODUCTION) $<
 
-# Blog main page.
-_build/site/blog/index.html: site/blog/* | _build/tmp
-	$(cufp.org) build html -production $(PRODUCTION) site/blog/index.html
-
 # Blog RSS feed.
-_build/site/blog/all.rss.xml: $(wildcard site/blog/20*)
-	$(cufp.org) build blog-rss >| $@
-
-# Blog post markdown files.
-blog-post-bases=$(wildcard site/blog/20*.md)
-$(patsubst %.md, _build/%.html, $(blog-post-bases)): _build/site/%.html: site/%.md | _build/tmp
-	$(cufp.org) build blog-post -production $(PRODUCTION) $<
+_build/site/blog/all.rss.xml: site/blog/all.rss.xml | _build/site/blog
+	cp -f $< $@
 
 # robots.txt
 _build/site/robots.txt:
@@ -140,9 +131,7 @@ site: $(cufp.org) \
       _cache/foundation-icons \
       $(patsubst %.md, _build/%.html, $(markdown-bases)) \
       $(patsubst %, _build/%, $(html-files)) \
-      _build/site/blog/index.html \
       _build/site/blog/all.rss.xml \
-      $(patsubst %.md, _build/%.html, $(blog-post-bases)) \
       _build/site/robots.txt \
       $(patsubst %, _build/site/%, $(years_2009-2015)) \
       | _build/site/css _build/site/js _build/tmp
@@ -176,6 +165,9 @@ _build/site/js: | _build/site
 	mkdir $@
 
 _build/site/css: | _build/site
+	mkdir $@
+
+_build/site/blog: | _build/site
 	mkdir $@
 
 _build/tmp: | _build

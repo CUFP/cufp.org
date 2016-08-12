@@ -1,5 +1,4 @@
 module About = About
-module Blog = Blog
 module Conference = Conference
 module Disqus = Disqus
 module Event = Cufp_event

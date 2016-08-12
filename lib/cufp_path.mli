@@ -64,10 +64,6 @@ val parent : t -> t
 
 val check_suffix : t -> string -> bool
 val is_event_file : t -> bool
-val is_blog_post : t -> bool
-
-(** Return all blog post files given repo_root. *)
-val all_blog_post_files : string -> t list Deferred.t
 
 
 (** {6 Non-content paths}
@@ -79,5 +75,4 @@ val in_site_root : string -> string
 val out_site_root : string -> string
 val temp_dir : string -> string
 val main_template : string -> string
-val blog_dir : string -> string
 val app_dir : string -> string

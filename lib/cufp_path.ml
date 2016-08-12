@@ -15,7 +15,6 @@ let in_site_root repo_root = repo_root/"site"
 let out_site_root repo_root = repo_root/"_build"/"site"
 let temp_dir repo_root = repo_root/"_build"/"tmp"
 let main_template repo_root = repo_root/"template"/"main.html"
-let blog_dir repo_root = repo_root/"site"/"blog"
 let app_dir repo_root = repo_root/"_build"/"app"
 
 
@@ -79,18 +78,3 @@ let is_event_file {path; _} = match path with
   | x::y::[] ->
     Util.is_YYYY x && Event.is_valid_filename y
   | _ -> false
-
-let is_blog_post {path; _} = match path with
-  | "blog"::y::[] -> Blog.Post.is_valid_filename y
-  | _ -> false
-
-let all_blog_post_files repo_root =
-  let blog_dir = in_site_root repo_root / "blog" in
-  Sys.readdir blog_dir >>= fun files ->
-  return (Array.to_list files) >>=
-  Deferred.List.filter_map ~f:(fun file ->
-    if Blog.Post.is_valid_filename file then
-      make ~repo_root ("blog"/file) >>| Option.some
-    else
-      return None
-  )
