@@ -236,7 +236,7 @@ let schedule t date =
         | Event.BoF ->
           a ~a:[a_class ["event"]; a_href (x.Event.url_title ^ ".html")] childs
         | Event.Break | Event.Discussion ->
-          a ~a:[a_class ["event"]] childs (* FIXME: fix design to avoid link *)
+          div ~a:[a_class ["event"]] childs
       )
     )
   ]

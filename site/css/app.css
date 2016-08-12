@@ -1239,7 +1239,7 @@ h3 {
   font-size: 1.4375rem; }
 
 h4 {
-  font-size: 1rem; }
+  font-size: 1.5rem; }
 
 h5 {
   font-size: 1.25rem; }
@@ -1262,12 +1262,12 @@ h6 {
     font-size: 1rem; } }
 
 a {
-  color: #2980b9;
+  color: #50b966;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #236e9f; }
+    color: #41a356; }
   a img {
     border: 0; }
 
@@ -1468,12 +1468,12 @@ kbd {
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  background-color: #2980b9;
+  background-color: #50b966;
   color: #fefefe; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #236d9d;
+    background-color: #40a155;
     color: #fefefe; }
   .button.tiny {
     font-size: 0.6rem; }
@@ -1487,10 +1487,10 @@ kbd {
     margin-left: 0;
     margin-right: 0; }
   .button.primary {
-    background-color: #2980b9;
+    background-color: #50b966;
     color: #fefefe; }
     .button.primary:hover, .button.primary:focus {
-      background-color: #216694;
+      background-color: #3d9750;
       color: #fefefe; }
   .button.secondary {
     background-color: #ecf0f1;
@@ -1517,19 +1517,19 @@ kbd {
       background-color: #da3116;
       color: #fefefe; }
   .button.hollow {
-    border: 1px solid #2980b9;
-    color: #2980b9; }
+    border: 1px solid #50b966;
+    color: #50b966; }
     .button.hollow, .button.hollow:hover, .button.hollow:focus {
       background-color: transparent; }
     .button.hollow:hover, .button.hollow:focus {
-      border-color: #15405d;
-      color: #15405d; }
+      border-color: #265f32;
+      color: #265f32; }
     .button.hollow.primary {
-      border: 1px solid #2980b9;
-      color: #2980b9; }
+      border: 1px solid #50b966;
+      color: #50b966; }
       .button.hollow.primary:hover, .button.hollow.primary:focus {
-        border-color: #15405d;
-        color: #15405d; }
+        border-color: #265f32;
+        color: #265f32; }
     .button.hollow.secondary {
       border: 1px solid #ecf0f1;
       color: #ecf0f1; }
@@ -1558,7 +1558,7 @@ kbd {
     opacity: 0.25;
     cursor: not-allowed; }
     .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #2980b9;
+      background-color: #50b966;
       color: #fefefe; }
   .button.dropdown::after {
     content: '';
@@ -1986,7 +1986,7 @@ p:last-child, .button:last-child, button:last-child {
   .diamond.one {
     background: #c0392b; }
   .diamond.two {
-    background: #2ecc71; }
+    background: #50b966; }
   .diamond.three {
     background: #3498db; }
   @media screen and (min-width: 40em) {
@@ -2069,7 +2069,7 @@ header {
       background-color: #fefefe;
       padding: 0.50rem 1.6rem 0.5rem 1rem;
       height: auto;
-      color: #2980b9;
+      color: #50b966;
       width: auto;
       font-weight: 700;
       line-height: 1.4; }
@@ -2094,8 +2094,7 @@ header {
     float: left;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 128px;
-    padding-bottom: 192px;
+    padding: 128px 2rem 192px;
     text-align: center; }
     @media screen and (min-width: 40em) {
       header .title {
@@ -2385,7 +2384,7 @@ footer {
     color: #3d3d3d;
     line-height: 1.1; }
   .action-bar a:hover {
-    background: #2980b9; }
+    background: #50b966; }
     .action-bar a:hover h3 {
       color: #fefefe; }
     .action-bar a:hover small {
@@ -2491,29 +2490,35 @@ footer {
         padding-right: 2rem; } }
     .schedule .day-calendar:last-child:not(:first-child) {
       float: right; }
-    .schedule .day-calendar .calendar a {
+    .schedule .day-calendar .calendar .event {
       display: block;
       border-top: 1px solid #cacaca;
       color: #0a0a0a;
       padding: 8px 0; }
-      .schedule .day-calendar .calendar a > div {
+      .schedule .day-calendar .calendar .event > div {
         padding: 8px 0; }
-      .schedule .day-calendar .calendar a .time {
+      .schedule .day-calendar .calendar .event .time {
         font-weight: 700; }
-      .schedule .day-calendar .calendar a .description h2 {
+      .schedule .day-calendar .calendar .event .description h2 {
         font-weight: 300;
         margin: 0; }
-      .schedule .day-calendar .calendar a .authors {
+      .schedule .day-calendar .calendar .event .authors {
         overflow: hidden; }
-        .schedule .day-calendar .calendar a .authors h6 {
+        .schedule .day-calendar .calendar .event .authors h6 {
           width: 50%;
           float: left; }
-          .schedule .day-calendar .calendar a .authors h6:last-child:not(:first-child) {
+          .schedule .day-calendar .calendar .event .authors h6:last-child:not(:first-child) {
             float: right; }
-          .schedule .day-calendar .calendar a .authors h6 em {
+          .schedule .day-calendar .calendar .event .authors h6 em {
             display: block;
             font-size: 0.875rem;
             font-weight: 300; }
+      .schedule .day-calendar .calendar .event:hover h2 {
+        color: #50b966; }
+    .schedule .day-calendar .calendar div.event {
+      color: #8a8a8a; }
+      .schedule .day-calendar .calendar div.event:hover h2 {
+        color: #8a8a8a; }
   @media screen and (min-width: 40em) {
     .schedule .day-menu {
       width: 25%;
@@ -2543,33 +2548,31 @@ footer {
       .schedule .day-calendar .calendar {
         display: table;
         width: 100%; }
-        .schedule .day-calendar .calendar a {
+        .schedule .day-calendar .calendar .event {
           display: table-row;
           padding: 0; }
-          .schedule .day-calendar .calendar a > div {
+          .schedule .day-calendar .calendar .event > div {
             display: table-cell;
             padding: 32px 10.66667px;
             vertical-align: top;
             border-bottom: 1px dotted #cacaca; }
-          .schedule .day-calendar .calendar a .time {
+          .schedule .day-calendar .calendar .event .time {
             width: 15%; }
-          .schedule .day-calendar .calendar a .authors {
+          .schedule .day-calendar .calendar .event .authors {
             width: 30%; }
-            .schedule .day-calendar .calendar a .authors h6 {
+            .schedule .day-calendar .calendar .event .authors h6 {
               width: 100%;
               float: left;
               padding-left: 1rem;
               padding-right: 1rem; } }
           @media screen and (min-width: 40em) and (min-width: 40em) {
-            .schedule .day-calendar .calendar a .authors h6 {
+            .schedule .day-calendar .calendar .event .authors h6 {
               padding-left: 2rem;
               padding-right: 2rem; } }
   @media screen and (min-width: 40em) {
-              .schedule .day-calendar .calendar a .authors h6:last-child:not(:first-child) {
+              .schedule .day-calendar .calendar .event .authors h6:last-child:not(:first-child) {
                 float: right; }
-          .schedule .day-calendar .calendar a:hover h2 {
-            color: #2980b9; }
-          .schedule .day-calendar .calendar a:last-of-type > div {
+          .schedule .day-calendar .calendar .event:last-child > div {
             border-bottom: none; } }
 
 @media screen and (min-width: 40em) {
@@ -2628,7 +2631,7 @@ footer {
     .profile-list li a:hover p {
       color: #ec5840; }
   .profile-list.large li strong, .profile-list.xlarge li strong {
-    color: #2980b9; }
+    color: #50b966; }
   @media screen and (min-width: 40em) {
     .profile-list {
       margin: 0 -1rem 4rem; }
@@ -2692,11 +2695,11 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 10;
-    border: 0.1rem solid #2980b9;
+    border: 0.1rem solid #50b966;
     -webkit-transition: border 0.2s;
     transition: border 0.2s; }
   .avatar:hover:after {
-    border: 0.5rem solid rgba(41, 128, 185, 0.6); }
+    border: 0.5rem solid rgba(80, 185, 102, 0.6); }
   .avatar img {
     max-width: none;
     width: 100%;

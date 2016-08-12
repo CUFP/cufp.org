@@ -92,7 +92,8 @@ $global-width: rem-calc(1280);
 $global-lineheight: 1.5;
 $paragraph-line-height: $global-lineheight;
 $foundation-palette: (
-  primary: $belize-hole,
+  // primary: $belize-hole,
+  primary: #50b966,
   secondary: $clouds,
   success: #3adb76,
   warning: #ffae00,
@@ -163,7 +164,7 @@ $header-sizes: (
     'h1': 96,
     'h2': 26,
     'h3': 23,
-    'h4': 16,
+    'h4': 24,
     'h5': 20,
     'h6': 16,
   ),

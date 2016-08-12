@@ -96,8 +96,7 @@ header
 	.title
 	{
 		@include grid-col(12);
-		padding-top: $column-gutter*2;
-		padding-bottom: $column-gutter*3;
+		padding: $column-gutter*2 $global-padding*2 $column-gutter*3;
 		text-align: center;
 
 		h1

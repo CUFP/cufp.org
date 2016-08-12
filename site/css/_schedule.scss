@@ -80,7 +80,7 @@
 
 		.calendar
 		{
-			a
+			.event
 			{
 				display: block;
 				border-top: 1px solid $hr-border-color;
@@ -122,6 +122,27 @@
 						}
 					}
 				}
+
+				&:hover
+				{
+					h2
+					{
+						color: $primary-color;
+					}
+				}
+			}
+
+			div.event
+			{
+				color: $dark-gray;
+
+				&:hover
+				{
+					h2
+					{
+						color: $dark-gray;
+					}
+				}
 			}
 		}
 	}
@@ -143,7 +164,7 @@
 			display: table;
 			width: 100%;
 
-			a
+			.event
 			{
 				display: table-row;
 				padding: 0;
@@ -171,15 +192,7 @@
 					}
 				}
 
-				&:hover
-				{
-					h2
-					{
-						color: $primary-color;
-					}
-				}
-
-				&:last-of-type
+				&:last-child
 				{
 					&>div
 					{
