@@ -153,7 +153,7 @@ site: $(cufp.org) \
 	rsync -a site/201[4-6]cfp _build/site/
 	rsync -a --exclude=/index.html site/videos/ _build/site/videos/
 
-	$(cufp.org) build events -background img/437089535_75b3ddc6eb_o.jpg -production $(PRODUCTION) 2016
+	$(cufp.org) build events -background img/photo-1461727885569-b2ddec0c4328.jpeg -production $(PRODUCTION) 2016
 
 
 ################################################################################
