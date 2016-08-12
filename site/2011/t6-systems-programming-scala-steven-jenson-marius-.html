@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T6: Systems Programming in Scala</h1><div class="speakers"><ul><li><span class="person">Steven Jenson</span> <span class="affiliation">Twitter</span></li><li><span class="person">Marius Eriksen</span> <span class="affiliation">Twitter</span></li></ul></div><div class="time">September 23, 2011 9:00 AM - 12:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>In this tutorial you will learn Scala from a <em>systems programming</em>
+centric point of view. By the end of the tutorial you will have built
+a simple, robust and performant distributed search engine for tweets
+using many functional programming idioms in a systems context. Scala
+is a large language, so we won&#39;t cover every nook and cranny. However,
+the most important concepts will be covered, and participants will be
+left with experience with writing a non-trivial Scala application and
+with the skills to learn the rest by themselves.</p>
+<p>We start out by teaching the basic Scala concepts and language syntax.</p>
+<h2 id="BasicLanguageConcepts">Basic Language Concepts</h2><ul><li>Functions, Classes, Methods, Inheritance, <code>try-catch-finally</code>.
+ Value-oriented programming</li><li>Lists, Maps, functional combinators: <code>map</code>, <code>foreach</code>, <code>filter</code>,
+ <code>zip</code>, <code>folds</code></li><li>Case Classes, Objects, Packages, <code>apply</code>, <code>update</code>, Functions are
+ Objects (Uniform Access Principle), Basic Pattern Matching</li><li><code>PartialFunction</code> and advanced Pattern Matching</li><li>A Tour of the Scala Collections library</li></ul>
+
+<p>Next we introduce a few Twitter-specific concepts that will be used in
+our example application</p>
+<h2 id="TwitterConcepts">Twitter Concepts</h2><ul><li>Tweets, Twitter Streaming API</li><li><code>Future</code> and Finagle</li></ul>
+
+<p>Followed by building our example application: a distributed search
+engine for tweets built using functional concepts</p>
+<h2 id="BuildourSearchApplication">Build our Search Application</h2><ul><li>Read Tweets: Read fake data</li><li>Index Tweets: Building a functional indexer</li><li>Query Tweets: Read from the index</li><li>Use <em>Your</em> Tweets: Read from Twitter&#39;s Streaming API</li><li>Distributed Indexing</li><li>Run multiple indexers</li><li>query in parallel and merge results</li></ul>
+
+<p>Lastly we will discuss how these functional concepts map onto the
+object-oriented JVM.</p>
+<h2 id="HowScalaconceptstranslatetoJava">How Scala concepts translate to Java</h2><ul><li>Classes</li><li>Bytecode</li></ul>
+
+<h2 id="Audience">Audience</h2><p>We assume attendees have working knowledge of basic functional
+programming constructs such as pattern matching, higher order
+functions and recursion.  Basic knowledge of object oriented
+programming (classes, methods, inheritance) is also required.
+Familiarity with Java concepts is a plus, but not required.</p>
+<h2 id="SoftwarePrerequisites">Software Prerequisites</h2><ul><li>A Twitter account</li><li>A working Java (JVM) installation</li><li>The <a href="scalaschool.tgz">bootstrap tarball</a>, also available <a href="http://twitter.github.io/scala_school/">online</a>.</li></ul>
+
+<h2 id="SteveJenson">Steve Jenson</h2><p>An engineer at Twitter since 2008 focused on building Scala
+applications and libraries for high-volume systems. He has been
+programming on the JVM since 1999 and in Scala since 2007. He&#39;s a
+contributor to a number of open source Scala libraries.</p>
+<h2 id="MariusEriksen">Marius Eriksen</h2><p>Marius works on systems infrastructure at Twitter. He has worked on
+RPC and streaming systems, profiling tools, storage &amp; indexing systems
+and our front-end serving stack. He loves applying functional
+programming techniques to these domains.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

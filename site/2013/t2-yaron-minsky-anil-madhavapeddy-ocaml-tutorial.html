@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T2: OCaml tutorial</h1><div class="speakers"><ul><li><span class="person">Yaron Minsky</span> <span class="affiliation">Jane Street</span></li><li><span class="person">Anil Madhavapeddy</span> <span class="affiliation">University of Cambridge</span></li></ul></div><div class="time">September 23, 2013 9:00 AM - 12:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>OCaml is a statically typed functional language with a fast native
+code compiler and incremental garbage collector. In this tutorial, we
+will first introduce the basics of OCaml using an interactive
+environment running in a web browser, as well as a local install of
+OCaml using the OPAM package manager. Then, we will introduce Jane
+Street&#39;s Core library, which is an industrial-strength alternative to
+the OCaml standard library. Core is designed with consistency,
+explicitness and efficiency in mind. We will build up to the
+construction of a simple publish-subscribe data broker using the Async
+monadic concurrency library.</p>
+<h2 id="Preparations">Preparations</h2><p>The Real World OCaml tutorial is intended to be interactive, with a
+guided introduction to building a distributed broker service using the
+Core and Async libraries.  Complete beginners can also work through
+the first few chapters of the O&#39;Reilly &quot;Real World OCaml&quot; book, with
+questions being answered by the authors.</p>
+<p>Before arriving for the tutorial, it would save time if you set up the
+compilation environment.  You will need at least OCaml 4.01.0, which
+you can easily install using the OPAM package manager.</p>
+<ol><li>Install OPAM by following the quick-start guide at <a href="http://opam.ocaml.org/doc/Quick_Install.html">this
+page</a>.</li></ol>
+
+<p> (You can use OCaml 3.12.1 or greater to get this in place, or just
+ use binary packages if available on your platform.)</p>
+<p>2.Once OPAM is installed, compile the 4.01.0 compiler by running:</p>
+<pre><code>$ opam update</code></pre><p>$ opam switch 4.01.0
+$ eval <code>opam config env</code></p>
+<ol><li><p>Install the Core and Async packages required for the tutorial.</p>
+<p>$ opam install utop core_extended async core_bench
+$ utop   # to test it out</p>
+</li></ol>
+
+<p>PCRE and pkg-config need to be installed before Core_extended will
+compile.</p>
+<p>On MacOS X:</p>
+<pre><code>$ brew install pcre pkg-config</code></pre>
+
+<p>And Debian/Ubuntu users should have it in their respective APT repositories.</p>
+<p>This will take 10-15 minutes depending on the speed of your computer,
+so it&#39;s best to get it done before the tutorial starts.</p>
+<h2 id="YaronMinsky">Yaron Minsky</h2><p><img alt="Yaron Minsky" src="img/yaron-minsky-portrait.jpg" align="right"/>
+Yaron Minsky obtained his PhD in Computer Science from Cornell
+University in 2002, focusing on distributed systems. In 2003, he
+joined Jane Street where he founded the quantitative research group
+and introduced OCaml to the organization. Today, he leads Jane
+Street&#39;s technology group, which uses OCaml as its primary development
+language.</p>
+<h2 id="AnilMadhavapeddy">Anil Madhavapeddy</h2><p><img alt="Anil Madhavapeddy" src="img/anil-madhavapeddy-portrait.jpg" align="right"/>
+Dr. Anil Madhavapeddy is a Senior Research Fellow at Wolfson College
+Cambridge based in the Systems Research Group in the Cambridge
+Computer Laboratory. Dr. Madhavapeddy was on the original team at
+Cambridge that developed the Xen hypervisor, and subsequently served
+as the product director for XenSource/Citrix before returning to
+academia. Prior to obtaining his PhD in 2006 from the University of
+Cambridge, Dr. Madhavapeddy had a diverse background in industry at
+Network Appliance, NASA, and Internet Vision. In addition to
+professional and academic activities, Dr. Madhavapeddy is an active
+member of the open source development community with the OpenBSD
+operating system and various networking, database and web
+applications, a member of the steering committee for Commercial Users
+of Functional Programming, and on the boards of startup companies such
+as Ashima Arts.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

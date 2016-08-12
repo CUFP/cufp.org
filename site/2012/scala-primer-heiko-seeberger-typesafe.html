@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> Scala Primer</h1><div class="speakers"><ul><li><span class="person">Heiko Seeberger</span> <span class="affiliation">Typesafe</span></li></ul></div><div class="time">September 13, 2012 9:00 AM - 5:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>This tutorial will introduce you to the Scala. It is intended to enable
+experienced developers to confidently start programming in Scala. No previous knowledge of Scala is assumed. Although intense, the course ensures you will have a solid understanding of the fundamentals of the language and the tooling.</p>
+<h2 id="Content">Content</h2><p>After having participated in this course you should</p>
+<ul><li>be a competent user of Scala constructs in application code</li><li>know and be able to apply the functional programming style in Scala</li><li>know how to use the fundamental Scala tools</li><li>be confident to start using Scala in production applications</li></ul>
+
+<h2 id="Prerequisites">Prerequisites</h2><p>The presentation will frequently be mixed with hands-on exercises that
+give you a good opportunity to try what you have learnt and a chance to
+clarify your understanding.</p>
+<h2 id="Preparation">Preparation</h2><p>Please bring a laptop to the tutorial. Ideally, you should install the
+required software on your laptop <em>before the tutorial</em>. If that fails,
+we&#39;ll have a machine on-site for you to connect to.  In that case,
+make sure to have an
+<a href="http://en.wikipedia.org/wiki/Remote_Desktop_Protocol">RDP</a> client (a
+client for Microsoft&#39;s Remote Desktop protocol) installed on your
+laptop, so you can connect to our on-site machine.</p>
+<p>If you have problems or questions, please contact Mike Sperber (sperber(at)deinprogramm(dot)de).</p>
+<h3 id="Installingtheprerequisitesoftware">Installing the prerequisite software</h3><p>You will need a machine with Java 6 installed.</p>
+<ul><li>Install the <a href="http://www.typesafe.com/stack/download">TypeSafe Stack</a>.</li><li>Verify Verify the installation by opening a terminal and entering <code>scala -version</code>:</li></ul>
+
+<pre>
+Scala code runner version 2.9.2 -- Copyright 2002-2011, LAMP/EPFL
+</pre><ul><li><p>Download and install <a href="http://www.eclipse.org/downloads/packages/release/indigo/sr2">Eclipse 3.7 (Indigo)</a> for your platform.</p>
+</li><li><p>Install the Scala plugin Special Edition for Scala 2.10.0-M5 with the menu &quot;Help &gt; Install New Software ...&quot;.</p>
+</li><li><p>Use the following update site: <code>http://download.scala-ide.org/releases-210/milestone/site</code>.</p>
+</li><li><p>Verify the installation by opening a fresh workspace, e.g. <code>~/workspaces/training-scala</code>, and switching to the Scala perspective.</p>
+</li><li><p>Create a directory <code>~/.sbt/plugins</code> via the command</p>
+</li></ul>
+
+<pre>
+mkdir -p ~/.sbt/plugins
+</pre><ul><li>Create a file <code>plugins.sbt</code> in the directory <code>~/.sbt/plugins</code> with the following contents:</li></ul>
+
+<pre>
+addSbtPlugin(
+  "com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.1.0"
+)
+</pre><ul><li><p>In an <code>sbt</code> session, execute the <code>eclipse</code> command, which should produce the following output:</p>
+</li><li><p>In Eclipse, import the new Eclipse project with the menu &quot;Import ... &gt; Existing Projects into Workspace&quot;.</p>
+</li><li><p>Use the giter8 template <code>typesafehub/training-ftts</code> to create the case study project via the following command:</p>
+</li></ul>
+
+<pre>
+g8 typesafehub/training-ftts
+</pre><ul><li>Accept the default name <code>scalanetworks</code> with the ENTER key.</li><li><code>cd</code> into the new <code>scalanetworks</code> directory.</li><li>Start <code>sbt</code> and ceate an Eclipse project with the <code>eclipse</code> command.  This should produce the following output:</li></ul>
+
+<pre>
+[info] Successfully created Eclipse project files ...
+</pre><ul><li>Import the case study project into your Eclipse workspace.</li></ul>
+
+<h2 id="HeikoSeeberger">Heiko Seeberger</h2><p><img alt="Heiko Seeberger" src="img/heiko-seeberger-portrait.jpg" align="right"/></p>
+<p>Heiko Seeberger is the Director Professional Services at Typesafe. He
+has been a Scala enthusiast ever since he came to know this beautiful
+language in 2008. He has more than ten years of professional expertise
+in consulting and software development on the Java platform, actively
+contributes to Scala community projects and regularly shares his
+expertise in articles and talks. Heiko is the main author of the German
+Scala book &quot;Durchstarten mit Scala&quot;.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

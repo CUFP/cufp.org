@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T3: Intro to Elm: a field guide for functional front-end programming (Part 1)</h1><div class="speakers"><ul><li><span class="person">Evan Czaplicki</span> <span class="affiliation">Prezi</span></li><li><span class="person">Spiros Eliopoulos</span> <span class="affiliation">Cornell</span></li></ul></div><div class="time">September 04, 2014 9:00 AM - 12:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Elm began as an exploration of what “purely functional graphics
+programming” would look like, and has since grown into a practical
+language for front-end programming that is pure, functional, and
+statically-typed. This tutorial will cover the key concepts and
+features of Elm including declarative graphics, functional reactive
+programming, extensible records, and JavaScript interop. This will
+explain what “functional front-end programming” really means and how
+to do it in Elm.</p>
+<h2 id="Tutorialobjectives">Tutorial objectives</h2><p>We have three main conceptual objectives:</p>
+<ul><li><p>Understand FRP - core concepts and how to use them in practice</p>
+</li><li><p>Understand the architecture of a functional GUI - structuring code,
+ how the renderer works, useful patterns, etc.</p>
+</li><li><p>Understand extensible records - explore the many tricks made
+ possible by this Elm is designed so that it can be embedded in any
+ app so you can introduce it incrementally, so by the end of this
+ tutorial, you will be prepared to use Elm in your own project.</p>
+</li></ul>
+
+<h2 id="Targetaudience">Target audience</h2><p>The target audience is commercial users who would like to use a
+functional approach on the front-end. Whether you are frustrated with
+JS or just exploring alternative approaches, you will get a lot out of
+this. It is also valuable for academics interested in seeing FP used
+to solve a very real practical problem.</p>
+<p>This tutorial requires the Elm Platform, the elm-d3 source code, and a
+modern web browser. Documentation of the process can be found here:
+https://github.com/elm-lang/elm-platform/blob/master/README.md#elm-platform. The
+elm-d3 source code is available via GitHub:
+https://github.com/seliopou/elm-d3.</p>
+<h2 id="EvanCzaplicki">Evan Czaplicki</h2>
+<div class="row">
+
+<div class="medium-4 columns">
+<img alt="Evan Czaplicki" src="img/evan-czaplicki.jpg"/>
+</div>
+
+<div class="medium-8 columns"><p>Evan Czaplicki is a functional programmer at heart, and his broad goal is to provide the tools and learning resources to make functional languages common in industry. He works full-time to develop Elm’s compiler, tools, and community to make it a great choice for web and cross-platform projects.</p>
+</div></div>
+
+<h2 id="SpirosEliopoulos">Spiros Eliopoulos</h2><p>Spiros Eliopoulos is a research engineer at Cornell
+University, serving as Lead Engineer on the Frenetic controller
+platform for Software-Defined Networks. He’s the author of the elm-d3
+library that provides Elm bindings to the D3 JavaScript
+library. Previously, he was the founding CEO of Tracelytics, a
+SaaS-based Application Performance Management company built on top of
+the X-Trace distributed tracing framework. He resides in Brooklyn, via
+Rhode Island.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

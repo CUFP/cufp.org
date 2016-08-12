@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-microphone"></i> Disco: using Erlang to implement Mapreduce, Nokia</h1><div class="speakers"><ul><li><span class="person">Jared Flatow</span> <span class="affiliation">Nokia</span></li><li><span class="person">Prashanth Mundkur</span> <span class="affiliation">Nokia</span></li><li><span class="person">Ville Tuulos</span> <span class="affiliation">Nokia Research</span></li></ul></div><div class="time">September 24, 2011 4:00 - 4:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>We will describe our experiences using Erlang within Nokia to build Disco [1], a lean and flexible MapReduce framework for large-scale data analysis that scales to large clusters and is used in production at Nokia. 
+Disco is an open-source project that was started in 2008 when attempts to use Hadoop to analyze data proved to be a painful experience. The MapReduce step formed only a portion of the analytics stack, and it was felt that it would be faster to write a custom implementation that would integrate well, than adapt Hadoop with the amount of internal Hadoop expertise available.  Among the crucial tasks of such an implementation would be to deal with cluster monitoring, fault- tolerance, and the management and scheduling of a large number of concurrent and distributed jobs. To keep the implementation simple, the use of a platform that provided first-class support for distribution and concurrency was imperative. This motivated the choice of Erlang/OTP to implement the core control plane of Disco. It bears stressing that this choice was driven primarily by pragmatic concerns, as opposed to any beliefs about the superiority of functional programming languages in general or Erlang in particular. The fact that Erlang has a well-known track record in the implementation of production- quality reliable server systems with minimal downtime made it an easier selection to justify internally. The choice of language to implement computations in Disco was Python, which also emerged from pragmatic priorities.  Python is a popular language in the scientific computing community, with numerous readily- available libraries. It is simple to write Python programs using the extensive Python libraries to analyze relatively unstructured log and data files, an important initial use case for Disco.  Once the core of Disco was implemented in Erlang, a need was felt for a custom distributed filesystem, since experiences with off-the-shelf solutions for Linux proved unsatisfactory.  Many of the interfaces and abstractions offered by POSIX-compatible filesystems were thought unnecessary in the MapReduce set- ting; instead, a minimal set of requirements and interfaces was chosen, and these were implemented as the Disco Distributed Filesystem (DDFS). Again, the choice of Erlang for the implementation proved sound: the tag-based replicating DDFS has been implemented in 2.8K lines of Erlang (including comments). The Erlang portion of Disco itself is 6.3K lines.</p>
+<p>We’ve recently implemented a support library [2] for writing Disco jobs in OCaml. This takes advantage of the support for workers in arbitrary languages added to Disco 0.4.  The talk will not discuss the architecture of Disco [3]. Instead, we’ll discuss our experiences using Erlang, Python and OCaml.  Although Erlang is a dynamically-typed functional programming language, there are type-checking tools available like Typer and Dialyzer whose use make it possible to apply some amount of static analysis to an Erlang codebase. In the case of Disco, the use of these tools was introduced after the system had been developed; we will talk about some issues we faced in introducing these tools post-facto, and what new Erlang projects can do to avoid these issues. We will present the results of using these tools, some of the issues and bugs they found, and some of the features we wished they had. We will also discuss our experiences in using property-testing Quickcheck-like tools for Erlang like Triq and Proper.  One problem that projects in unusual programming languages face is getting even interested parties to contribute to the codebase. For instance, even though one of the new contributors to Disco had a functional programming background, it was not straightforward for him to quickly understand the Erlang code of Disco, even though Erlang is a fairly simple functional language.  We will explore the reasons for this, and what we think may help in reducing such hurdles[4]. Lastly, we will discuss some of the Nokia-internal consequences of using Erlang for Disco.</p>
+<p>[1] The Disco Project is at http://discoproject.org. 
+[2] ODisco, available at https://github.com/pmundkur/odisco.
+[3] A paper on the architecture has been submitted to the Erlang Workshop 2011.
+[4] In particular, we think this is because Erlang programs have a highly dynamic process and linkage structure that is not easily understood by an Erlang newcomer by just looking at source code.  Experience needs to be gained with running systems via logs and interaction, more so than with projects in most other languages, which often use relatively static threading structures. Process tree diagrams indicating parent-child and linkage relationships in the documentation are invaluable to get oriented.</p>
+<div class="flex-video"><iframe src="http://www.youtube.com/embed/IjOGUC-iR_Q?controls=2&showinfo=0&theme=light&autohide=1" width="420" height="315" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div><div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

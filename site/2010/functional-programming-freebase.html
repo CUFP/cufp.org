@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-microphone"></i> Functional Programming at Freebase</h1><div class="speakers"><ul><li><span class="person">Warren Harris</span> <span class="affiliation">Metaweb</span></li></ul></div><div class="time">October 02, 2010 4:00 - 4:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Freebase is a community-built, online database of facts and information, developed by Metaweb Technologies in San Francisco, California [1]. Freebase uses a proprietary graph database technology to store and query a network of over 12 million interrelated topics involving several hundred million individual graph relations. Third-party applications are free to query and update the Freebase database, and do so using the Metaweb Query Language, MQL [2]. MQL queries are expressed with a JSON-based template language which makes them easy to integrate into web applications, particularly the client-side portion which is processed with JavaScript?.</p>
+<p>Metaweb&#39;s first-generation MQL implementation was written as a Python-based middle-tier application that dynamically translates JSON-based queries into a low-level proprietary graph query language and networking protocol [3]. The low-level query language was designed for efficiency rather than for direct usability, and significant effort is required to translate between the two languages. Analysis of the entire Freebase application stack has revealed that as much time was being spent in the MQL query and result translation process as was being spent actually resolving the low-level graph queries. Much of this was attributed to the memory-intensive architecture of the translator, but a large portion was attributed to overhead inherent in the Python 2.6 runtime.</p>
+<p>We have undertaken developing a second-generation MQL translator written in Ocaml and drawing on a number of pure functional techniques. The core language translation process is expressed in terms of embedded language that implements the graph query protocol. This embedded language is used for both for static queries, e.g. for schema lookups, and for expressing the dynamic translation of MQL queries. The translator operates as a server and uses Lwt (Lightweight Threads library [4]) to interleave both client and graph database requests. A web services API and monitoring console have been developed using the Ocsigen web server and associated Eliom infrastructure [5].</p>
+<p>The performance of our reimplemented MQL translator service is very encouraging. One process can sustain over an order of magnitude more simultaneous MQL requests, and service each request in a small fraction of the time consumed by the Python implementation. Moreover, due to the asynchronous nature of the underlying Lwt I/O subsystem, a single processor core can handle several times the capacity of an entire multi-core server machine running the former Apache/WSGI/Python [6] infrastructure.</p>
+<p>In addition to describing the MQL translator system, I would like to discuss the underlying mechanism by which it batches fragments of I/O requests together into single larger protocol messages, thereby minimizing communication overhead with the underlying graph database. This technique closely resembles monads typically used in functional programming, but also provides some of the benefits of &#39;arrows&#39; [7].</p>
+<ul><li>[1] http://freebase.com</li><li>[2] http://mql.freebaseapps.com/</li><li>[3] http://research.freebase.com/sigmod692-meyer.pdf</li><li>[4] http://ocsigen.org/lwt</li><li>[5] http://ocsigen.org/eliom/</li><li>[6] http://www.wsgi.org/wsgi/</li><li>[7] http://www.cs.chalmers.se/~rjmh/Papers/arrows.pdf </li></ul><div class="flex-video"><iframe src="http://player.vimeo.com/video/16754274?title=0&byline=0&portrait=0" width="420" height="315" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div><div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

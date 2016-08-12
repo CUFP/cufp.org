@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T5: LiquidHaskell: Programming With Liquid Types in Haskell</h1><div class="speakers"><ul><li><span class="person">Niki Vazou</span> <span class="affiliation">UC San Diego</span></li></ul></div><div class="time">September 03, 2015 1:30 - 5:00 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Haskell has many delightful features, perhaps the most
+beloved of which is its type system which allows developers
+to specify and verify a variety of program properties at compile
+time. However, many properties, typically those that depend
+on relationships between program values are impossible, or
+at the very least, cumbersome to encode within Haskell&#39;s
+type system.</p>
+<p>Liquid types enable the specification and verification of
+value-dependent properties by extending Haskell&#39;s type system
+with logical predicates drawn from efficiently decidable logics.</p>
+<p>In this tutorial, we will start with a high level description of
+Liquid Types. Next, we will present an overview of
+LiquidHaskell, a liquid type checker for Haskell.
+In particular, we will describe the kinds of properties
+that can be checked, ranging from generic requirements
+like like totality (will &#39;head&#39; crash?) and termination
+(will &#39;mergeSort&#39; loop forever?), to application specific
+concerns like memory safety (will my code SEGFAULT?)
+and data structure correctness invariants (is this tree BALANCED?) .</p>
+<p>Joint work with: Ranjit Jhala, Eric Seidel, Patrick Rondon, Dimitris
+Vytiniotis and Simon Peyton-Jones.</p>
+<h2 id="Tutorialobjectives">Tutorial objectives</h2><p>The goal of the tutorial is to teach attendees about the basics
+of logic, and liquid types and they can use such types to
+design, specify and verify correctness of their programs.</p>
+<p>The tools will be available over the web (see below) and can be
+accessed via a browser. However, ideally, the participants would
+require on their system (MacOs, Windows or Linux) a recent installation
+of Haskell (GHC-7.8.3 + cabal). After this the participants need to:</p>
+<ol><li>Install <a href="https://github.com/Z3Prover/z3">Z3</a></li><li>`cabal install liquidhaskell</li></ol>
+
+<p>The material will be drawn from a book on programming with
+refinement types that we are writing (in concert with the
+LiquidHaskell tool).</p>
+<ul><li><a href="http://refinement-types.org">HTML</a></li><li><a href="http://ucsd-progsys.github.io/liquidhaskell-tutorial/book.pdf">PDF</a></li><li><a href="https://github.com/ucsd-progsys/liquidhaskell-tutorial/tree/master/src">Source</a></li></ul>
+
+<p><strong>References:</strong></p>
+<p>In addition to the book (we will only touch a fraction during the workshop),
+the participants can learn more via introductory blog articles, as well as
+research papers listed at: http://goto.ucsd.edu/liquid</p>
+<h2 id="Targetaudience">Target audience</h2><p>Users, researchers, students of functional
+programming. Basic knowledge of OCaml, ML, Haskell or other typed
+higher-order functional language is assumed.</p>
+<h2 id="NikiVazou">Niki Vazou</h2>
+<div class="row">
+
+<div class="medium-4 columns">
+<img alt="Niki Vazou" src="img/niki-vazou.jpg"/>
+</div>
+
+<div class="medium-8 columns"><p>Niki Vazou is a PhD student studying type systems at UC San Diego.
+She works on liquidHaskell and tries to integrate
+formal verification into the standard Haskell development chain,
+by building an automatic, usuable and fast refinement type checker.</p>
+</div></div><div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

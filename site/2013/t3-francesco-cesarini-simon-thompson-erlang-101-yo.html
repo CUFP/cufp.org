@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T3: Erlang 101 - Your introduction to Concurrency and Multi-core</h1><div class="speakers"><ul><li><span class="person">Francesco Cesarini</span></li><li><span class="person">Simon Thompson</span></li></ul></div><div class="time">September 23, 2013 9:00 AM - 12:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Erlang’s basic features are a perfect match for massively concurrent,
+distributed cloud environments. Being rooted in an actor model with no
+shared memory, the complexity of multicore programming is hidden from
+the developers, allowing them to focus on the program. This tutorial
+will introduce Erlang and its actor model, explaining how it is
+positioning itself to win the multicore challenge.  Basic &amp;
+Sequential Erlang  This section deals with Erlang data types and
+pattern matching. Functions, and modules are discussed. It continues
+by introducing recursion, with a special emphasis on different
+recursive patterns, including tail recursion.  Concurrent Programming 
+This section describes the creation of processes and their life
+span. It looks at sending and receiving messages, selective reception,
+and passing data in the messages. It continues with the various uses
+of time outs and registering processes, and terminates by showing the
+generic process code structure. We conclude this section by
+introducing the simple but powerful error handling mechanisms in
+processes. It looks at process links, exit signals and their
+propagation semantics.  Multicore Programming This section guides the
+users through examples and scalability issues when writing programs
+you expect to double in speed when doubling your cores. It covers
+tools and programming techniques you can use to detect and avoid
+bottlenecks.</p>
+<p>In order to get the most out of this tutorial, you must have a good
+grasp of other programming languages. Having dabbled with
+<a href="http://tryerlang.org">http://tryerlang.org</a> is not necessary, but
+will help. This is a hands-on tutorial.</p>
+<p>Before arriving, download and install Erlang and get the Erlang mode
+for your favorite editor working. Erlang (source or binaries) can be
+downloaded at
+<a href="https://www.erlang-solutions.com/downloads/download-erlang-otp">https://www.erlang-solutions.com/downloads/download-erlang-otp</a>. Erlang
+is supported in most editors, including Emacs, VIM, Intellij, Eclipse,
+Sublime and others.</p>
+<h2 id="FrancescoCesarini">Francesco Cesarini</h2><p>Francesco Cesarini is the founder of <a href="https://www.erlang-solutions.com">Erlang Solutions
+Ltd</a>. He has used Erlang on a daily
+basis since 1995, starting as an intern at Ericsson’s computer science
+laboratory, the birthplace of Erlang. He moved on to Ericsson’s Erlang
+training and consulting arm working on the first release of the OTP
+middleware, applying it to turnkey solutions and flagship telecom
+applications. In 1999, soon after Erlang was released as open source,
+he founded Erlang Solutions. With offices in three countries, they
+have become the world leaders in Erlang based support, consulting,
+training, certification, systems development and
+conferences. Francesco has worked in major Erlang based projects both
+within and outside Ericsson, and as Technical Director, has led the
+development and consulting teams at Erlang Solutions. He is also the
+co-author of Erlang Programming, a book recently published by O’Reilly
+and lectures at Oxford University and the IT University of
+Gothenburg. You can follow his ramblings on
+<a href="https://twitter.com/FrancescoC">Twitter</a>.</p>
+<h2 id="SimonThompson">Simon Thompson</h2><p><img width="200" alt="Simon Thompson" src="http://www.cs.kent.ac.uk/people/staff/sjt/Misc/SJT-OReilly-cut.jpg" align="right"/>
+Simon Thompson is Professor of Logic and Computation in the School of
+Computing of the University of Kent, where he has taught computing at
+undergraduate and postgraduate levels for the past twentyeight years,
+and where he was formerly department head for seven years and is
+currently Director of Research and Enterprise. His research focusses
+on building tools for more effective programming, including the
+Wrangler refactorer for Erlang.</p>
+<p>Simon has co-authored Erlang Programming with O&#39;Reilly Media, Miranda:
+The Craft of Functional Programming, Haskell: The Craft of Functional
+Programming and Type Theory and Functional Programming. Website:
+<a href="http://www.cs.kent.ac.uk/~sjt/">www.cs.kent.ac.uk/~sjt/</a>; Twitter:
+<a href="https://twitter.com/thompson_si">@thompson_si</a>.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

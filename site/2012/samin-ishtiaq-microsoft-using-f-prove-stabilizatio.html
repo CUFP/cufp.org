@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-microphone"></i> Using F# to Prove Stabilization of Biological Networks</h1><div class="speakers"><ul><li><span class="person">Samin Ishtiaq</span> <span class="affiliation">Microsoft</span></li></ul></div><div class="time">September 15, 2012 2:20 - 2:45 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p><a href="http://biomodelanalyzer.research.microsoft.com">BMA</a> is a tool for
+modeling and analyzing Systems Biology models, such as cellular-level
+descriptions of skin and blood.</p>
+<p>One important property that these biological artifacts have is
+<em>homeostasis</em> or stability. Stability in skin, for instance, means
+that the epidermis is dividing at the same rate that the surface is
+losing cells; instability, in contrast, means either cancer or surface
+sores.</p>
+<p>A tool that verifies stability is, we hope, part of a development to
+target drugs better, by identifying the cellular components that 
+enable stability. The whole endeavor can be seen as an EDA for biology.</p>
+<p>In this talk, I will describe the F# implementation of the
+stabilization prover of BMA.</p>
+<p>The prover checks that, regardless of the initial values the model&#39;s
+variables, there is one stability point that the model always reaches
+and then remains in. The complexity of this analysis stems from the
+high number of possible states of such a system. Yet the BMA prover
+scales by composing a lot of local, small proofs together. The
+prover&#39;s underlying procedure is based on mathematical techniques for
+the specification and verification of properties in concurrent
+systems.</p>
+<p>Though this domain (automatically proving properties of systems) is
+one that is known to be amenable to functional programming techniques,
+the BMA implementation exploits several F# features. Almost all the
+data structures are immutable collections like Set and Map. The main
+fixed-point loop is implemented using the Seq lazy sequences library:
+transforming the loop from a recursive function to a Seq.fold was
+quick, yielding code that is elegantly asynchronous, and allows the
+C#-based UI to pause, step, and fast-forward the proof search.</p>
+<p>The analyzer also uses FParsec (a parser combinator library) to parse
+the definition of the model&#39;s update functions, and Z3 (an SMT solver)
+to generate counter-examples to stability.</p>
+<p>I am normally an Emacs/OCaml functional programmer. I&#39;ll also compare
+my development experience of Visual Studio/F#.</p>
+<h2 id="SaminIshtiaq">Samin Ishtiaq</h2><p>Samin Ishtiaq is Principal RSDE in the Programming Principles and
+Tools group at Microsoft Research Cambridge.  He builds formal
+verification and testing tools as part of the SLAyer (Separation
+Logic-based memory safety for C programs), TERMINATOR (program
+termination) and BMA (analysis of gene regulatory networks) projects.
+He was previously Principal CPU Verification Engineer at ARM.</p>
+<div class="flex-video"><iframe src="http://www.youtube.com/embed/wOldpHtwjyY?controls=2&showinfo=0&theme=light&autohide=1" width="420" height="315" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div><div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

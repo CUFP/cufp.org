@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T2: Erlang web frameworks</h1><div class="speakers"><ul><li><span class="person">Steve Vinoski</span> <span class="affiliation">Basho Technologies</span></li></ul></div><div class="time">September 13, 2012 2:00 - 5:30 PM</div><div class="slides"><i class="fi-page"></i> <a href="/2012/slides/erlang-web-frameworks.pdf">Slides</a></div>
+
+<h2 id="Abstract">Abstract</h2><p>Erlang started life nearly thirty years ago as part of an
+effort to find more effective ways of developing highly concurrent,
+highly reliable telecommunications systems. Fortunately, we&#39;ve found
+that its concurrency and reliability capabilities are just as valuable
+in other domains as well, especially web development. This tutorial
+will explore several Erlang web servers, including Yaws and Mochiweb,
+and will examine the Nitrogen, Webmachine, and Chicago Boss Erlang web
+frameworks. Each web server and framework provides different features
+and capabilities, allowing them to address  different portions of the
+vast web development landscape.</p>
+<h2 id="Prerequisites">Prerequisites</h2><p>Attendees should possess a basic knowledge of HTTP,
+HTML, and JSON. Some prior knowledge of Erlang is preferred but not
+required. Attendees should bring a laptop in order to participate in
+hands-on coding exercises. Instructions for loading Erlang and other
+software will be sent to attendees prior to the tutorial.</p>
+<h2 id="Goals">Goals</h2><p>Participants will gain deeper knowledge of the basics of Erlang
+web development, will learn how to use specific features of different
+Erlang web servers and frameworks, and acquire a better understanding
+of which servers and frameworks to apply to different kinds of web
+development problems.</p>
+<p>Please bring a laptop to the tutorial. Ideally, you should install the
+required software on your laptop <em>before the tutorial</em>. If that fails,
+we&#39;ll have a machine on-site for you to connect to.  In that case,
+make sure to have an
+<a href="http://en.wikipedia.org/wiki/Remote_Desktop_Protocol">RDP</a> client (a
+client for Microsoft&#39;s Remote Desktop protocol) installed on your
+laptop, so you can connect to our on-site machine.</p>
+<p>If you have problems or questions, please contact Mike Sperber (sperber(at)deinprogramm(dot)de).</p>
+<h3 id="Installingtheprerequisitesoftware">Installing the prerequisite software</h3><p>For this tutorial, you should have Unix/Linux/Mac OS X on your laptop.  If that&#39;s not possible, see above.</p>
+<ul><li><p>First, install Erlang/OTP 15B01 from <a href="http://www.erlang.org/download.html">this page</a>.</p>
+</li><li><p>Download <a href="erlang-web.tar.gz">this file</a> and untar it somewhere on your machine.</p>
+</li></ul>
+
+<h2 id="SteveVinoski">Steve Vinoski</h2><p>&lt;img align=&quot;right&quot; src=&quot;/sites/all/files/speaker-portraits/steve-vinoski-portrait.jpg&quot; alt=&quot;Steve Vinoski&quot;&lt;/img&gt;</p>
+<p>Steve Vinoski is an architect at Basho Technologies, Cambridge,
+MA, USA. He&#39;s been a committer on the Yaws web server project since</p>
+<ol><li>Steve has been writing &quot;The Functional Web&quot; column, in which he
+explores the application of functional programming languages and
+techniques to web development, for the IEEE Internet Computing
+magazine since 2009. He&#39;s also written several other articles about
+REST and HTTP over the past decade.</li></ol><div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

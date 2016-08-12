@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T4: Systematic generation of optimal code with MetaOCaml</h1><div class="speakers"><ul><li><span class="person"><a href="http://okmij.org/ftp/">Oleg Kiselyov</a></span></li></ul></div><div class="time">September 23, 2013 2:00 - 5:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>A common application of generative programming is building
+high-performance computational kernels highly tuned to the problem at
+hand. A typical simple linear algebra kernel is specialized to data
+representation, loop unrolling factors, and the a priori knowledge
+(e.g., if a matrix is symmetric, almost tridiagonal, etc). It is
+tedious and error prone to specialize by hand, writing numerous
+variations of the same algorithm. A typed staged programming language
+such as MetaOCaml lets us state a general, obviously correct algorithm
+and add layers of specializations in a modular way. By ensuring that
+the generated code always compiles and letting us quickly run it,
+MetaOCaml makes writing generators less daunting and more productive.
+The tutorial will answer a simple Shonan Challenge.</p>
+<h2 id="Goals">Goals</h2><p>By the end of the tutorial, the participants will:</p>
+<ul><li>implement a simple linear algebra DSL in MetaOCaml with
+ layers of optimizations, specializing to memory layout of
+ matrices and vectors and to their algebraic properties.</li><li>generate a couple of simple and optimal BLAS</li></ul>
+
+<p>and learn how to</p>
+<ul><li>write typed code generators; </li><li>write modular generators;</li><li>locally optimize code.</li></ul>
+
+<h2 id="Intendedaudience">Intended audience</h2><p>No prior knowledge of MetaOCaml is assumed. It is expected that
+participants are familiar with a modern functional language, in
+particular OCaml, F#, SML. The tutorial should also be comprehensible
+to Haskell programmers.</p>
+<h2 id="Preparation">Preparation</h2><p>The MetaOCaml tutorial is intended to be interactive, with exercises
+and small projects to be done in class. Therefore, it will benefit the
+participants to have MetaOCaml on their laptops.</p>
+<p>Although any version of MetaOCaml (including the legacy one) should
+be sufficient, the latest version, BER MetaOCaml N100 (which is based
+on OCaml 4.00.1) is preferred. Code generators could then take
+advantage of all features of OCaml 4.00.1.</p>
+<p>The best way to install BER MetaOCaml N100 is through <a href="http://opam.ocamlpro.com/">OPAM, OCaml
+package manager</a>:</p>
+<p>The above web site explains how to install and use OPAM. A number of
+binary OPAM installation options are available. One can install OPAM
+without the prior installation of OCaml (OPAM will bring its own
+OCaml then). After OPAM is installed, BER MetaOCaml can be installed
+by the command</p>
+<pre><code>   opam switch 4.00.1+BER</code></pre>
+
+<p>The <code>opam switch</code> command is explained in the <a href="http://opam.ocaml.org/doc/Advanced_Usage.html">Advanced manual</a>
+Don&#39;t forget to execute the command to update the environment,
+which <code>opam switch</code> tells you to do at the end.</p>
+<p>BER MetaOCaml can also be installed from source as described</p>
+<pre><code>[here](http://okmij.org/ftp/ML/MetaOCaml.html#install).</code></pre>
+
+<p>You will need OCaml 4.00.1 distribution (as a .tar archive or
+as as a git clone)</p>
+<p>For the tutorial, byte-code top-level MetaOCaml (<code>metaocaml</code>) will be
+sufficient.</p>
+<h2 id="OlegKiselyov">Oleg Kiselyov</h2><p>Oleg Kiselyov is a Computer Scientist in Monterey, CA. His web site is
+<a href="http://okmij.org/ftp/">http://okmij.org/ftp/</a>.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

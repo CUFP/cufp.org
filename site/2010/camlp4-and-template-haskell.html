@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> Camlp4 and Template Haskell</h1><div class="speakers"><ul><li><span class="person"><a href="http://jaked.org/">Jake Donham</a></span></li><li><span class="person">Nicolas Pouillard</span> <span class="affiliation">INRIA</span></li></ul></div><div class="time">October 01, 2010 2:00 - 6:00 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>&quot;Static metaprogramming&quot; is compile-time code analysis and
+synthesis. It has many applications, such as (from simple to complex):
+defining abbreviations, generating boilerplate from type definitions,
+extending the language syntax, and embedding DSLs.</p>
+<p>Static metaprogramming is supported for Haskell with Template Haskell,
+and for OCaml with Camlp4; the two systems have a lot in common. In
+this tutorial we will work through examples in both languages,
+sticking mostly to their commonalities. We will also say a little
+about features which are unique to each.</p>
+<p>The main features we will cover are:</p>
+<ul><li>host language syntax trees</li><li>quotations / antiquotations for host language syntax trees</li><li>defining new quotations</li><li>pragmatics of each tool</li></ul>
+
+<p>(Quotations / antiquotations are a mechanism for working with host
+language abstract syntax trees using the concrete syntax of the host
+language.)</p>
+<p>We will motivate these features through examples of increasing
+complexity, including a simple DSL for working with JSON data.</p>
+<p>Participants will leave with a basic understanding of how to build
+syntax extensions with the two systems, including how to run the tool,
+how to work with the host language syntax trees using quotations and
+antiquotations, and how to define new quotations to extend the host
+language.</p>
+<h2 id="Audience">Audience</h2><p>Participants should be familiar with either OCaml or Haskell, but we
+will assume no prior knowledge of Template Haskell or Camlp4. It would
+be helpful to know the basics of parsing (lexing vs. parsing, abstract
+syntax trees, recursive descent) and be familiar with at least one
+parser generator.</p>
+<h2 id="Softwareprerequisites">Software prerequisites</h2><p>Participants should have recent versions of Objective Caml and the
+Haskell Platform installed.  Objective Caml is available here:</p>
+<p><a href="http://caml.inria.fr/download.en.html"><code>http://caml.inria.fr/download.en.html</code></a></p>
+<p>The Haskell platform is available here:</p>
+<p><a href="http://www.haskell.org/platform/"><code>http://www.haskell.org/platform/</code></a></p>
+<p>For OCaml, participants need to
+install Findlib:</p>
+<p><a href="http://projects.camlcity.org/projects/findlib.html"><code>http://projects.camlcity.org/projects/findlib.html</code></a></p>
+<p>and for both OCaml and Haskell the tutorial materials are at:</p>
+<p><a href="http://github.com/jaked/cufp-metaprogramming-tutorial/tarball/release-0930"><code>http://github.com/jaked/cufp-metaprogramming-tutorial/tarball/release-0930</code></a></p>
+<h2 id="JakeDonham"><a href="http://jaked.org/">Jake Donham</a></h2><p>is the author of several OCaml free
+software projects, and blogs about OCaml at Ambassador to the
+Computers. Jake previously spoke about the ocamljs project at CUFP
+2008.</p>
+<h2 id="NicolasPouillard">Nicolas Pouillard</h2><p>When learning programming in the engineering school of EPITA in Paris,
+Nicolas Pouillard first met meta-programming using Camlp4 for very
+basic syntax extensions, C++ templates and program transformation
+using Stratego/XT.  Then he entered the research team of Xavier Leroy
+at INRIA. He first spent six months as an intern for the renovation of
+Camlp4 under the direction of Michel Mauny.  He continued with him by
+accepting an engineer job on a project joint with Intel.  During this
+contract he worked on a new front-end (written in OCaml) for their
+in-house functional language featuring overloading and
+meta-programming facilities.  During these months he also learned
+Haskell and in particular meta-programming through Template Haskell.
+Finally he continued as a PhD on &quot;Safer and more expressive languages
+for meta-programming&quot; directed by Francois Pottier.  In this work we
+aim at leveraging safety features like strong typing and lexical
+scoping to manipulated programs within a meta-programming language.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T6: Haskell (Day 2)</h1><div class="speakers"><ul><li><span class="person">Simon Marlow</span></li></ul></div><div class="time">September 24, 2013 9:00 AM - 5:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Pure functional programming is about programming with expressions
+rather than actions, data rather than control. Many programs are more
+naturally expressed in this way, and functional programs are often an
+order of magnitude shorter than equivalent imperative programs - just
+as programs in traditional high-level languages like C and Java are
+typically much shorter and clearer than their equivalents in assembly
+language. Many exciting ideas in mainstream programming arose first in
+FP, including garbage collection, generics, closures, and list
+comprehensions. FP is a fertile laboratory for language innovation,
+and familiarity with FP is good preparation for future developments in
+programming. In particular, multicore chips and cloud computing
+architectures are forcing us all into dealing with concurrency, and
+there is good evidence that the breakthroughs here will come from FP,
+with its emphasis on immutability and independence of evaluation
+order.</p>
+<p>On Day 2 you will get a little taste of the joys of concurrent
+programming in Haskell. By the end, you will be writing some simple
+(but real!) Concurrent Haskell programs. We will also cover some of
+the practical aspects of day-to-day programming in Haskell, such as
+working with third-party libraries.</p>
+<h2 id="Preparations">Preparations</h2><p>You don&#39;t need to install or setup Haskell on your machine to follow
+the CUFP Haskell Tutorials. Instead, you can use the just released FP
+Haskell Center by FP Complete. To do so, go to <a href="https://www.fpcomplete.com/">this
+page</a> and click the &quot;Free Trial&quot; link to
+sign up for a time-limited trial account that provides you with full
+access to the system. Once you&#39;ve done that, you have a Haskell IDE
+and compiler that you can use from within your browser. You will be
+able to use the Haskell packages needed during the course without
+further setup, and we will provide you with access to the course
+materials at the beginning of the CUFP tutorials.</p>
+<p>Note that university students, faculty and staff can also sign up for
+a 1-year academic license via <a href="https://www.fpcomplete.com/business/fp-haskell-center/academic-account-request">this
+page</a>.</p>
+<p>If you prefer to install and use Haskell on your own machine, this is
+of course possible. In this case, you should install the latest
+Haskell Platform (2013.2.0.0, based on GHC 7.6.3). Go to <a href="http://www.haskell.org/platform/">this
+page</a> and follow the instructions
+for your platform. In addition, you should have a good
+programmer-friendly text editor of your choice installed. You&#39;ll need
+some additional Haskell libraries, but they can easily be installed
+on-the-fly during the course.</p>
+<h2 id="SimonMarlow">Simon Marlow</h2><p><img alt="Simon Marlow" src="img/simon-marlow-portrait.jpg" align="right"/>
+Simon Marlow is a developer at Facebook. He has been one of the two
+lead developers of the Glasgow Haskell Compiler over most of its
+lifetime. Simon was responsible in particular for GHC&#39;s
+highly-regarded multi-core runtime system. He contributes to the
+functional programming languages research community, and has a string
+of papers on subjects ranging from garbage collection to language
+design. In recent years Simon&#39;s focus has been on making Haskell an
+ideal programming language for parallel and concurrent applications,
+both by developing new programming models and building a high-quality
+implementation. In 2012, he moved from Microsoft Research in Cambridge
+to Facebook. He is also the author of the upcoming book Parallel and
+Concurrent Programming in Haskell, published by O’Reilly Media.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

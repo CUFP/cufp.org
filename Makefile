@@ -128,7 +128,8 @@ $(patsubst %.md, _build/%.html, $(blog-post-bases)): _build/site/%.html: site/%.
 _build/site/robots.txt:
 	$(cufp.org) build robots -production $(PRODUCTION) >| $@
 
-_build/site/2009: site/2009
+years_2009-2015=2009 2010 2011 2012 2013 2014 2015
+$(patsubst %, _build/site/%, $(years_2009-2015)): _build/site/%: site/%
 	rsync -a $</*.html $@/
 
 .PHONY: site
@@ -143,7 +144,7 @@ site: $(cufp.org) \
       _build/site/blog/all.rss.xml \
       $(patsubst %.md, _build/%.html, $(blog-post-bases)) \
       _build/site/robots.txt \
-      _build/site/2009 \
+      $(patsubst %, _build/site/%, $(years_2009-2015)) \
       | _build/site/css _build/site/js _build/tmp
 
 	cp -f site/css/app.css _build/site/css/

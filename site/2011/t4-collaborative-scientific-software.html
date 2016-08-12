@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T4: Collaborative Scientific Software</h1><div class="speakers"><ul><li><span class="person"><a href="http://ashishagarwal.org">Ashish Agarwal</a></span> <span class="affiliation">New York University</span></li></ul></div><div class="time">September 22, 2011 2:00 - 5:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Science has always been a social activity. In this tutorial, we will build
+an application in OCaml to support collaborative research amongst
+scientists. A classic 3-layer architecture will be used: a domain logic in
+the middle, a database backend to persist analysis results, and a web
+interface to present the application&#39;s functionality to end-users.</p>
+<p>Obtaining data and analyzing it are two basic scientific
+activities. In the domain layer, we will implement a function to
+download data from a widely used public genomics data repository, and
+then use OCaml-R to analyze this data. The downloaded data as well as
+the analysis results will be saved to a PostgreSQL database using
+PG&#39;OCaml, which validates OCaml code at compile time against the
+database schema. Finally, we will implement a website using Ocsigen to
+summarize the downloaded datasets and visualize the analysis
+results. Time permitting, we will add user accounts and an access
+control policy to give end-users the ability to select the
+collaborators they share their data with.</p>
+<p>By the end of this tutorial, participants should feel comfortable building a
+complete application end-to-end in OCaml. It should be clear how each
+layer&#39;s functionality could be extended to build a full enterprise
+application. The tutorial should be of interest to non-scientists as well.
+One needs only to replace tools in the domain layer to build applications
+for other purposes.</p>
+<h2 id="Audience">Audience</h2><p>Audience should be comfortable writing basic programs in OCaml. Working
+through any one of the introductory texts on OCaml is sufficient.
+Familiarity with the specific libraries being used in the tutorial is not
+necessary. Their use will be covered in the tutorial.</p>
+<h2 id="Preparation">Preparation</h2><p>On September 15th, please download the
+<a href="http://cims.nyu.edu/~agarwal/download/CUFP2011-T4.ova">virtual machine</a>
+needed for this
+tutorial onto your laptop. Note the URL will not be active before then.
+Install
+<a href="https://www.virtualbox.org">VirtualBox</a>
+if you do not already have it. Open VirtualBox&#39;s
+preferences and select the <code>Network</code> tab. In the <code>Host-Only Networks</code> box, you
+should see one entry, <code>vobxnet0</code>. If not, click the <code>+</code> button to add it. Then,
+import the VM into VirtualBox using the <code>File</code> -&gt; <code>Import Appliance</code> command.
+During import, you will have the option of changing the VM&#39;s settings. Do
+not change them unnecessarily, especially the Network settings. It should be
+okay to change the name and path to the Virtual Disk Image if needed.</p>
+<p>Once the import is complete, boot up the VM and make sure it runs correctly.
+The user account name is <code>camel</code> and the password is <code>OCaml</code> with a capital
+<code>O</code> and capital <code>C</code>. In particular, make sure you can do the following:</p>
+<ul><li><p>Run <code>ifconfig</code> in the VM, and note the IP address on <code>eth1</code>. From a terminal window on the host, ssh to the VM using this IP address. It should let you connect.</p>
+</li><li><p>From within the VM, ping to an external site such as <code>google.com</code>. It should work.</p>
+</li></ul>
+
+<h2 id="AshishAgarwal">Ashish Agarwal</h2><p>is a researcher at the Center for Genomics and Systems
+Biology and the Courant Institute at NYU. He is designing a domain specific
+language, implemented in OCaml, for managing and processing large quantities
+of bioinformatics data in a high performance computing environment. His
+background is a mix of the natural sciences, with studies in Chemistry and
+Biology, and computer science, a PhD from CMU in the area of programming
+languages.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

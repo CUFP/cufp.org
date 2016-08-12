@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> F# 2.0 - A day at the beach</h1><div class="speakers"><ul><li><span class="person">Rick Minerich</span> <span class="affiliation">Atalasoft Inc.</span></li></ul></div><div class="time">October 01, 2010 2:00 - 6:00 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>This tutorial will be organised around learning the building blocks of F#,
+real world functional programming principles, and platform compatibility.</p>
+<ul><li><p>&quot;Hello Seagull&quot; - A first glimpse of F#</p>
+</li><li><p>Beyond the REPL - A relaxing Visual Studio 2010 rubdown</p>
+</li><li><p>The Power of Types - A distinct lack of unpleasant surprises</p>
+</li><li><p>Asynchrony and Concurrency - Be lazy, it works so you don&#39;t have to</p>
+</li><li><p>Monadic Magic - A frosty gulp of language oriented programming</p>
+</li><li><p>Tour de F# - Enjoy the fruits of others&#39; hard work</p>
+</li></ul>
+
+<p>What can attendees expect?  A thorough introduction to F#, one of the most
+powerful languages available for real world development.  Come dive into the
+building blocks of functional programming, swim around with the safety and
+convenience of type inferred statically checked code, and glide through F#&#39;s
+impressive array of libraries.</p>
+<h2 id="Audience">Audience</h2><p>General.  All programmers are welcome.  Come with curiosity and an
+open mind.  Those at any level of functional programming or F# experience
+will enjoy this session.</p>
+<h2 id="Softwareprerequisites">Software prerequisites:</h2><ul><li>(Windows) Visual Studio 2010, Visual Studio 2008 w/ F# plugin</li><li>(Linux/Mac) Mono w/ F# Zip Package Installed</li></ul>
+
+<h3 id="VisualStudio2010">Visual Studio 2010</h3><p>Any non-express Visual Studio 2010 installation comes with F#, just as long
+as it wasn&#39;t deselected during installation.</p>
+<h3 id="MicrosoftWindowswithoutVisualStudio2010">Microsoft Windows without Visual Studio 2010</h3><p>On Windows, you need to download and install <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=8e5aa7b6-8436-43f0-b778-00c3bca733d3&amp;displaylang=en">Visual Studio 2010 Shell
+(integrated mode)</a>.
+After installing Visual Studio 2010 Shell the next step is to download and
+install the F# Standalone package.  To do this just go to the <a href="http://msdn.microsoft.com/en-us/fsharp/default.aspx">F# MSDN
+portal</a> and click
+&quot;Get the F# Standalone and VS2008 CTP&quot;. After that, scroll to the bottom of the page, click the download button for &quot;InstallFSharp.msi&quot; and run it.</p>
+<h3 id="MacintoshLinux">Macintosh / Linux</h3><p>If you don&#39;t already have a recent version of Mono installed, you&#39;ll need to
+get it.  This process varies from platform to platform, please see
+<a href="http://www.mono-project.com/Getting_Mono">this page</a> for more information.</p>
+<p>Next, you&#39;ll need to install F#.  This requires downloading two things: the
+F# standalone package and the Mono key file.</p>
+<ul><li><p>Download the F# standalone package, <code>fsharp.zip</code>, from
+<a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=f8c623ae-aef6-4a06-a185-05f59be47d67&amp;displaylang=en">here</a>.</p>
+</li><li><p>Download the Mono Key from <a href="http://github.com/mono/mono/raw/master/mcs/class/mono.snk">here</a>.</p>
+</li><li><p>Unarchive <code>fsharp.zip</code>, copy <code>mono.snk</code> to the location F# was unarchived
+to, and run <code>install-mono.sh</code>.  This script will install F# assemblies into
+the Mono GAC and ensure correct permissions.</p>
+</li><li><p>To use F#, from the unarchived FSharp directory, run <code>mono bin/fsi.exe</code> for the interactive window (REPL) and <code>mono bin/fsc.exe</code> to
+compile from source.</p>
+</li></ul>
+
+<h2 id="RichardMinerich">Richard Minerich</h2><p>is a Microsoft MVP for the F# programming language.
+Through writing, speaking and running events, Richard hopes to help bridge
+the gap between the cutting edge in computation and the mainstream software
+engineer.  Currently, Richard works as a Software Architect specializing in
+digital image processing at Atalasoft, Inc.  He also leads the New England
+F# User Group and is anxiously awaiting the release of his first book,
+Professional F# 2.0.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

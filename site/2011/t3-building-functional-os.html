@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T3: Building a Functional OS</h1><div class="speakers"><ul><li><span class="person">Anil Madhavapeddy</span> <span class="affiliation">University of Cambridge</span></li><li><span class="person">Richard Mortier</span> <span class="affiliation">University of Nottingham</span></li><li><span class="person">David Scott</span> <span class="affiliation">Citrix</span></li></ul></div><div class="time">September 22, 2011 2:00 - 5:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Have you ever wondered what lies beneath the mysterious layers of your
+OS kernel? This tutorial will dispel such questions by walking you
+through the construction a web server operating system, written almost
+entirely in OCaml.  We use the Xen hypervisor to supply virtual
+hardware that the guest will execute under, so that only a single set
+of virtual drivers are required for networking and storage (ideal for
+learning about how it all works).</p>
+<p>The tutorial will last 3 hours and be highly interactive. We will:</p>
+<ul><li>begin by introducing the Mirage programming framework, and how to
+ use it under a familiar UNIX environment</li><li>introduce high-level OCaml abstractions for a console, lightweight
+ threads, and channels that map to UNIX sockets</li><li>use the tuntap infrastructure to insert a TCP/IP/Ethernet stack as
+ an alternative to the UNIX kernel stack</li><li>compile the same source code to a microkernel running directly under
+ Xen</li><li>build your own &quot;hello world&quot; webserver and execute it on the public
+ internet using Amazon EC2!</li></ul>
+
+<p>After the initial tutorial, we plan to hang around and help with
+further questions, or even explore alternative microkernels such as
+HalVM (Haskell) or GuestVM (Java). Come along and learn the essential
+skills to learn how to build specialised services in your favourite
+programming language!</p>
+<h2 id="Audience">Audience</h2><p>The tutorial will start gently, but participants should have some
+proficiency in OCaml.</p>
+<h2 id="Preparation">Preparation</h2><p><em>Note: This is the same VM as for the <a href="t2-janestreets-ocaml-core-library.html">T2: JaneStreet&#39;s OCaml Core Library</a>.</em></p>
+<p>You&#39;ll need:</p>
+<ul><li>an SSH client on your machine</li><li><a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox</a></li><li>the <a href="http://minsky-primus.net/CUFP-Core-and-Mirage-Tutorials.ova">machine image</a></li></ul>
+
+<p>Click <code>Import Appliance</code> from the File menu, and select the <code>.ova</code> file.
+After it imports the file, click on <code>CUFP Core and Mirage Tutorials</code>,
+and click the green <code>Start</code> arrow.</p>
+<p>The user account is <code>cufp</code>, and the password is <code>cufp2011</code>.  Log in,
+and type <code>/sbin/ifconfig</code> to figure out what the internet address of
+the virtual image is.  It should be the one associated with <code>eth1</code>.
+Then ssh to the box as <code>cufp</code> and log in.  All the software you should
+need is installed on the virtual machine.</p>
+<p>You can also direct a web-browser at the virtual host.  You&#39;ll find
+ocamldoc documentation for the Core libraries there.</p>
+<h2 id="AlternativePreparation">Alternative Preparation</h2><p>If you prefer not to use VirtualBox, you can run most of the Mirage tutorial if you have the following software:</p>
+<ul><li>MacOS X (10.6+) or Linux. 64-bit is preferred, but 32-bit should work</li><li>Tuntap networking (usually default on Linux, and downloadable for MacOS X from <a href="http://tuntaposx.sourceforge.net/">here</a></li><li>OCaml-3.12.0 with the native code version of the compilers (e.g. ocamlopt.opt) installed; available <a href="http://caml.inria.fr/pub/distrib/ocaml-3.12/">here</a>. Note that you need precisely this version of OCaml.</li><li><a href="http://git-scm.com/">Git</a></li></ul>
+
+<p>You can test that your setup works by cloning <a href="http://github.com/avsm/mirage">http://github.com/avsm/mirage</a> and typing in &#39;make&#39;.  A final version of the source tree will be tagged the day before the tutorial, but the expectation is that you just pull the latest version before beginning.</p>
+<h2 id="AnilMadhavapeddy">Anil Madhavapeddy</h2><p>is a Senior Research Fellow at Wolfson College Cambridge based in the
+Systems Research Group. Dr. Madhavapeddy was on the original team at
+Cambridge that developed the Xen hypervisor, and subsequently served
+as the senior architect and product director for XenSource/Citrix
+before returning to academia. Prior to obtaining his PhD in 2006 from
+the University of Cambridge, he had a diverse background in industry
+at Network Appliance, NASA, and Internet Vision. In addition to
+professional and academic activities, he is an active member of the
+open source development community with the OpenBSD operating system, a
+member of the steering committee for Commercial Uses of Functional
+Programming, and on the boards of startup companies such as Ashima
+Arts.</p>
+<h2 id="RichardMortier">Richard Mortier</h2><p>is a Horizon Transitional Fellow in Computer Science at the
+University of Nottingham.  His research currently centres on
+networked technologies within the Digital Economy.  In addition to
+the topic of this talk this currently also includes exokernels for
+secure high-performance multiscale computing; and infrastructure to
+build an ecosystem around privacy preserving third-party access to
+personal data. His background is in systems and networking, covering
+operating systems, distributed systems, and local and wide-area
+networking.  Prior to joining Nottingham he spent two years as
+founder at Vipadia Limited designing and building the Clackpoint and
+Karaka real-time communications products, six years as a researcher
+with Microsoft Research Cambridge, and seven months as a visitor at
+Sprint ATL, CA. He received a Ph.D. from the Systems Research Group
+at the University of Cambridge Computer Laboratory, and a B.A. in
+Mathematics, also from the University of Cambridge.</p>
+<h2 id="DaveScott">Dave Scott</h2><p>is the XenServer System Architect at Citrix, making virtualisation
+products based on the open source Xen hypervisor. Previously he was a
+consultant research scientist at Fraser Research, where he worked on
+their next-generation networking initiatives. In 2004 he finished a
+PhD in the University of Cambridge Computer Laboratory, affiliated
+with the Cambridge Programming Research Group . He was also a
+co-founder of High Energy Magic, which produced mobile phone software
+to recognise printed visual symbols, known as SpotCodes.</p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

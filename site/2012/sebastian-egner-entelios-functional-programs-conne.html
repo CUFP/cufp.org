@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-microphone"></i> Functional programs connected to the power grid</h1><div class="speakers"><ul><li><span class="person">Sebastian Egner</span> <span class="affiliation">Entelios</span></li></ul></div><div class="time">September 15, 2012 4:00 - 4:25 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Transmission system operators (TSOs), tasked with providing a reliable power
+grid, are facing increasing challenges due to liberalization (&quot;unbundling&quot;)
+and the rise of fluctuating production from renewable energy (e.g. wind, solar).
+This has created new market opportunities for &#39;operating reserve power,&#39;
+both in the open auctions held by the TSOs and within large utility companies.</p>
+<p>At Entelios AG, a VC-funded company founded in 2010, we have developed an
+IT system for remote control of industrial loads, contributing power to the
+German national power grid by &quot;not using it&quot;, an approach known as &quot;demand
+response&quot;. The system we operate consists of a &quot;network operation center,&quot;
+dedicated servers, embedded devices---and, of course, advanced application
+specific software.</p>
+<p>By nature, this operation is &quot;soft realtime&quot; and even has a &quot;man in the loop&quot;.
+Unsurprisingly, this requires the system to be highly reliable, resilient
+to transient malfunction of its subsystems and responsive at all times,
+despite having an elaborate GUI for planning, monitoring and control.</p>
+<p>In this situation, we have applied ideas from functional programming
+ranging from a general &quot;state fright&quot; to specific mechanisms,
+such as Functional Reactive Programming for combining planned actions and
+interactive adjustments in a systematic way. Our own implementations of
+field bus interfaces (Modbus, IEC-60870-5-104) are functional, in the sense
+that they are explicit with respect to state and messages. Most of the
+software is written in Python, F# (with WPF) and Erlang, each of which
+giving access to rich and mature libraries.</p>
+<p>Being a start-up, our approach requires numerous functional features to
+be demonstrated and evaluated in a short time frame.
+This means features are added for upcoming marketing events, usually after
+intense internal negotiation, as a way of taking customer feedback into
+account as quickly as possible. For this to work, caution must be exercised.</p>
+<p>Functional Programming has been extremely helpful in having the speed of
+software development match the considerable rate of change in requirements.
+As such, FP has contributed to delivering the right functionality at the
+right time without blocking the road ahead. Although it is hard to compare
+tools without considering the people wielding them, FP has earned its place
+as an integral part of the key components of our system contributing
+operating reserve power to the German national power grid.</p>
+<h2 id="DrSebastianEgner">Dr. Sebastian Egner</h2><p>Sebastian is chief system architect of Entelios AG,
+a VC-funded energy company.
+After studying physics and CS at the University of Karlsruhe,
+and completing a PhD in CS in 1997, he joined Philips Research B.V.
+in Eindhoven (Netherlands) to become a full-time inventor and scientist.
+In 2007 he founded the software development department of SPECS GmbH, 
+a Berlin based maker of instruments for surface physics.
+Sebastian is aware of the delicate and ever changing balance of being
+&quot;scientist, inventor, engineer, and manager&quot; whatever the job at hand
+calls for.</p>
+<div class="flex-video"><iframe src="http://www.youtube.com/embed/CoILVBmnfB0?controls=2&showinfo=0&theme=light&autohide=1" width="420" height="315" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div><div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CUFP</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="../css0/foundation-icons/foundation-icons.css"/>
+  <link rel="stylesheet" href="../css0/fairhead-webicons/webicons.css"/>
+  <link rel="stylesheet" href="../css0/flaticon-feather-pen/flaticon.css"/>
+  <link rel="stylesheet" href="../css0/cufp.css"/>
+  <script src="../js0/modernizr.js"></script>
+
+</head>
+
+<body class="event">
+
+
+<nav class="top-bar" data-topbar="data-topbar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/"><i class="fi-home"></i></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="left">
+      <li><a href="/blog/"><i class="fi-rss"></i> Blog</a></li>
+      <li><a href="/videos/"><i class="fi-video size-72"></i> Videos</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+<div class="row"><div class="small-12 columns"><h1><i class="fi-laptop"></i> T9: Bending Clojure to your will: Macros and Domain Specific Languages</h1><div class="speakers"><ul><li><span class="person">Leonardo Borges</span></li></ul></div><div class="time">September 24, 2013 2:00 - 5:30 PM</div>
+
+<h2 id="Abstract">Abstract</h2><p>Programmers, functional or not, oftentimes struggle to understand the
+ways of Lisp macros: when to use them, what to use them for and, more
+importantly, when not to use them.  Macros are programs that write
+programs - and that can be daunting at first. But it doesn&#39;t have to
+be!  Through a series of real-world examples from the Clojure world
+you&#39;ll learn how to write your own macros and use them to make your
+programs more expressive and elegant by building powerful
+abstractions.  Do more with less.</p>
+<p>Previously given at
+<a href="http://www.yowconference.com.au/lambdajam/">LambdaJam</a>.</p>
+<h2 id="RoughOutline">Rough Outline:</h2><ul><li><p>Macros and why you should care
+Brief example of the power of macros vs. when not to use them leading into the next topics.</p>
+</li><li><p>Compile-time vs. Runtime
+It&#39;s important to understand the different &quot;times&quot; in which Clojure code is executed. Know what &quot;macro-expansion&quot; time means.</p>
+</li><li><p>Syntax
+Everything about macros syntax in clojure: quoting, unquoting, unquote-splice, macro hygiene. We&#39;ll write a few basic macros here.</p>
+</li><li><p>Code walkthrough
+We&#39;ll run through several macro examples both from Clojure core and a couple I&#39;ve used in my own code in order to show the usefulness of macros in production code. This will allow plenty of time for discussions.</p>
+</li><li><p>Writing your own macros
+Get your hands dirty writing a few more involved macros. I&#39;ll come with suggestions but attendees are welcome to use their own ideas. Plenty of time for discussions.</p>
+</li><li><p>Wrap up
+Q&amp;A and anything else attendees might be willing to discuss.</p>
+</li></ul>
+
+<h2 id="IntendedAudience">Intended Audience</h2><p>Functional programmers familiar with any Lisp dialect - though basic knowledge of Clojure would be helpful.</p>
+<p>No knowledge of macros is required.</p>
+<h2 id="Infrastructurerequired">Infrastructure required:</h2><p>All you need is to make sure that you have these installed:</p>
+<ul><li><p>JDK 6+</p>
+</li><li><p><a href="http://leiningen.org/">Leiningen</a> 2.x</p>
+</li><li><p><a href="http://clojure.org/">Clojure</a> 1.5+</p>
+</li><li><p>A text editor/IDE of your choosing. Popular choices include: Emacs, Vim, IntelliJ with the <a href="http://plugins.jetbrains.com/plugin/4050">LaClojure</a> plugin and Eclipse with the <a href="http://code.google.com/p/counterclockwise/">CounterclockWise</a> plugin</p>
+</li></ul>
+
+<h2 id="LeonardoBorges">Leonardo Borges</h2><p><img width="200" alt="Leonardo Borges" src="https://confuiimagesproduction.s3.amazonaws.com/uploads/speaker/photo/5168110636c61b2a80000005/0e06f854-e3cd-4ab6-ad58-471eed1d1a57.png" align="right"/>
+A programming languages enthusiast, Leonardo loves writing code,
+contributing to open-source and speaking about subjects he feels
+strongly about. Currently undertaking the challenges of consulting at
+ThoughtWorks, his first contact with Functional Programming came from
+using Scheme while reading SICP. Not too long after he fell in love
+with Clojure and has since sneaked it into his latest client project,
+which became ThoughtWorks&#39; first Clojure engagement to go live in
+Australia. He created and runs clj-syd, the Clojure Sydney User Group,
+where local Clojurians gather monthly for talks and hack nights. He
+also blogs about other geeky stuff, plays the guitar and does stupid
+things like skydiving, rafting or rock climbing whenever he
+can. <a href="http://www.leonardoborges.com/">http://www.leonardoborges.com/</a>
+twitter: <a href="https://twitter.com/leonardo_borges">@leonardo_borges</a></p>
+<div id="disqus_thread"></div><script type="text/javascript">
+  var disqus_shortname = 'cufp';
+
+  (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script></div></div>
+
+
+<footer>
+<div class="row" data-equalizer="data-equalizer">
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <h3>CUFP</h3>
+    <p><i>Functional Programming as a means, not an end.</i></p>
+    <p>Co-located with <a href="http://icfpconference.org"><b>ICFP</b></a>.</p>
+  </div>
+
+  <div class="medium-2 columns social" data-equalizer-watch="data-equalizer-watch">
+    <ul class="small-block-grid-4 medium-block-grid-2">
+      <li>
+        <a href="https://twitter.com/cufpconference">
+          <i class="fi-social-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/blog/">
+          <i class="fi-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/cufp">
+          <i class="fi-social-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/videos/">
+          <i class="fi-video"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="medium-3 columns text-center" data-equalizer-watch="data-equalizer-watch">
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/bylaws.html">Bylaws</a></li>
+      <li><a href="/steering-committee.html">Steering Committee</a></li>
+    </ul>
+    <ul>
+      <li><a href="/license.html">Licenses</a></li>
+      <li><a href="http://github.com/cufp/cufp.org/issues">Website Issues</a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+<div class="row">
+  <div class="small-12 columns">
+      <p>© Copyright 2004 – 2016
+ Commercial Users of
+      Functional Programming. Details
+      in <a href="/license.html">Licenses</a>.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../js0/jquery.min.js"></script>
+<script src="../js0/fastclick.js"></script>
+<script src="../js0/foundation.js"></script>
+<script src="../js0/foundation.abide.js"></script>
+<script src="../js0/foundation.accordion.js"></script>
+<script src="../js0/foundation.alert.js"></script>
+<script src="../js0/foundation.clearing.js"></script>
+<script src="../js0/foundation.dropdown.js"></script>
+<script src="../js0/foundation.equalizer.js"></script>
+<script src="../js0/foundation.interchange.js"></script>
+<script src="../js0/foundation.joyride.js"></script>
+<script src="../js0/foundation.magellan.js"></script>
+<script src="../js0/foundation.offcanvas.js"></script>
+<script src="../js0/foundation.orbit.js"></script>
+<script src="../js0/foundation.reveal.js"></script>
+<script src="../js0/foundation.slider.js"></script>
+<script src="../js0/foundation.tab.js"></script>
+<script src="../js0/foundation.tooltip.js"></script>
+<script src="../js0/foundation.topbar.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-12990950-1"]);
+  _gaq.push(["_setVar", "anonymous user"]);
+  _gaq.push(['_setCustomVar', 1, "User roles", "anonymous user", 1]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+     var ga = document.createElement("script");
+     ga.type = "text/javascript";
+     ga.async = true;
+     ga.src =
+       ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+       ".google-analytics.com/ga.js";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+</body>
+</html>
