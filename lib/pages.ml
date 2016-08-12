@@ -11,17 +11,23 @@ let menu ~years =
       div ~a:[a_class ["sub-menu"]] [
         div [
           a ~a:[a_href "videos.html"] [
-            i ~a:[a_class ["fi-video"]] [pcdata " Videos"]];
+            i ~a:[a_class ["fi-video"]] [];
+            pcdata " Videos"
+          ]
         ];
 
         div [
           a ~a:[a_href "blog-list.html"] [
-            i ~a:[a_class ["fi-pencil"]] [pcdata " Blog"]];
+            i ~a:[a_class ["fi-pencil"]] [];
+            pcdata " Blog"
+          ]
         ];
 
         div [
           a ~a:[a_href "http://icfpconference.org"] [
-            i ~a:[a_class ["fi-web"]] [pcdata " ICFP"]];
+            i ~a:[a_class ["fi-web"]] [];
+            pcdata " ICFP"
+          ]
         ];
       ]
     ]
