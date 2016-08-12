@@ -106,11 +106,6 @@ markdown-bases=site/about.md site/bylaws.md site/license.md \
 $(patsubst %.md, _build/%.html, $(markdown-bases)): _build/site/%.html: site/%.md | _build/tmp
 	$(cufp.org) build markdown -production $(PRODUCTION) $<
 
-# General html files.
-html-files=site/2016/index.html
-$(patsubst %, _build/%, $(html-files)): _build/site/%.html: site/%.html | _build/tmp
-	$(cufp.org) build html -production $(PRODUCTION) $<
-
 # Blog RSS feed.
 _build/site/blog/all.rss.xml: site/blog/all.rss.xml | _build/site/blog
 	cp -f $< $@
@@ -123,6 +118,14 @@ years_2009-2015=2009 2010 2011 2012 2013 2014 2015
 $(patsubst %, _build/site/%, $(years_2009-2015)): _build/site/%: site/%
 	rsync -a $</*.html $@/
 
+_build/site/2016/index.html: site/2016/* | _build/tmp
+	$(cufp.org) build html -production $(PRODUCTION) site/2016/index.html
+
+_build/site/2016: site/2016 _build/site/2016/index.html
+	$(cufp.org) build events 2016 \
+          -background img/photo-1461727885569-b2ddec0c4328.jpeg \
+          -production $(PRODUCTION)
+
 .PHONY: site
 site: $(cufp.org) \
       _build/app/cufp.org \
@@ -134,6 +137,7 @@ site: $(cufp.org) \
       _build/site/blog/all.rss.xml \
       _build/site/robots.txt \
       $(patsubst %, _build/site/%, $(years_2009-2015)) \
+      _build/site/2016 \
       | _build/site/css _build/site/js _build/tmp
 
 	cp -f site/css/app.css _build/site/css/
@@ -146,8 +150,6 @@ site: $(cufp.org) \
 	rsync -a site/200[4-8] site/conference _build/site/
 	rsync -a site/201[4-6]cfp _build/site/
 	rsync -a --exclude=/index.html site/videos/ _build/site/videos/
-
-	$(cufp.org) build events -background img/photo-1461727885569-b2ddec0c4328.jpeg -production $(PRODUCTION) 2016
 
 
 ################################################################################
