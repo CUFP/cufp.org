@@ -63,29 +63,3 @@ let of_strings
         ?link:(List.nth_exn links_l i)
         ()
     )
-
-let to_html {name; affiliation; link; _ } =
-  let open Html in
-  [span ~a:["class", "person"]
-      (match link with
-      | None -> [data name]
-      | Some link -> [a ~a:["href",link] [data name]]
-      )
-  ]@
-  (match affiliation with
-  | None -> []
-  | Some affiliation ->
-    [
-      data " ";
-      span ~a:["class", "affiliation"] [data affiliation];
-    ]
-  )
-
-let to_html_ul tl =
-  let open Html in
-  ul (List.map tl ~f:(fun t -> li (to_html t)))
-
-let to_string_rss {name; email; _} =
-  match email with
-  | Some email -> Some (sprintf "%s (%s)" email name)
-  | None -> None

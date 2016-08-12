@@ -76,6 +76,3 @@ val typ_to_string : typ -> string
 (** Return description of a Break or Discussion as a plain
     string. Raise [Failure] if called on other types of events. *)
 val short_description : t -> string
-
-(** Foundation icon for given event [typ], if any. *)
-val icon : typ -> Html.item Or_error.t

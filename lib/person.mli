@@ -26,14 +26,3 @@ val of_strings :
   ?names:string ->
   unit ->
   t list
-
-(** Print person information in html. *)
-val to_html : t -> Html.t
-
-(** Print html ul list. *)
-val to_html_ul : t list -> Html.item
-
-
-(** Print email address in format required by RSS 2.0. Return None if
-    [t.email = None]. *)
-val to_string_rss : t -> string option

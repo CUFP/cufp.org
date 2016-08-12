@@ -90,18 +90,6 @@ let to_file (t:t) dir =
   Unix.mkdir ~p:() dir >>= fun () ->
   Writer.save out_file ~contents:(Omd.to_markdown md)
 
-
-let icon typ =
-  let open Result.Monad_infix in
-  (match typ with
-  | Talk | Keynote -> Ok "fi-microphone"
-  | Tutorial -> Ok "fi-laptop"
-  | BoF -> Ok "flaticon-pen43"
-  | Break | Discussion | Reception ->
-    error "icon undefined for event typ" typ sexp_of_typ
-  ) >>| fun x ->
-  Html.i ~a:["class", x] []
-
 let to_html ~years ~background_image (t:t) =
   let open Tyxml.Html in
 
