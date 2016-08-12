@@ -1,6 +1,5 @@
 module About = About
 module Conference = Conference
-module Disqus = Disqus
 module Event = Cufp_event
 module Html = Html
 module Markdown = Markdown

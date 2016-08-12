@@ -90,6 +90,18 @@ let to_file (t:t) dir =
   Unix.mkdir ~p:() dir >>= fun () ->
   Writer.save out_file ~contents:(Omd.to_markdown md)
 
+let disqus_script = "\
+  var disqus_shortname = 'cufp';\
+\
+  (function() {\
+    var dsq = document.createElement('script');\
+    dsq.type = 'text/javascript';\
+    dsq.async = true;\
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';\
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);\
+   })();\
+"
+
 let to_html ~years ~background_image (t:t) =
   let open Tyxml.Html in
 
@@ -172,7 +184,7 @@ let to_html ~years ~background_image (t:t) =
           div ~a:[a_class ["sidebar"]] [
             div ~a:[a_id "disqus_thread"] [];
             script ~a:[Unsafe.string_attrib "type" "text/javascript"] (
-              pcdata Disqus.script_text
+              pcdata disqus_script
             )
           ]
         ]
