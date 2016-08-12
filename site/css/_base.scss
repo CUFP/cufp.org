@@ -81,12 +81,12 @@ p, .button, button
 
 	&.two
 	{
-		background: $primary-color;
+		background: $peter-river;
 	}
 
 	&.three
 	{
-		background: $peter-river;
+		background: $primary-color;
 	}
 
 @include breakpoint(medium)
