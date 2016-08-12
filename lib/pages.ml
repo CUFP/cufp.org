@@ -55,5 +55,5 @@ let menu ~years =
   in
 
   div ~a:[a_class ["row"]] [
-    nav [main_links; home; years]
+    nav [main_links; pcdata " "; home; pcdata " "; years]
   ]
