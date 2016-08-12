@@ -2,7 +2,6 @@ module About = About
 module Conference = Conference
 module Event = Cufp_event
 module Html = Html
-module Markdown = Markdown
 module Mpp = Mpp
 module Path = Cufp_path
 module Pages = Pages

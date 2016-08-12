@@ -271,9 +271,32 @@ let of_markdown ~filename omd =
 
   let {url_title; date; start; finish} = parse_filename filename in
 
+  (* Parse markdown that is assumed to be an unordered list, with each
+     item being a tag-value pair separated by a colon. *)
+  let parse_assoc_list = function
+    | Omd.Ul ul ->
+      List.map ul ~f:(fun l ->
+        List.map l ~f:(function
+          | Omd.Text x -> x
+          | Omd.Raw "&amp;" -> "&"
+          | md ->
+            failwithf "unexpected markdown list item: %s" (Omd.to_markdown [md]) ()
+        )
+        |> String.concat ~sep:""
+        |> String.split ~on:':'
+        |> (function
+          | [] | _::[] ->
+            failwith "colon not found in markdown assoc list"
+          | x::rest ->
+            (String.strip x, String.concat ~sep:":" rest |> String.strip)
+        )
+      )
+    | _ -> failwith "expected markdown unordered list"
+  in
+
   match omd with
   | ul::description -> (
-    Markdown.parse_assoc_list ul
+    parse_assoc_list ul
     |> fun ul ->
       let got_fields = List.map ul ~f:fst |> String.Set.of_list in
       if not (Set.subset got_fields expected_fields) then
