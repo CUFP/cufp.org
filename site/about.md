@@ -1,5 +1,10 @@
+<header class="title=parallax" style="background-image: url(2016/img/photo-1461727885569-b2ddec0c4328.jpeg)">
+  (( cmd cufp.org print menu ))
+</header>
+<div class="main-wrap" media:type="text/omd">
+<div class="white-bg padded" media:type="text/omd">
 <div class="row" media:type="text/omd">
-<div class="small-12 columns" media:type="text/omd">
+<div class="main-column article" media:type="text/omd">
 
 # About
 
@@ -41,5 +46,7 @@ be more a discussion forum than a technical interchange.  All of the
 videos of previous talks are available in our [videos](/videos/)
 section on this site.
 
+</div>
+</div>
 </div>
 </div>

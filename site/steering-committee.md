@@ -1,5 +1,10 @@
+<header class="title=parallax" style="background-image: url(2016/img/photo-1461727885569-b2ddec0c4328.jpeg)">
+  (( cmd cufp.org print menu ))
+</header>
+<div class="main-wrap" media:type="text/omd">
+<div class="white-bg padded" media:type="text/omd">
 <div class="row" media:type="text/omd">
-<div class="small-12 columns" media:type="text/omd">
+<div class="main-column article" media:type="text/omd">
 
 # Steering Committee
 
@@ -27,5 +32,7 @@ activities deemed to forward the goals of CUFP.
 - Francesco Cesarini (Prior Program Committee Co-Chair: Retiring 2013)
 - John Launchbury (Member At Large: Retiring 2013)
 
+</div>
+</div>
 </div>
 </div>

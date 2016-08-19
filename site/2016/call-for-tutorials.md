@@ -1,5 +1,10 @@
+<header class="title=parallax" style="background-image: url(img/photo-1461727885569-b2ddec0c4328.jpeg)">
+  (( cmd cufp.org print menu ))
+</header>
+<div class="main-wrap" media:type="text/omd">
 <div class="white-bg padded" media:type="text/omd">
 <div class="row" media:type="text/omd">
+<div class="main-column article" media:type="text/omd">
 
 # CUFP 2016 Call for Tutorials
 
@@ -55,5 +60,7 @@ If you have any questions, email to
 
 You can follow CUFP over twitter to get semi-regular updates @cufpconference
 
+</div>
+</div>
 </div>
 </div>
