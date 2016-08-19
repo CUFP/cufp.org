@@ -8,16 +8,13 @@ let menu ~years =
   let open Tyxml.Html in
   let home = div [a ~a:[a_href "index.html"] [pcdata "CUFP"]] in
 
-  let years =
-    List.sort years ~cmp:(fun x y -> Int.compare y x) |>
-    List.tl_exn
-  in
-  let previous_year = List.hd_exn years in
+  let years = List.sort years ~cmp:(fun x y -> Int.compare y x) in
+  let current_year = List.hd_exn years in
   let prior_years = List.tl_exn years in
   let years =
     div [
-      a ~a:[a_href @@ sprintf "/%d/" previous_year] [
-        pcdata @@ Int.to_string previous_year
+      a ~a:[a_href @@ sprintf "/%d/" current_year] [
+        pcdata @@ Int.to_string current_year
       ];
 
       div ~a:[a_class ["sub-menu"]] (
