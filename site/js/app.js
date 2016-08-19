@@ -39,6 +39,7 @@ $(window).on('resize', Foundation.util.throttle(function () {
 	if (isMobile)
 	{
 		$('.schedule .day-calendar').slideUp(0);
+		$('.schedule .date-head.open').closest('.schedule').find('.day-calendar').slideDown(0);
 	}
 	else
 	{
