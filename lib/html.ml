@@ -4,21 +4,25 @@ open Async.Std
 (******************************************************************************)
 (* HTML fragments *)
 (******************************************************************************)
-let menu ~years =
+let menu ?main_year ~years =
   let open Tyxml.Html in
   let home = div [a ~a:[a_href "index.html"] [pcdata "CUFP"]] in
-
   let years = List.sort years ~cmp:(fun x y -> Int.compare y x) in
-  let current_year = List.hd_exn years in
-  let prior_years = List.tl_exn years in
+  let main_year,years = match main_year,years with
+    | _, [] -> assert false
+    | Some main_year, (x::rest as l) ->
+      main_year, (if x = main_year then rest else l)
+    | None, x::rest ->
+      x, rest
+  in
   let years =
     div [
-      a ~a:[a_href @@ sprintf "/%d/" current_year] [
-        pcdata @@ Int.to_string current_year
+      a ~a:[a_href @@ sprintf "/%d/" main_year] [
+        pcdata @@ Int.to_string main_year
       ];
 
       div ~a:[a_class ["sub-menu"]] (
-        List.map prior_years ~f:(fun x ->
+        List.map years ~f:(fun x ->
           div [
             a ~a:[a_href @@ sprintf "/%d/" x] [
               pcdata @@ Int.to_string x
@@ -28,7 +32,6 @@ let menu ~years =
       )
     ]
   in
-
   div ~a:[a_class ["row"]] [
     nav [home; pcdata " "; years]
   ]

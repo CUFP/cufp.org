@@ -217,10 +217,17 @@ let print_menu : (string * Command.t) =
   ("menu",
    Command.async
      ~summary:"print menu"
-     Command.Spec.(empty +> Param.repo_root)
-     (fun repo_root () ->
+     Command.Spec.(
+       empty +>
+       Command.Spec.(
+         flag "-main-year" (optional int)
+           ~doc:"INT Year to display as visible item of menu."
+       ) +>
+       Param.repo_root
+     )
+     (fun main_year repo_root () ->
         Conference.years ~repo_root () >>= fun years ->
-        return @@ Html.menu ~years >>= fun x ->
+        return @@ Html.menu ?main_year ~years >>= fun x ->
         return @@ Format.asprintf "%a" (Tyxml.Html.pp_elt ()) x >>= fun x ->
         return @@ print_endline x
      )

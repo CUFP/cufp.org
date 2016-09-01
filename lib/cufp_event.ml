@@ -151,13 +151,29 @@ let to_html ~years ~background_image (t:t) =
     )
   in
 
+  let slides =
+    Option.map t.slides (fun x ->
+      iframe
+        ~a:[
+          a_src (
+            sprintf "http://docs.google.com/gview?url=http://cufp.org/%s&embedded=true"
+              (Slides.to_uri x)
+          );
+          a_width 560;
+          a_height 315;
+          Unsafe.string_attrib "frameborder" "0";
+        ]
+        []
+    )
+  in
+
   [
     header
       ~a:[
         a_class ["title-parallax"];
         a_style @@ sprintf "background-image:url('%s')" background_image;
       ]
-      [Html.menu ~years]
+      [Html.menu ~main_year:(Date.year t.date) ~years]
     ;
 
     div ~a:[a_class ["main-wrap"]] [
@@ -177,6 +193,7 @@ let to_html ~years ~background_image (t:t) =
           div ~a:[a_class ["main-column intro-paragraph"]] (
             List.filter_map ~f:Fn.id [
               video;
+              slides;
               Some (Unsafe.data (Omd.to_html t.description));
             ]
           );

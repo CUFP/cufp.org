@@ -1,5 +1,5 @@
 <header class="title=parallax" style="background-image: url(img/photo-1461727885569-b2ddec0c4328.jpeg)">
-  (( cmd cufp.org print menu ))
+  (( cmd cufp.org print menu -main-year 2016 ))
 </header>
 <div class="main-wrap" media:type="text/omd">
 <div class="white-bg padded" media:type="text/omd">

@@ -4,8 +4,13 @@ open Async.Std
 
 (** {HTML fragments} *)
 
-(** Main menu that we insert in header of most pages. *)
-val menu : years:int list -> Html_types.div Tyxml.Html.elt
+(** Main menu that we insert in header of most pages. [years] should
+    be the list of all years to include in menu. Optional [main_year]
+    should be the year to display as the top item, which is visible
+    without hovering over the menu. It should correspond to the year of
+    the event which the page is about. Otherwise, omit it and the latest
+    year will be used. *)
+val menu : ?main_year:int -> years:int list -> Html_types.div Tyxml.Html.elt
 
 
 (** {Links} *)
