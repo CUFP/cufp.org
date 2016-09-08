@@ -11,7 +11,7 @@ TBA
 
 <div class="image">
 <div class="avatar">
-<img src="img/yaron-minksy.jpg" alt="Yaron Minksy"></img>
+<img src="img/yaron-minsky.jpg" alt="Yaron Minksy"></img>
 </div>
 </div>
 
