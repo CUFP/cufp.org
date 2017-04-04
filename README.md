@@ -15,7 +15,7 @@ need to have several OCaml libraries installed, for which we assume you have
 do:
 
 ```
-opam switch cufp.org -A 4.02.3
+opam switch cufp.org -A 4.03.0
 cd /to/your/working/directory
 opam pin add cufporg . -n
 opam pin add solvuu-build https://github.com/solvuu/solvuu-build.git
