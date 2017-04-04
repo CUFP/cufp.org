@@ -13,7 +13,7 @@
 Commercial Users of Functional Programming 2017<br />
 Sponsored by SIGPLAN<br />
 [CUFP 2017](/2017/)<br />
-Co-located with [ICFP 2017](http://icfpconference.org/icfp2017/)<br />
+Co-located with [ICFP 2017](http://conf.researchr.org/home/icfp-2017)<br />
 Oxford, UK<br />
 September 7-9<br />
 Talk Proposal Submission Deadline: 9 June 2017<br />
