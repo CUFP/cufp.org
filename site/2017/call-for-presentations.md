@@ -81,7 +81,7 @@ available to would-be presenters who require assistance in this respect.
 ## Program Committee
 - Alex Lang (Tsuru Capital), co-chair
 - Rachel Reese (Mulberry Labs), co-chair
-- Garrett Smith (CloudBees)
+- Garrett Smith (Guild AI)
 - Danielle Sucher (Jane Street)
 - Jasper Van der Jeugt (Fugue)
 - Yukitoshi Suzuki
