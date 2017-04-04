@@ -101,7 +101,7 @@ node_modules/postcss-cli:
 # General markdown files.
 markdown-bases=site/about.md site/bylaws.md site/license.md \
                site/steering-committee.md \
-               site/2016/call-for-presentations.md \
+               $(patsubst %, site/%/call-for-presentations.md, 2016 2017) \
                site/2016/call-for-tutorials.md
 $(patsubst %.md, _build/%.html, $(markdown-bases)): _build/site/%.html: site/%.md | _build/tmp
 	$(cufp.org) build markdown -production $(PRODUCTION) $<
@@ -148,7 +148,7 @@ site: $(cufp.org) \
 	rsync -a --exclude=/icon/ ../cufp.org-media/* _build/site/
 	cp -f ../cufp.org-media/icon/favicon-32x32.png _build/site/
 	rsync -a site/200[4-8] site/conference _build/site/
-	rsync -a site/201[4-6]cfp _build/site/
+	rsync -a site/201[4-7]cfp _build/site/
 	rsync -a --exclude=/index.html site/videos/ _build/site/videos/
 
 
