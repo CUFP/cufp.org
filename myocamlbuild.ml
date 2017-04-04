@@ -6,9 +6,9 @@ let project_name = "cufporg"
 let version = "dev"
 
 let lib : Project.item = Project.lib project_name
-    ~pkg:project_name
+    ~install:(`Findlib project_name)
     ~dir:"lib"
-    ~pack_name:project_name
+    ~style:(`Pack project_name)
     ~findlib_deps:[
       "async"; "core"; "markup"; "mpp"; "omd"; "ppx_sexp_conv";
       "uri"; "tyxml"
