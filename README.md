@@ -109,14 +109,11 @@ Markdown or HTML; most files have little or no MPP sections.
 
 PROCESSING PIPELINE
 ===================
-Source files within `site/` are processed through a sequence of
-steps to produce the HTML pages constituting the site. The OCaml
-[`Asset`](https://github.com/CUFP/cufp.org/blob/master/lib/cufp_asset.mli)
-module implements the logic of generating the site. Each file type is
-categorized as being of a certain type, e.g. a general Markdown file,
-or more specifically a Markdown file that contains a blog post. The
-`make` function in this module defines how each type of asset is
-compiled. A rough description is below:
+Source files within `site/` are processed through a sequence of steps
+to produce the HTML pages constituting the site. The Makefile
+implements the logic of generating the site. Rules for generating
+various files are provided, often calling the command line app to do
+most of the work. A rough description is below:
 
 ###### conference main page
 Each conference is organized under a directory named YYYY, the 4-digit
