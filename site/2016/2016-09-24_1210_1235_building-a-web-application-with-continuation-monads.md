@@ -2,6 +2,7 @@
 - title: Building a web application with continuation monads
 - speakers: Seitaro Yuki
 - affiliations: Dwango
+- video: https://www.youtube.com/watch?v=yUWfnGOY1-0
 
 ## Abstract 
 

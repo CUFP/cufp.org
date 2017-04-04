@@ -2,6 +2,7 @@
 - title: The Highs and Lows of Optimising DSLs
 - speakers: Jacob Stanley
 - affiliations: Ambiata
+- video: https://www.youtube.com/watch?v=vewEILtqF7E
 
 ## Abstract 
 

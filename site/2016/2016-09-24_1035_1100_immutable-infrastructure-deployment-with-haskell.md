@@ -2,6 +2,7 @@
 - title: Immutable Infrastructure Deployment with Haskell
 - speakers: Nick Hibberd
 - affiliations: Ambiata
+- video: https://www.youtube.com/watch?v=RR4Do_LMKko
 
 ## Abstract 
 

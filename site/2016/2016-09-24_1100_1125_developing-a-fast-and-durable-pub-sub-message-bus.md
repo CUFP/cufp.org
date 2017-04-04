@@ -2,6 +2,7 @@
 - title: Developing a fast and durable pub/sub message bus
 - speakers: Will Sewell
 - affiliations: Pusher
+- video: https://www.youtube.com/watch?v=ycf3LG1A8Hg
 
 ## Abstract 
 

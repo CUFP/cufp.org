@@ -2,6 +2,7 @@
 - title: Baby steps to unikernels in production
 - speakers: Sean Grove
 - affiliations: Bushido
+- video: https://www.youtube.com/watch?v=i9eu9e7gN0Q
 
 ## Abstract 
 

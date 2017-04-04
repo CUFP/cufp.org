@@ -2,6 +2,7 @@
 - title: Creating an approachable Haskell-like DSL
 - speakers: Jasper Van der Jeugt
 - affiliations: Fugue
+- video: https://www.youtube.com/watch?v=rIphd57Sm1U
 
 ## Abstract 
 

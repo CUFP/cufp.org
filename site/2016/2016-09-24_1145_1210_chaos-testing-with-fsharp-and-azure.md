@@ -2,6 +2,7 @@
 - title: Chaos testing with F# and Azure
 - speakers: Rachel Reese
 - affiliations: Jet.com
+- video: https://www.youtube.com/watch?v=__V1wcURCYc
 
 ## Abstract 
 

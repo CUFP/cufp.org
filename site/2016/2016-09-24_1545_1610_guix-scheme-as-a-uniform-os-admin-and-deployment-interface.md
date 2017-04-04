@@ -2,6 +2,7 @@
 - title: Guix: Scheme as a uniform OS admin and deployment interface
 - speakers: Ludovic Courtès
 - affiliations: Inria
+- video: https://www.youtube.com/watch?v=c8-bOCjMkj4
 
 ## Abstract 
 

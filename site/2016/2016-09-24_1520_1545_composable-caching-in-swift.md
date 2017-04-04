@@ -2,6 +2,7 @@
 - title: Composable Caching in Swift
 - speakers: Brandon Kase
 - affiliations: Pinterest
+- video: https://www.youtube.com/watch?v=8uqXuEZLyUU
 
 ## Abstract 
 
