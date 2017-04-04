@@ -126,6 +126,12 @@ _build/site/2016: site/2016 _build/site/2016/index.html
           -background img/photo-1461727885569-b2ddec0c4328.jpeg \
           -production $(PRODUCTION)
 
+_build/site/2017/index.html: site/2017/* | _build/tmp
+	$(cufp.org) build html -production $(PRODUCTION) site/2017/index.html
+
+_build/site/2017: site/2017 _build/site/2017/index.html
+	echo "" # Nothing to do yet.
+
 .PHONY: site
 site: $(cufp.org) \
       _build/app/cufp.org \
@@ -137,7 +143,7 @@ site: $(cufp.org) \
       _build/site/blog/all.rss.xml \
       _build/site/robots.txt \
       $(patsubst %, _build/site/%, $(years_2009-2015)) \
-      _build/site/2016 \
+      $(patsubst %, _build/site/%, 2016 2017) \
       | _build/site/css _build/site/js _build/tmp
 
 	cp -f site/css/app.css _build/site/css/

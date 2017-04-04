@@ -58,6 +58,11 @@ version of foo.jpg might be named cropped_foo.jpg. Below you will find
 entries only for the original file name; modified versions are
 released under the same license as the original.
 
+* /2017/img/13164220234_91e79f4575_z.jpg
+  - link: https://flic.kr/p/m4h53o
+  - license: CC BY-NC-ND 2.0
+  - attribution: [barnyz](https://www.flickr.com/photos/75487768@N04/)
+
 * /2016/img/photo-1461727885569-b2ddec0c4328.jpeg
   - link: https://unsplash.com/photos/0_xMuEbpFAQ
   - license: Creative Commons Zero
