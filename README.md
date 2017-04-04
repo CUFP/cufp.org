@@ -89,7 +89,7 @@ ABOUT MPP
 MPP is used as a templating tool and to auto-generate various other
 content. It is a preprocessor that allows programmatically inserting
 content into virtually any other kind of text file. One inserts MPP
-sections delimited in a customizalbe way, e.g. enclosed in double
+sections delimited in a customizable way, e.g. enclosed in double
 parentheses (( )) or double curly braces {{ }}, and within such a
 section you can for example write an arbitrary bash command. MPP will
 run the command and replace the MPP section with whatever the command
