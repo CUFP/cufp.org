@@ -10,8 +10,8 @@ need to build the site locally. You can just add or modify Markdown
 files.
 
 If you do want to test your changes locally before pushing, you'll
-need to have several OCaml, for which we assume you have
-[opam](http://opam.ocaml.org/). Once you have it installed, you can
+need to have several OCaml libraries installed, for which we assume you have
+[opam](http://opam.ocaml.org/). Once you have opam setup, you can
 do:
 
 ```
