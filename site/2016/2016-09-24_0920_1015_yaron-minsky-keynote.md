@@ -1,5 +1,5 @@
 - type: keynote
-- title: Keynote
+- title: Keynote - Observations of a Functional Programmer
 - speakers: Yaron Minsky
 - affiliations: Jane Street
 - video: https://www.youtube.com/watch?v=_1GZShA1F20
