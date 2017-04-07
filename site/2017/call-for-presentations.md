@@ -84,7 +84,7 @@ available to would-be presenters who require assistance in this respect.
 - Garrett Smith (Guild AI)
 - Danielle Sucher (Jane Street)
 - Jasper Van der Jeugt (Fugue)
-- Yukitoshi Suzuki
+- Yukitoshi Suzuki (Ziosoft)
 - Evelina Gabasova (University of Cambridge)
 - Brian Mitchell (Jet.com)
 
