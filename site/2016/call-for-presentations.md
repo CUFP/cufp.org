@@ -57,8 +57,8 @@ or Latin America; and people who have never presented at a conference
 before. We recognize that inclusion is an important part of our
 mission to promote functional programming. So that CUFP can be a safe
 environment in which participants openly exchange ideas, we abide by
-the [SIGPLAN Conference Anti-Harassment
-Policy](http://www.sigplan.org/Resources/Policies/Anti-harassment).
+the [SIGPLAN Conference Code of Conduct
+Policy](http://www.sigplan.org/Resources/Policies/CodeOfConduct/).
 
 If you are interested in offering a talk, or nominating someone to do
 so, please submit your presentation before 24 June 2016 via the
@@ -92,7 +92,7 @@ available to would-be presenters who require assistance in this respect.
 For more information on CUFP, including videos of presentations from
 previous years, take a look at the CUFP website at
 [http://cufp.org](/). Note that presenters, like other attendees, will
-need to register for the event. Acceptance and rejection letters will 
+need to register for the event. Acceptance and rejection letters will
 be sent out by July 15th.
 
 
@@ -126,8 +126,8 @@ are a number of places to look for those interesting bits.
 
 * **Don't just be a cheerleader**: It's easy to write a rah-rah talk
   about how well FP worked for you, but CUFP is more interesting when
-  the talks also cover what doesn't work. Even when the results were 
-  all great, you should spend more time on the challenges along the way 
+  the talks also cover what doesn't work. Even when the results were
+  all great, you should spend more time on the challenges along the way
   than on the parts that went smoothly.
 
 </div>

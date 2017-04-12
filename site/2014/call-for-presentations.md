@@ -53,8 +53,8 @@ or Latin America; and people who have never presented at a conference
 before. We recognize that inclusion is an important part of our
 mission to promote functional programming. So that CUFP can be a safe
 environment in which participants openly exchange ideas, we abide by
-the [SIGPLAN Conference Anti-Harassment
-Policy](http://www.sigplan.org/Resources/Policies/Anti-harassment).
+the [SIGPLAN Conference Code of Conduct
+Policy](http://www.sigplan.org/Resources/Policies/CodeOfConduct/).
 
 If you are interested in offering a talk, or nominating someone to do
 so, please submit your presentation before 27 June 2014 via the
