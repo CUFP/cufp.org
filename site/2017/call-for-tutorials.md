@@ -12,7 +12,7 @@ The Commercial Users of Functional Programming (CUFP) is an annual meeting co-lo
 
 CUFP aims to bridge the gap between academia and users applying functional programming in practice. CUFP provides high-quality practical tutorials covering state-of-the-art techniques and tools for functional programming. There will be a mix of tutorials on introduction and advanced level, such that anyone that wants to learn something new has an opportunity to do so.
 
-We are seeking proposals for half-day tutorials to be presented during the first two days of the meeting, 7th to 9th of September. Submission deadline is July 1st, but the earlier you submit, the better!
+We are seeking proposals for half-day tutorials to be presented during the first two days of the meeting, 7th to 9th of September. Submission deadline is May 25, but the earlier you submit, the better!
 
 ## Please read these guidelines before submitting:
 
@@ -38,7 +38,7 @@ We are seeking proposals for half-day tutorials to be presented during the first
 * Infrastructure required: For example, will participants need access to a particular system? Do they need to download anything prior to the tutorial? Can they be expected to have this on a laptop, or does it need to be provided by the meeting?
 * Other minor information which will help us market your tutorial.
 
-Tutorials should be submitted using the following talk submission form. Deadline for submission is June 26, 2017. Notification of acceptance is two weeks later.
+Tutorials should be submitted using the following talk submission form. Deadline for submission is May 25, 2017. Notification of acceptance is two weeks later.
 
 ## Tutorial Agreement
 
@@ -49,12 +49,12 @@ While CUFP does not pay tutors, they will be compensated with admission credits 
 
 Note that we reserve the right to cancel tutorials with fewer than 5 registrants, but we will try hard to avoid having to do so. No compensation will be awarded for cancelled tutorials.
 
-[Register here to submit a CUFP tutorial proposal.](http://goo.gl/forms/qoyK9qYPZhiDPSzO2)
+[Register here to submit a CUFP tutorial proposal.](https://docs.google.com/forms/d/e/1FAIpQLSedJcLEUckSRpzRFsxRGDemD23dOsvvBz8PLdJidA-Cif9eJQ/viewform?c=0&w=1)
 
 If you have any questions, email to
 
 * Takayuki Muranushi: muranushi at gmail dot com
-* Runhang Li: marklrh at gmail dot com
+* Runhang Li: obj dot runhang at gmail dot com
 
 You can follow CUFP over twitter to get semi-regular updates @cufpconference
 
