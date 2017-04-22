@@ -38,14 +38,15 @@ We are seeking proposals for half-day tutorials to be presented during the first
 * Infrastructure required: For example, will participants need access to a particular system? Do they need to download anything prior to the tutorial? Can they be expected to have this on a laptop, or does it need to be provided by the meeting?
 * Other minor information which will help us market your tutorial.
 
-Tutorials should be submitted using the following talk submission form. Deadline for submission is May 25, 2017. Notification of acceptance is two weeks later.
+Tutorials should be submitted using the following talk submission form.  
+**Deadline for submission is May 25, 2017.** Notification of acceptance is two weeks later.
 
 ## Tutorial Agreement
 
 While CUFP does not pay tutors, they will be compensated with admission credits to CUFP and ICFP, as outlined below.
 
 * If a tutorial has 5 or more registrants, the tutor will receive free admission to CUFP, including the two days of tutorials and the day of the CUFP workshop.
-* If a tutorial has 10 or more registrants, the tutorialist will additionally receive a $250 voucher that can be used to register for any of the other ICFP events, including ICFP itself.
+* If a tutorial has 10 or more registrants, the tutor will additionally receive a $250 voucher that can be used to register for any of the other ICFP events, including ICFP itself.
 
 Note that we reserve the right to cancel tutorials with fewer than 5 registrants, but we will try hard to avoid having to do so. No compensation will be awarded for cancelled tutorials.
 
@@ -56,7 +57,7 @@ If you have any questions, email to
 * Takayuki Muranushi: muranushi at gmail dot com
 * Runhang Li: obj dot runhang at gmail dot com
 
-You can follow CUFP over twitter to get semi-regular updates @cufpconference
+You can follow CUFP over twitter to get semi-regular updates [@cufpconference](https://twitter.com/cufpconference).
 
 </div>
 </div>
