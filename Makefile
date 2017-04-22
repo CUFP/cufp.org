@@ -102,7 +102,7 @@ node_modules/postcss-cli:
 markdown-bases=site/about.md site/bylaws.md site/license.md \
                site/steering-committee.md \
                $(patsubst %, site/%/call-for-presentations.md, 2016 2017) \
-               site/2016/call-for-tutorials.md
+               $(patsubst %, site/%/call-for-tutorials.md, 2016 2017)
 $(patsubst %.md, _build/%.html, $(markdown-bases)): _build/site/%.html: site/%.md | _build/tmp
 	$(cufp.org) build markdown -production $(PRODUCTION) $<
 
