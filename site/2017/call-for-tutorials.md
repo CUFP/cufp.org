@@ -6,7 +6,10 @@
 <div class="row" media:type="text/omd">
 <div class="main-column article" media:type="text/omd">
 
+
 # CUFP 2017 Call for Tutorials
+
+# Notice: The submission deadline has been extended to Jun 18th, 2017
 
 The Commercial Users of Functional Programming (CUFP) is an annual meeting co-located with the International Conference on Functional Programming (ICFP) which this year will take place in Oxford, U.K. from the 7th to 9th of September 2017.
 
@@ -39,7 +42,7 @@ We are seeking proposals for half-day tutorials to be presented during the first
 * Other minor information which will help us market your tutorial.
 
 Tutorials should be submitted using the following talk submission form.  
-**Deadline for submission is May 25, 2017.** Notification of acceptance is two weeks later.
+**Deadline for submission is Jun 18th, 2017.** Notification of acceptance is two weeks later.
 
 ## Tutorial Agreement
 
