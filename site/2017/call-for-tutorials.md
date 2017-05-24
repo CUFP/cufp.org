@@ -6,7 +6,6 @@
 <div class="row" media:type="text/omd">
 <div class="main-column article" media:type="text/omd">
 
-
 # CUFP 2017 Call for Tutorials
 
 # Notice: The submission deadline has been extended to Jun 18th, 2017
