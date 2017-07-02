@@ -130,7 +130,9 @@ _build/site/2017/index.html: site/2017/* | _build/tmp
 	$(cufp.org) build html -production $(PRODUCTION) site/2017/index.html
 
 _build/site/2017: site/2017 _build/site/2017/index.html
-	echo "" # Nothing to do yet.
+	$(cufp.org) build events 2017 \
+          -background img/13164220234_91e79f4575_z.jpg \
+          -production $(PRODUCTION)
 
 .PHONY: site
 site: $(cufp.org) \
