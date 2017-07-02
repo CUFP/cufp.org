@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T8: GraphQL Servers in OCaml
+- title: C8: GraphQL Servers in OCaml
 - speakers: Andreas Garnæs
 
 ## Abstract

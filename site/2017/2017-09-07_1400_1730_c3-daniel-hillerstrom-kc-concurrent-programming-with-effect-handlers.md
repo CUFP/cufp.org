@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T3: Concurrent Programming with Effect Handlers
+- title: C3: Concurrent Programming with Effect Handlers
 - speakers: Daniel Hillerström and KC Sivaramakrishnan
 
 ## Abstract

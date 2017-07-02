@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T5: Teaching Functional Programming
+- title: C5: Teaching Functional Programming
 - speakers: Michael Sperber
 
 ## Abstract

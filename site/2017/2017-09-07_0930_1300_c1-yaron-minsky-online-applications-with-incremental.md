@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T1: Online Applications with Incremental
+- title: C1: Online Applications with Incremental
 - speakers: Yaron Minsky and Sebastian Funk
 
 ## Abstract

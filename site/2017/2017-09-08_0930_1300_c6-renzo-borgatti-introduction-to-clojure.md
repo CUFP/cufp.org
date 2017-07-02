@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T6: Introduction to Clojure
+- title: C6: Introduction to Clojure
 - speakers: Renzo Borgatti
 
 ## Abstract

@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T7: Owl - Data Science in OCaml
+- title: C7: Owl - Data Science in OCaml
 - speakers: Liang Wang
 
 ## Abstract

@@ -1,5 +1,5 @@
 - type: tutorial
-- title: T4: Git under the hood with OCaml
+- title: C4: Git under the hood with OCaml
 - speakers: Romain Calascibetta
 
 ## Abstract
