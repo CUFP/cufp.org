@@ -14,6 +14,9 @@ This tutorial is aimed at people with programming experience but not necessarily
 ## Infrastructure required
 Participants should bring their laptop with a copy of VirtualBox installed (free download from https://www.virtualbox.org). The tutorial is distributed as an image which provides all the necessary setup to start working, including slides and labs. The image will be provided at the beginning of the session.
 
+Please sign up mailing list `clojure-workshop@googlegroups.com` so that
+your question before or after tutorial will be answered by the tutors.
+
 <div class="author media" media:type="text/omd">
 
 <div class="image">
