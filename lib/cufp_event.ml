@@ -1,5 +1,5 @@
-open Core.Std
-open Async.Std
+open Core
+open Async
 let (/) = Filename.concat
 
 type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion | Reception
@@ -136,7 +136,7 @@ let to_html ~years ~background_image (t:t) =
   in
 
   let video =
-    Option.map t.video (fun x ->
+    Option.map t.video ~f:(fun x ->
       div ~a:[a_class ["talk-video embed-container"]] [
         iframe
           ~a:[
@@ -152,7 +152,8 @@ let to_html ~years ~background_image (t:t) =
   in
 
   let slides =
-    Option.map t.slides (fun x ->
+    Option.map t.slides ~f:(fun x ->
+      div ~a:[a_class ["embed-container"]] [
       iframe
         ~a:[
           a_src (
@@ -164,6 +165,7 @@ let to_html ~years ~background_image (t:t) =
           Unsafe.string_attrib "frameborder" "0";
         ]
         []
+      ]
     )
   in
 
@@ -316,7 +318,7 @@ let of_markdown ~filename omd =
     parse_assoc_list ul
     |> fun ul ->
       let got_fields = List.map ul ~f:fst |> String.Set.of_list in
-      if not (Set.subset got_fields expected_fields) then
+      if not (Set.is_subset got_fields ~of_:expected_fields) then
         failwithf "%s: unexpected fields: %s"
           filename
           (
@@ -328,31 +330,34 @@ let of_markdown ~filename omd =
       else
         make
           ~typ:(
-            List.Assoc.find_exn ul "type"
+            List.Assoc.find_exn ul "type" ~equal:String.equal
             |> typ_of_string
           )
-          ~title:(List.Assoc.find_exn ul "title")
+          ~title:(List.Assoc.find_exn ul "title" ~equal:String.equal)
           ~url_title
           ~date
           ~start
           ~finish
           ~speakers:(
             Person.of_strings
-              ?names:(List.Assoc.find ul "speakers")
-              ?affiliations:(List.Assoc.find ul "affiliations")
-              ?links:(List.Assoc.find ul "links")
+              ?names:(List.Assoc.find ul "speakers" ~equal:String.equal)
+              ?affiliations:
+                (
+                  List.Assoc.find ul "affiliations" ~equal:String.equal
+                )
+              ?links:(List.Assoc.find ul "links" ~equal:String.equal)
               ()
           )
           ~session:(
-            List.Assoc.find ul "session"
+            List.Assoc.find ul "session" ~equal:String.equal
             |> Option.map ~f:String.strip
           )
           ~video:(
-            List.Assoc.find ul "video"
+            List.Assoc.find ul "video" ~equal:String.equal
             |> Option.map ~f:(fun x -> x |> String.strip |> Video.of_string)
           )
           ~slides:(
-            List.Assoc.find ul "slides"
+            List.Assoc.find ul "slides" ~equal:String.equal
             |> Option.map ~f:(fun x -> x |> String.strip |> Slides.of_string)
           )
           ~description

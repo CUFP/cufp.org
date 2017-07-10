@@ -1,5 +1,5 @@
-open Core.Std
-open Async.Std
+open Core
+open Async
 module Event = Cufp_event
 let (/) = Filename.concat
 

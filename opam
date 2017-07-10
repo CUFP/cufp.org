@@ -12,7 +12,7 @@ build: [omake]
 
 depends: [
   "solvuu-build" {build & = "dev"}
-  "core" {>= "113.24.02"}
+  "core" {>= "v0.9.1"}
   "async"
   "omd"
   "markup"

@@ -1,5 +1,5 @@
-open Core.Std
-open Async.Std
+open Core
+open Async
 module Path = Cufp_path
 
 let mpp_sys ?(its=false) ?(set=[]) ?o ~app_dir file =

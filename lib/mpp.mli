@@ -1,6 +1,6 @@
 (** MPP operations. *)
-open Core.Std
-open Async.Std
+open Core
+open Async
 
 
 (** [main_template ()] runs {i mpp} on the main.html template. Output

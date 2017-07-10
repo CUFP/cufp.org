@@ -1,5 +1,5 @@
-open Core.Std
-open Async.Std
+open Core
+open Async
 
 let is_YYYY s =
   (String.length s = 4) && (String.for_all s ~f:Char.is_digit)
@@ -19,7 +19,7 @@ let find dir =
           | `Unknown -> Pipe.write w (Error (`Unknown_file_type file))
         )
       )
-  in Pipe.init (f dir)
+  in Pipe.create_reader ~close_on_exception:false (f dir)
 
 let command ?(echo=false) ?(dry_run=false) cmd =
   let echo = echo || dry_run in
@@ -189,7 +189,7 @@ let zip3 a b c =
   |> Option.map ~f:List.rev
 
 let get_list ?(on=',') al field =
-  List.Assoc.find al field
+  List.Assoc.find al field ~equal:String.equal
   |> function
     | None -> []
     | Some y ->

@@ -12,8 +12,8 @@
 
     - content depth - Depth of a content file relative to site root.
 *)
-open Core.Std
-open Async.Std
+open Core
+open Async
 
 (** Absolute path to a content file (or directory).
 

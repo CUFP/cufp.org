@@ -1,6 +1,6 @@
 (** Events. *)
-open Core.Std
-open Async.Std
+open Core
+open Async
 
 type typ = Talk | Keynote | Tutorial | BoF | Break | Discussion | Reception
 

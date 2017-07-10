@@ -1,6 +1,6 @@
 (** Conferences. *)
-open Core.Std
-open Async.Std
+open Core
+open Async
 
 (** A session is a sequence of events, all of which have the same
     session name and occur on the same date. If the events' session

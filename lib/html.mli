@@ -1,6 +1,6 @@
 (** HTML operations. *)
-open Core.Std
-open Async.Std
+open Core
+open Async
 
 (** {HTML fragments} *)
 

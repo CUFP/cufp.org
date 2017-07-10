@@ -1,6 +1,6 @@
 (** Miscellaneous utility functions and values. *)
-open Core.Std
-open Async.Std
+open Core
+open Async
 
 val is_YYYY : string -> bool
 

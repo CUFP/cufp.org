@@ -1,5 +1,5 @@
-open Core.Std
-open Async.Std
+open Core
+open Async
 
 (******************************************************************************)
 (* HTML fragments *)
@@ -72,13 +72,15 @@ let append_index_html s =
 
 let map_links_str ?(attributes_to_map = attributes_with_link_values) ~f x =
   let f = function
-    | `Start_element ((elem_namespace,elem_name) as elem, attributes) -> (
+    | `Start_element ((_,elem_name) as elem, attributes) -> (
         let attributes =
-          match List.Assoc.find attributes_to_map elem_name with
+          match
+            List.Assoc.find attributes_to_map elem_name ~equal:String.equal
+          with
           | None -> attributes
           | Some attr_to_map ->
             List.map attributes
-              ~f:(fun (((attr_namespace,attr_name) as attr, value) as x) ->
+              ~f:(fun (((_,attr_name) as attr, value) as x) ->
                 match String.equal attr_name attr_to_map with
                 | false -> x
                 | true -> (attr, f value)
