@@ -29,11 +29,10 @@ OCaml developers with an interest in web programming.
 
 <div class="content" media:type="text/omd">
 ### Andreas Garnæs
-Andreas Garnæs is a software engineer with many years of experience. He used a
-variety of languages throughout his career and got interested in Clojure around 2010.
-He's author of "Clojure Standard Library, Annotated Reference" book by
-Manning and the "Clojure Pills" screencasts on YouTube. He currently works for
-uSwitch, an online comparison service company based in London.
+Andreas Garnæs leads a team of engineers at Zendesk, where GraphQL is playing an
+increasingly important role. After much frustration about the lack of type safety in other
+GraphQL implementations, Andreas authored a GraphQL library in OCaml, ocaml-graphql.
+Besides OCaml, Andreas is excited about microservices, Go and Ruby.
 </div>
 
 </div>
