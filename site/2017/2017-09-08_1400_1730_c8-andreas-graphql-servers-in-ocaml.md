@@ -3,7 +3,7 @@
 - speakers: Andreas Garnæs
 
 ## Abstract
-Github and more. By being client-centric, GraphQL allows you to deliver features faster, with fewer network roundtrips and less data going over the wire. Unlike REST, types are front and center in GraphQL: all input and output types must be declared up front in a schema. It's these type declarations that enable some of GraphQL's unique selling points: self-documenting APIs that can be explored and introspected with explicit guarantees on the shape of data.
+By being client-centric, GraphQL allows you to deliver features faster, with fewer network roundtrips and less data going over the wire. Unlike REST, types are front and center in GraphQL: all input and output types must be declared up front in a schema. It's these type declarations that enable some of GraphQL's unique selling points: self-documenting APIs that can be explored and introspected with explicit guarantees on the shape of data.
 
 The types declared in your GraphQL schema are connected to the types in your application code, but it turns out to be quite hard to capture this connection. Most GraphQL libraries resolve to runtime checks and type coercions rather than static type checking to enforce this connection. With OCaml's powerful type system, `ocaml-graphql` is able to tie the types in  schema to the types in your application code, resulting in compile-time checking of GraphQL schemas!
 
