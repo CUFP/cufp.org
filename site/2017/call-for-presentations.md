@@ -86,7 +86,6 @@ available to would-be presenters who require assistance in this respect.
 - Jasper Van der Jeugt (Fugue)
 - Yukitoshi Suzuki (Ziosoft)
 - Evelina Gabasova (University of Cambridge)
-- Brian Mitchell (Jet.com)
 
 ## More information
 For more information on CUFP, including videos of presentations from
