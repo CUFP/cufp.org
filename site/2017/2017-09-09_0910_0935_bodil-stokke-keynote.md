@@ -1,0 +1,3 @@
+- type: keynote
+- title: Keynote
+- speakers: Bodil Stokke
