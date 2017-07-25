@@ -13,7 +13,7 @@ With the talk, we'd wish to present the system we've designed and built with a m
 
 <div class="image">
 <div class="avatar">
-<img src="img/mate-marjai" alt="Máté Marjai"></img>
+<img src="img/mate-marjai.jpg" alt="Máté Marjai"></img>
 </div>
 </div>
 
