@@ -1,7 +1,7 @@
 - type: talk
 - title: Building the largest payment sandbox on a tiny machine
 - speakers: Máté Marjai
-- affiliations: 
+- affiliations: TestingPays
 
 ## Abstract
 
