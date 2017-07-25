@@ -23,4 +23,8 @@ While biopharma is an unusual setting for this, we used functional programming t
 </div>
 </div>
 
+### Austin Huang
+
+Austin Huang, PhD, is the Biomedical Data Science Lead for Computational Biomedicine / Genome Sciences and Technology within Pfizer Worldwide Research and Development. He leads and contributes to a broad range of projects to enable human-derived evidence for translational efficacy using advanced analytical methods - machine learning, artificial intelligence, probabilistic modeling - applied to large-scale electronic medical record and molecular biomarker data. He also works on technology initiatives to transform biopharmaceutical research as a knowledge-driven enterprise through innovation in big data and cloud computing. Austin Huang received his PhD from the Harvard - Massachusetts Institute of Technology division of Health Sciences and Technology (HST) and holds a concurrent faculty appointment in the Warren Alpert School of Medicine at Brown University. He is based in Cambridge, MA.
+
 </div>
