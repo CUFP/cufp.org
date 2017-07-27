@@ -1,6 +1,7 @@
 - type: talk
 - title: Functional Facades over Legacy Code
 - speakers: Nicholas Cowle, Robin Kay
+- affiliations: G-Research
 
 ## Abstract 
 

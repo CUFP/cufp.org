@@ -17,5 +17,18 @@ In this talk, I will highlight the technical and social problems that we, at Amb
 
 From this talk, the audience will learn about the difference between type-directed and integrated shrinking, and how integrated shrinking can provide superior counterexamples, while placing a smaller burden on developers writing tests.
 
-## Notes
-This talk has been given at YOW! Lambda Jam 2017 in Sydney. See the conference website (http://lambdajam.yowconference.com.au/speakers/jacob-stanley-2/) for the slides that I used that day.
+<div class="author media" media:type="text/omd">
+
+<div class="image">
+<div class="avatar">
+<img src="img/jacob-stanley.jpg" alt="Jacob Stanley"></img>
+</div>
+</div>
+
+<div class="content" media:type="text/omd">
+### Jacob Stanley
+
+Jacob works at Ambiata, implementing the compiler and surrounding ecosystem for Icicle, a query language for processing large amounts of time-series data. His passion is building correct high performance software and he thinks functional programming and property-based testing are outstanding tools for this purpose.
+
+</div>
+</div>
