@@ -17,17 +17,16 @@ This tutorial is aimed at people with basic Clojure understanding. Previous expe
 ## Infrastructure required
 Participants should bring their laptop. The tutorial files will be distributed at the beginning of the session, including slides and labs. Please sign up mailing list clojure-workshop@googlegroups.com so that your question before or after tutorial will be answered by the tutors.
 
-<div class="author media" media:type="text/omd">
-
-<div class="image">
-<div class="avatar">
-<img src="img/User_silhouette_512.png" alt="Renzo Borgatti"></img>
-</div>
-</div>
-
 <div class="content" media:type="text/omd">
 ### Renzo Borgatti
 Renzo Borgatti is a software engineer with many years of experience. He used a variety of languages throughout his career and got interested in Clojure around 2010. He's author of "Clojure Standard Library, Annotated Reference" book by Manning and the "Clojure Pills" screencasts on YouTube. He currently works for uSwitch, an online comparison service company based in London.
 </div>
 
+<div class="content" media:type="text/omd">
+### Nick Ogden
+Nick Ogden is a software engineer at uSwitch.com. He has more than eight years of
+software development experience including aeronautics, real-time video streaming, and
+web. Nick also has three years experience of developing commercial Clojure products.
+He contributes to Clojure [Ring](https://github.com/ring-clojure/ring) library, and
+author of Clojure multimedia library.
 </div>
