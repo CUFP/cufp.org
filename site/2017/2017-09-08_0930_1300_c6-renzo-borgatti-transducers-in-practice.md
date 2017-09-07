@@ -28,5 +28,5 @@ Nick Ogden is a software engineer at uSwitch.com. He has more than eight years o
 software development experience including aeronautics, real-time video streaming, and
 web. Nick also has three years experience of developing commercial Clojure products.
 He contributes to Clojure [Ring](https://github.com/ring-clojure/ring) library, and
-author of Clojure multimedia library.
+he is the author of Clojure multimedia library.
 </div>
